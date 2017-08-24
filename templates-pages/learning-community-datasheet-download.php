@@ -23,7 +23,7 @@ get_header(); ?>
         <p class="padding-bottom text-center">Select your data sheet to download from the options below.</p>
 
         <?php
-          $the_query = new WP_Query( array( 'posts_per_page' => '20' , 'orderby' => 'title' , 'order' => 'ASC' , 'category_name' => 'data-sheets' ) );
+          $the_query = new WP_Query( array( 'posts_per_page' => '50' , 'orderby' => 'title' , 'order' => 'ASC' , 'category_name' => 'data-sheets' ) );
              while ($the_query -> have_posts()) : $the_query -> the_post();
 
           $thumb_id = get_post_thumbnail_id();
