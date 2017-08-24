@@ -45,11 +45,14 @@ get_header(); ?>
     </div>
   </div>
   <script type="text/javascript">
-    $(window).on('load', function () {
+  jQuery(document).ready(function(){
+    jQuery(window).on('load', function () {
       var titleData = '<?php echo the_title();?>';
-      $('input#event-20e22d23-8089-4f25-9f30-52ba0bddecf1').val(titleData);
+      jQuery('input#event-20e22d23-8089-4f25-9f30-52ba0bddecf1').val(titleData);
     });
+  });
   </script>
+
   <div class="container">
     <div class="row padding-top padding-bottom">
       <div class="col-md">
