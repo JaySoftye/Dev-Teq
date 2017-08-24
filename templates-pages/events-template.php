@@ -13,7 +13,7 @@ get_header(); ?>
   <div class="container nopadding padding-top padding-bottom">
     <section>
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-md padding-bottom">
           <h1 class="text-center"><img src="<?php echo get_template_directory_uri(); ?>/_img/teq-events-logo-icon.svg" class="halfWidth" /></h1>
           <p>Here at Teq we strive to continually educate ourselves and others on the latest improvements in education. Below you can find a list of upcoming Events, Webinars, Professional Development Sessions, etc. Please feel free to engage with the Teq team here or through any one of our social channels. We look forward to your feedback and invite you to be part of our learning community.</p>
         </div>
@@ -39,7 +39,7 @@ get_header(); ?>
           <div class="eventArticle">
             <a class="eventHeader" href="<?php the_permalink() ?>" style="background-color: #3c4852; background-size: cover; background-repeat: no-repeat; background-position: top center; background-image: url('<?php echo $thumb_url[0]; ?>');"><?php the_title(); ?></a>
             <div class="eventInfo">
-              <h6><a class="bold" href="<?php the_permalink() ?>"><?php the_title(); ?></a></h6>
+              <h5><a class="bold" href="<?php the_permalink() ?>"><?php the_title(); ?></a></h5>
               <p><?php echo get_the_excerpt(); ?></p>
               <small class="ml-1"><a class="bold teqBlue" href="<?php the_permalink() ?>">MORE DETAILS &#187;</a></small>
             </div>

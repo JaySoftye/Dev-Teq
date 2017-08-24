@@ -870,7 +870,7 @@ div.centeredForm .hs-form .hs-button, .hs-button {
 .standardForm legend.hs-field-desc {
   text-indent: 1.5rem;
   text-align: left;
-  color: rgb(60, 72, 82);
+  color: rgba(60, 72, 82, 0.5);
 }
 
 .standardForm form.hs-form .actions {
@@ -1676,6 +1676,7 @@ ul.breadcrumb a, ul.breadcrumb li.active, ul.breadcrumb li > a, span.divider {
 
 article.eventContainer {
   padding-top: 20px;
+  margin-bottom: 55px;
 }
 
 div.eventArticle img {
@@ -1684,37 +1685,8 @@ div.eventArticle img {
 
 div.eventArticle {
   background-color: #ffffff;
-  -webkit-box-shadow: 0 4px 6px -4px #777;
-  -moz-box-shadow: 0 4px 6px -4px #777;
-  box-shadow: 0 4px 6px -4px #777;
 }
 
-div.eventArticle {
-  position:relative;
-}
-
-div.eventArticle:before, div.eventArticle:after {
-  content:"";
-  position:absolute;
-  z-index:-1;
-  -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
-  -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
-  box-shadow:0 0 20px rgba(0,0,0,0.8);
-  top:50%;
-  bottom:0;
-  left:10px;
-  right:10px;
-  -moz-border-radius:100px / 10px;
-  border-radius:100px / 10px;
-}
-
-div.eventArticle:after {
-  right:10px;
-  left:auto;
-  -webkit-transform:skew(8deg) rotate(3deg);
-  -moz-transform:skew(8deg) rotate(3deg);
-  transform:skew(8deg) rotate(3deg);
-}
 
 div.eventArticle a.eventHeader {
   display: block;
@@ -1724,7 +1696,7 @@ div.eventArticle a.eventHeader {
 }
 
 div.eventArticle .eventInfo {
-  padding: 1rem;
+  padding: 0 1rem;
 }
 
 ul.commentlist {
@@ -1953,9 +1925,10 @@ div.henryViscardiSchool {
 }
 
 .event-form-bg {
-  background: rgba(0, 180, 228, 0.5); 
-  background: -webkit-linear-gradient(to top, #2c3e50, #3498db);
-  background: linear-gradient(to top, #2c3e50, #3498db);
+  background: rgb(136,191,232); /* Old browsers */
+  background: -moz-linear-gradient(left, rgba(136,191,232,0.75) 0%, rgba(112,176,224,0.5) 100%);
+  background: -webkit-linear-gradient(left, rgba(136,191,232,0.75) 0%,rgba(112,176,224,0.5) 100%);
+  background: linear-gradient(to right, rgba(136,191,232,0.75) 0%,rgba(112,176,224,0.5) 100%);
 }
 
 @media (max-width: 768px) {
