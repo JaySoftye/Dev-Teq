@@ -305,6 +305,26 @@
     </div>
   </div>
 
+  <div class="modal" id="smart2000-details" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="modal-copy">
+            <p><strong>WIRELESS SCREEN-SHARING</strong><br />Students and teachers can show whatever is on their Android, iOS and Microsoft devices, and laptops on the display with a few easy taps.</p>
+            <p><strong>SMART LEARNING SUITE INCLUDED </strong><br /> SMART Learning Suite’s interactive lessons, game-based activities, formativeassessment, online co-creation and more.</p>
+            <p><strong>MORE STUDENT ENGAGEMENT</strong><br />Students who are engaged learn more. The 2000 series gives every student a chance tocontribute, which builds confidence.</p>
+            <p><strong>4K ULTRA HD RESOLUTION</strong><br />SMART Notebook lessons. Videos. Web browsing. Brilliant 4K resolution ensures whatever you show on your 2000 series looks its best.</p>
+            <p><strong>EASY TO AFFORD</strong><br />Sometimes you don’t need an interactive display for your lessons. With the 2000 series, you get wireless screen-sharing and 4K resolution on a 75” display at a great price.</p>
+          </div>
+          <img src="<?php echo get_template_directory_uri();?>/_img/diit-nycdoe-quote-footer.jpg" />
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">[Close X]</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 <div>
   <div class="container-fluid" style="background: transparent url(<?php echo get_template_directory_uri();?>/_img/diit-nycdoe-top-header-bg.jpg) no-repeat top center; background-size: cover;">
     <div class="row product-md-text">
@@ -373,9 +393,22 @@
       <div class="row">
       <div class="col-sm-4">
         <img src="<?php echo get_template_directory_uri();?>/_img/diit-nycdoe-product-smart-7000.jpg" />
-        <h6 class="text-center">Coming soon...</h6>
         <h3><strong>SMART 7000 Series</strong></h3>
         <p>The pinnacle of interactive classroom displays.</p>
+        <table class="table famis">
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th>FAMIS #</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>6275</td>
+              <td>358570018</td>
+            </tr>
+          </tbody>
+        </table>
         <div class="buttonRow">
           <a target="_blank" href="<?php echo get_template_directory_uri();?>/_img/Tech Catalog-2017-smart-7000.pdf"><button class="moreInfo" type="button">More Details</button></a><button class="quote" type="button" data-toggle="modal" data-target="#requestPrice">Request a quote</button>
         </div>
@@ -409,9 +442,10 @@
       </div>
 
       <div class="col-sm-4">
-        <img src="<?php echo get_template_directory_uri();?>/_img/diit-nycdoe-product-smart-4000.jpg" />
-        <h3><strong>SMART 4000 Series</strong></h3>
-        <p>Develop life-long collaboration skills for students with the 4000 series.</p>
+        <img src="<?php echo get_template_directory_uri();?>/_img/diit-nycdoe-product-smart-2000.jpg" />
+        <p class="text-center"><small>Coming soon...</small></p>
+        <h3><strong>SMART 2000 Series</strong></h3>
+        <p>Designed for classrooms that need more than just a basic consumer display.</p>
         <table class="table famis">
           <thead>
             <tr>
@@ -421,21 +455,13 @@
           </thead>
           <tbody>
             <tr>
-              <td>4070</td>
-              <td>358036186</td>
-            </tr>
-            <tr>
-              <td>4075</td>
-              <td>358036143</td>
-            </tr>
-            <tr>
-              <td>4084</td>
-              <td>358036062</td>
+              <td>2075</td>
+              <td>358569672</td>
             </tr>
           </tbody>
         </table>
         <div class="buttonRow">
-          <a target="_blank" href="<?php echo get_template_directory_uri();?>/_img/Tech Catalog-2017-smart-4000.pdf"><button class="moreInfo" type="button">More Details</button></a><button class="quote" type="button" data-toggle="modal" data-target="#requestPrice">Request a quote</button>
+          <a href="#"><button class="moreInfo" type="button" data-toggle="modal" data-target="#smart2000-details">More Details</button></a><button class="quote" type="button" data-toggle="modal" data-target="#requestPrice">Request a quote</button>
         </div>
       </div>
 <!--
