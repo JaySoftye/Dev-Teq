@@ -404,7 +404,7 @@
           </thead>
           <tbody>
             <tr>
-              <td>6275</td>
+              <td>7275</td>
               <td>358570018</td>
             </tr>
           </tbody>
@@ -443,7 +443,6 @@
 
       <div class="col-sm-4">
         <img src="<?php echo get_template_directory_uri();?>/_img/diit-nycdoe-product-smart-2000.jpg" />
-        <p class="text-center"><small>Coming soon...</small></p>
         <h3><strong>SMART 2000 Series</strong></h3>
         <p>Designed for classrooms that need more than just a basic consumer display.</p>
         <table class="table famis">
