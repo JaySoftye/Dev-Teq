@@ -40,7 +40,7 @@
                     }
                   ?>
                 </a>
-                <div class="padding">
+                <div>
                   <h6><a class="bold" href="<?php the_permalink() ?>"><?php the_title(); ?></a></h6>
                   <p><?php echo get_the_excerpt(); ?></p>
                   <small class="ml-1"><a class="bold teqBlue" href="<?php the_permalink() ?>">MORE DETAILS &#187;</a></small>

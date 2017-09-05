@@ -439,7 +439,7 @@
               <h2 class="white">Get started with your <span class="teqBlue">new classroom technology</span> today.</h2>
           </div>
           <div class="col-md-6">
-              <a href="http://onlinepd.teq.com/index/gettingstarted/" onclick="trackOutboundLink('http://onlinepd.teq.com/index/gettingstarted/'); return false;"><img src="<?php echo get_template_directory_uri();?>/_img/teq-headernav-GettingStartedAd.png" /></a>
+              <a href="http://onlinepd.teq.com/gettingstarted/" onclick="trackOutboundLink('http://onlinepd.teq.com/gettingstarted/'); return false;"><img src="<?php echo get_template_directory_uri();?>/_img/teq-headernav-GettingStartedAd.png" /></a>
           </div>
           <div class="col-md-3">
               <p class="white">You’ll learn all the skills you need to start using your new products and software right away. Teq's Getting Started option gives you access to an entire library of <a class="ctleWindow" href="http://www.teq.com/ctle-approved"><span class="teqBlue">State-approved PD content</span></a> as well as hours of complementary online PD.</p><p class="white bold">To see what PD courses are available for you, visit <a class="teqBlue bold" href="http://onlinepd.teq.com/gettingstarted/" onclick="trackOutboundLink('http://onlinepd.teq.com/gettingstarted/'); return false;">onlinepd.teq.com/gettingstarted</a>.</p>
