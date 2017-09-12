@@ -12,45 +12,31 @@
 
   <main>
     <div class="container nopadding padding-top">
-      <section>
+      <section id="teqBlog">
         <div class="row">
           <div class="col-md text-center">
             <h1>Recent Teq <strong>Press Releases</strong></h1>
             <h3>Below you will find our most recent Press Releases regarding company updates, news, upcoming annoucements, product updates, etc.</h3>
           </div>
         </div>
-
+        <div class="row twoRowHeight">
   			  <?php
-            $the_query = new WP_Query( array( 'category_name' => 'press-releases', 'posts_per_page' => '5') );
+            $the_query = new WP_Query( array( 'category_name' => 'press-releases', 'posts_per_page' => '10') );
   			       while ($the_query -> have_posts()) : $the_query -> the_post();
 
+               $thumb_id = get_post_thumbnail_id();
+               $thumb_url = wp_get_attachment_image_src($thumb_id,'full', true);
+
           ?>
+          <article style="background-color: #3c4852; background-size: cover; background-repeat: no-repeat; background-position: top center; background-image: url('<?php echo $thumb_url[0]; ?>');">
+            <div class="postInfo">
+              <p><?php the_date(); ?></p>
+              <a href="<?php the_permalink() ?>"> <?php the_title(); ?> &#187;</a>
+            </div>
+          </article>
 
-          <div class="row padding">
-            <article class="col-md padding-left padding-right eventContainer">
-              <div class="eventArticle">
-                <a href="<?php the_permalink() ?>">
-                  <?php
-                    if ( has_post_thumbnail() ) {
-                      the_post_thumbnail();
-                    } else {
-                  ?>
-                    <img src="<?php echo get_template_directory_uri();?>/_img/teq-learning-community-default-post-feature-image.jpg" />
-                  <?php
-                    }
-                  ?>
-                </a>
-                <div>
-                  <h6><a class="bold" href="<?php the_permalink() ?>"><?php the_title(); ?></a></h6>
-                  <p><?php echo get_the_excerpt(); ?></p>
-                  <small class="ml-1"><a class="bold teqBlue" href="<?php the_permalink() ?>">MORE DETAILS &#187;</a></small>
-                </div>
-              </div>
-            </article>
-          </div>
-
-        <?php endwhile; wp_reset_postdata(); ?>
-
+          <?php endwhile; wp_reset_postdata(); ?>
+        </div>
       </section>
     </div>
   </main>

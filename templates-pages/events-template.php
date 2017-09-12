@@ -29,7 +29,15 @@ get_header(); ?>
       <div class="row">
 
         <?php
-          $the_query = new WP_Query( array( 'posts_per_page' => '18' , 'category_name' => 'events', 'order' => 'DESC' ) );
+          $args = array(
+            'category_name' => 'events',
+            'order' => 'DESC',
+            'date_query' => array(
+            'after' => date('Y-m-d', strtotime('-6 months'))
+              )
+            );
+
+          $the_query = new WP_Query($args);
 			       while ($the_query -> have_posts()) : $the_query -> the_post();
 
           $thumb_id = get_post_thumbnail_id();
@@ -41,7 +49,7 @@ get_header(); ?>
             <div class="eventInfo">
               <h5><a class="bold" href="<?php the_permalink() ?>"><?php the_title(); ?></a></h5>
               <p><?php echo get_the_excerpt(); ?></p>
-              <small class="ml-1"><a class="bold teqBlue" href="<?php the_permalink() ?>">MORE DETAILS &#187;</a></small>
+              <p><small class="ml-1"><a class="bold teqBlue" href="<?php the_permalink() ?>">MORE DETAILS &#187;</a></small></p>
             </div>
           </div>
         </article>
