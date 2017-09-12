@@ -19,7 +19,7 @@ get_header(); ?>
 <section>
 
   <?php wp_reset_query();
-    if ( in_category('events') ) { ?>
+    if ( in_category('events') && get_post_meta($postid, 'formId', true) ) { ?>
 
   <div class="container">
     <div class="col padding-top">
