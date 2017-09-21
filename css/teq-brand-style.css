@@ -187,18 +187,6 @@ video {
   padding-left: 6rem;
 }
 
-@media (max-width: 768px) {
-  .padding, .padding-right, .padding-left {
-    padding: .7rem;
-  }
-}
-
-@media (max-width: 425px) {
-  .padding, .padding-right, .padding-left {
-    padding: .1rem;
-  }
-}
-
 .padding-top {
   padding-top: 5rem;
 }
@@ -310,24 +298,6 @@ section {
 
 small {
   margin-bottom: 2rem;
-}
-
-@media (max-width: 425px) {
-  h1 {
-    font-size: 1.4rem;
-  }
-  h2 {
-    font-size: 1.2rem;
-  }
-  h3 {
-    font-size: 1rem;
-  }
-  h4 {
-    font-size: .8rem;
-  }
-  section {
-    padding-top: 3rem;
-  }
 }
 
 a:hover, a:focus {
@@ -702,9 +672,6 @@ ul.nav.title-roles-content p {
 }
 
 #navbarMobile {
-  position: absolute;
-  top: 4rem;
-  left: 0;
   padding-top: 1rem;
   padding-left: 2rem;
   width: 100%;
@@ -884,25 +851,6 @@ div.centeredForm .hs-form .hs-button, .hs-button {
 
 .centeredForm .hs-form-field {
   width: 100%;
-}
-
-@media (max-width: 768px) {
-  .trialForm .hs-form-field, .standardForm .hs-form-field {
-    float: left;
-    width: 50%;
-  }
-  div.trialForm .hs-form .hs-button, div.standardForm .hs-form .hs-button {
-    left: auto;
-  }
-}
-
-@media (max-width: 425px) {
-  .trialForm .hs-form-field, .standardForm .hs-form-field {
-    width: 100%;
-  }
-  div.trialForm .hs-form .hs-button, div.standardForm .hs-form .hs-button {
-    left: auto;
-  }
 }
 
 .centeredForm input[type='text'], .centeredForm input[type='email'], .centeredForm input[type='tel'], .centeredForm select.hs-input {
@@ -1191,20 +1139,6 @@ div.main-header {
 
 div.scrollToDiv {
   border-top: 5px solid #ffffff;
-}
-
-@media (max-width: 768px) {
-  div.main-header {
-    height: 100%;
-    min-height:90vh;
-  }
-}
-
-@media (max-width: 425px) {
-  div.main-header {
-    height: 100%;
-    min-height:60vh;
-  }
 }
 
 div.error-header {
@@ -1592,20 +1526,6 @@ ul.breadcrumb a, ul.breadcrumb li.active, ul.breadcrumb li > a, span.divider {
   right: 0;
 }
 
-@media (max-width: 768px) {
-  #teqBlog article:nth-child(1n+0) {
-    position: relative;
-    width: 100%;
-    height: 20rem;
-    margin-top: 1rem;
-    margin-right: 1rem;
-    float: left;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
-}
-
 #teqResources ul {
   list-style: none;
   padding: 0 0;
@@ -1931,18 +1851,6 @@ div.henryViscardiSchool {
   background: -moz-linear-gradient(left, rgba(136,191,232,0.75) 0%, rgba(112,176,224,0.5) 100%);
   background: -webkit-linear-gradient(left, rgba(136,191,232,0.75) 0%,rgba(112,176,224,0.5) 100%);
   background: linear-gradient(to right, rgba(136,191,232,0.75) 0%,rgba(112,176,224,0.5) 100%);
-}
-
-@media (max-width: 768px) {
-  div.instructionalSoftware, div.whiteboards-smart-kappBg, div.tech-tubs-twoBg, div.cloudgenix-central-controlBg {
-    background-position: left top;
-  }
-  div.sightSound, div.safe-systemBg, div.accessories-coversBg {
-    background-position: right top;
-  }
-  div.conceptsMap {
-    background: white url(../_img/classroomconcepts-browser-window.svg) no-repeat center top;
-  }
 }
 
 .topBottomShadow {
