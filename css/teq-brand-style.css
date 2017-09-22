@@ -913,7 +913,7 @@ ul.hs-error-msgs {
   color: red;
 }
 
-#postContent li a, #postContent p a, #postContent span a  {
+#postContent li a, #postContent p a, #postContent span a, #postContent a  {
   color: #00b4e4;
   font-weight: 300;
 }

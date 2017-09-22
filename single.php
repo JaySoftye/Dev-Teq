@@ -16,7 +16,7 @@ get_header(); ?>
     $postid = $wp_query->post->ID;
 ?>
 
-<section>
+<section id="postContent">
 
   <?php wp_reset_query();
     if ( in_category('events') && get_post_meta($postid, 'formId', true) ) { ?>
