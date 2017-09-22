@@ -267,7 +267,7 @@ span.videoPlayStem {
 
 h1, h2, h3, h4, h5, h6, p, small, blockquote, a, button {
   font-family:'Roboto',Helvetica,Arial,san-serif !important;
-  font-weight: 200;
+  font-weight: 300 !important;
   color: #3c4852;
   margin-top: .5rem;
   margin-bottom: .5rem;
