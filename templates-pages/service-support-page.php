@@ -60,14 +60,14 @@
       <div class="container padding">
         <div class="col-md-6 padding flex-md-middle">
           <h1 class="white"><strong>Having an issue?</strong></h1>
-          <h3 class="productBlue">Contact our TEQ engineer specialists today.</h3>
+          <h3 class="productBlue">Contact our TEQ Support Specialists today.</h3>
           <h1 class="white"><strong>877.455.9369</strong></h1>
         </div>
         <div class="col-md-6 padding flex-md-middle">
           <h1 class="white"><strong>Teq Support Plans</strong></h1>
           <p class="white">We will happily provide tech support for you if you have:</p>
           <ol>
-            <li class="product white">Have an active Teq service plan or warranty and is located in the NY and NJ area.</li>
+            <li class="product white">Have an active Teq service plan or warranty and are located in the NY and NJ area.</li>
             <li class="product white">Purchased SMART hardware within the last 24 months</li>
             <li class="product white">Have a license and active SMART Notebook Advantage Subscription</li>
           </ol>
