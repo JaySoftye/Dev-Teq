@@ -27,7 +27,7 @@
       <div class="container">
         <div class="row teqTestimonial padding-bottom">
           <?php
-            $the_query = new WP_Query( array( 'cat' => '-368', 'category_name' => 'testimonials', 'posts_per_page' => '10', 'orderby' => 'rand') );
+            $the_query = new WP_Query( array( 'cat' => '-482', 'category_name' => 'testimonials', 'posts_per_page' => '10', 'orderby' => 'rand') );
                while ($the_query -> have_posts()) : $the_query -> the_post();
           ?>
 
