@@ -229,8 +229,8 @@
                 <li><a href="<?php echo site_url(); ?>/steam/jumpstart-nao/" class="subnav-link">Jumpstart NAO</a></li>
                 <li><a href="<?php echo site_url(); ?>/steam/labdisc/" class="subnav-link">Labdisc</a></li>
                 <li><a href="<?php echo site_url(); ?>/steam/ultimaker-3d-printer/" class="subnav-link">Ultimaker 3D Printer</a></li>
-                <!--
                 <li><a href="<?php echo site_url(); ?>/steam/zspace/" class="subnav-link">zSpace</a></li>
+                <!--
                 <li><a href="<?php echo site_url(); ?>/steam/vr/" class="subnav-link">VR</a></li>
                 -->
                 <li><a href="<?php echo site_url(); ?>/steam/stem-maker-station/" class="subnav-link">STEM Maker Station</a></li>

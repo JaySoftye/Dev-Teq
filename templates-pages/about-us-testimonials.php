@@ -11,8 +11,33 @@
   </nav>
 
   <main>
-    <div class="container-fluid nopadding padding-top padding-bottom">
-      <section id="teqBlog">
+    <div class="container nopadding padding-top">
+      <section id="teqCustomerSuccess">
+        <div class="row oneRowHeight">
+
+          <?php
+            $the_query = new WP_Query( array( 'posts_per_page' => '2', 'category_name' => 'customer-success-stories') );
+               while ($the_query -> have_posts()) : $the_query -> the_post();
+
+            $thumb_id = get_post_thumbnail_id();
+            $thumb_url = wp_get_attachment_image_src($thumb_id,'full', true);
+          ?>
+
+          <article style="background-color: #3c4852; background-size: cover; background-repeat: no-repeat; background-position: top center; background-image: url('<?php echo $thumb_url[0]; ?>');">
+            <div class="postInfo">
+              <?php the_category(); ?>
+              <h2><a href="<?php the_permalink() ?>"><strong><?php the_title(); ?></strong></a></h2>
+              <button class="small-blue"><a href="<?php the_permalink() ?>">watch video</a></button>
+            </div>
+          </article>
+
+          <?php endwhile; wp_reset_postdata(); ?>
+
+        </div>
+      </section>
+    </div>
+
+    <div class="container-fluid nopadding padding-bottom">
       <div class="container">
         <div class="row">
           <div class="col-md padding-bottom text-center">
@@ -60,7 +85,6 @@
         </div>
 -->
       </div>
-      </section>
     </div>
   </main>
 
