@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: DIIT NY Department of Educatioin Page
+ * Template Name: DIIT NY Department of Education Page
  * Description: Displays NYDOE Products ONLY
  *
  * @package WordPress
@@ -345,7 +345,7 @@
 <div class="container-fluid">
   <div class="container">
     <row>
-      <div class="col-sm-4">
+      <div class="col-sm-6 col-md-3">
         <section style="padding-bottom: 3px; padding-top: 5px;">
           <img src="<?php echo get_template_directory_uri();?>/_img/diit-nycdoe-free-online-pd-account-compare.png" />
           <p class="text-center">Compare a FREE Account with a Teq Online PD School Subscription</p>
@@ -354,7 +354,7 @@
             <a target="_blank" href="<?php echo get_template_directory_uri();?>/_img/teq_opd_comparison.pdf"><button class="small download" type="button">Compare now</button></a>
           </div>
       </div>
-      <div class="col-sm-4">
+      <div class="col-sm-6 col-md-3">
         <section style="padding-bottom: 3px; padding-top: 5px;">
           <img src="<?php echo get_template_directory_uri();?>/_img/diit-nycdoe-smart-notebook-compare.png" />
           <p class="text-center">Compare SMART Notebook to a SMART Learning Suite or Teq Unlimited Subscription</p>
@@ -363,13 +363,22 @@
             <a target="_blank" href="<?php echo get_template_directory_uri();?>/_img/teq_sls_unlimited_comparison.pdf"><button class="small download" type="button">Compare now</button></a>
           </div>
       </div>
-      <div class="col-sm-4">
+      <div class="col-sm-6 col-md-3">
         <section style="padding-bottom: 3px; padding-top: 5px;">
           <img src="<?php echo get_template_directory_uri();?>/_img/diit-nycdoe-subscription-compare.png" />
           <p class="text-center">Find a plan thats fits your school's needs</p>
         </section>
           <div class="buttonRow">
             <button class="small download" type="button" data-toggle="modal" data-target="#requestPrice">Request a full quote</button>
+          </div>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <section style="padding-bottom: 3px; padding-top: 5px;">
+          <img src="<?php echo get_template_directory_uri();?>/_img/diit-nycdoe-screen-share-troubleshoot.jpg" />
+          <p class="text-center">Trouble with Screen Share? Download our general screen sharing troubleshooting guide</p>
+        </section>
+          <div class="buttonRow">
+              <a target="_blank" href="http://www.teq.com/pdf/SMART-Teq-General-Screen-sharing-troubleshooting_web.pdf"><button class="small download">Download the guide</button></a>
           </div>
       </div>
     </div>
