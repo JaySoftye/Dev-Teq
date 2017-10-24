@@ -121,7 +121,7 @@
   }
 
   section.post {
-  	min-height: 25rem;
+  	min-height: 5rem;
   	border-bottom: 2px solid #ffffff;
   	display: flex;
     flex-direction: column;
@@ -325,60 +325,65 @@
     </div>
   </div>
 
-<div>
   <div class="container-fluid" style="background: transparent url(<?php echo get_template_directory_uri();?>/_img/diit-nycdoe-top-header-bg.jpg) no-repeat top center; background-size: cover;">
-    <div class="row product-md-text">
-      <div class="container"><div class="row">
-        <div class="col-sm-7">
-          <h3 class="text-left"><img src="<?php echo get_template_directory_uri();?>/_img/diit-nycdoe-top-header-logo.png" style="margin: 0;" /></h3>
-          <p class="white text-left" style="padding-top: 36px; padding-bottom: 2px; margin-bottom: 0;">Welcome to Teq's Online Product Catalog for the</p>
-          <h1 class="white text-left"><strong>New York City Department of Education</strong></h1>
+    <div class="container">
+      <div class="row" style="padding-top: 12%;">
+        <div class="col-md-4">
+          <h3><img src="<?php echo get_template_directory_uri();?>/_img/teq-nyc-department-of-ed-logo.svg" style="margin: 0;" /></h3>
         </div>
-        <div class="col-sm-5">
-          <a href="http://www.teq.com/onlinepd"><img src="<?php echo get_template_directory_uri();?>/_img/diit-nycdoe-online-pd-bannerAD-badge.png" style="cursor:pointer;" /></a>
+        <div class="col-md-8">
+          <p class="white text-left">Welcome to Teq's Online Product Catalog for the</p>
+          <h1 class="white text-left" style="margin: 0 0;"><strong>New York City Department of Education</strong></h1>
         </div>
-      </div></div>
+      </div>
+      <div class="row" style="padding-top: 6%;">
+        <div class="col-md">
+          <h2 class="text-center"><a class="teqBlue" data-toggle="collapse" href="#collapseOPD" aria-expanded="false" aria-controls="collapseOPD"><strong>Did you know that &#187;</strong></a></h2>
+          <div class="collapse" id="collapseOPD">
+            <h2 class="text-center white">Teq Online PD is approved by NYS to fulfill CTLE requirments? <br /><strong>Start earning credit towards your State Teaching License with Online PD today!</strong></h2>
+            <center>
+              <a href="https://onlinepd.teq.com/"><button class="lightBlue">Learn more</button></a>
+            </center>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md">
+          <img src="<?php echo get_template_directory_uri();?>/_img/diit-nycdoe-teq-opd-ctle-approved.png" style="margin: 0;" />
+        </div>
+      </div>
     </div>
   </div>
-</div>
+
 
 <div class="container-fluid">
   <div class="container">
-    <row>
-      <div class="col-sm-6 col-md-3">
-        <section style="padding-bottom: 3px; padding-top: 5px;">
+    <div class="row">
+      <div class="product-sm-text col-sm-6 col-md-4">
+        <div>
           <img src="<?php echo get_template_directory_uri();?>/_img/diit-nycdoe-free-online-pd-account-compare.png" />
           <p class="text-center">Compare a FREE Account with a Teq Online PD School Subscription</p>
-        </section>
+        </div>
           <div class="buttonRow">
             <a target="_blank" href="<?php echo get_template_directory_uri();?>/_img/teq_opd_comparison.pdf"><button class="small download" type="button">Compare now</button></a>
           </div>
       </div>
-      <div class="col-sm-6 col-md-3">
-        <section style="padding-bottom: 3px; padding-top: 5px;">
+      <div class="product-sm-text col-sm-6 col-md-4">
+        <div>
           <img src="<?php echo get_template_directory_uri();?>/_img/diit-nycdoe-smart-notebook-compare.png" />
-          <p class="text-center">Compare SMART Notebook to a SMART Learning Suite or Teq Unlimited Subscription</p>
-        </section>
+          <p class="text-center">Compare SMART Notebook to a SLS or Teq Essentials Subscription</p>
+        </div>
           <div class="buttonRow">
             <a target="_blank" href="<?php echo get_template_directory_uri();?>/_img/teq_sls_unlimited_comparison.pdf"><button class="small download" type="button">Compare now</button></a>
           </div>
       </div>
-      <div class="col-sm-6 col-md-3">
-        <section style="padding-bottom: 3px; padding-top: 5px;">
+      <div class="product-sm-text col-sm-6 col-md-4">
+        <div>
           <img src="<?php echo get_template_directory_uri();?>/_img/diit-nycdoe-subscription-compare.png" />
-          <p class="text-center">Find a plan thats fits your school's needs</p>
-        </section>
+          <p class="text-center">Price includes 1 Onsite PD Day - Find a plan thats fits your school's needs</p>
+        </div>
           <div class="buttonRow">
             <button class="small download" type="button" data-toggle="modal" data-target="#requestPrice">Request a full quote</button>
-          </div>
-      </div>
-      <div class="col-sm-6 col-md-3">
-        <section style="padding-bottom: 3px; padding-top: 5px;">
-          <img src="<?php echo get_template_directory_uri();?>/_img/diit-nycdoe-screen-share-troubleshoot.jpg" />
-          <p class="text-center">Trouble with Screen Share? Download our general screen sharing troubleshooting guide</p>
-        </section>
-          <div class="buttonRow">
-              <a target="_blank" href="http://www.teq.com/pdf/SMART-Teq-General-Screen-sharing-troubleshooting_web.pdf"><button class="small download">Download the guide</button></a>
           </div>
       </div>
     </div>
@@ -394,6 +399,7 @@
     <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#stemProducts">STEAM Products</a></li>
     <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#software">Instructional Software</a></li>
     <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#pdSupport">Professional Development / Support & Services</a></li>
+    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#faq">Guides and FAQ's</a></li>
   </ul>
 
   <div class="tab-content">
@@ -887,6 +893,35 @@
       </div>
     </div>
 
+    <div id="faq" class="tab-pane fade">
+      <div class="row">
+      <div class="col-sm-4">
+        <img src="<?php echo get_template_directory_uri();?>/_img/diit-nycdoe-screen-share-troubleshoot.jpg" />
+        <p>General Screen Sharing Troubleshooting.</p>
+        <div class="buttonRow">
+          <a target="_blank" href="<?php echo get_home_url();?>/pdf/SMART-Teq-General-Screen-sharing-troubleshooting_web.pdf"><button class="moreInfo" type="button">More Details</button></a>
+        </div>
+      </div>
+
+      <div class="col-sm-4">
+        <img src="<?php echo get_template_directory_uri();?>/_img/diit-nycdoe-apple-screen-share-troubleshoot.jpg" />
+        <p>Screen Sharing Troubleshooting for Apple Devices.</p>
+        <div class="buttonRow">
+          <a target="_blank" href="<?php echo get_home_url();?>/pdf/SMART-Apple-Devices-Screenshare-Board-Sheet_web.pdf"><button class="moreInfo" type="button">More Details</button></a>
+        </div>
+      </div>
+
+      <div class="col-sm-4">
+        <img src="<?php echo get_template_directory_uri();?>/_img/diit-nycdoe-android-screen-share-troubleshoot.jpg" />
+        <p>Screen Sharing Troubleshooting for Android Devices.</p>
+        <div class="buttonRow">
+          <a target="_blank" href="<?php echo get_home_url();?>/pdf/SMART-Android-Devices-Screenshare-Board-Sheet_web.pdf"><button class="moreInfo" type="button">More Details</button></a>
+        </div>
+      </div>
+
+      </div>
+    </div>
+
    <h2><img src="<?php echo get_template_directory_uri();?>/_img/Teq-CDWG-contract-no-B220901.png" /></h2>
   </div>
 
@@ -920,12 +955,13 @@
 </div>
 
 <!-- Footer section -->
- <div class="container-fluid" style="background-color: #323e48;">
+ <div class="container-fluid" style="background: transparent url(<?php echo get_template_directory_uri();?>/_img/diit-nycdoe-footer-bg.jpg) no-repeat top center; background-size: cover; background-color: #323e48;">
  <div class="container">
    <div class="row product-sm-text">
-     <div class="col-md text-center">
-       <p class="footer-text white"><span class="blue">Its all about learning.</span><br>7 Norden Lane<br>Huntington Station<br>NY 11746<br>United States<br></p>
-    </div>
+     <div class="col-md">
+       <h2 class="white">For Site Assistance Please Contact:<br /><strong>877.455.9369</strong></h2>
+       <p ><small class="white">© Copyright 2017 All rights reserved.  Tequipment, Inc.<br />7 Norden Lane | Huntington Station, NY 11746</small></p>
+     </div>
            </div>
          </div>
 
