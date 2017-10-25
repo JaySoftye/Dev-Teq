@@ -53,7 +53,8 @@ var imageArray = [];
     title : "PD and Curriculum Specialist",
     video : "Jessica_Wenke_PDBio_2017_Web"
   };
-  imageArray[6] = {
+  /**
+  imageArray[] = {
     count: "7",
     src : teqHome + "joe_massi.jpg",
     firstName : "Joe",
@@ -61,7 +62,8 @@ var imageArray = [];
     title : "PD Specialist",
     video : "Joe_Masi_PDBio_2017_Web"
   };
-  imageArray[7] = {
+  **/
+  imageArray[6] = {
     count: "8",
     src : teqHome + "joe_sanfillippo.jpg",
     firstName : "Joe",
@@ -69,7 +71,7 @@ var imageArray = [];
     title : "Director of eLearning",
     video : "Joe_Sanfilippo_PDBio_2017_Web"
   };
-  imageArray[8] = {
+  imageArray[7] = {
     count: "9",
     src : teqHome + "laura_jakubowski.jpg",
     firstName : "Laura",
@@ -77,7 +79,7 @@ var imageArray = [];
     title : "PD Specialist",
     video : "Laura_Jakubowski_PDBio_2017_Web"
   };
-  imageArray[9] = {
+  imageArray[8] = {
     count: "10",
     src : teqHome + "matt_thaxter.jpg",
     firstName : "Matt",
@@ -85,7 +87,7 @@ var imageArray = [];
     title : "PD Specialist",
     video : "Matthew_Thaxter_PDBio_2017_Web"
   };
-  imageArray[10] = {
+  imageArray[9] = {
     count: "11",
     src : teqHome + "robert_abraham.jpg",
     firstName : "Robert",
@@ -93,7 +95,7 @@ var imageArray = [];
     title : "PD Specialist",
     video : "Robert_Abraham_PDBio_2017_Web"
   };
-  imageArray[11] = {
+  imageArray[10] = {
     count: "12",
     src : teqHome + "terry_vannoy.jpg",
     firstName : "Terry",
@@ -101,7 +103,7 @@ var imageArray = [];
     title : "PD Specialist",
     video : "Terry_VanNoy_PDBio_2017_Web"
   };
-  imageArray[12] = {
+  imageArray[11] = {
     count: "13",
     src : teqHome + "thomas_schwartz.jpg",
     firstName : "Thomas",
@@ -109,6 +111,7 @@ var imageArray = [];
     title : "PD Specialist",
     video : "Thomas_Schwartz_PDBio_2017_Web"
   };
+  /**
   imageArray[13] = {
     count: "14",
     src : teqHome + "una_titus.jpg",
@@ -117,6 +120,7 @@ var imageArray = [];
     title : "PD Specialist",
     video : "Una_Titus_PDBio_2017_Web"
   };
+  **/
 
    var containner = document.getElementById('pdBioImages');
    var videoContainner = document.getElementById('pdBioVideos');
