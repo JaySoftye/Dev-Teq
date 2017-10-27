@@ -574,7 +574,6 @@ nav#mainNav .container-fluid {
 ul.nav li {
   line-height: 1.1;
   padding: .25rem 0;
-  font-size: .95rem;
 }
 
 li.nav-item a.nav-link:focus {
@@ -673,10 +672,10 @@ ul.nav.title-roles-content p {
 }
 
 .nav a.subnav-link {
-  color: #eceeef;
+  padding-right: 20px;
 }
 
-.navbar-nav a.nav-link:hover, .nav a.subnav-link:hover {
+.nav li a:hover, .navbar-nav a.nav-link:hover, .nav a.subnav-link:hover {
   color: #00b3e3;
   text-decoration: none;
 }

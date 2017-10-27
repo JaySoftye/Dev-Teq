@@ -19,22 +19,22 @@ get_header(); ?>
 
       <section class="col-md">
 
-        <header class="padding-top text-center"><h1>Product <strong>Data sheet</strong> Downloads</h1></header>
-        <p class="padding-bottom text-center">Select your data sheet to download from the options below.</p>
+        <header class="padding-top text-center"><h1>Product <strong>Catalogs and Datasheets</strong></h1></header>
+        <p class="padding-bottom text-center">Easily download our Product Catalog(s) and/or Datasheet(s) from the links below.</p>
 
         <?php
-          $the_query = new WP_Query( array( 'posts_per_page' => '50' , 'orderby' => 'title' , 'order' => 'ASC' , 'category_name' => 'data-sheets' ) );
+          $the_query = new WP_Query( array( 'posts_per_page' => '100' , 'orderby' => 'title' , 'order' => 'ASC' , 'category_name' => 'data-sheets' ) );
              while ($the_query -> have_posts()) : $the_query -> the_post();
 
           $thumb_id = get_post_thumbnail_id();
           $thumb_url = wp_get_attachment_image_src($thumb_id,'full', true);
         ?>
 
-          <article class="col-md-3 col-sm-4 text-center">
+          <article class="col-md-3 col-sm-3 text-center">
             <div class="card">
               <a href="<?php the_permalink() ?>"><img class="card-img-top" src="<?php echo $thumb_url[0]; ?>" /></a>
                 <div class="card-block">
-                  <h5><a class="bold" href="<?php the_permalink() ?>"><?php the_title(); ?></a></h5>
+                  <h6 style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"><a class="bold" href="<?php the_permalink() ?>"><?php the_title(); ?></a></h6>
                 </div>
             </div>
           </article>
