@@ -563,7 +563,7 @@ nav#mainNav {
   display: block;
   z-index: 900;
   border-top: 4px solid #00b4e1;
-  background-color: rgba(30, 36, 40, .9);
+  background-color: rgba(30, 36, 40, .95);
 }
 
 nav#mainNav .container-fluid {
@@ -573,7 +573,8 @@ nav#mainNav .container-fluid {
 
 ul.nav li {
   line-height: 1.1;
-  padding: .3rem 0;
+  padding: .25rem 0;
+  font-size: .95rem;
 }
 
 li.nav-item a.nav-link:focus {
@@ -650,32 +651,29 @@ ul.nav.title-roles-content p {
 }
 
 .navbar-nav {
-    display: table;
-    width: 100%;
-    margin: 0;
+  display: table;
+  width: 100%;
+  margin: 0;
 }
 
 .navbar-nav > li.nav-item {
-    float: none;
-    display: table-cell;
-    text-align: left;
-    padding-top: 1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+  float: none;
+  display: table-cell;
+  text-align: left;
+  padding-bottom: .5rem;
 }
 
 .navbar-nav > li.nav-item.closeMenuCell {
-    text-align: right;
+  text-align: right;
 }
 
-.nav .subnav-link {
-  margin-top: .2rem;
-  margin-right: 2rem;
-}
-
-.navbar-nav a.nav-link, .nav a.subnav-link {
+.navbar-nav a.nav-link, .nav li a {
   color: #eceeef;
-  font-size: .9rem;
+  font-size: inherit;
+}
+
+.nav a.subnav-link {
+  color: #eceeef;
 }
 
 .navbar-nav a.nav-link:hover, .nav a.subnav-link:hover {

@@ -919,6 +919,22 @@
         </div>
       </div>
 
+      <div class="col-sm-4">
+        <img src="<?php echo get_template_directory_uri();?>/_img/diit-nycdoe-chromebooks-screen-share-troubleshoot.jpg" />
+        <p>Screen Sharing Troubleshooting for Chromebooks.</p>
+        <div class="buttonRow">
+          <a target="_blank" href="<?php echo get_home_url();?>/pdf/SMART-Chromebooks-Screenshare-Board-Sheet_web.pdf"><button class="moreInfo" type="button">More Details</button></a>
+        </div>
+      </div>
+
+      <div class="col-sm-4">
+        <img src="<?php echo get_template_directory_uri();?>/_img/diit-nycdoe-windows-screen-share-troubleshoot.jpg" />
+        <p>Screen Sharing Troubleshooting for Windows Devices.</p>
+        <div class="buttonRow">
+          <a target="_blank" href="<?php echo get_home_url();?>/pdf/SMART-Windows-Screenshare-Board-Sheet_web.pdf"><button class="moreInfo" type="button">More Details</button></a>
+        </div>
+      </div>
+
       </div>
     </div>
 

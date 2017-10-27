@@ -30,7 +30,7 @@ get_header(); ?>
           $thumb_url = wp_get_attachment_image_src($thumb_id,'full', true);
         ?>
 
-          <article class="col-md-4 col-sm-6 text-center">
+          <article class="col-md-3 col-sm-4 text-center">
             <div class="card">
               <a href="<?php the_permalink() ?>"><img class="card-img-top" src="<?php echo $thumb_url[0]; ?>" /></a>
                 <div class="card-block">

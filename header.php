@@ -226,13 +226,25 @@
               <h5><a class="nav-link bold" href="<?php echo site_url(); ?>/steam/">STEAM</a></h5>
               <ul class="nav">
                 <li><a href="<?php echo site_url(); ?>/steam/consulting-services/" class="subnav-link">Consulting Services</a></li>
-                <li><a href="<?php echo site_url(); ?>/steam/jumpstart-nao/" class="subnav-link">Jumpstart NAO</a></li>
+                <li><a href="<?php echo site_url(); ?>/steam/robotics/" class="subnav-link">Robotics</a>
+                  <ul class="nav">
+                    <li class="row">
+                      <div class="col-sm"><a href="<?php echo site_url(); ?>/steam/jumpstart-nao/" class="subnav-link">Jumpstart NAO</a></div>
+                      <div class="col-sm"><a href="<?php echo site_url(); ?>/steam/robotis/" class="subnav-link">Robotis</a></div>
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="<?php echo site_url(); ?>/steam/3d-printers/" class="subnav-link">3D Printers</a>
+                  <ul class="nav">
+                    <li class="row">
+                      <div class="col-sm"><a href="<?php echo site_url(); ?>/steam/ultimaker-3d-printer/" class="subnav-link">Ultimaker</a></div>
+                      <div class="col-sm"><a href="<?php echo site_url(); ?>/steam/makerbot-3d-printer/" class="subnav-link">MakerBot</a></div>
+                    </li>
+                  </ul>
+                </li>
                 <li><a href="<?php echo site_url(); ?>/steam/labdisc/" class="subnav-link">Labdisc</a></li>
-                <li><a href="<?php echo site_url(); ?>/steam/ultimaker-3d-printer/" class="subnav-link">Ultimaker 3D Printer</a></li>
                 <li><a href="<?php echo site_url(); ?>/steam/zspace/" class="subnav-link">zSpace</a></li>
-                <!--
-                <li><a href="<?php echo site_url(); ?>/steam/vr/" class="subnav-link">VR</a></li>
-                -->
+                <li><a href="<?php echo site_url(); ?>/steam/pi-top/" class="subnav-link">Pi-Top</a></li>
                 <li><a href="<?php echo site_url(); ?>/steam/stem-maker-station/" class="subnav-link">STEM Maker Station</a></li>
                 <li><a href="<?php echo site_url(); ?>/steam/furniture/" class="subnav-link">Furniture</a></li>
                 <li><a href="<?php echo site_url(); ?>/steam/stem-labs/" class="subnav-link">STEAM Labs</a></li>
@@ -244,9 +256,6 @@
                 <li><a href="<?php echo site_url(); ?>/sight-and-sound/smart-boards/" class="subnav-link">SMART Boards</a>
                   <ul class="nav">
                     <li class="row">
-                    <!--
-                      <div class="col-sm"><a href="<?php echo site_url(); ?>/sight-and-sound/smart-board-2000/" class="subnav-link">2000</a></div>
-                    -->
                       <div class="col-sm"><a href="<?php echo site_url(); ?>/sight-and-sound/smart-board-4000/" class="subnav-link">4000 Series</a></div>
                       <div class="col-sm"><a href="<?php echo site_url(); ?>/sight-and-sound/smart-board-6000/" class="subnav-link">6000 Series</a></div>
                       <div class="col-sm"><a href="<?php echo site_url(); ?>/sight-and-sound/smart-board-7000/" class="subnav-link">7000 Series</a></div>
@@ -276,7 +285,7 @@
                 <li><!--HubSpot Call-to-Action Code -->
                   <span class="hs-cta-wrapper" id="hs-cta-wrapper-205fbdda-6101-47ae-a87b-34a30caa21f8">
                     <span class="hs-cta-node hs-cta-205fbdda-6101-47ae-a87b-34a30caa21f8" id="hs-cta-205fbdda-6101-47ae-a87b-34a30caa21f8"><!--[if lte IE 8]><div id="hs-cta-ie-element"></div><![endif]-->
-                      <a href="https://cta-redirect.hubspot.com/cta/redirect/182596/205fbdda-6101-47ae-a87b-34a30caa21f8"  target="_blank" >
+                      <a class="subnav-link" href="https://cta-redirect.hubspot.com/cta/redirect/182596/205fbdda-6101-47ae-a87b-34a30caa21f8"  target="_blank" >
                         <img class="hs-cta-img" id="hs-cta-img-205fbdda-6101-47ae-a87b-34a30caa21f8" style="border-width:0px;" src="https://no-cache.hubspot.com/cta/default/182596/205fbdda-6101-47ae-a87b-34a30caa21f8.png"  alt="Download a PD Catalog"/>
                       </a>
                     </span>
@@ -288,7 +297,7 @@
                 <li><!--HubSpot Call-to-Action Code -->
                   <span class="hs-cta-wrapper" id="hs-cta-wrapper-249f818a-e081-4a0d-a45c-b903e031f77d">
                     <span class="hs-cta-node hs-cta-249f818a-e081-4a0d-a45c-b903e031f77d" id="hs-cta-249f818a-e081-4a0d-a45c-b903e031f77d"><!--[if lte IE 8]><div id="hs-cta-ie-element"></div><![endif]-->
-                      <a href="https://cta-redirect.hubspot.com/cta/redirect/182596/249f818a-e081-4a0d-a45c-b903e031f77d"
+                      <a class="subnav-link" href="https://cta-redirect.hubspot.com/cta/redirect/182596/249f818a-e081-4a0d-a45c-b903e031f77d"
                       target="_blank" >
                         <img class="hs-cta-img" id="hs-cta-img-249f818a-e081-4a0d-a45c-b903e031f77d" style="border-width:0px;" src="https://no-cache.hubspot.com/cta/default/182596/249f818a-e081-4a0d-a45c-b903e031f77d.png"  alt="Download a STEAM Catalog"/>
                       </a>
@@ -301,7 +310,7 @@
                 <li><!--HubSpot Call-to-Action Code -->
                   <span class="hs-cta-wrapper" id="hs-cta-wrapper-b2bedec5-1687-40ce-9097-0b6d5db865b9">
                     <span class="hs-cta-node hs-cta-b2bedec5-1687-40ce-9097-0b6d5db865b9" id="hs-cta-b2bedec5-1687-40ce-9097-0b6d5db865b9"><!--[if lte IE 8]><div id="hs-cta-ie-element"></div><![endif]-->
-                      <a href="https://cta-redirect.hubspot.com/cta/redirect/182596/b2bedec5-1687-40ce-9097-0b6d5db865b9"  target="_blank" >
+                      <a class="subnav-link" href="https://cta-redirect.hubspot.com/cta/redirect/182596/b2bedec5-1687-40ce-9097-0b6d5db865b9"  target="_blank" >
                         <img class="hs-cta-img" id="hs-cta-img-b2bedec5-1687-40ce-9097-0b6d5db865b9" style="border-width:0px;" src="https://no-cache.hubspot.com/cta/default/182596/b2bedec5-1687-40ce-9097-0b6d5db865b9.png"  alt="Download a Tech Catalog"/>
                       </a>
                     </span>
@@ -345,13 +354,10 @@
               <h5><a class="nav-link bold" href="<?php echo site_url(); ?>/support-and-services/">Service Plans and Bundles</a></h5>
           </li>
           <li class="nav-item">
-              <h5><a class="nav-link bold" href="<?php echo site_url(); ?>/support-and-services/support-resources/">Projector Guides and Instructions</a></h5>
+              <h5><a class="nav-link bold" href="<?php echo site_url(); ?>/support-and-services/support-resources/">Product Guides, Instructions, and FAQ's</a></h5>
           </li>
           <li class="nav-item">
               <h5><a class="nav-link bold" href="<?php echo site_url(); ?>/support-and-services/#contactSupportTeam">Contact Support</a></h5>
-          </li>
-          <li class="nav-item">
-              <h5><a class="nav-link bold" href="<?php echo site_url(); ?>/support-and-services/support-resources/">Support Videos</a></h5>
           </li>
           <li class="nav-item">
               <h5><a class="nav-link bold" href="<?php echo site_url(); ?>/support-and-services/teqsquad/">Teq Squad</a></h5>
