@@ -330,7 +330,7 @@
               </ul>
               -->
           </li>
-          <li class="nav-item col-sm closeMenuCell">
+          <li class="nav-item closeMenuCell">
             <a href="#productsMenu" data-toggle="collapse" aria-expanded="false" aria-controls="productsMenu"><img class="mainLogo" src="<?php echo get_template_directory_uri();?>/_img/subnav-collapse-icon.svg" /></a>
           </li>
         </ul>

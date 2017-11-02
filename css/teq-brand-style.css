@@ -1480,29 +1480,23 @@ ul.breadcrumb a, ul.breadcrumb li.active, ul.breadcrumb li > a, span.divider {
   z-index: 20;
 }
 
-#teqBlog div.oneRowHeight, #teqCustomerSuccess div.oneRowHeight {
+#teqBlog div.oneRowHeight {
   height: 100%;
   min-height: 36rem;
   position: relative;
   z-index: 20;
 }
 
-#teqBlog article, #teqCustomerSuccess article {
+#teqBlog article {
   position: absolute;
   width: 24.5%;
   height: 15rem;
 }
 
-#teqBlog article:nth-child(1), #teqCustomerSuccess article:nth-child(1) {
+#teqBlog article:nth-child(1) {
   width: 49.8%;
   height: 30.5rem;
   left: 0;
-}
-
-#teqCustomerSuccess article:nth-child(2){
-  width: 49.8%;
-  height: 30.5rem;
-  right: 0;
 }
 
 #teqBlog article:nth-child(2) {
@@ -1571,7 +1565,7 @@ ul.breadcrumb a, ul.breadcrumb li.active, ul.breadcrumb li > a, span.divider {
   margin-bottom: 1.2rem;
 }
 
-#teqBlog article .postInfo, #teqCustomerSuccess article .postInfo {
+#teqBlog article .postInfo {
   position: absolute;
   background-color: rgba(30, 36, 40, 0.8);
   bottom: 0;
@@ -1591,8 +1585,13 @@ ul.breadcrumb a, ul.breadcrumb li.active, ul.breadcrumb li > a, span.divider {
   font-size: 1rem;
 }
 
+#teqCustomerSuccess article {
+  margin-top: 15px;
+}
+
 #teqCustomerSuccess ul.post-categories {
   padding: 0 0;
+  list-style: none;
 }
 
 #teqCustomerSuccess li a, #teqCustomerSuccess li a:hover, #teqCustomerSuccess li a:focus {
@@ -1601,29 +1600,22 @@ ul.breadcrumb a, ul.breadcrumb li.active, ul.breadcrumb li > a, span.divider {
   color: #eceeef;
 }
 
-#teqCustomerSuccess h2 a {
+div.postInfo h4 a {
   color: #00b4e1;
+  display: block;
+  line-height: 1.5em;
+  height: 3em;
+  overflow: hidden;
+}
+
+#teqCustomerSuccess div.postInfo {
+  position: absolute;
+  background-color: rgba(60, 72, 82, 0.8);
+  padding: 60px 20px;
+  width: 50%;
 }
 
 #teqBlog article:nth-child(1) .postInfo, #teqBlog article:nth-child(10) .postInfo {
-  background-color: rgba(30, 36, 40, 0.8);
-  width: 50%;
-  height: 100%;
-  padding-top: 25%;
-  padding-left: 3%;
-  overflow: hidden;
-}
-
-#teqCustomerSuccess article:nth-child(1) .postInfo {
-  background-color: rgba(30, 36, 40, 0.8);
-  width: 50%;
-  height: 100%;
-  padding-top: 25%;
-  padding-left: 3%;
-  overflow: hidden;
-}
-
-#teqCustomerSuccess article:nth-child(2) .postInfo {
   background-color: rgba(30, 36, 40, 0.8);
   width: 50%;
   height: 100%;
@@ -1899,6 +1891,11 @@ div.teqSquadBg {
 
 div.henryViscardiSchool {
   background: #3c4852 url(../_img/henry_viscardi_school.jpg) no-repeat center top;
+  background-size: cover;
+}
+
+div.threeDPrinting {
+  background: #3c4852 url(../_img/STEAM-3d-printing-main-steam-bg.jpg) no-repeat center top;
   background-size: cover;
 }
 
