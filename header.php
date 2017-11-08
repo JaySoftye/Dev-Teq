@@ -64,18 +64,9 @@
           <ul class="footerLinks subnav collapse" id="mobileMenuProducts">
             <li><a href="<?php echo site_url(); ?>/pd-platforms/" class="white">PD Platforms</a></li>
             <li><a href="<?php echo site_url(); ?>/instructional-software/" class="white">Instructional Software</a></li>
-            <li><a href="<?php echo site_url(); ?>/steam/" class="white">STEAM Solutions</a></li>
+            <li><a href="<?php echo site_url(); ?>/stem/" class="white">STEM Solutions</a></li>
             <li><a href="<?php echo site_url(); ?>/sight-and-sound/" class="white">Sight and Sound</a></li>
             <li><a href="<?php echo site_url(); ?>/sd-wan/" class="white">Software Assurance</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <h6><a class="white nav-link" data-toggle="collapse" href="#mobileConsultingServices" aria-expanded="false" aria-controls="mobileConsultingServices">Consulting Services</a></h6>
-          <ul class="footerLinks subnav collapse" id="mobileConsultingServices">
-            <li><a class="nav-link subnav-link" href="<?php echo site_url(); ?>/consulting-services/" class="white">About Teq Consulting</a></li>
-            <li><a class="nav-link subnav-link" href="<?php echo site_url(); ?>/network-management/" class="white">Network Enabled Device Management</a></li>
-            <li><a class="nav-link subnav-link" href="<?php echo site_url(); ?>/educational-leadership/" class="white">Effective Educational Leadership &amp; Supervision</a></li>
-            <li><a class="nav-link subnav-link" href="<?php echo site_url(); ?>/steam-initiatives/" class="white">Steam Initiatives</a></li>
           </ul>
         </li>
         <li class="nav-item">
@@ -129,9 +120,6 @@
         </li>
         <li class="nav-item">
             <a class="nav-link" href="#productsMenu" data-toggle="collapse" aria-expanded="false" aria-controls="productsMenu">Products &amp; Things</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#consultingServices" data-toggle="collapse" aria-expanded="false" aria-controls="consultingServices">Consulting Services</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="#classroomConceptsMenu" data-toggle="collapse" aria-expanded="false" aria-controls="classroomConceptsMenu">Classroom Concepts</a>
@@ -233,32 +221,26 @@
               </ul>
           </li>
           <li class="col-sm">
-              <h5><a class="nav-link subnav-link" href="<?php echo site_url(); ?>/steam/">STEAM</a></h5>
+              <h5><a class="nav-link subnav-link" href="<?php echo site_url(); ?>/stem/">STEM</a></h5>
               <ul class="nav">
-                <li><a href="<?php echo site_url(); ?>/steam/jumpstart-nao/" class="subnav-link">Jumpstart NAO</a></li>
-                <!-- <li><a href="<?php echo site_url(); ?>/steam/robotics/" class="subnav-link">Robotics</a>
+                <li><a href="<?php echo site_url(); ?>/stem/robotics/" class="subnav-link">Robotics</a>
                   <ul class="nav">
-                    <li class="row">
-                      <div class="col-sm"><a href="<?php echo site_url(); ?>/steam/jumpstart-nao/" class="subnav-link">Jumpstart NAO</a></div>
-                      <div class="col-sm"><a href="<?php echo site_url(); ?>/steam/robotis/" class="subnav-link">Robotis</a></div>
-                    </li>
+                    <li class="level2"><a href="<?php echo site_url(); ?>/stem/jumpstart-nao/" class="subnav-link">Jumpstart NAO</a></li>
+                    <li class="level2"><a href="<?php echo site_url(); ?>/stem/robotis/" class="subnav-link">Robotis</a></li>
                   </ul>
-                </li> -->
-                <li><a href="<?php echo site_url(); ?>/steam/labdisc/" class="subnav-link">Labdisc</a></li>
-                <!-- <li><a href="<?php echo site_url(); ?>/steam/3d-printers/" class="subnav-link">3D Printers</a>
+                </li>
+                <li><a href="<?php echo site_url(); ?>/stem/3d-printers/" class="subnav-link">3D Printers</a>
                   <ul class="nav">
-                    <li class="row">
-                      <div class="col-sm"><a href="<?php echo site_url(); ?>/steam/ultimaker-3d-printer/" class="subnav-link">Ultimaker</a></div>
-                      <div class="col-sm"><a href="<?php echo site_url(); ?>/steam/makerbot-3d-printer/" class="subnav-link">MakerBot</a></div>
-                    </li>
+                    <li class="level2"><a href="<?php echo site_url(); ?>/stem/ultimaker-3d-printer/" class="subnav-link">Ultimaker</a></li>
+                    <li class="level2"><a href="<?php echo site_url(); ?>/stem/makerbot-3d-printer/" class="subnav-link">MakerBot</a></li>
                   </ul>
-                </li> -->
-                <li><a href="<?php echo site_url(); ?>/steam/ultimaker-3d-printer/" class="subnav-link">Ultimaker</a></li>
-                <li><a href="<?php echo site_url(); ?>/steam/zspace/" class="subnav-link">zSpace</a></li>
-                <!-- <li><a href="<?php echo site_url(); ?>/steam/pi-top/" class="subnav-link">Pi-Top</a></li> -->
-                <li><a href="<?php echo site_url(); ?>/steam/stem-maker-station/" class="subnav-link">STEM Maker Station</a></li>
-                <li><a href="<?php echo site_url(); ?>/steam/furniture/" class="subnav-link">Furniture</a></li>
-                <li><a href="<?php echo site_url(); ?>/steam/stem-labs/" class="subnav-link">STEAM Labs</a></li>
+                </li>
+                <li><a href="<?php echo site_url(); ?>/stem/labdisc/" class="subnav-link">Labdisc</a></li>
+                <li><a href="<?php echo site_url(); ?>/stem/zspace/" class="subnav-link">zSpace</a></li>
+                <!-- <li><a href="<?php echo site_url(); ?>/stem/pi-top/" class="subnav-link">Pi-Top</a></li> -->
+                <li><a href="<?php echo site_url(); ?>/stem/stem-maker-station/" class="subnav-link">STEM Maker Station</a></li>
+                <li><a href="<?php echo site_url(); ?>/stem/furniture/" class="subnav-link">Furniture</a></li>
+                <li><a href="<?php echo site_url(); ?>/stem/stem-labs/" class="subnav-link">STEM Labs</a></li>
               </ul>
           </li>
           <li class="col-sm">
@@ -266,11 +248,9 @@
               <ul class="nav">
                 <li><a href="<?php echo site_url(); ?>/sight-and-sound/smart-boards/" class="subnav-link">SMART Boards</a>
                   <ul class="nav">
-                    <li class="row">
-                      <div class="col-sm"><a href="<?php echo site_url(); ?>/sight-and-sound/smart-board-4000/">4000 Series</a></div>
-                      <div class="col-sm"><a href="<?php echo site_url(); ?>/sight-and-sound/smart-board-6000/">6000 Series</a></div>
-                      <div class="col-sm"><a href="<?php echo site_url(); ?>/sight-and-sound/smart-board-7000/">7000 Series</a></div>
-                    </li>
+                    <li class="level2"><a href="<?php echo site_url(); ?>/sight-and-sound/smart-board-4000/">4000 Series</a></li>
+                    <li class="level2"><a href="<?php echo site_url(); ?>/sight-and-sound/smart-board-6000/">6000 Series</a></li>
+                    <li class="level2"><a href="<?php echo site_url(); ?>/sight-and-sound/smart-board-7000/">7000 Series</a></li>
                   </ul>
                 </li>
                 <li><a href="<?php echo site_url(); ?>/sight-and-sound/audio-enhancement/" class="subnav-link">Audio Enhancement</a></li>
@@ -309,7 +289,7 @@
                     <span class="hs-cta-node hs-cta-249f818a-e081-4a0d-a45c-b903e031f77d" id="hs-cta-249f818a-e081-4a0d-a45c-b903e031f77d">
                       <a class="subnav-link" href="https://cta-redirect.hubspot.com/cta/redirect/182596/249f818a-e081-4a0d-a45c-b903e031f77d"
                       target="_blank" >
-                        <img class="hs-cta-img" id="hs-cta-img-249f818a-e081-4a0d-a45c-b903e031f77d" style="border-width:0px;" src="https://no-cache.hubspot.com/cta/default/182596/249f818a-e081-4a0d-a45c-b903e031f77d.png"  alt="Download a STEAM Catalog"/>
+                        <img class="hs-cta-img" id="hs-cta-img-249f818a-e081-4a0d-a45c-b903e031f77d" style="border-width:0px;" src="https://no-cache.hubspot.com/cta/default/182596/249f818a-e081-4a0d-a45c-b903e031f77d.png"  alt="Download a STEM Catalog"/>
                       </a>
                     </span>
                   <script charset="utf-8" src="https://js.hscta.net/cta/current.js"></script>
@@ -349,7 +329,7 @@
             <a class="nav-link subnav-link" href="<?php echo site_url(); ?>/educational-leadership/">Effective Educational Leadership &amp; Supervision</a>
           </li>
           <li class="col-sm">
-            <a class="nav-link subnav-link" href="<?php echo site_url(); ?>/steam-initiatives/">Steam Initiatives</a>
+            <a class="nav-link subnav-link" href="<?php echo site_url(); ?>/stem-initiatives/">Stem Initiatives</a>
           </li>
           <li class="nav-item col-sm closeMenuCell">
             <a href="#consultingServices" data-toggle="collapse" aria-expanded="false" aria-controls="consultingServices"><img class="mainLogo" src="<?php echo get_template_directory_uri();?>/_img/subnav-collapse-icon.svg" /></a>

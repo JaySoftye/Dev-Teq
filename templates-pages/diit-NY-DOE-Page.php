@@ -340,7 +340,7 @@
         <div class="col-md">
           <h2 class="text-center"><a class="teqBlue" data-toggle="collapse" href="#collapseOPD" aria-expanded="false" aria-controls="collapseOPD"><strong>Did you know that &#187;</strong></a></h2>
           <div class="collapse" id="collapseOPD">
-            <h2 class="text-center white">Teq Online PD is approved by NYS to fulfill CTLE requirments? <br /><strong>Start earning credit towards your State Teaching License with Online PD today!</strong></h2>
+            <h2 class="text-center white">Teq Online PD is approved by NYS to fulfill CTLE requirments? <br /><strong>Start earning CTLE hours towards maintaining your State Teaching License with Online PD today!</strong></h2>
             <center>
               <a href="https://onlinepd.teq.com/"><button class="lightBlue">Learn more</button></a>
             </center>
@@ -396,7 +396,7 @@
 
   <ul class="nav nav-tabs" role="tablist">
     <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#classroomTech">Classroom Technology</a></li>
-    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#stemProducts">STEAM Products</a></li>
+    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#stemProducts">STEM Products</a></li>
     <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#software">Instructional Software</a></li>
     <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#pdSupport">Professional Development / Support & Services</a></li>
     <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#faq">Guides and FAQ's</a></li>

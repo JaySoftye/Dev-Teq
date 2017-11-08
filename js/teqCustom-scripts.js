@@ -107,13 +107,11 @@
 
 /* Every time the window is scrolled something will fade into the window... */
   $(window).scroll( function(){
-
     /* Check the location of each desired element */
     $('.hideItem').each( function(i){
       var bottom_of_object = $(this).offset().top + $(this).outerHeight();
       var bottom_of_window = $(window).scrollTop() + $(window).height();
-
-      /* If the object is completely visible in the window, fade it in */
+    /* If the object is completely visible in the window, fade it in */
       if( bottom_of_window >= bottom_of_object ){
         $(this).delay(100).animate({'opacity':'1'},800);
       }
@@ -132,5 +130,35 @@
     event.preventDefault();
     window.open($(this).attr("href"), "popupWindow", "width=880,height=480");
   });
+
+/* pi-top image scroll */
+  var lastScrollTop = 0 + '50';
+    $(window).scroll(function(event){
+      var st = $(this).scrollTop();
+      if (st > lastScrollTop) {
+        $('img#keyboard').animate({top: '+=1.5'}, 6);
+        $('img#panel').animate({left: '+=1.5'}, 6);
+      } else {
+        $('img#keyboard').animate({top: '15px'}, 3);
+        $('img#panel').animate({left: '15px'}, 3);
+      }
+    lastScrollTop = st;
+  });
+
+  $(window).scroll(function() {
+
+    var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+    $('.scrollFade').each(function() {
+      /* Check the location of each desired element */
+      var objectBottom = $(this).offset().top + $(this).outerHeight();
+
+      /* If the element is completely within bounds of the window, fade it in */
+      if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+        if ($(this).css('opacity')==0) {$(this).fadeTo(500,1);}
+      } else { //object goes out of view (scrolling up)
+        if ($(this).css('opacity')==1) {$(this).fadeTo(500,0);}
+      }
+    });
+  }).scroll();
 
 });

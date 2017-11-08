@@ -14,7 +14,7 @@
       <ul class="footerLinks collapse" id="footerProducts">
         <li><a href="<?php echo site_url(); ?>/pd-platforms/" class="white">PD Platforms</a></li>
         <li><a href="<?php echo site_url(); ?>/instructional-software/" class="white">Instructional Software</a></li>
-        <li><a href="<?php echo site_url(); ?>/steam/" class="white">STEAM Solutions</a></li>
+        <li><a href="<?php echo site_url(); ?>/stem/" class="white">STEM Solutions</a></li>
         <li><a href="<?php echo site_url(); ?>/sight-and-sound/" class="white">Sight and Sound</a></li>
         <li><a href="<?php echo site_url(); ?>/sd-wan/" class="white">SD-Wan from Cloudgenix</a></li>
       </ul>
@@ -23,7 +23,7 @@
         <li><a href="<?php echo site_url(); ?>/consulting-services/" class="white">About Teq Consulting</a></li>
         <li><a href="<?php echo site_url(); ?>/network-management/" class="white">Network Enabled Device Management</a></li>
         <li><a href="<?php echo site_url(); ?>/educational-leadership/" class="white">Effective Educational Leadership &amp; Supervision</a></li>
-        <li><a href="<?php echo site_url(); ?>/steam-initiatives/" class="white">Steam Initiatives</a></li>
+        <li><a href="<?php echo site_url(); ?>/stem-initiatives/" class="white">Stem Initiatives</a></li>
       </ul>
       <h6><a class="white" data-toggle="collapse" href="#footerServices" aria-expanded="false" aria-controls="footerServices">Support &amp; Services &#187;</a></h6>
       <ul class="footerLinks collapse" id="footerServices">

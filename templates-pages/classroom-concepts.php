@@ -35,7 +35,7 @@
                 <g>
                   <a href="#conceptThree" data-toggle="modal">
                     <circle cx="<?php echo get_post_meta($postid, 'conceptThreeX', true); ?>%" cy="<?php echo get_post_meta($postid, 'conceptThreeY', true); ?>%" r="23" stroke="#eceeef" stroke-width="2" fill="#4fc5dd" />
-                    <text text-anchor="middle" x="<?php echo get_post_meta($postid, 'conceptThreeX', true); ?>%" y="<?php echo get_post_meta($postid, 'conceptThreeY', true); ?>%" fill="#4fc5dd">STEAM</text>
+                    <text text-anchor="middle" x="<?php echo get_post_meta($postid, 'conceptThreeX', true); ?>%" y="<?php echo get_post_meta($postid, 'conceptThreeY', true); ?>%" fill="#4fc5dd">STEM</text>
                   </a>
                 </g>
                 <g>

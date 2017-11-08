@@ -2,6 +2,7 @@
 /*! mobile view */
 
 @media (max-width: 768px) {
+
   .padding, .padding-right, .padding-left {
     padding: .7rem;
   }
@@ -39,6 +40,10 @@
   }
   div.conceptsMap {
     background: white url(../_img/classroomconcepts-browser-window.svg) no-repeat center top;
+  }
+
+  div.fadingContent .scrollFade:not(:first-child)  {
+    margin-top: 0;
   }
 
 }
@@ -98,7 +103,7 @@
     left: 75%;
   }
 
-  button.trialScroll {
+  button.trialScroll, .scrollFade img {
     display: none !important;
   }
 

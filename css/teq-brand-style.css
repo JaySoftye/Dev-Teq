@@ -163,6 +163,16 @@ video.vidBackgroundHeader {
   transition: 1s opacity;
 }
 
+video.vidBackgroundHeader.productVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: auto;
+  min-width: 100%;
+  z-index: -100;
+  transform: translateX(0) translateY(0);
+}
+
 video {
   display: block;
   margin: 0 auto;
@@ -542,6 +552,10 @@ img.scrollIcon:after {
   clear: both;
 }
 
+div.fadingContent .scrollFade:not(:first-child)  {
+  margin-top: calc(-5vh - 7.5%);
+}
+
 /*! Nav styles */
 header#mainBanner {
   width: 100%;
@@ -575,6 +589,12 @@ ul.nav li {
   line-height: 1.1;
   padding: .25rem 0;
 }
+
+ul.nav li.level2 {
+  margin-left: 15px;
+  font-size: .95rem;
+}
+
 
 li.nav-item a.nav-link:focus {
   color: #00b4e1;
@@ -1896,6 +1916,11 @@ div.henryViscardiSchool {
 
 div.threeDPrinting {
   background: #3c4852 url(../_img/STEAM-3d-printing-main-steam-bg.jpg) no-repeat center top;
+  background-size: cover;
+}
+
+div.makerbotStemfuse {
+  background: #3c4852 url(../_img/makerbot-main-stemfuse-image-bg.jpg) no-repeat center top;
   background-size: cover;
 }
 

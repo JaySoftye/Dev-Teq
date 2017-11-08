@@ -53,9 +53,9 @@
       </div>
       <div class="col-md-6 padding flex-md-middle text-left">
         <h1 class="hideItem"><img src="<?php echo get_template_directory_uri(); ?>/_img/discover-steam-stem.svg" alt="Discover" /></h1>
-        <h2 class="pdGreen display-5 hideItem">STEAM</h2>
-        <h4 class="white hideItem">Discover activity-rich STEAM environments personalized to your needs with Teq's consulting services, innovated product selection, and supportive professional development.</h4>
-        <a href="/steam/"><button class="light d-inline-block hideItem">Discover more</button></a>
+        <h2 class="pdGreen display-5 hideItem">STEM</h2>
+        <h4 class="white hideItem">Discover activity-rich STEM environments personalized to your needs with Teq's consulting services, innovated product selection, and supportive professional development.</h4>
+        <a href="/stem/"><button class="light d-inline-block hideItem">Discover more</button></a>
       </div>
     </div>
   </div>
