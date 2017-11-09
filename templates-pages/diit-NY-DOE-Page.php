@@ -935,6 +935,14 @@
         </div>
       </div>
 
+      <div class="col-sm-4">
+        <img src="<?php echo get_template_directory_uri();?>/_img/diit-nycdoe-audio-AM40-troubleshoot.jpg" />
+        <p>Audio Troubleshooting for 6000 Series and AM-40 iQ Module.</p>
+        <div class="buttonRow">
+          <a target="_blank" href="<?php echo get_home_url();?>/pdf/SMART-Sound-AM-40-IQ-Swap_web.pdf"><button class="moreInfo" type="button">More Details</button></a>
+        </div>
+      </div>
+
       </div>
     </div>
 
