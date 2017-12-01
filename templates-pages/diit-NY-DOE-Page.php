@@ -41,6 +41,14 @@
   	margin: 0 auto;
   }
 
+  ul.nav-tabs li.nav-item a.nav-link {
+  	color: #666666;
+  }
+
+  ul.nav-tabs li.nav-item a.nav-link.active {
+  	color: #00b4e1;
+  }
+
   div.tab-pane .col-sm-4 {
     padding-top: 5rem;
   }

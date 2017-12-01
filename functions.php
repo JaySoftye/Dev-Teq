@@ -168,11 +168,10 @@ function my_theme_slug_add_post_formats_to_page(){
 }
 
 /*
-* Creating a function to create our CPT
+* Creating a function to create our Custom Post Types
 */
 
-function custom_post_type() {
-
+function custom_post_type_teq_tip() {
 // Set UI labels for Custom Post Type
 	$labels = array(
 		'name'                => _x( 'Teq-Tips', 'Post Type General Name', 'bootstrap-four' ),
@@ -189,9 +188,7 @@ function custom_post_type() {
 		'not_found'           => __( 'Not Found', 'bootstrap-four' ),
 		'not_found_in_trash'  => __( 'Not found in Trash', 'bootstrap-four' ),
 	);
-
 // Set other options for Custom Post Type
-
 	$args = array(
 		'label'               => __( 'Teq-Tips', 'bootstrap-four' ),
 		'description'         => __( 'Teq-Tip', 'bootstrap-four' ),
@@ -220,11 +217,60 @@ function custom_post_type() {
 	// Registering your Custom Post Type
 	register_post_type( 'Teq-Tips', $args );
 }
+
+function custom_post_type_nedm_survey() {
+// Set UI labels for Custom Post Type
+	$labels = array(
+		'name'                => _x( 'NEDM-Survey', 'Post Type General Name', 'bootstrap-four' ),
+		'singular_name'       => _x( 'NEDM-Survey', 'Post Type Singular Name', 'bootstrap-four' ),
+		'menu_name'           => __( 'NEDM Survey', 'bootstrap-four' ),
+		'parent_item_colon'   => __( 'Parent NEDM-Survey', 'bootstrap-four' ),
+		'all_items'           => __( 'All NEDM-Surveys', 'bootstrap-four' ),
+		'view_item'           => __( 'View NEDM-Survey', 'bootstrap-four' ),
+		'add_new_item'        => __( 'Add New NEDM-Survey', 'bootstrap-four' ),
+		'add_new'             => __( 'Add New', 'bootstrap-four' ),
+		'edit_item'           => __( 'Edit NEDM-Survey', 'bootstrap-four' ),
+		'update_item'         => __( 'Update TNEDM-Survey', 'bootstrap-four' ),
+		'search_items'        => __( 'Search NEDM-Survey', 'bootstrap-four' ),
+		'not_found'           => __( 'Not Found', 'bootstrap-four' ),
+		'not_found_in_trash'  => __( 'Not found in Trash', 'bootstrap-four' ),
+	);
+// Set other options for Custom Post Type
+	$args = array(
+		'label'               => __( 'NEDM-Surveys', 'bootstrap-four' ),
+		'description'         => __( 'NEDM-Survey', 'bootstrap-four' ),
+		'labels'              => $labels,
+		// Features this CPT supports in Post Editor
+		'supports'            => array( 'title', 'editor', 'author', 'custom-fields', 'revisions' ),
+		/* A hierarchical CPT is like Pages and can have
+		* Parent and child items. A non-hierarchical CPT
+		* is like Posts.
+		*/
+		'hierarchical'        => false,
+		'public'              => false,
+		'show_ui'             => true,
+		'show_in_menu'        => true,
+		'show_in_nav_menus'   => true,
+		'show_in_admin_bar'   => true,
+		'menu_position'       => 6,
+    'menu_icon'           => 'dashicons-analytics',
+		'can_export'          => true,
+		'has_archive'         => true,
+		'exclude_from_search' => true,
+		'publicly_queryable'  => true,
+		'capability_type'     => 'post',
+    'taxonomies'          => array('post_tag')
+	);
+	// Registering your Custom Post Type
+	register_post_type( 'NEDM-Surveys', $args );
+}
+
 /* Hook into the 'init' action so that the function
 * Containing our post type registration is not
 * unnecessarily executed.
 */
-add_action( 'init', 'custom_post_type', 0 );
+add_action( 'init', 'custom_post_type_teq_tip', 0 );
+add_action( 'init', 'custom_post_type_nedm_survey', 0 );
 
 /* search filter for search
 *only search in the custom post type Teq Tips

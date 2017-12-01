@@ -2,6 +2,15 @@
 /*! mobile view */
 
 @media (max-width: 768px) {
+  .hidesmall {
+    display: none !important;
+  }
+
+  .flex-md-bottom {
+    -webkit-align-self: flex-end !important;
+    -ms-flex-item-align: end !important;
+    align-self: flex-end !important;
+  }
 
   .padding, .padding-right, .padding-left {
     padding: .7rem;
@@ -49,7 +58,6 @@
 }
 
 @media (max-width: 425px) {
-
   h1, h2, h3, h4, h5, h6, p, small, blockquote, a {
     padding: 0 5px;
   }
@@ -75,6 +83,10 @@
   }
   .display-1, h1.display-1, .display-2, h1.display-2, .display-4, h1.display-h4 {
     font-size: 2.25rem;
+  }
+  .height-three-quarters {
+    height: 50% !important;
+    min-height: 51vh !important;
   }
 
   nav#mainNav {
@@ -118,8 +130,8 @@
   }
 
   div.main-header {
-    height: 100%;
-    min-height:60vh;
+    height: 50vh !important;
+    min-height: 50vh !important;
   }
 
 }
