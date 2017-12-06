@@ -15,8 +15,8 @@
      <meta name="viewport" content="width=device-width, initial-scale=1">
      <title>Consulting Services</title>
 
-     <link rel="stylesheet" href="../consulting-services/../consulting-services/public/css/bootstrap.css" />
-     <link rel="stylesheet" href="../consulting-services/../consulting-services/public/css/main.css" />
+     <link rel="stylesheet" href="/consulting-services/public/css/bootstrap.css" />
+     <link rel="stylesheet" href="/consulting-services/public/css/main.css" />
      <!-- Roboto -->
      <link href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900" rel="stylesheet" type="text/css">
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
@@ -282,36 +282,3 @@
        </div>
      </div>
    </nav>
-
-<?php
-
-add_action( 'post_edit_form_tag' , 'post_edit_form_tag' );
-
-	function post_edit_form_tag( ) {
-		echo ' enctype="multipart/form-data"';
-	}
-
-/** Submit your form information **/
-if (isset($_POST['submitted']) && isset($_POST['post_nonce_field']) && wp_verify_nonce($_POST['post_nonce_field'], 'post_nonce')) {
-
-  /** Basic Form validation **/
-  if (trim($_POST['nedm-survey-school-name']) === '' ) {
-    $hasError = true;
-
-  } else {
-    $post_information = array(
-      'post_title' => wp_strip_all_tags( $_POST['nedm-survey-school-name'] ),
-		  'post_type' => 'NEDM-Surveys',
-		  'post_status' => 'publish'
-	  );
-    $new_post = wp_insert_post( $post_information );
-      add_post_meta($new_post, "firstName", $firstName);
-
-    $url = site_url( '/consulting-services/', 'http' );
-      wp_redirect( $url );
-	    exit();
-  }
-
-}
-
-?>

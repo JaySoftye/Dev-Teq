@@ -238,7 +238,7 @@ function custom_post_type_nedm_survey() {
 // Set other options for Custom Post Type
 	$args = array(
 		'label'               => __( 'NEDM-Surveys', 'bootstrap-four' ),
-		'description'         => __( 'NEDM-Survey', 'bootstrap-four' ),
+		'description'         => __( 'NEDM-Surveys', 'bootstrap-four' ),
 		'labels'              => $labels,
 		// Features this CPT supports in Post Editor
 		'supports'            => array( 'title', 'editor', 'author', 'custom-fields', 'revisions' ),
@@ -271,6 +271,22 @@ function custom_post_type_nedm_survey() {
 */
 add_action( 'init', 'custom_post_type_teq_tip', 0 );
 add_action( 'init', 'custom_post_type_nedm_survey', 0 );
+
+/* add action for email notification
+* anytime a CPT NEDM Survey is published or changed
+*/
+add_action( 'transition_post_status', 'send_mails_on_publish', 10, 3 );
+
+function send_mails_on_publish( $new_status, $old_status, $post ) {
+  if ( 'publish' !== $new_status or 'publish' === $old_status or 'nedm-surveys' !== get_post_type( $post ) )
+
+    return;
+      $to = 'jonathansoftye@teq.com';
+      $body = sprintf( 'Hey there is a new entry!' . "\n\n");
+      $body .= sprintf( 'See <%s>', get_permalink( $post ));
+
+    wp_mail( $to, 'New Network-Enabled Device Management Survey', $body );
+}
 
 /* search filter for search
 *only search in the custom post type Teq Tips

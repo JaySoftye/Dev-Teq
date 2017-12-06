@@ -938,6 +938,18 @@ div.centeredForm .hs-form .hs-button, .hs-button {
   width: 25%;
 }
 
+.trialForm .hs_product.hs-form-field, .standardForm .hs_product.hs-form-field {
+  width: 100% !important;
+}
+
+.standardForm ul.inputs-list > li {
+  padding-top: 0;
+  float: left;
+  display: inline;
+  position: relative;
+  width: 25% !important;
+}
+
 .centeredForm .hs-form-field {
   width: 100%;
 }

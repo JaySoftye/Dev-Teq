@@ -69,6 +69,7 @@
             <li><a href="<?php echo site_url(); ?>/sd-wan/" class="white">Software Assurance</a></li>
           </ul>
         </li>
+        <!--
         <li class="nav-item">
           <h6><a class="white nav-link" data-toggle="collapse" href="#mobileConsultingServices" aria-expanded="false" aria-controls="mobileConsultingServices">Consulting Services</a></h6>
           <ul class="footerLinks subnav collapse" id="mobileConsultingServices">
@@ -78,6 +79,7 @@
             <li><a href="<?php echo site_url(); ?>/consulting-services/si/" class="white">Stem Initiatives</a></li>
           </ul>
         </li>
+        -->
         <li class="nav-item">
           <h6><a class="white nav-link" data-toggle="collapse" href="#mobileMenuConcepts" aria-expanded="false" aria-controls="mobileMenuConcepts">Classroom Concepts</a></h6>
           <ul class="footerLinks subnav collapse" id="mobileMenuConcepts">
@@ -130,9 +132,11 @@
         <li class="nav-item">
             <a class="nav-link" href="#productsMenu" data-toggle="collapse" aria-expanded="false" aria-controls="productsMenu">Products &amp; Things</a>
         </li>
+        <!--
         <li class="nav-item">
             <a class="nav-link" href="#consultingServices" data-toggle="collapse" aria-expanded="false" aria-controls="consultingServices">Consulting Services</a>
         </li>
+        -->
         <li class="nav-item">
             <a class="nav-link" href="#classroomConceptsMenu" data-toggle="collapse" aria-expanded="false" aria-controls="classroomConceptsMenu">Classroom Concepts</a>
         </li>
@@ -287,45 +291,6 @@
                 <li><a href="<?php echo site_url(); ?>/sd-wan/cloudgenix-central-control-point/" class="subnav-link">Centralized Control Center</a></li>
                 <li><a href="<?php echo site_url(); ?>/sd-wan/cloudgenix-software-assurance/" class="subnav-link">Software Assurance</a></li>
               </ul>
-              <!--
-              <h5 class="white bold"><img src="<?php echo get_template_directory_uri();?>/_img/subnav-download-catalog-icon.svg" class="quarterWidth" /> Catalogs</h5>
-              <ul class="nav">
-                <li>
-                  <span class="hs-cta-wrapper" id="hs-cta-wrapper-205fbdda-6101-47ae-a87b-34a30caa21f8">
-                    <span class="hs-cta-node hs-cta-205fbdda-6101-47ae-a87b-34a30caa21f8" id="hs-cta-205fbdda-6101-47ae-a87b-34a30caa21f8">
-                      <a class="subnav-link" href="https://cta-redirect.hubspot.com/cta/redirect/182596/205fbdda-6101-47ae-a87b-34a30caa21f8"  target="_blank" >
-                        <img class="hs-cta-img" id="hs-cta-img-205fbdda-6101-47ae-a87b-34a30caa21f8" style="border-width:0px;" src="https://no-cache.hubspot.com/cta/default/182596/205fbdda-6101-47ae-a87b-34a30caa21f8.png"  alt="Download a PD Catalog"/>
-                      </a>
-                    </span>
-                  <script charset="utf-8" src="https://js.hscta.net/cta/current.js"></script>
-                  <script type="text/javascript"> hbspt.cta.load(182596, '205fbdda-6101-47ae-a87b-34a30caa21f8', {}); </script>
-                  </span>
-                </li>
-                <li>
-                  <span class="hs-cta-wrapper" id="hs-cta-wrapper-249f818a-e081-4a0d-a45c-b903e031f77d">
-                    <span class="hs-cta-node hs-cta-249f818a-e081-4a0d-a45c-b903e031f77d" id="hs-cta-249f818a-e081-4a0d-a45c-b903e031f77d">
-                      <a class="subnav-link" href="https://cta-redirect.hubspot.com/cta/redirect/182596/249f818a-e081-4a0d-a45c-b903e031f77d"
-                      target="_blank" >
-                        <img class="hs-cta-img" id="hs-cta-img-249f818a-e081-4a0d-a45c-b903e031f77d" style="border-width:0px;" src="https://no-cache.hubspot.com/cta/default/182596/249f818a-e081-4a0d-a45c-b903e031f77d.png"  alt="Download a STEM Catalog"/>
-                      </a>
-                    </span>
-                  <script charset="utf-8" src="https://js.hscta.net/cta/current.js"></script>
-                  <script type="text/javascript"> hbspt.cta.load(182596, '249f818a-e081-4a0d-a45c-b903e031f77d', {}); </script>
-                </span>
-                </li>
-                <li>
-                  <span class="hs-cta-wrapper" id="hs-cta-wrapper-b2bedec5-1687-40ce-9097-0b6d5db865b9">
-                    <span class="hs-cta-node hs-cta-b2bedec5-1687-40ce-9097-0b6d5db865b9" id="hs-cta-b2bedec5-1687-40ce-9097-0b6d5db865b9">
-                      <a class="subnav-link" href="https://cta-redirect.hubspot.com/cta/redirect/182596/b2bedec5-1687-40ce-9097-0b6d5db865b9"  target="_blank" >
-                        <img class="hs-cta-img" id="hs-cta-img-b2bedec5-1687-40ce-9097-0b6d5db865b9" style="border-width:0px;" src="https://no-cache.hubspot.com/cta/default/182596/b2bedec5-1687-40ce-9097-0b6d5db865b9.png"  alt="Download a Tech Catalog"/>
-                      </a>
-                    </span>
-                    <script charset="utf-8" src="https://js.hscta.net/cta/current.js"></script>
-                    <script type="text/javascript"> hbspt.cta.load(182596, 'b2bedec5-1687-40ce-9097-0b6d5db865b9', {}); </script>
-                  </span>
-                </li>
-              </ul>
-              -->
           </li>
           <li class="nav-item closeMenuCell">
             <a href="#productsMenu" data-toggle="collapse" aria-expanded="false" aria-controls="productsMenu"><img class="mainLogo" src="<?php echo get_template_directory_uri();?>/_img/subnav-collapse-icon.svg" /></a>
