@@ -178,7 +178,7 @@
   }
 
   .modal-body {
-  	padding: 0 0;
+  	padding: 1.25rem;
   	max-height: 60%;
   }
 
@@ -193,7 +193,6 @@
   }
 
   input[type="submit"] {
-      float: left;
       height: 34px;
   		display: block;
   		font-size: 1.2em;
@@ -284,34 +283,23 @@
 
   <!-- End Header. Begin Template Content -->
 
-  <div class="modal" id="requestPrice" role="dialog">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-body">
-          <div class="modal-copy">
-            <h4>We want to hear from you. Simply fill out the form below and a Teq Representative will reach out to you directly.</h4>
+<div class="modal fade" id="requestPrice" role="dialog" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content centeredForm">
+      <div class="modal-body">
 
-            <!--[if lte IE 8]>
-            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
-            <![endif]-->
-            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-            <script>
-              hbspt.forms.create({
-                portalId: '182596',
-                formId: '42b188a8-165d-4be0-af27-ce6016a04a8a',
-                submitButtonClass: 'btn-form'
-              });
-            </script>
-
-          </div>
-          <img src="<?php echo get_template_directory_uri();?>/_img/diit-nycdoe-quote-footer.jpg" />
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">[Close X]</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+        <div class="col-md"><p>We want to hear from you. Simply fill out the form below and a Teq Representative will reach out to you directly.</p></div>
+<!--[if lte IE 8]>
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+<![endif]-->
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+<script>
+  hbspt.forms.create({
+    portalId: '182596',
+    formId: '42b188a8-165d-4be0-af27-ce6016a04a8a'
+  });
+</script>
+</div></div></div></div>
 
   <div class="modal" id="smart2000-details" role="dialog">
     <div class="modal-dialog">
@@ -712,6 +700,74 @@
         </table>
         <div class="buttonRow">
           <a target="_blank" href="<?php echo get_template_directory_uri();?>/_img/Tech Catalog-2017-jumpstart-nao.pdf"><button class="moreInfo" type="button">More Details</button></a><button class="quote" type="button" data-toggle="modal" data-target="#requestPrice">Request a quote</button>
+        </div>
+      </div>
+
+      <div class="col-sm-4">
+        <img src="<?php echo get_template_directory_uri();?>/_img/diit-nycdoe-product-Robotis.jpg" />
+        <h3><strong>Robotis</strong></h3>
+        <p>Robotis has created a diverse robotics product line that introduces and engages students in STEM subjects from an early age, including engineering, coding, physics and more.</p>
+        <table class="table famis">
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th>FAMIS #</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Dream Beginner Kits</td>
+              <td>358573041</td>
+            </tr>
+            <tr>
+              <td>Play Early Elementary Kits</td>
+              <td>358572932</td>
+            </tr>
+            <tr>
+              <td>Mini Humanoid Robotics Kit</td>
+              <td>358572975</td>
+            </tr>
+            <tr>
+              <td>STEM Intermediate Kits</td>
+              <td>358573025</td>
+            </tr>
+            <tr>
+          </tbody>
+        </table>
+        <div class="buttonRow">
+          <a target="_blank" href="<?php echo get_template_directory_uri();?>/_img/Teq-Robotis-DOE-nyc.pdf"><button class="moreInfo" type="button">More Details</button></a><button class="quote" type="button" data-toggle="modal" data-target="#requestPrice">Request a quote</button>
+        </div>
+      </div>
+
+      <div class="col-sm-4">
+        <img src="<?php echo get_template_directory_uri();?>/_img/diit-nycdoe-product-makerbot.jpg" />
+        <h3><strong>Makerbot</strong></h3>
+        <p>Elevate and streamline your desktop 3D printing experience with their full set of connected solutions and services.</p>
+        <table class="table famis">
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th>FAMIS #</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Replicator+</td>
+              <td>358571952</td>
+            </tr>
+            <tr>
+              <td>Replicator Mini+</td>
+              <td>358571863</td>
+            </tr>
+            <tr>
+              <td>Replicator Z18</td>
+              <td>358572029</td>
+            </tr>
+            <tr>
+          </tbody>
+        </table>
+        <div class="buttonRow">
+          <a target="_blank" href="<?php echo get_template_directory_uri();?>/_img/Teq-MakerBot-DOE-nyc.pdf"><button class="moreInfo" type="button">More Details</button></a><button class="quote" type="button" data-toggle="modal" data-target="#requestPrice">Request a quote</button>
         </div>
       </div>
 

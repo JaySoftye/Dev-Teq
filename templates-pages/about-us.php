@@ -187,11 +187,6 @@
                             <small>Director of Logistics</small>
                           </div>
                           <div class="col-sm">
-                            <img src="/wp-content/uploads/2016/12/about-us-leadership-CherylZimmerman.png" />
-                            <p><strong>Cheryl Zimmerman</strong></p>
-                            <small>Director of Client Services</small>
-                          </div>
-                          <div class="col-sm">
                             <img src="/wp-content/uploads/2016/12/about-us-leadership-DawnLibretto.png" />
                             <p><strong>Dawn Libretto</strong></p>
                             <small>Director of Scheduling</small>

@@ -249,6 +249,7 @@
                   <ul class="nav">
                     <li class="level2"><a href="<?php echo site_url(); ?>/stem/ultimaker-3d-printer/" class="subnav-link">Ultimaker</a></li>
                     <li class="level2"><a href="<?php echo site_url(); ?>/stem/makerbot-3d-printer/" class="subnav-link">MakerBot</a></li>
+                    <li class="level2"><a href="<?php echo site_url(); ?>/stem/3d-printer-labs/" class="subnav-link">3D Printer Labs</a></li>
                   </ul>
                 </li>
                 <li><a href="<?php echo site_url(); ?>/stem/zspace/" class="subnav-link">zSpace</a></li>

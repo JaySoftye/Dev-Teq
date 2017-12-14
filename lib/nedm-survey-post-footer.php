@@ -9,7 +9,6 @@
             </svg>
             <div class="card padding">
               <img src="../consulting-services/public/images/network-enabled-support-level-1-text.svg" alt="" />
-              <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>
             </div>
           </div>
           <div class="col-md-4">
@@ -22,7 +21,6 @@
             </svg>
             <div class="card padding">
               <img src="../consulting-services/public/images/network-enabled-support-level-2-text.svg" alt="" />
-              <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>
             </div>
           </div>
           <div class="col-md-4">
@@ -37,7 +35,6 @@
             </svg>
             <div class="card padding">
               <img src="../consulting-services/public/images/network-enabled-support-level-3-text.svg" alt="" />
-              <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>
             </div>
           </div>
         </div>
