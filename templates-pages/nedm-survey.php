@@ -214,7 +214,7 @@ if (isset($_POST['submitted'])) {
     </div>
     <div class="form-group row">
       <div class="form-check col-md-6">
-        <label>How will the IFPs be connecting to the network?</label>
+        <label>How will your Interactive Flat Panels be connecting to the network?</label>
         <label class="form-check-label">
           <input class="form-check-input" type="radio" name="nedm-survey-connection" id="nedm-survey-wired-connection" value="Wired connection" checked="checked"><span class="form-check-input-text"><?php _e('Wired', 'framework') ?></span>
         </label>
@@ -341,7 +341,7 @@ if (isset($_POST['submitted'])) {
         <input type="text" class="form-control" name="nedm-survey-total-ip" id="nedm-survey-total-ip" value="<?php echo $totalIp; ?>">
       </div>
       <div class="form-check col-md-6">
-        <label>Will the client devices and IFP be on the same VLAN?</label>
+        <label>Will the client devices and Interactive Flat Panels be on the same VLAN?</label>
         <label class="form-check-label">
           <input class="form-check-input" type="radio" name="nedm-survey-same-vlan" id="nedm-survey-same-vlan-yes" value="Client devices and IFP's will be on the same VLAN" checked="checked"><span class="form-check-input-text"><?php _e('Yes', 'framework') ?></span>
         </label>
@@ -355,12 +355,12 @@ if (isset($_POST['submitted'])) {
 
 <div class="row group-row">
   <div class="col-md-6">
-    <h2><strong>How will you be utilizing your IFP's in the classroom?</strong></h2>
+    <h2><strong>How will you be utilizing your Interactive Flat Panels' in the classroom?</strong></h2>
   </div>
   <div class="col-md-6">
     <div class="form-group row">
       <div class="form-check col-md-6">
-        <label>Will the IFPs be used to play any HDCP content, including Blu-rays, DVDs, and other HD media?</label>
+        <label>Will the Interactive Flat Panels be used to play any HDCP content, including Blu-rays, DVDs, and other HD media?</label>
         <label class="form-check-label">
           <input class="form-check-input" type="radio" name="nedm-survey-hdcp-content" id="nedm-survey-hdcp-content-yes" value="The IFPs will be used to play HDCP content" checked="checked"><span class="form-check-input-text"><?php _e('Yes', 'framework') ?></span>
         </label>
@@ -369,7 +369,7 @@ if (isset($_POST['submitted'])) {
         </label>
       </div>
       <div class="form-check col-md-6">
-        <label>Will teachers and students be allowed to browse the Internet from the IFPs?</label>
+        <label>Will teachers and students be allowed to browse the Internet from the Interactive Flat Panels?</label>
         <label class="form-check-label">
           <input class="form-check-input" type="radio" name="nedm-survey-browse-internet" id="nedm-survey-browse-internet-yes" value="Teachers and students will be allowed to browse the Internet from the IFPs" checked="checked"><span class="form-check-input-text"><?php _e('Yes', 'framework') ?></span>
         </label>
@@ -380,7 +380,7 @@ if (isset($_POST['submitted'])) {
     </div>
     <div class="form-group">
       <div class="form-check">
-        <label>Should teachers and students be able to share their device’s screen to the IFPs?</label>
+        <label>Should teachers and students be able to share their device’s screen to the Interactive Flat Panels?</label>
         <label class="form-check-label">
           <input class="form-check-input" type="radio" name="nedm-survey-teacher-share" id="nedm-survey-teacher-share-yes" value="Teachers and students will be able to share their device’s screen to the IFPs" checked="checked"><span class="form-check-input-text"><?php _e('Yes', 'framework') ?></span>
         </label>
@@ -395,7 +395,7 @@ if (isset($_POST['submitted'])) {
         <input type="text" class="form-control" name="nedm-survey-total-sharing" id="nedm-survey-total-sharing" value="<?php echo $totalSharing; ?>">
       </div>
       <div class="form-check col-md-6">
-        <label>Will wired devices such as desktops be expected to share their screen on the IFPs?</label>
+        <label>Will wired devices such as desktops be expected to share their screen on the Interactive Flat Panels?</label>
         <label class="form-check-label">
           <input class="form-check-input" type="radio" name="nedm-survey-wired-sharing" id="nedm-survey-wired-sharing-yes" value="Wired devices such as desktops will be expected to share their screen on the IFPs" checked="checked"><span class="form-check-input-text"><?php _e('Yes', 'framework') ?></span>
         </label>
@@ -414,7 +414,7 @@ if (isset($_POST['submitted'])) {
   <div class="col-md-6">
     <div class="form-group">
       <div class="form-check">
-        <label>Will your school be leveraging automatic updates for IFP firmware/software? </label>
+        <label>Will your school be leveraging automatic updates for the Interactive Flat Panels' firmware/software? </label>
         <label class="form-check-label">
           <input class="form-check-input" type="radio" name="nedm-survey-automatic-updates" id="nedm-survey-automatic-updates-yes" value="The school will be leveraging automatic updates for IFP firmware/software" checked="checked"><span class="form-check-input-text"><?php _e('Yes', 'framework') ?></span>
         </label>

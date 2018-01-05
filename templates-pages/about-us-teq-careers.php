@@ -52,8 +52,8 @@
           ?>
 
           <div class="col-md-6">
-            <h6><strong><?php the_title(); ?></strong></h6>
-            <?php echo get_the_excerpt(); ?>...<small><a class="bold teqBlue" href="<?php the_permalink() ?>">Full Description &#187;</a></small></p>
+            <h6><a href="<?php the_permalink() ?>"><strong><?php the_title(); ?></strong></a></h6>
+            <?php echo get_the_excerpt(); ?> <a class="teqBlue" href="<?php the_permalink() ?>"><strong>Full Description &#187;</strong></a> </p>
             <hr />
           </div>
 

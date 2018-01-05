@@ -145,9 +145,9 @@
                           <small>Director of Sales Operations</small>
                         </div>
                         <div class="col-sm">
-                          <img src="/wp-content/uploads/2016/12/about-us-leadership-PaulCangelosi.png" />
-                          <p><strong>Paul Cangelosi</strong></p>
-                          <small>Director of Sales Operations</small>
+                          <img src="/wp-content/uploads/2016/12/about-us-leadership-MichellePetry.png" />
+                          <p><strong>Michelle Petry</strong></p>
+                          <small>Director of Client Services</small>
                         </div>
                         <div class="col-sm">
                           <img src="/wp-content/uploads/2016/12/about-us-leadership-PaulPrincipato.png" />
@@ -192,9 +192,9 @@
                             <small>Director of Scheduling</small>
                           </div>
                           <div class="col-sm">
-                            <img src="/wp-content/uploads/2016/12/about-us-leadership-MichellePetry.png" />
-                            <p><strong>Michelle Petry</strong></p>
-                            <small>Finance Manager</small>
+                            <img src="/wp-content/uploads/2016/12/about-us-leadership-PaulCangelosi.png" />
+                            <p><strong>Paul Cangelosi</strong></p>
+                            <small>Director of Sales Operations</small>
                           </div>
                           <div class="col-sm">
                             <img src="/wp-content/uploads/2016/12/about-us-leadership-JenniferHennessey.png" />
