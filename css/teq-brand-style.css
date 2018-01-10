@@ -1200,6 +1200,19 @@ li.nav-item.accordion > a {
   text-decoration: none;
 }
 
+li.nav-item.accordion > a.onWhite {
+  color: #3c4852;
+  font-size: 1rem;
+}
+
+li.nav-item.accordion > a.onWhite.active {
+  color: #7fa8e0;
+}
+
+li.nav-item.accordion > a:hover {
+  color: #00b4e4;
+}
+
 li.nav-item.accordion.active > a span, li.nav-item.accordion > a.active span {
   border-bottom: 1px solid #fe5000;
 }
