@@ -20,7 +20,6 @@
 
     <!-- Custom CSS -->
     <link href="<?php echo get_stylesheet_directory_uri();?>/css/teq-brand-style.css" rel="stylesheet" type="text/css">
-    <link href="<?php echo get_stylesheet_directory_uri();?>/css/teq-brand-style-mobile.css" rel="stylesheet" type="text/css">
     <!-- Roboto -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900" rel="stylesheet" type="text/css">
 
@@ -75,22 +74,19 @@
         height: 2.5rem;
         display: block;
         padding: 3px 10px;
-        border: 1px solid rgba(60, 72, 82, 0.50);
+        border: none;
         color:#000000;
-        font-size: 85%;
+        font-size: 100%;
         border-radius: 0;
-        -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.25);
-        -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.25);
-        box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.25);
         -webkit-appearance: none;
         -moz-appearance: none;
         appearance: none;
       }
       div.form-option.blue input, div.form-option.blue select {
-        background-color: rgba(0, 180, 228, 0.10);
+        background-color: rgba(0, 180, 228, 0.25);
       }
       div.form-option.green input, div.form-option.green select {
-        background-color: rgba(161, 215, 132, 0.10);
+        background-color: rgba(161, 215, 132, 0.25);
       }
       div.form-option input#submit {
         height: 3.5rem;
@@ -100,6 +96,13 @@
         padding: 3px 10px;
         margin-top: 50px;
         border: none;
+      }
+      span.error {
+        display: block;
+        margin-left: 12px;
+        font-size: .75rem;
+        font-weight: 500;
+        color: rgb(140, 0, 0);
       }
     </style>
 
@@ -148,54 +151,82 @@
 
           <?php
 
-            if(isset($_POST['submit']))
-            {
+            if(isset($_POST['submit'])) {
               $flag=1;
 
-          if ( empty($_POST) )
-        {
-          $flag=0;
-          print 'Sorry, your nonce did not verify.';
-          exit;
-        }
-        else
-        {
-          if($flag==1)
-          {
-            echo "* Thank you, your message has been successfully sent. You should hear from us within 2-3 business days. If you have any further questions please contact us at: 877.455.9369";
-            $to = 'jonathansoftye@teq.com';
-            $subject = 'SMART Learning Suite Epson Request';
-            $body = 'Testing Content';
-            $headers = 'From: Epson-Teq <epsonsls@teq.com>';
-              wp_mail( $to, $subject, $body, $headers );
-              exit;
-          }
-        }
-      }
-      ?>
+              if (empty($_POST['companyname']))
+              {
+                $flag=0;
+                $companynameerr = '* PLEASE ENTER A COMPANY NAME';
+              }
+              if (empty($_POST['contactname']))
+              {
+                $flag=0;
+                $contactnameerr = '* PLEASE ENTER A CONTACT NAME';
+              }
+              if (empty($_POST['contactemail']))
+              {
+                $flag=0;
+                $contactemailerr = '* PLEASE ENTER A CONTACT EMAIL';
+              }
+              if (empty($_POST['contactconfirmemail']))
+              {
+                $flag=0;
+                $contactemailconfirmerr = '* PLEASE ENTER OR CONFIRM YOUR CONTACT EMAIL';
+              }
+
+            else {
+              if($flag==1)
+              {
+
+                $email_message .= "Company Name: " . $_POST['companyname'] . "\r\n";
+                $email_message .= "Company Address: " . $_POST['billtoaddress1'] . $_POST['billtoaddress2'] . "\r\n";
+                $email_message .= "Company City: " . $_POST['companycity'] . "\r\n";
+                $email_message .= "Company State: " . $_POST['companystate'] . "\r\n";
+                $email_message .= "Company Zip/Postal Code: " . $_POST['companyzip'] . "\r\n";
+                $email_message .= "Company Country: " . $_POST['companycountry'] . "\r\n";
+                $email_message .= "Company Phone: " . $_POST['companyphonenumber'] . "\r\n";
+                $email_message .= "Company Fax: " . $_POST['companyfaxnumber'] . "\r\n" . "\r\n";
+                $email_message .= "Contact Name: " . $_POST['contactname'] . "\r\n";
+                $email_message .= "Contact Phone: " . $_POST['contactphonenumber'] . "\r\n";
+                $email_message .= "Contact Email: " . $_POST['contactemail'] . "\r\n";
+
+                echo "* Thank you, your message has been successfully sent. You should hear from us within 2-3 business days. If you have any further questions please contact us at: 877.455.9369";
+                $to = 'jonathansoftye@teq.com';
+                $subject = 'SMART Learning Suite Epson Request';
+                $body = $email_message;
+                $headers = 'From: Epson-Teq <epsonsls@teq.com>';
+                  wp_mail( $to, $subject, $body, $headers );
+                  exit;
+                }
+              }
+
+            }
+          ?>
         </div>
 
         <form method="post" id="contactus_form">
           <div class="form-option blue">
             <label for="">Company Name</label>
-            <input type="text" name="companyname" id="companyname" value="" placeholder="Company Name" />
+            <input type="text" name="companyname" id="companyname" value="<?php echo isset($_POST["companyname"]) ? $_POST["companyname"] : ''; ?>" placeholder="Company Name" />
+            <span class="error"><?php echo $companynameerr; ?></span>
           </div>
           <div class="form-option blue">
             <label for="">Bill to Address 1</label>
-            <input type="text" name="billtoaddress1" id="billtoaddress1" value="" placeholder="Bill to Address 1" />
+            <input type="text" name="billtoaddress1" id="billtoaddress1" value="<?php echo isset($_POST["billtoaddress1"]) ? $_POST["billtoaddress1"] : ''; ?>" placeholder="Bill to Address 1" />
           </div>
           <div class="form-option blue">
             <label for="">Bill to Address 2</label>
-            <input type="text" name="billtoaddress2" id="billtoaddress2" value="" placeholder="Bill to Address 2" />
+            <input type="text" name="billtoaddress2" id="billtoaddress2" value="<?php echo isset($_POST["billtoaddress2"]) ? $_POST["billtoaddress2"] : ''; ?>" placeholder="Bill to Address 2" />
           </div>
           <div class="row">
             <div class="form-option blue col-md-6">
               <label for="">City</label>
-              <input type="text" name="companycity" id="companycity" value="" placeholder="City" >
+              <input type="text" name="companycity" id="companycity" value="<?php echo isset($_POST["companycity"]) ? $_POST["companycity"] : ''; ?>" placeholder="City" >
             </div>
             <div class="form-option blue col-md-6">
               <label for="">State</label>
-              <select name="companystate" id="companystate" value="">
+              <select name="companystate" id="companystate" value="<?php echo isset($_POST["companystate"]) ? $_POST["companystate"] : ''; ?>">
   <option value="" disabled selected>State/Province</option>
   <option value="AL">Alabama</option>
   <option value="AK">Alaska</option>
@@ -267,11 +298,11 @@
           <div class="row">
             <div class="form-option blue col-md-6">
               <label for="">Zip/Postal Code</label>
-              <input type="number" name="companyzip" id="companyzip" value="" placeholder="Zip/Postal Code" >
+              <input type="number" name="companyzip" id="companyzip" value="<?php echo isset($_POST["companyzip"]) ? $_POST["companyzip"] : ''; ?>" placeholder="Zip/Postal Code" >
             </div>
             <div class="form-option blue col-md-2">
               <label for="">Country</label>
-              <select name="companycountry" id="companycountry" value="">
+              <select name="companycountry" id="companycountry" value="<?php echo isset($_POST["companycountry"]) ? $_POST["companycountry"] : ''; ?>">
   <option value="" disabled selected>Country</option>
   <option value="US">US</option>
   <option value="Canada">Canada</option>
@@ -281,35 +312,34 @@
           <div class="row">
             <div class="form-option blue col-md-6">
               <label for="">Company Fax Number</label>
-              <input type="number" name="companyfaxnumber" id="companyfaxnumber" value="" placeholder="Company Fax Number" >
+              <input type="number" name="companyfaxnumber" id="companyfaxnumber" value="<?php echo isset($_POST["companyfaxnumber"]) ? $_POST["companyfaxnumber"] : ''; ?>" placeholder="Company Fax Number" >
             </div>
             <div class="form-option blue col-md-6">
               <label for="">Company Phone Number</label>
-              <input type="number" name="companyphonenumber" id="companyphonenumber" value="" placeholder="Company Phone Number" >
+              <input type="number" name="companyphonenumber" id="companyphonenumber" value="<?php echo isset($_POST["companyphonenumber"]) ? $_POST["companyphonenumber"] : ''; ?>" placeholder="Company Phone Number" >
             </div>
           </div>
-          <div class="form-option">
-            <svg width="75" height="8">
-              <rect width="50" height="8" style="fill:rgb(60, 72, 82);" />
-            </svg>
-          </div>
+
           <div class="row">
             <div class="form-option green col-md-6">
               <label for="">Contact Name</label>
-              <input type="text" name="contactname" id="contactname" value="" placeholder="Contact Name" >
+              <input type="text" name="contactname" id="contactname" value="<?php echo isset($_POST["contactname"]) ? $_POST["contactname"] : ''; ?>" placeholder="Contact Name" >
+              <span class="error"><?php echo $contactnameerr; ?></span>
             </div>
             <div class="form-option green col-md-6">
               <label for="">Phone Number</label>
-              <input type="number" name="contactphonenumber" id="contactphonenumber" value="" placeholder="Phone Number" >
+              <input type="number" name="contactphonenumber" id="contactphonenumber" value="<?php echo isset($_POST["contactphonenumber"]) ? $_POST["contactphonenumber"] : ''; ?>" placeholder="Phone Number" >
             </div>
           </div>
           <div class="form-option green">
             <label for="">Contact Email</label>
-            <input type="email" name="contactemail" id="contactemail" value="" placeholder="Email" >
+            <input type="email" name="contactemail" id="contactemail" value="<?php echo isset($_POST["contactemail"]) ? $_POST["contactemail"] : ''; ?>" placeholder="Email" >
+            <span class="error"><?php echo $contactemailerr; ?></span>
           </div>
           <div class="form-option green">
             <label for="">Confirm Email</label>
-            <input type="email" name="contactconfirmemail" id="contactconfirmemail" value="" placeholder="Confirm Email" >
+            <input type="email" name="contactconfirmemail" id="contactconfirmemail" value="<?php echo isset($_POST["contactconfirmemail"]) ? $_POST["contactconfirmemail"] : ''; ?>" placeholder="Confirm Email" >
+            <span class="error"><?php echo $contactemailconfirmerr; ?></span> <span class="error"><?php echo $contactconfirmerr; ?></span>
           </div>
           <div class="form-option green">
             <input type="submit" name="submit" id="submit" value="SUBMIT"/>
