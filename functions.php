@@ -218,6 +218,53 @@ function custom_post_type_teq_tip() {
 	register_post_type( 'Teq-Tips', $args );
 }
 
+function custom_post_type_employee_handbook() {
+
+	$labels = array(
+		'name'                => _x( 'employeehandbook', 'Post Type General Name', 'FoundationPress-master' ),
+		'singular_name'       => _x( 'employeehandbook', 'Post Type Singular Name', 'FoundationPress-master' ),
+		'menu_name'           => __( 'Employee Handbook', 'FoundationPress-master' ),
+		'parent_item_colon'   => __( 'Parent employeehandbook', 'FoundationPress-master' ),
+		'all_items'           => __( 'All employeehandbook', 'FoundationPress-master' ),
+		'view_item'           => __( 'View employeehandbook', 'FoundationPress-master' ),
+		'add_new_item'        => __( 'Add New employeehandbook', 'FoundationPress-master' ),
+		'add_new'             => __( 'Add New', 'FoundationPress-master' ),
+		'edit_item'           => __( 'Edit employeehandbook', 'FoundationPress-master' ),
+		'update_item'         => __( 'Update employeehandbook', 'FoundationPress-master' ),
+		'search_items'        => __( 'Search employeehandbook', 'FoundationPress-master' ),
+		'not_found'           => __( 'Not Found', 'FoundationPress-master' ),
+		'not_found_in_trash'  => __( 'Not found in Trash', 'FoundationPress-master' ),
+	);
+// Set other options for Custom Post Type
+	$args = array(
+		'label'               => __( 'employeehandbook', 'FoundationPress-master' ),
+		'description'         => __( 'employeehandbook', 'FoundationPress-master' ),
+		'labels'              => $labels,
+		// Features this CPT supports in Post Editor
+		'supports'            => array( 'title', 'editor', 'author', 'custom-fields', 'revisions' ),
+		/* A hierarchical CPT is like Pages and can have
+		* Parent and child items. A non-hierarchical CPT
+		* is like Posts.
+		*/
+		'hierarchical'        => false,
+		'public'              => false,
+		'show_ui'             => true,
+		'show_in_menu'        => true,
+		'show_in_nav_menus'   => true,
+		'show_in_admin_bar'   => true,
+		'menu_position'       => 6,
+    'menu_icon'           => 'dashicons-book-alt',
+		'can_export'          => true,
+		'has_archive'         => true,
+		'exclude_from_search' => true,
+		'publicly_queryable'  => true,
+		'capability_type'     => 'post',
+    'taxonomies'          => array('post_tag')
+	);
+	// Registering your Custom Post Type
+	register_post_type( 'employeehandbook', $args );
+}
+
 function custom_post_type_nedm_survey() {
 // Set UI labels for Custom Post Type
 	$labels = array(
@@ -270,6 +317,7 @@ function custom_post_type_nedm_survey() {
 * unnecessarily executed.
 */
 add_action( 'init', 'custom_post_type_teq_tip', 0 );
+add_action( 'init', 'custom_post_type_employee_handbook', 0 );
 add_action( 'init', 'custom_post_type_nedm_survey', 0 );
 
 /* add action for email notification

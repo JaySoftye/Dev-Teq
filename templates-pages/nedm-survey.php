@@ -139,7 +139,7 @@ if (isset($_POST['submitted'])) {
 
 <div class="row">
   <div class="col-md-6">
-    <h2><strong>Let’s start with some basic information about you.</strong></h2>
+    <h2><strong>Basic information.</strong></h2>
   </div>
   <div class="col-md-6">
     <div class="form-group">
@@ -201,7 +201,7 @@ if (isset($_POST['submitted'])) {
 
 <div class="row group-row">
   <div class="col-md-6">
-    <h2><strong>Let’s talk about your school or district network setup.</strong></h2>
+    <h2><strong>School/district network setup.</strong></h2>
   </div>
   <div class="col-md-6">
     <div class="form-group">
@@ -321,7 +321,7 @@ if (isset($_POST['submitted'])) {
 
 <div class="row group-row">
   <div class="col-md-6">
-    <h2><strong>Just a little bit more about your local network environment.</strong></h2>
+    <h2><strong>Local network environment.</strong></h2>
   </div>
   <div class="col-md-6">
     <div class="form-group row">
@@ -409,7 +409,7 @@ if (isset($_POST['submitted'])) {
 
 <div class="row group-row">
   <div class="col-md-6">
-    <h2><strong>You're just about done, just a few more questions to go.</strong></h2>
+    <h2><strong>General Info.</strong></h2>
   </div>
   <div class="col-md-6">
     <div class="form-group">

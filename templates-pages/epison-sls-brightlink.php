@@ -57,10 +57,15 @@
         position: absolute;
         bottom: 1%;
       }
-      div.form-option {
+      div.form-option, div.form-message {
         display: block;
         padding: 0 10px;
         margin-bottom: 20px;
+      }
+      div.form-message {
+        color: #00b4e4;
+        font-size: 1.5rem;
+        padding-bottom: 25px;
       }
       div.form-option label {
         display: none;
@@ -139,33 +144,17 @@
 
     <div class="col-sm-6 height-full section-padding epson-notebook-bg">
       <div id="primary" class="middle-center">
+        <div class="form-message">
 
-        <?php
+          <?php
 
-        if(isset($_POST['submit']))
-        {
-          $flag=1;
-        if($_POST['softwarecontactname']=='') {
-          $flag=0;
-          echo "Please Enter Your Name<br>";
-        }
-        else if(!preg_match('/[a-zA-Z_x7f-xff][a-zA-Z0-9_x7f-xff]*/',$_POST['softwarecontactname']))
+            if(isset($_POST['submit']))
+            {
+              $flag=1;
+
+          if ( empty($_POST) )
         {
           $flag=0;
-          echo "Please Enter Valid Name<br>";
-        }
-        if($_POST['contactemail']=='')
-        {
-          $flag=0;
-          echo "Please Enter E-mail<br>";
-        }
-        else if(!eregi("^[_a-z0-9-]+(.[_a-z0-9-]+)*@[a-z0-9-]+(.[a-z0-9-]+)*(.[a-z]{2,3})$", $_POST['contactemail']))
-        {
-          $flag=0;
-          echo "Please Enter Valid E-Mail<br>";
-        }
-        if ( empty($_POST) )
-        {
           print 'Sorry, your nonce did not verify.';
           exit;
         }
@@ -173,16 +162,18 @@
         {
           if($flag==1)
           {
-            $to = 'epsonsls@teq.com';
-            $subject = 'The subject';
+            echo "* Thank you, your message has been successfully sent. You should hear from us within 2-3 business days. If you have any further questions please contact us at: 877.455.9369";
+            $to = 'jonathansoftye@teq.com';
+            $subject = 'SMART Learning Suite Epson Request';
             $body = 'Testing Content';
             $headers = 'From: Epson-Teq <epsonsls@teq.com>';
               wp_mail( $to, $subject, $body, $headers );
-            echo "Mail Successfully Sent";
+              exit;
           }
         }
       }
       ?>
+        </div>
 
         <form method="post" id="contactus_form">
           <div class="form-option blue">
