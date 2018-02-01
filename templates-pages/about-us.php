@@ -114,6 +114,11 @@
                     <div class="collapse in padding-top padding-bottom" id="conceptTwo">
                       <div class="row">
                         <div class="col-sm">
+                          <img src="/wp-content/uploads/2016/12/about-us-leadership-chrissy_rebert.png" />
+                          <p><strong>Chrissy Rebert</strong></p>
+                          <small>VP of Instructional Solutions</small>
+                        </div>
+                        <div class="col-sm">
                           <img src="/wp-content/uploads/2016/12/about-us-leadership-JohnBall.png" />
                           <p><strong>John Ball </strong></p>
                           <small>VP of Operations</small>

@@ -3,6 +3,26 @@
 <?php get_template_part( 'navigation', 'default' ); ?>
 </nav>
 
+<div id="onload" class="modal fade in" role="dialog" aria-hidden="true">
+<div class="modal-dialog" role="document">
+  <button class="modal-close" data-dismiss="modal" aria-label="Close">
+    <strong>x</strong>
+  </button>
+  <div class="modal-content">
+    <div class="modal-body">
+      <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/_img/teq_consulting-modal_image.jpg" />
+    </div>
+    <div class="col-md text-center">
+      <h6>With over <em>45 years experience of partnering with school districts in the fusion of technology and learning</em>, Teq has expanded its offerings to include <strong>consulting services</strong> in the following areas:</h6>
+      <h6><strong>Effective Instructional Leadership & Supervision</strong></h6>
+      <h6><strong>Network-Enabled Device Management</strong></h6>
+      <h6><strong>STEM Initiatives.</strong></h6>
+      <a href="/consulting-services/"><button class="lightBlue">Discover more</button></a>
+    </div>
+  </div>
+</div>
+</div>
+
 <main>
 
   <div class="container-fluid home-header">

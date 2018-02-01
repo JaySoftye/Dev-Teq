@@ -21,9 +21,9 @@
       <h6><a class="white" data-toggle="collapse" href="#footerConcepts" aria-expanded="false" aria-controls="footerConcepts">Consulting Services &#187;</a></h6>
       <ul class="footerLinks collapse" id="footerConcepts">
         <li><a href="<?php echo site_url(); ?>/consulting-services/" class="white">About Teq Consulting</a></li>
-        <li><a href="<?php echo site_url(); ?>/consulting-services/eils/" class="white">Effective Educational Leadership &amp; Supervision</a></li>
-        <li><a href="<?php echo site_url(); ?>/consulting-services/nedm/" class="white">Network Enabled Device Management</a></li>
-        <li><a href="<?php echo site_url(); ?>/consulting-services/si/" class="white">Stem Initiatives</a></li>
+        <li><a href="http://www.teq.com/consulting-services/eils/" class="white">Effective Educational Leadership &amp; Supervision</a></li>
+        <li><a href="http://www.teq.com/consulting-services/nedm/" class="white">Network Enabled Device Management</a></li>
+        <li><a href="http://www.teq.com/consulting-services/si/" class="white">Stem Initiatives</a></li>
       </ul>
       <h6><a class="white" data-toggle="collapse" href="#footerServices" aria-expanded="false" aria-controls="footerServices">Support &amp; Services &#187;</a></h6>
       <ul class="footerLinks collapse" id="footerServices">
