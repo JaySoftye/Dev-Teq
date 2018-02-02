@@ -614,8 +614,7 @@ if (isset($_POST['submitted'])) {
   </div>
   <div class="col-md-6 padding-right">
     <div class="form-group">
-      <label>Please take a second to read over <a href="/nedm-survey/terms-and-conditions" target="_blank">Teq's network consulation terms</a> and agree to placing a network device on our WAN monitoring purposes only.</label>
-      <p class="lead"><a href="../consulting-services/public/images/Teq_Consulting-NEDM_Sample-Reporting_2018copy.pdf"><strong>Download</strong> a Sample Report &raquo;</a></p>
+      <label>Please take a second to read over <a class="lead" href="/nedm-survey/terms-and-conditions" target="_blank"><strong>Teq's network consulation terms</strong></a> and agree to placing a network device on our WAN monitoring purposes only.</label>
     </div>
     <div class="form-group">
       <div class="form-check">
