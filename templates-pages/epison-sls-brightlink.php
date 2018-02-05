@@ -333,7 +333,7 @@
           <div class="row">
             <div class="form-option blue col-md-6">
               <label for="">Zip/Postal Code</label>
-              <input type="number" name="companyzip" id="companyzip" value="<?php echo isset($_POST["companyzip"]) ? $_POST["companyzip"] : ''; ?>" placeholder="Zip/Postal Code" >
+              <input type="text" name="companyzip" id="companyzip" value="<?php echo isset($_POST["companyzip"]) ? $_POST["companyzip"] : ''; ?>" placeholder="Zip/Postal Code" >
               <span class="error"><?php echo $companyziperr; ?></span>
             </div>
             <div class="form-option blue col-md-2">
