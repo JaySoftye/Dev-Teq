@@ -250,15 +250,10 @@
                 </li>
                 <li><a href="<?php echo site_url(); ?>/stem/zspace/" class="subnav-link">zSpace</a></li>
                 <li><a href="<?php echo site_url(); ?>/stem/labdisc/" class="subnav-link">Labdisc</a></li>
+                <li><a href="<?php echo site_url(); ?>/stem/sparkfun/" class="subnav-link">Sparkfun</a></li>
                 <li><a href="<?php echo site_url(); ?>/stem/pi-top/" class="subnav-link">Pi-Top</a></li>
-                <li><a href="<?php echo site_url(); ?>/stem/stem-mobile-carts/" class="subnav-link">STEM Mobile Carts</a>
-                  <ul class="nav">
-                    <li class="level2"><a href="<?php echo site_url(); ?>/stem/stem-labs/" class="subnav-link">STEM Labs</a></li>
-                    <li class="level2"><a href="<?php echo site_url(); ?>/stem/stem-maker-station/" class="subnav-link">STEM Maker Station</a></li>
-                  </ul>
-                </li>
+                <li><a href="<?php echo site_url(); ?>/stem/stem-mobile-carts/" class="subnav-link">STEM Mobile Carts</a></li>
                 <li><a href="<?php echo site_url(); ?>/stem/furniture/" class="subnav-link">Furniture</a></li>
-
               </ul>
           </li>
           <li class="col-sm">
