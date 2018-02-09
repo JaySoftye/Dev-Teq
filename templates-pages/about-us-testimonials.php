@@ -16,19 +16,19 @@
         <div class="row oneRowHeight">
 
           <?php
-            $the_query = new WP_Query( array( 'posts_per_page' => '3', 'category_name' => 'customer-success-stories') );
+            $the_query = new WP_Query( array( 'posts_per_page' => '4', 'category_name' => 'customer-success-stories') );
                while ($the_query -> have_posts()) : $the_query -> the_post();
 
             $thumb_id = get_post_thumbnail_id();
             $thumb_url = wp_get_attachment_image_src($thumb_id,'full', true);
           ?>
 
-          <article class="col-md-4">
+          <article class="col-md-3">
             <div style="background-color: #3c4852; background-size: cover; background-repeat: no-repeat; background-position: top center; background-image: url('<?php echo $thumb_url[0]; ?>');">
               <div class="postInfo">
                 <?php the_category(); ?>
                 <h4><a href="<?php the_permalink() ?>"><strong><?php the_title(); ?></strong></a></h4>
-                <button class="small-blue"><a href="<?php the_permalink() ?>">watch video</a></button>
+                <button class="small-blue"><a href="<?php the_permalink() ?>">View &#8227;</a></button>
               </div>
             </div>
           </article>

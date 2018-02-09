@@ -1729,7 +1729,7 @@ div.postInfo h4 a {
 }
 
 #teqCustomerSuccess div.postInfo {
-  position: absolute;
+  position: relative;
   background-color: rgba(60, 72, 82, 0.8);
   padding: 60px 20px;
   width: 50%;
@@ -2011,6 +2011,11 @@ div.teqSquadBg {
 
 div.henryViscardiSchool {
   background: #3c4852 url(../_img/henry_viscardi_school.jpg) no-repeat center top;
+  background-size: cover;
+}
+
+div.cradleOfAviation {
+  background: #3c4852 url(../_img/cradle-of-aviation-customer-success.jpg) no-repeat center top;
   background-size: cover;
 }
 
