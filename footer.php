@@ -1,13 +1,11 @@
 <footer>
 <div class="container">
-
     <?php
       if (function_exists('bootstrapwp_breadcrumbs')) {
         bootstrapwp_breadcrumbs();
       }
     ?>
   <div class="row">
-
     <div class="col-md-3">
       <h3 class="teqBlue">Its all about learning.</h3>
       <h6><a class="white" data-toggle="collapse" href="#footerProducts" aria-expanded="false" aria-controls="footerProducts">Products &amp; Things &#187;</a></h6>
@@ -18,18 +16,8 @@
         <li><a href="<?php echo site_url(); ?>/sight-and-sound/" class="white">Sight and Sound</a></li>
         <li><a href="<?php echo site_url(); ?>/sd-wan/" class="white">SD-Wan from Cloudgenix</a></li>
       </ul>
-      <h6><a class="white" data-toggle="collapse" href="#footerConcepts" aria-expanded="false" aria-controls="footerConcepts">Consulting Services &#187;</a></h6>
-      <ul class="footerLinks collapse" id="footerConcepts">
-        <li><a href="<?php echo site_url(); ?>/consulting-services/" class="white">About Teq Consulting</a></li>
-        <li><a href="http://www.teq.com/consulting-services/eils/" class="white">Effective Educational Leadership &amp; Supervision</a></li>
-        <li><a href="http://www.teq.com/consulting-services/nedm/" class="white">Network Enabled Device Management</a></li>
-        <li><a href="http://www.teq.com/consulting-services/si/" class="white">Stem Initiatives</a></li>
-      </ul>
-      <h6><a class="white" data-toggle="collapse" href="#footerServices" aria-expanded="false" aria-controls="footerServices">Support &amp; Services &#187;</a></h6>
-      <ul class="footerLinks collapse" id="footerServices">
-        <li><a href="<?php echo site_url(); ?>/support-and-services/" class="white">Service Plans</a></li>
-        <li><a href="<?php echo site_url(); ?>/support-and-services/support-resources/" class="white">Product Guides</a></li>
-      </ul>
+      <h6><a href="<?php echo site_url(); ?>/consulting-services/" class="white">Consulting Services &#187;</a></h6>
+      <h6><a href="<?php echo site_url(); ?>/support-and-services/" class="white">Support &amp; Services &#187;</a></h6>
       <h6><a class="white" data-toggle="collapse" href="#footerLearning" aria-expanded="false" aria-controls="footerLearning">Community &#187;</a></h6>
       <ul class="footerLinks collapse" id="footerLearning">
         <li><a href="/learning-community/teq-talk/" class="white">Teq Talk</a></li>
@@ -38,27 +26,31 @@
         <li><a href="/learning-community/social-media-center/" class="white">Social Media </a></li>
       </ul>
       <h6><a class="white" href="<?php echo site_url(); ?>/teq-events/">Events &#187;</a></h6>
-      <h6><a class="white" data-toggle="collapse" href="#footerAbout" aria-expanded="false" aria-controls="footerAbout">About &#187;</a></h6>
-      <ul class="footerLinks collapse" id="footerAbout">
-        <li><a href="<?php echo site_url(); ?>/about-us/" class="white">About Us</a></li>
-        <li><a href="<?php echo site_url(); ?>/about-us/press-releases/" class="white">Press Releases</a></li>
-        <li><a href="<?php echo site_url(); ?>/about-us/testimonials/" class="white">Testimonials</a></li>
-        <li><a href="<?php echo site_url(); ?>/about-us/teq-careers/" class="white">Teq Careers</a></li>
-        <li><a href="<?php echo site_url(); ?>/contact-us/" class="white">Contact Us</a></li>
+      <h6><a href="<?php echo site_url(); ?>/about-us/" class="white">About &#187;</a></h6>
+      <ul class="navbar-nav footerLinks">
+        <li class="nav-item">
+          <a href="<?php echo site_url(); ?>/roadmap/"><img src="<?php echo get_template_directory_uri();?>/_img/teq-footer-roadmap-icon.png" /></a>
+        </li>
+        <li class="nav-item">
+          <a href="https://www.facebook.com/myTeq/"><img src="<?php echo get_template_directory_uri();?>/_img/teq-footer-facebook-icon.png" /></a>
+        </li>
+        <li class="nav-item">
+          <a href="https://twitter.com/TeqPD"><img src="<?php echo get_template_directory_uri();?>/_img/teq-footer-twitter-icon.png" /></a>
+        </li>
+        <li class="nav-item">
+          <a href="https://www.linkedin.com/company/teq/"><img src="<?php echo get_template_directory_uri();?>/_img/teq-footer-linkedin-icon.png" /></a>
+        </li>
       </ul>
-      <h6><a href="https://www.facebook.com/myTeq/"><img src="<?php echo get_template_directory_uri();?>/_img/teq-footer-facebook-icon.png" /></a><a href="https://twitter.com/TeqPD"><img src="<?php echo get_template_directory_uri();?>/_img/teq-footer-twitter-icon.png" /></a><a href="https://www.linkedin.com/company/teq/"><img src="<?php echo get_template_directory_uri();?>/_img/teq-footer-linkedin-icon.png" /></a></h6>
-      <small>©2016 Teq - all rights reserved</small>
     </div>
-    <div class="col-md-5 padding-right hidden-sm-down hidden-xs-down">
+    <div class="col-md-5 hidden-sm-down hidden-xs-down">
       <h3 class="teqBlue">Teq Talk</h3>
-
+      <ul class="footerLinks">
       <?php $the_query = new WP_Query( 'posts_per_page=2' ); ?>
 			<?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
-        <div>
-          <p class="white"><a class="teqBlue" href="<?php the_permalink() ?>"> <?php the_title(); ?> </a> - <?php echo get_the_excerpt(); ?>...<small><a class="white bold" href="<?php the_permalink() ?>">READ MORE &#187;</a></small></p>
-        </div>
+        <li class="white"><a class="teqBlue" href="<?php the_permalink() ?>"> <?php the_title(); ?> </a> - <?php echo get_the_excerpt(); ?>...<small><a class="teqBlue" href="<?php the_permalink() ?>">READ MORE &#187;</a></small></p>
+        </li>
 			<?php endwhile; wp_reset_postdata(); ?>
-
+      </ul>
     </div>
     <div class="col-md-4">
       <h3 class="teqBlue">Stay Connected</h3>
@@ -73,17 +65,9 @@
           formId: 'ec8c46db-58d6-4267-9f39-6f3fc85bfc2f'
         });
       </script>
-      <div class="col-md-12 nopadding">
-        <img src="<?php echo get_template_directory_uri();?>/_img/teq-footer-teq-icon.png" />
-      </div>
-      <div class="col-md-6 nopadding">
-        <p class="white">7 Norden Lane<br />Huntington Station, NY 11746 United States</p>
-      </div>
-      <div class="col-md-6 nopadding">
-        <p class="white">Phone: 877.455.9369<br />Email: info@teq.com<br />Fax: 631.293.4951</p>
-      </div>
+      <p class="white">7 Norden Lane<br /> Huntington Station, NY 11746 (US)<br />877.455.9369 | info@teq.com</p>
+      <small>©2016 Teq - all rights reserved</small>
     </div>
-
   </div>
 </div>
 </footer>

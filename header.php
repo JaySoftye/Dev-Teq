@@ -109,6 +109,7 @@
           <h6><a class="white nav-link" data-toggle="collapse" href="#mobileMenuAbout" aria-expanded="false" aria-controls="mobileMenuAbout">About Us</a></h6>
           <ul class="footerLinks subnav collapse" id="mobileMenuAbout">
             <li><a href="<?php echo site_url(); ?>/about-us/" class="white">About Teq</a></li>
+            <li><a href="<?php echo site_url(); ?>/roadmap/" class="white">Roadmap</a></li>
             <li><a href="<?php echo site_url(); ?>/about-us/testimonials/" class="white">Testimonials</a></li>
             <li><a href="<?php echo site_url(); ?>/about-us/teq-careers/" class="white">Careers at Teq</a></li>
             <li><a href="<?php echo site_url(); ?>/contact-us/" class="white">Contact Us</a></li>
@@ -261,16 +262,12 @@
               <ul class="nav">
                 <li><a href="<?php echo site_url(); ?>/sight-and-sound/smart-boards/" class="subnav-link">SMART Boards</a>
                   <ul class="nav">
-                    <li class="level2"><a href="<?php echo site_url(); ?>/sight-and-sound/smart-board-4000/">4000 Series</a></li>
                     <li class="level2"><a href="<?php echo site_url(); ?>/sight-and-sound/smart-board-6000/">6000 Series</a></li>
                     <li class="level2"><a href="<?php echo site_url(); ?>/sight-and-sound/smart-board-7000/">7000 Series</a></li>
                   </ul>
                 </li>
                 <li><a href="<?php echo site_url(); ?>/sight-and-sound/audio-enhancement/" class="subnav-link">Audio Enhancement</a></li>
                 <li><a href="<?php echo site_url(); ?>/sight-and-sound/safe-system/" class="subnav-link">SAFE System</a></li>
-                <!--
-                  <li><a href="<?php echo site_url(); ?>/sight-and-sound/smart-table/" class="subnav-link">SMART Table</a></li>
-                -->
                 <li><a href="<?php echo site_url(); ?>/sight-and-sound/wall-mounts-mobile-stands/" class="subnav-link">Wall Mounts/Mobile Stands</a></li>
                 <li><a href="<?php echo site_url(); ?>/sight-and-sound/tech-tub/" class="subnav-link">Tech Tub</a></li>
                 <li><a href="<?php echo site_url(); ?>/sight-and-sound/accessories/" class="subnav-link">Accessories</a></li>
@@ -382,6 +379,9 @@
         <ul class="nav row">
           <li class="col-sm">
             <a class="nav-link subnav-link" href="<?php echo site_url(); ?>/about-us/">About</a>
+          </li>
+          <li class="col-sm">
+            <a class="nav-link subnav-link" href="<?php echo site_url(); ?>/roadmap/">Roadmap</a>
           </li>
           <li class="col-sm">
             <a class="nav-link subnav-link" href="<?php echo site_url(); ?>/about-us/press-releases/">Press Releases</a>

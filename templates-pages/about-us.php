@@ -56,6 +56,14 @@
         </div>
       </div>
 
+      <div class="container nopadding">
+        <div class="row">
+          <div class="col-md padding">
+            <a href="<?php echo site_url(); ?>/roadmap/"><img src="<?php echo get_template_directory_uri(); ?>/_img/aboutus-teq-roadmap.svg" /></a>
+          </div>
+        </div>
+      </div>
+
     <div class="container-fluid nopadding barn-raised">
       <div class="row height-full">
         <div class="col-md-1">

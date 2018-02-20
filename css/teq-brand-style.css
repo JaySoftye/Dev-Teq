@@ -1516,7 +1516,7 @@ footer {
   background-color: rgba(30, 36, 40, 1);
 }
 
-footer h4, h6 {
+footer h4, footer p, h6 {
   margin-bottom: 1rem;
 }
 
@@ -1527,8 +1527,9 @@ footer label {
 
 footer ul.footerLinks, ul.footerLinks {
   list-style: none;
-  padding-left: .8rem;
-  font-size: .8rem;
+  padding-right: .75rem;
+  padding-left: 0;
+  font-weight: 300;
 }
 
 footer .hs-form.stacked .field {
