@@ -651,6 +651,36 @@
           <a target="_blank" href="<?php echo get_template_directory_uri();?>/_img/Teq-Mobile-STEM-Lab-datasheet_web.pdf"><button class="moreInfo" type="button">More Details</button></a><button class="quote" type="button" data-toggle="modal" data-target="#requestPrice">Request a quote</button>
         </div>
       </div>
+      <div class="col-sm-4">
+        <img src="<?php echo get_template_directory_uri();?>/_img/diit-nycdoe-product-coding-bundles.jpg" />
+        <h3><strong>STEM Coding Bundles</strong></h3>
+        <p>Each coding bundle is made up of different Robotis, pi-top, and SparkFun kits designed to introduce students to coding, as well as STEM specific Onsite PD Days. Available in Elementary, Middle, and High School configurations.</p>
+        <table class="table famis">
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th>FAMIS #</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Elementary STEM Coding Bundle</td>
+              <td>358574072</td>
+            </tr>
+            <tr>
+              <td>Middle School STEM Coding Bundle</td>
+              <td>358574080</td>
+            </tr>
+            <tr>
+              <td>High School STEM Coding Bundle</td>
+              <td>358574099</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="buttonRow">
+          <a target="_blank" href="<?php echo get_template_directory_uri();?>/_img/Teq-STEM-Catalog_web.pdf"><button class="moreInfo" type="button">More Details</button></a><button class="quote" type="button" data-toggle="modal" data-target="#requestPrice">Request a quote</button>
+        </div>
+      </div>
 
       <div class="col-sm-4">
         <img src="<?php echo get_template_directory_uri();?>/_img/diit-nycdoe-product-labdisc.jpg" />
@@ -736,6 +766,40 @@
         </table>
         <div class="buttonRow">
           <a target="_blank" href="<?php echo get_template_directory_uri();?>/_img/Teq-Robotis-DOE-nyc.pdf"><button class="moreInfo" type="button">More Details</button></a><button class="quote" type="button" data-toggle="modal" data-target="#requestPrice">Request a quote</button>
+        </div>
+      </div>
+
+      <div class="col-sm-4">
+        <img src="<?php echo get_template_directory_uri();?>/_img/diit-nycdoe-product-pitop.jpg" />
+        <h3><strong>pi-top</strong></h3>
+        <p>With all you need to deliver a high impact Computer Science and STEM learning classroom, pi‑top gives you the tools to create a transformative learning experience.</p>
+        <table class="table famis">
+          <tbody>
+            <tr>
+              <td>Famis#</td>
+              <td>358573521</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="buttonRow">
+          <a target="_blank" href="<?php echo get_template_directory_uri();?>/_img/Teq-STEM-pi-top_web.pdf"><button class="moreInfo" type="button">More Details</button></a><button class="quote" type="button" data-toggle="modal" data-target="#requestPrice">Request a quote</button>
+        </div>
+      </div>
+
+      <div class="col-sm-4">
+        <img src="<?php echo get_template_directory_uri();?>/_img/diit-nycdoe-product-sparkfun.jpg" />
+        <h3><strong>Sparkfun</strong></h3>
+        <p>No matter a teacher’s vision or a student’s skill level, SparkFun kits are afun and creative way to help students achieve electronics literacy.</p>
+        <table class="table famis">
+          <tbody>
+            <tr>
+              <td>Famis#</td>
+              <td>35857336X</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="buttonRow">
+          <a target="_blank" href="<?php echo get_template_directory_uri();?>/_img/Teq-STEM-sparkfun_web.pdf"><button class="moreInfo" type="button">More Details</button></a><button class="quote" type="button" data-toggle="modal" data-target="#requestPrice">Request a quote</button>
         </div>
       </div>
 

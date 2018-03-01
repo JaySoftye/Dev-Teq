@@ -65,6 +65,7 @@
             <li><a href="<?php echo site_url(); ?>/pd-platforms/" class="white">PD Platforms</a></li>
             <li><a href="<?php echo site_url(); ?>/instructional-software/" class="white">Instructional Software</a></li>
             <li><a href="<?php echo site_url(); ?>/stem/" class="white">STEM Solutions</a></li>
+            <li><a href="<?php echo site_url(); ?>/makerspaces/" class="white">Makerspaces</a></li>
             <li><a href="<?php echo site_url(); ?>/sight-and-sound/" class="white">Sight and Sound</a></li>
             <li><a href="<?php echo site_url(); ?>/sd-wan/" class="white">Software Assurance</a></li>
           </ul>
@@ -253,8 +254,19 @@
                 <li><a href="<?php echo site_url(); ?>/stem/labdisc/" class="subnav-link">Labdisc</a></li>
                 <li><a href="<?php echo site_url(); ?>/stem/sparkfun/" class="subnav-link">Sparkfun</a></li>
                 <li><a href="<?php echo site_url(); ?>/stem/pi-top/" class="subnav-link">Pi-Top</a></li>
-                <li><a href="<?php echo site_url(); ?>/stem/stem-mobile-carts/" class="subnav-link">STEM Mobile Carts</a></li>
-                <li><a href="<?php echo site_url(); ?>/stem/furniture/" class="subnav-link">Furniture</a></li>
+                <li><a href="<?php echo site_url(); ?>/stem/coding-bundles/" class="subnav-link">Coding Bundles</a></li>
+              </ul>
+          </li>
+          <li class="col-sm">
+              <h5><a class="nav-link subnav-link" href="<?php echo site_url(); ?>/makerspaces/">Makerspaces</a></h5>
+              <ul class="nav">
+                <li><a href="<?php echo site_url(); ?>/makerspaces/stem-mobile-carts/" class="subnav-link">STEM Mobile Carts</a>
+                  <ul class="nav">
+                    <li class="level2"><a href="<?php echo site_url(); ?>/makerspaces/stem-labs/" class="subnav-link">Mobile STEM Labs</a></li>
+                    <li class="level2"><a href="<?php echo site_url(); ?>/makerspaces/stem-maker-station/" class="subnav-link">STEM Maker Station</a></li>
+                  </ul>
+                </li>
+                <li><a href="<?php echo site_url(); ?>/makerspaces/furniture/" class="subnav-link">Furniture</a></li>
               </ul>
           </li>
           <li class="col-sm">

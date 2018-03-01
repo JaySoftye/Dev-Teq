@@ -15,11 +15,27 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
       <?php wp_head(); ?>
-
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <link href="<?php echo get_stylesheet_directory_uri();?>/css/teq-brand-style.css" rel="stylesheet" type="text/css">
       <link href="<?php echo get_stylesheet_directory_uri();?>/css/addingstyle.css" rel="stylesheet" type="text/css">
       <!-- Roboto -->
       <link href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900" rel="stylesheet" type="text/css">
+
+      <script>
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 500, function(){
+        window.location.hash = hash;
+      });
+    }
+  });
+});
+</script>
 
   </head>
   <body <?php body_class(); ?>>
@@ -29,30 +45,20 @@
     ?>
 
       <div class="container-fluid" style="background-image: url('<?php echo get_template_directory_uri(); ?>/_img/<?php echo get_post_meta($postid, 'headerBackground', true); ?>.jpg');">
-        <div class="row padding-top padding-bottom hidden-sm-down">
-          <div class="col-sm-1">
-          </div>
-          <div class="col-sm-2">
-            <a href="<?php echo site_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/_img/<?php echo get_post_meta($postid, 'headerCaption', true); ?>.png" /></a>
-            </ul>
-          </div>
-          <div class="col-sm-2">
-          </div>
-          <div class="col-sm-2 text-right">
-            <a href="<?php echo get_site_url(); ?>" class="white">More about Teq</a>
-          </div>
-          <div class="col-sm-2 text-center">
-            <a href="http://onlinepd.teq.com" class="white">More about Online PD</a>
-          </div>
-          <div class="col-sm-2 text-right">
-            <a class="white text-right"><button class="rounded-rectangle" onclick="$('html,body').animate({scrollTop:900},'slow');return false;">Customize your PD plan today</button></a>
-          </div>
-          <div class="col-sm-1">
+        <div class="container padding-top">
+          <div class="row">
+            <div class="col-md-7">
+              <ul class="nav navbar-nav">
+                <li class="nav-item"><a href="<?php echo site_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/_img/<?php echo get_post_meta($postid, 'headerCaption', true); ?>.png" /></a></li>
+                <li class="nav-item"><a href="http://onlinepd.teq.com" class="white">More about Online PD</a></li>
+                <li class="nav-item"><a href="#form" class="white"><button class="rounded-rectangle">Customize a PD plan</button></a></li>
+              </ul>
+            </div>
           </div>
         </div>
         <div class="row">
           <div class="container flex-md-bottom">
-            <div class="col-md-12 flex-md-bottom padding-top">
+            <div class="col-md-12 flex-md-bottom padding">
               <h1 class="padding-top display-3 white bold text-center"><strong><?php echo get_post_meta($postid, 'headerTitle', true); ?></strong></h1>
               <h2 class="white text-center">Finally Professional Development designed around you.</h2>
             </div>
@@ -62,7 +68,7 @@
           </div>
         </div>
       </div>
-      <div class="container-fluid">
+      <div class="container-fluid" id="form">
         <div class="row padding-top">
           <div class="container">
             <div class="col-sm text-center">

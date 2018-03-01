@@ -277,7 +277,7 @@ function custom_post_type_nedm_survey() {
 		'add_new_item'        => __( 'Add New NEDM-Survey', 'bootstrap-four' ),
 		'add_new'             => __( 'Add New', 'bootstrap-four' ),
 		'edit_item'           => __( 'Edit NEDM-Survey', 'bootstrap-four' ),
-		'update_item'         => __( 'Update TNEDM-Survey', 'bootstrap-four' ),
+		'update_item'         => __( 'Update NEDM-Survey', 'bootstrap-four' ),
 		'search_items'        => __( 'Search NEDM-Survey', 'bootstrap-four' ),
 		'not_found'           => __( 'Not Found', 'bootstrap-four' ),
 		'not_found_in_trash'  => __( 'Not found in Trash', 'bootstrap-four' ),
@@ -312,6 +312,53 @@ function custom_post_type_nedm_survey() {
 	register_post_type( 'NEDM-Surveys', $args );
 }
 
+function custom_post_type_famis_product() {
+// Set UI labels for Custom Post Type
+	$labels = array(
+		'name'                => _x( 'FAMIS-Product', 'Post Type General Name', 'bootstrap-four' ),
+		'singular_name'       => _x( 'FAMIS-Product', 'Post Type Singular Name', 'bootstrap-four' ),
+		'menu_name'           => __( 'FAMIS-Product', 'bootstrap-four' ),
+		'parent_item_colon'   => __( 'Parent FAMIS-Product', 'bootstrap-four' ),
+		'all_items'           => __( 'All FAMIS-Products', 'bootstrap-four' ),
+		'view_item'           => __( 'View FAMIS-Product', 'bootstrap-four' ),
+		'add_new_item'        => __( 'Add New FAMIS-Product', 'bootstrap-four' ),
+		'add_new'             => __( 'Add New', 'bootstrap-four' ),
+		'edit_item'           => __( 'Edit FAMIS-Product', 'bootstrap-four' ),
+		'update_item'         => __( 'Update FAMIS-Product', 'bootstrap-four' ),
+		'search_items'        => __( 'Search FAMIS-Product', 'bootstrap-four' ),
+		'not_found'           => __( 'Not Found', 'bootstrap-four' ),
+		'not_found_in_trash'  => __( 'Not found in Trash', 'bootstrap-four' ),
+	);
+// Set other options for Custom Post Type
+	$args = array(
+		'label'               => __( 'FAMIS-Products', 'bootstrap-four' ),
+		'description'         => __( 'FAMIS-Products', 'bootstrap-four' ),
+		'labels'              => $labels,
+		// Features this CPT supports in Post Editor
+		'supports'            => array( 'title', 'editor', 'author', 'custom-fields', 'revisions', 'thumbnail' ),
+		/* A hierarchical CPT is like Pages and can have
+		* Parent and child items. A non-hierarchical CPT
+		* is like Posts.
+		*/
+		'hierarchical'        => false,
+		'public'              => false,
+		'show_ui'             => true,
+		'show_in_menu'        => true,
+		'show_in_nav_menus'   => true,
+		'show_in_admin_bar'   => true,
+		'menu_position'       => 7,
+    'menu_icon'           => 'dashicons-forms',
+		'can_export'          => true,
+		'has_archive'         => true,
+		'exclude_from_search' => true,
+		'publicly_queryable'  => true,
+		'capability_type'     => 'post',
+    'taxonomies'          => array( 'category' )
+	);
+	// Registering your Custom Post Type
+	register_post_type( 'FAMIS-Products', $args );
+}
+
 /* Hook into the 'init' action so that the function
 * Containing our post type registration is not
 * unnecessarily executed.
@@ -319,6 +366,7 @@ function custom_post_type_nedm_survey() {
 add_action( 'init', 'custom_post_type_teq_tip', 0 );
 add_action( 'init', 'custom_post_type_employee_handbook', 0 );
 add_action( 'init', 'custom_post_type_nedm_survey', 0 );
+add_action( 'init', 'custom_post_type_famis_product', 0 );
 
 /* add action for email notification
 * anytime a CPT NEDM Survey is published or changed
@@ -330,10 +378,11 @@ function send_mails_on_publish( $new_status, $old_status, $post ) {
 
     return;
       $to = 'jonathansoftye@teq.com';
+      $headers = 'CC: jay@teq.com.com';
       $body = sprintf( 'Hey there is a new entry!' . "\n\n");
       $body .= sprintf( 'See <%s>', get_permalink( $post ));
 
-    wp_mail( $to, 'New Network-Enabled Device Management Survey', $body );
+    wp_mail( $to, 'New Network-Enabled Device Management Survey', $body, $headers );
 }
 
 /* search filter for search
