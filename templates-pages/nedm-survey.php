@@ -33,11 +33,6 @@ if (isset($_POST['submitted'])) {
     $emailClassError = 'errorfield';
     $hasError = true;
   }
-  elseif (trim( $_POST['nedm-survey-cloudgenix-device']) === '' ) {
-    $cloudgenixDeviceError = 'This field is required';
-    $cloudgenixClassError = 'errorfield';
-    $hasError = true;
-  }
   else {
     $hasError = false;
     header('Location: /nedm-survey-confirmation/');
@@ -162,7 +157,6 @@ if (isset($_POST['submitted'])) {
       add_post_meta($new_post, "groupPolicy", $groupPolicy);
       add_post_meta($new_post, "multipleUsers", $multipleUsers);
       add_post_meta($new_post, "userPermissions", $userPermissions);
-      add_post_meta($new_post, "cloudgenixDevice", $cloudgenixDevice);
  }
 
  get_template_part( 'lib/nedm-survey-post-header' ); wp_reset_query(); the_content();
@@ -608,6 +602,7 @@ if (isset($_POST['submitted'])) {
   </div>
 </div>
 
+<!--
 <div class="row group-row">
   <div class="col-md-6 padding-right">
     <img src="../consulting-services/public/images/network-enabled-form-report-image.jpg" alt="SD-WAN utilization reporting" class="full" />
@@ -630,6 +625,7 @@ if (isset($_POST['submitted'])) {
     </div>
   </div>
 </div>
+-->
 
 <div class="row group-row">
   <div class="col-md">

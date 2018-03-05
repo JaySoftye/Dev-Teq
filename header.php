@@ -260,12 +260,8 @@
           <li class="col-sm">
               <h5><a class="nav-link subnav-link" href="<?php echo site_url(); ?>/makerspaces/">Makerspaces</a></h5>
               <ul class="nav">
-                <li><a href="<?php echo site_url(); ?>/makerspaces/stem-mobile-carts/" class="subnav-link">STEM Mobile Carts</a>
-                  <ul class="nav">
-                    <li class="level2"><a href="<?php echo site_url(); ?>/makerspaces/stem-labs/" class="subnav-link">Mobile STEM Labs</a></li>
-                    <li class="level2"><a href="<?php echo site_url(); ?>/makerspaces/stem-maker-station/" class="subnav-link">STEM Maker Station</a></li>
-                  </ul>
-                </li>
+                <li><a href="<?php echo site_url(); ?>/makerspaces/stem-labs/" class="subnav-link">Mobile STEM Labs</a></li>
+                <li><a href="<?php echo site_url(); ?>/makerspaces/stem-maker-station/" class="subnav-link">STEM Maker Station</a></li
                 <li><a href="<?php echo site_url(); ?>/makerspaces/furniture/" class="subnav-link">Furniture</a></li>
               </ul>
           </li>
