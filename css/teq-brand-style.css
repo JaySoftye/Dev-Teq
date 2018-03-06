@@ -728,6 +728,10 @@ ul.nav.title-roles-content p {
   padding-right: 20px;
 }
 
+.nav h5 a.subnav-link {
+  font-weight: bold !important;
+}
+
 .nav li a:hover, .navbar-nav a.nav-link:hover, .nav a.subnav-link:hover {
   color: #00b3e3;
   text-decoration: none;
