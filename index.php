@@ -3,6 +3,7 @@
 <?php get_template_part( 'navigation', 'default' ); ?>
 </nav>
 
+<!--
 <div id="onload" class="modal fade in" role="dialog" aria-hidden="true">
 <div class="modal-dialog" role="document">
   <button class="modal-close" data-dismiss="modal" aria-label="Close">
@@ -22,6 +23,7 @@
   </div>
 </div>
 </div>
+-->
 
 <main>
 
