@@ -604,6 +604,18 @@ header#mainBanner a.close {
   opacity: .8;
 }
 
+div#popInWindow {
+  width: 15rem;
+  display: none;
+  position: fixed;
+  bottom: 0;
+  z-index: 1000 !important;
+}
+
+div#popInWindow a {
+  width: 15rem;
+}
+
 nav#mainNav {
   width: 100%;
   position: fixed;

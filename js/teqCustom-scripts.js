@@ -47,12 +47,15 @@
  function checkOffset() {
     if ($("#mainNav").offset().top < 50) {
       $("#mainBanner").slideDown(200);
+      $( "div#popInWindow" ).slideUp(200);
     }
     else if(!$(window).scrollTop()) {
       $("#mainBanner").show();
+      $( "div#popInWindow" ).hide();
     }
     else {
       $("#mainBanner").slideUp(200);
+      $( "div#popInWindow" ).slideDown(600);
     }
 }
     checkOffset();
