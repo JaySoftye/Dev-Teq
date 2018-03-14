@@ -30,28 +30,25 @@
         </div>
       </div>
 
-      <?php
-      /**
-*      <div class="container-fluid nopadding trialForm collapse" id="trialsignup">
-*        <div class="container">
-*          <div class="col-md nopadding">
-*            <h6 class="white text-center">For more info or to <strong>request a call from our Support Staff</strong>, simply fill out the form below.</h6>
-*            <!--[if lte IE 8]>
-*              <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
-*            <![endif]-->
+      <div class="container-fluid nopadding trialForm trialFormOpen collapse in" id="trialsignup">
+        <button class="trialClose" type="button" aria-label="Close" data-toggle="collapse" data-target="#trialsignup" aria-expanded="true" aria-controls="trialsignup"><span aria-hidden="true">×</span></button>
+        <div class="container">
+          <div class="col-md nopadding">
+            <h6 class="white text-center">Our exceptional support and service programs combine both in-person and remote aid. Our specialists can provide your teachers and school with the technology to drive student engagement. For more info or to <strong>discuss a specific Service Plan for your school</strong>, simply fill out the form below.</h6>
+            <!--[if lte IE 8]>
+              <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+            <![endif]-->
 
-*            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-*              <script>
-*                hbspt.forms.create({
-*                  portalId: '182596',
-*                  formId: '<?php echo get_post_meta($postid, 'formId', true); ?>',
-*                });
-*              </script>
-*          </div>
-*        </div>
-*      </div>
-      **/
-      ?>
+            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+              <script>
+                hbspt.forms.create({
+                  portalId: '182596',
+                  formId: '<?php echo get_post_meta($postid, 'formId', true); ?>',
+                });
+              </script>
+          </div>
+        </div>
+      </div>
 
     <?php wp_reset_query(); the_content(); ?>
 
