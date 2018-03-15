@@ -71,21 +71,21 @@
         <h1 class="hideItem"><img src="<?php echo get_template_directory_uri(); ?>/_img/enrich-sight-and-sound.svg" alt="Enrich" /></h1>
         <h2 class="classroomBlue display-5 hideItem">Sight and Sound</h2>
         <h4 class="hideItem">Enrich student experiences and cultivate collaborative learning with the latest interactive displays and classroom audio systems.</h4>
-        <a href="/sight-and-sound/"><button class="hideItem">Discover Sight and Sound</button></a>
+        <a href="/sight-and-sound/"><button class="hideItem">Discover more</button></a>
       </div>
     </div>
   </div>
-  <div class="container-fluid nopadding sdwan">
+  <div class="container-fluid nopadding consultingServices">
     <div class="row height-full">
       <div class="col-md-1">
       </div>
-      <div class="col-md-5 padding-right padding-top flex-md-middle text-left">
-        <h1 class="hideItem"><img src="<?php echo get_template_directory_uri(); ?>/_img/simplify-sd-wan-from-cloudgenix.svg" alt="Simplify" /></h1>
-        <h2 class="cloudgenixRed display-5 hideItem">SD-WAN from Cloudgenix</span></h2>
-        <h4 class="white hideItem">Simplify your network and in the process gain the visibility to prioritize all the applications and IPs in use at your school, all from an easy to manage interface.</h4>
-        <a href="/sd-wan/"><button class="light hideItem">Discover more</button></a>
+      <div class="col-md-5 padding-top flex-md-middle text-left">
+        <h1 class="hideItem"><img src="<?php echo get_template_directory_uri(); ?>/_img/guiding-consulting-services-teq-areas.svg" alt="Guiding" /></h1>
+        <h4 class="white hideItem">We have expanded our offerings to <strong>three new areas of guidance and expertise</strong>.</h4>
+        <a href="/consulting-services"><button class="light hideItem">Discover Teq's Consulting Services</button></a>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-6 padding-top flex-md-middle text-left">
+        <h1 class="hideItem col-xs-7"><img src="<?php echo get_template_directory_uri(); ?>/_img/guiding-consulting-services-logo.png" /></h1>
       </div>
     </div>
   </div>

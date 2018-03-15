@@ -608,12 +608,29 @@ div#popInWindow {
   width: 15rem;
   display: none;
   position: fixed;
-  bottom: 0;
+  bottom: -2.5rem;
   z-index: 1000 !important;
+  -webkit-animation: swinging 5s infinite;
+  -moz-animation: swinging 5s infinite;
+  animation: swinging 5s infinite;
 }
 
 div#popInWindow a {
   width: 15rem;
+}
+
+@-webkit-keyframes swinging {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-moz-keyframes swinging {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes swinging {
+  0%   { transform: rotate(3deg); }
+  50% { transform: rotate(-1deg); }
+  100% { transform: rotate(3deg); }
 }
 
 nav#mainNav {
@@ -643,6 +660,12 @@ ul.nav li.level2 {
 
 li.nav-item a.nav-link:focus {
   color: #00b4e1;
+}
+
+li.nav-item.new {
+  background: transparent url('../_img/new-consulting-service-bg.png') no-repeat left top;
+  background-repeat: no-repeat;
+  background-size: auto;
 }
 
 .navbar-nav .nav-link {
@@ -2048,6 +2071,11 @@ div.makerbotStemfuse {
 
 div.stemMobileCarts {
   background: #3c4852 url(../_img/stemteq-stem-mobile-carts-bg.jpg) no-repeat center top;
+  background-size: cover;
+}
+
+div.consultingServices {
+  background: #3c4852 url(../_img/teq-consulting-services-home-bg.jpg) no-repeat center top;
   background-size: cover;
 }
 

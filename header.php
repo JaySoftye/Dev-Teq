@@ -132,7 +132,7 @@
         <li class="nav-item">
             <a class="nav-link" href="#productsMenu" data-toggle="collapse" aria-expanded="false" aria-controls="productsMenu">Products &amp; Things</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item new">
             <a class="nav-link" href="#consultingServices" data-toggle="collapse" aria-expanded="false" aria-controls="consultingServices">Consulting Services</a>
         </li>
         <li class="nav-item">
