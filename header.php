@@ -18,7 +18,6 @@
 </head>
 <body <?php body_class(); ?>>
 
-
   <nav id="mainNav">
     <?php
       if ( is_page_template( 'templates-pages/classroom-concepts.php' ) || is_page_template( 'templates-pages/learning-community.php' ) || is_page_template( 'templates-pages/learning-community-teq-talk.php' ) || is_page_template( 'templates-pages/learning-community-media-resource-center.php' ) || is_page_template( 'templates-pages/learning-community-educator-resource-center.php' ) || is_archive() || is_404() ) {
@@ -31,21 +30,13 @@
     <header id="mainBanner" class="hidden-sm-down hidden-xs-down collapse in">
       <div class="container">
         <?php if( is_home() ) { ?>
-          <div class="col-md-1"></div>
-          <div class="col-md-10">
-            <a href="<?php echo print_my_general_settings_field(); ?>">
-              <img src="<?php echo( get_header_image() ); ?>" />
-            </a>
-          </div>
-          <div class="col-md-1"></div>
+          <div class="col" id="bannerPlugin"></div>
         <?php } elseif(metadata_exists('post', $post->ID,'bannerHeaderImg')) { ?>
-          <div class="col-md-1"></div>
-          <div class="col-md-10">
+          <div class="col">
             <a href="<?php echo get_post_meta($post->ID, 'bannerHeaderURL', true); ?>">
               <img src="<?php echo get_template_directory_uri(); ?>/images/<?php echo get_post_meta($post->ID, 'bannerHeaderImg', true); ?>.jpg" />
             </a>
           </div>
-          <div class="col-md-1"></div>
         <?php } else { ?>
           <span></span>
         <?php } ?>

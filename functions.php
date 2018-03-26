@@ -48,23 +48,6 @@ if ( ! function_exists( 'bootstrap_four_setup' ) ) :
     );
     add_theme_support( 'custom-header', $header_defaults );
 
-// URL for Default Banner Header
-    add_filter('admin_init', 'my_general_settings_register_fields');
-      function my_general_settings_register_fields() {
-        register_setting('general', 'default_banner_url', 'esc_attr');
-        add_settings_field('default_banner_url', '<label for="default_banner_url">'.__('Banner Head URL' , 'default_banner_url' ).'</label>' , 'my_general_settings_fields_html', 'general');
-      }
-
-      function my_general_settings_fields_html() {
-        $defalt_banner_url_value = get_option( 'default_banner_url', '' );
-        echo '<input type="text" id="default_banner_url" name="default_banner_url" value="' . $defalt_banner_url_value . '" />';
-      }
-
-      function print_my_general_settings_field() {
-        $defalt_banner_url_value_print = get_option( 'default_banner_url', '' );
-        echo $defalt_banner_url_value_print;
-      }
-
     add_theme_support( 'automatic-feed-links' );
 
     add_theme_support( 'title-tag' );
