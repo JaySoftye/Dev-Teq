@@ -1060,10 +1060,6 @@ div.centeredForm .hs-form .hs-button, .hs-button {
   color: #3c4852;
 }
 
-.centeredForm label span:nth-child(1) {
-  margin-left: 2rem;
-}
-
 .hs-form.stacked .actions {
   width: 100%;
   display: inline-block;
