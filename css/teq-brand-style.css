@@ -308,7 +308,7 @@ span.videoPlayStem {
   font-weight: 400;
 }
 
-h1, h2, h3, h4, h5, h6, p, small, blockquote, a, button {
+h1, h2, h3, h4, h5, h6, p, small, blockquote, a, li, button {
   font-family:'Roboto',Helvetica,Arial,san-serif !important;
   font-weight: 300 !important;
   color: #3c4852;
@@ -345,6 +345,14 @@ small {
 
 a:hover, a:focus {
   color: #00b3e3;
+}
+
+ul li, p {
+  font-size: 1.15rem;
+}
+
+ul, p {
+  margin-bottom: 2.45rem;
 }
 
 ol {
@@ -648,8 +656,8 @@ nav#mainNav .container-fluid {
 }
 
 ul.nav li {
+  font-size: 1rem;
   line-height: 1.1;
-  padding-top: .25rem;
 }
 
 ul.nav li.level2 {
