@@ -7,7 +7,7 @@
     ?>
   <div class="row">
     <div class="col-md-3">
-      <h3 class="teqBlue">Its all about learning.</h3>
+      <h3 class="teqBlue">It's all about learning.</h3>
       <h6><a class="white" data-toggle="collapse" href="#footerProducts" aria-expanded="false" aria-controls="footerProducts">Products &amp; Things &#187;</a></h6>
       <ul class="footerLinks collapse" id="footerProducts">
         <li><a href="<?php echo site_url(); ?>/pd-platforms/" class="white">PD Platforms</a></li>
