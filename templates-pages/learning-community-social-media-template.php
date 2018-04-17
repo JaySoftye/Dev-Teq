@@ -24,7 +24,7 @@ get_header(); ?>
 
       <div class="col-md-6" style="height: 100vh; overflow: scroll;">
       <h4>Tweets by @{TeqPD}</h4>
-      <a class="twitter-timeline" href="https://twitter.com/TeqPD">Tweets by TeqPD</a>
+      <a class="twitter-timeline" href="https://twitter.com/TeqOPD">Tweets by TeqPD</a>
       <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
       </div>
       <div class="col-md-6" style="height: 100vh; overflow: scroll;">
