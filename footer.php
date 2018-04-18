@@ -13,7 +13,6 @@
         <li><a href="<?php echo site_url(); ?>/pd-platforms/" class="white">PD Platforms</a></li>
         <li><a href="<?php echo site_url(); ?>/instructional-software/" class="white">Instructional Software</a></li>
         <li><a href="<?php echo site_url(); ?>/stem/" class="white">STEM Solutions</a></li>
-        <li><a href="<?php echo site_url(); ?>/makerspaces/" class="white">Makerspaces</a></li>
         <li><a href="<?php echo site_url(); ?>/sight-and-sound/" class="white">Sight and Sound</a></li>
         <li><a href="<?php echo site_url(); ?>/sd-wan/" class="white">SD-Wan from Cloudgenix</a></li>
       </ul>
@@ -24,7 +23,7 @@
         <li><a href="/learning-community/teq-talk/" class="white">Teq Talk</a></li>
         <li><a href="/learning-community/teq-tips/" class="white">Teq Tips</a></li>
         <li><a href="/learning-community/media-resource-center/" class="white">Media Center</a></li>
-        <li><a href="/learning-community/social-media-center/" class="white">Social Media</a></li>
+        <li><a href="/learning-community/social-media-center/" class="white">Social Media </a></li>
       </ul>
       <h6><a class="white" href="<?php echo site_url(); ?>/teq-events/">Events &#187;</a></h6>
       <h6><a href="<?php echo site_url(); ?>/about-us/" class="white">About &#187;</a></h6>

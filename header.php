@@ -18,6 +18,7 @@
 </head>
 <body <?php body_class(); ?>>
 
+
   <nav id="mainNav">
     <?php
       if ( is_page_template( 'templates-pages/classroom-concepts.php' ) || is_page_template( 'templates-pages/learning-community.php' ) || is_page_template( 'templates-pages/learning-community-teq-talk.php' ) || is_page_template( 'templates-pages/learning-community-media-resource-center.php' ) || is_page_template( 'templates-pages/learning-community-educator-resource-center.php' ) || is_archive() || is_404() ) {
@@ -56,7 +57,6 @@
             <li><a href="<?php echo site_url(); ?>/pd-platforms/" class="white">PD Platforms</a></li>
             <li><a href="<?php echo site_url(); ?>/instructional-software/" class="white">Instructional Software</a></li>
             <li><a href="<?php echo site_url(); ?>/stem/" class="white">STEM Solutions</a></li>
-            <li><a href="<?php echo site_url(); ?>/makerspaces/" class="white">Makerspaces</a></li>
             <li><a href="<?php echo site_url(); ?>/sight-and-sound/" class="white">Sight and Sound</a></li>
             <li><a href="<?php echo site_url(); ?>/sd-wan/" class="white">Software Assurance</a></li>
           </ul>
@@ -64,10 +64,10 @@
         <li class="nav-item">
           <h6><a class="white nav-link" data-toggle="collapse" href="#mobileConsultingServices" aria-expanded="false" aria-controls="mobileConsultingServices">Consulting Services</a></h6>
           <ul class="footerLinks subnav collapse" id="mobileConsultingServices">
-            <li><a href="<?php echo site_url(); ?>/consulting-services/" class="white">About Teq Consulting</a></li>
-            <li><a href="http://www.teq.com/consulting-services/eils/" class="white">Effective Educational Leadership &amp; Supervision</a></li>
-            <li><a href="http://www.teq.com/consulting-services/nedm/" class="white">Network-Enabled Device Management</a></li>
-            <li><a href="http://www.teq.com/consulting-services/si/" class="white">Stem Initiatives</a></li>
+            <li><a href="<?php echo site_url(); ?>/consulting-services" class="white">About Teq Consulting</a></li>
+            <li><a href="<?php echo site_url(); ?>/consulting-services/eils" class="white">Effective Educational Leadership &amp; Supervision</a></li>
+            <li><a href="<?php echo site_url(); ?>/consulting-services/nedm" class="white">Network-Enabled Device Management</a></li>
+            <li><a href="<?php echo site_url(); ?>/consulting-services/si" class="white">Stem Initiatives</a></li>
           </ul>
         </li>
         <li class="nav-item">
@@ -84,6 +84,7 @@
           <ul class="footerLinks subnav collapse" id="mobileMenuServices">
             <li><a href="<?php echo site_url(); ?>/support-and-services/" class="white">Service and Bundles</a></li>
             <li><a href="<?php echo site_url(); ?>/support-and-services/support-resources/" class="white">Projector Guides</a></li>
+            <li><a href="http://www.teq.com/consulting-services/nedm#ifp-faq" class="white">FAQ's</a></li>
           </ul>
         </li>
         <li class="nav-item">
@@ -101,7 +102,6 @@
           <h6><a class="white nav-link" data-toggle="collapse" href="#mobileMenuAbout" aria-expanded="false" aria-controls="mobileMenuAbout">About Us</a></h6>
           <ul class="footerLinks subnav collapse" id="mobileMenuAbout">
             <li><a href="<?php echo site_url(); ?>/about-us/" class="white">About Teq</a></li>
-            <li><a href="<?php echo site_url(); ?>/roadmap/" class="white">Roadmap</a></li>
             <li><a href="<?php echo site_url(); ?>/about-us/testimonials/" class="white">Testimonials</a></li>
             <li><a href="<?php echo site_url(); ?>/about-us/teq-careers/" class="white">Careers at Teq</a></li>
             <li><a href="<?php echo site_url(); ?>/contact-us/" class="white">Contact Us</a></li>
@@ -267,6 +267,9 @@
                 </li>
                 <li><a href="<?php echo site_url(); ?>/sight-and-sound/audio-enhancement/" class="subnav-link">Audio Enhancement</a></li>
                 <li><a href="<?php echo site_url(); ?>/sight-and-sound/safe-system/" class="subnav-link">SAFE System</a></li>
+                <!--
+                  <li><a href="<?php echo site_url(); ?>/sight-and-sound/smart-table/" class="subnav-link">SMART Table</a></li>
+                -->
                 <li><a href="<?php echo site_url(); ?>/sight-and-sound/wall-mounts-mobile-stands/" class="subnav-link">Wall Mounts/Mobile Stands</a></li>
                 <li><a href="<?php echo site_url(); ?>/sight-and-sound/tech-tub/" class="subnav-link">Tech Tub</a></li>
                 <li><a href="<?php echo site_url(); ?>/sight-and-sound/accessories/" class="subnav-link">Accessories</a></li>
@@ -290,16 +293,16 @@
       <div class="container">
         <ul class="nav row">
           <li class="col-sm">
-            <a class="nav-link subnav-link" href="<?php echo site_url(); ?>/consulting-services/">About Teq Consulting</a>
+            <a class="nav-link subnav-link" href="<?php echo site_url(); ?>/consulting-services">About Teq Consulting</a>
           </li>
           <li class="col-sm">
-            <a class="nav-link subnav-link" href="http://www.teq.com/consulting-services/eils">Effective Educational Leadership &amp; Supervision</a>
+            <a class="nav-link subnav-link" href="<?php echo site_url(); ?>/consulting-services/eils">Effective Educational Leadership &amp; Supervision</a>
           </li>
           <li class="col-sm">
-            <a class="nav-link subnav-link" href="http://www.teq.com/consulting-services/nedm/">Network-Enabled Device Management</a>
+            <a class="nav-link subnav-link" href="<?php echo site_url(); ?>/consulting-services/nedm">Network-Enabled Device Management</a>
           </li>
           <li class="col-sm">
-            <a class="nav-link subnav-link" href="http://www.teq.com/consulting-services/si/">Stem Initiatives</a>
+            <a class="nav-link subnav-link" href="<?php echo site_url(); ?>/consulting-services/si">Stem Initiatives</a>
           </li>
           <li class="nav-item col-sm closeMenuCell">
             <a href="#consultingServices" data-toggle="collapse" aria-expanded="false" aria-controls="consultingServices"><img class="mainLogo" src="<?php echo get_template_directory_uri();?>/_img/subnav-collapse-icon.svg" /></a>
@@ -342,6 +345,9 @@
           </li>
           <li class="col-sm">
             <a class="nav-link subnav-link" href="<?php echo site_url(); ?>/support-and-services/teqsquad/">Teq Squad</a>
+          </li>
+          <li class="col-sm">
+            <a class="nav-link subnav-link" href="http://www.teq.com/consulting-services/nedm#ifp-faq" class="white">FAQ's</a>
           </li>
           <li class="nav-item col-sm closeMenuCell">
             <a href="#supportMenu" data-toggle="collapse" aria-expanded="false" aria-controls="supportMenu"><img class="mainLogo" src="<?php echo get_template_directory_uri();?>/_img/subnav-collapse-icon.svg" /></a>
