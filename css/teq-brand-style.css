@@ -707,6 +707,15 @@ a.nav-link.title-link:focus, a.nav-link.title-link:active, a.nav-link.title-link
   color: #00b4e1;
 }
 
+a#freeNavLink {
+  color: rgb(255, 118, 125) !important;
+  font-weight: 500 !important;
+}
+
+a#freeNavLink:hover, a#freeNavLink:active, a#freeNavLink:focus  {
+  color: #00b4e1 !important;
+}
+
 div#title-roles-nav {
   position: absolute;
   right: 0;
