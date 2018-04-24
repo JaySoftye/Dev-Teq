@@ -15,14 +15,14 @@ get_header(); ?>
     <div class="row">
       <div class="col-md-6 flex-md-middle">
         <h1 class="padding-top"><img src="<?php echo get_template_directory_uri(); ?>/_img/teq-squad-logo-transparent-dark.png" alt="Teq Squad" /></h1>
-        <h4>Have our team of certified specialists visit your school and <strong>demonstrate the latest hardware, software, and STEM solutions</strong> for you and your staff and receive detailed classroom product support and training unique to your specific teaching style and curriculum.</h4>
+        <h4 class="white">Have our team of certified specialists visit your school and <strong>demonstrate the latest hardware, software, and STEM solutions</strong> for you and your staff and receive detailed classroom product support and training unique to your specific teaching style and curriculum.</h4>
         </div>
     </div>
   </div>
 </div>
 <div class="container-fluid standardForm nopadding padding-top padding-bottom">
   <div class="container">
-    <h6><strong>To request a Teq Squad appointment, simply fill out the form below and a Scheduling Representative will reach out to you.</strong> Please note your preferred date is subject to change due to Teq Squad's availability.</h6>
+    <h6><strong style="color: #d54742;">To request a Teq Squad appointment, simply fill out the form below and a Scheduling Representative will reach out to you.</strong> Please note your preferred date is subject to change due to Teq Squad's availability.</h6>
     <!--[if lte IE 8]>
     <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
     <![endif]-->

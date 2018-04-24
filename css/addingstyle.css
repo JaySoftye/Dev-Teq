@@ -79,6 +79,17 @@ img.fullWidthImage {
 	width: 100%;
 }
 
+a img.fade {
+	opacity: 1;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+}
+
+a img.fade:hover, a img.fade:focus, a img.fade:active {
+	opacity: .5;
+}
+
 ul {
 	list-style: disc;
 	margin-left: 36px;
