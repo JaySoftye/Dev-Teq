@@ -22,13 +22,14 @@
             $thumb_id = get_post_thumbnail_id();
             $thumb_url = wp_get_attachment_image_src($thumb_id,'full', true);
           ?>
-
           <article class="col-md-3">
-            <div style="background-color: #3c4852; background-size: cover; background-repeat: no-repeat; background-position: top center; background-image: url('<?php echo $thumb_url[0]; ?>');">
-              <div class="postInfo">
-                <?php the_category(); ?>
-                <h4><a href="<?php the_permalink() ?>"><strong><?php the_title(); ?></strong></a></h4>
-                <button class="small-blue"><a href="<?php the_permalink() ?>">View &#8227;</a></button>
+            <div class="card">
+              <a href="<?php the_permalink() ?>">
+                <img class="card-img-top" src="<?php echo $thumb_url[0]; ?>">
+              </a>
+              <div class="col-md">
+                <?php echo the_category(); ?>
+                <h4 class="card-title"><a href="<?php the_permalink() ?>"><strong><?php the_title(); ?></strong></a></h4>
               </div>
             </div>
           </article>
