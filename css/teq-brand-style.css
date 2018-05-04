@@ -1090,6 +1090,18 @@ ul.hs-error-msgs {
   color: red;
 }
 
+p.gdpr-form {
+  margin-top: -5px;
+  margin-left: -5px;
+  text-align: center;
+  font-size: 75%;
+  color: rgba(50, 62, 72, 0.85);
+}
+
+.trialForm p.gdpr-form {
+  color: rgba(236, 238, 239, 0.65);
+}
+
 #postContent li a, #postContent p a, #postContent span a, #postContent a  {
   color: #00b4e4;
   font-weight: 300;

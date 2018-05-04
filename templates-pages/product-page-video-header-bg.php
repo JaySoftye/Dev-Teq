@@ -54,6 +54,7 @@
                   formId: '<?php echo get_post_meta($postid, 'formId', true); ?>',
                 });
               </script>
+              <p class="gdpr-form">By submitting this form I confirm that I would like to receive email from Teq</p>
           </div>
         </div>
       </div>

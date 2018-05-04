@@ -33,6 +33,7 @@ get_header(); ?>
         formId: '45bc47d6-3632-40df-81c0-5bd595aa56f4'
       });
     </script>
+    <p class="gdpr-form">By submitting this form I confirm that I would like to receive email from Teq</p>
   </div>
 </div>
 <div class="container padding-top">

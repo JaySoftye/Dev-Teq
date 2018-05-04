@@ -89,6 +89,7 @@ $(document).ready(function(){
                     formId: '86c1596f-82aa-4f66-bca5-ad0ded9fb0af'
                   });
                 </script>
+              <p class="gdpr-form">By submitting this form I confirm that I would like to receive email from Teq</p>
             </div>
           </div>
         </div>

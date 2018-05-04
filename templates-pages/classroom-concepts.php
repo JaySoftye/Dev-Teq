@@ -75,6 +75,7 @@
             formId: '68ffbe0d-eb5e-45f1-80ba-c3e8e7845abb'
           });
         </script>
+        <p class="gdpr-form">By submitting this form I confirm that I would like to receive email from Teq</p>
     </div>
   </div>
 
