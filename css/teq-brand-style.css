@@ -222,6 +222,10 @@ video {
   padding: 4rem;
 }
 
+.padding-sm {
+  padding: 1.875rem 2.125rem;
+}
+
 .padding-right {
   padding-right: 6rem;
 }
@@ -240,6 +244,14 @@ video {
 
 .center {
   margin: 0 auto;
+}
+
+.border-top {
+  border-top: 1px solid #d2d4d4;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #d2d4d4;
 }
 
 .height-full {
