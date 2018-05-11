@@ -11,46 +11,48 @@
   </nav>
 
   <main>
-    <div class="container nopadding padding-top">
-      <section id="teqCustomerSuccess">
-        <div class="row oneRowHeight">
-
-          <?php
-            $the_query = new WP_Query( array( 'posts_per_page' => '4', 'category_name' => 'customer-success-stories') );
-               while ($the_query -> have_posts()) : $the_query -> the_post();
-
-            $thumb_id = get_post_thumbnail_id();
-            $thumb_url = wp_get_attachment_image_src($thumb_id,'full', true);
-          ?>
-          <article class="col-md-3">
-            <div class="card">
-              <a href="<?php the_permalink() ?>">
-                <img class="card-img-top" src="<?php echo $thumb_url[0]; ?>">
-              </a>
-              <div class="col-md">
-                <?php echo the_category(); ?>
-                <h4 class="card-title"><a href="<?php the_permalink() ?>"><strong><?php the_title(); ?></strong></a></h4>
-              </div>
+    <section>
+      <div class="container-fluid nopadding padding-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-md padding-bottom text-center">
+              <h1>Customer <strong>Testimonials</strong></h1>
+              <h5>Below you will find a partial list of our customer testimonials, feel free to <a class="teqBlue bold" href="/contact-us/">contact us</a> for a full referral list.</h5>
             </div>
-          </article>
-
-          <?php endwhile; wp_reset_postdata(); ?>
-
+          </div>
         </div>
       </section>
-    </div>
 
-    <div class="container-fluid nopadding padding-top padding-bottom">
-      <div class="container">
-        <div class="row">
-          <div class="col-md padding-bottom text-center">
-            <h1>Customer <strong>Testimonials</strong></h1>
-            <h5>Below you will find a partial list of our customer testimonials, feel free to <a class="teqBlue bold" href="/contact-us/">contact us</a> for a full referral list.</h5>
+      <?php wp_reset_query(); the_content(); ?>
+
+      <div class="container nopadding">
+        <div id="teqCustomerSuccess">
+          <div class="row oneRowHeight">
+
+            <?php
+              $the_query = new WP_Query( array('category_name' => 'customer-success-stories') );
+                 while ($the_query -> have_posts()) : $the_query -> the_post();
+
+              $thumb_id = get_post_thumbnail_id();
+              $thumb_url = wp_get_attachment_image_src($thumb_id,'full', true);
+            ?>
+            <article class="col-md-3">
+              <div class="card">
+                <a href="<?php the_permalink() ?>">
+                  <img class="card-img-top" src="<?php echo $thumb_url[0]; ?>">
+                </a>
+                <div class="col-md">
+                  <?php echo the_category(); ?>
+                  <h4 class="card-title"><a href="<?php the_permalink() ?>"><strong><?php the_title(); ?></strong></a></h4>
+                </div>
+              </div>
+            </article>
+
+            <?php endwhile; wp_reset_postdata(); ?>
+
           </div>
         </div>
       </div>
-
-      <?php wp_reset_query(); the_content(); ?>
 
       <div class="container">
         <div class="row teqTestimonial padding-bottom">
