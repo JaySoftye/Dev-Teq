@@ -232,6 +232,7 @@
                   <ul class="nav">
                     <li class="level2"><a href="<?php echo site_url(); ?>/stem/jumpstart-nao/" class="subnav-link">Jumpstart NAO</a></li>
                     <li class="level2"><a href="<?php echo site_url(); ?>/stem/robotis/" class="subnav-link">Robotis</a></li>
+                    <li class="level2"><a href="<?php echo site_url(); ?>/stem/wonder-workshop/" class="subnav-link">Wonder Workshop</a></li>
                   </ul>
                 </li>
                 <li><a href="<?php echo site_url(); ?>/stem/3d-printers/" class="subnav-link">3D Printers</a>
