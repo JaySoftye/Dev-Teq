@@ -250,6 +250,158 @@
             </div>
           </div>
         </article>
+        <article class="col-md-4 nedm-data">
+          <div class="card nedm-data-field">
+            <div class="card-body">
+              <h6 class="nedm-text"><strong>Devices connecting to the IFP</strong></h6>
+              <h2><?php echo get_post_meta( $post->ID, 'deviceConnecting', true ); ?></h2>
+            </div>
+          </div>
+        </article>
+        <article class="col-md-4 nedm-data">
+          <div class="card nedm-data-field">
+            <div class="card-body">
+              <h6 class="nedm-text"><strong>Approximate Age of the Systems</strong></h6>
+              <h2><?php echo get_post_meta( $post->ID, 'approxAge', true ); ?></h2>
+            </div>
+          </div>
+        </article>
+        <article class="col-md-4 nedm-data">
+          <div class="card nedm-data-field">
+            <div class="card-body">
+              <h6 class="nedm-text"><strong>Processor Type</strong></h6>
+              <h2><?php echo get_post_meta( $post->ID, 'processorType', true ); ?></h2>
+            </div>
+          </div>
+        </article>
+        <article class="col-md-4 nedm-data">
+          <div class="card nedm-data-field">
+            <div class="card-body">
+              <h6 class="nedm-text"><strong>Operating System</strong></h6>
+              <h2><?php echo get_post_meta( $post->ID, 'operatingSystem', true ); ?></h2>
+            </div>
+          </div>
+        </article>
+        <article class="col-md-4 nedm-data">
+          <div class="card nedm-data-field">
+            <div class="card-body">
+              <h6 class="nedm-text"><strong>Dedicated graphics hardware or Onboard?</strong></h6>
+              <h2><?php echo get_post_meta( $post->ID, 'dedicatedGraphics', true ); ?></h2>
+            </div>
+          </div>
+        </article>
+        <article class="col-md-4 nedm-data">
+          <div class="card nedm-data-field">
+            <div class="card-body">
+              <h6 class="nedm-text"><strong>Are there free display ports?</strong></h6>
+              <h2><?php echo get_post_meta( $post->ID, 'freeDisplay', true ); ?></h2>
+            </div>
+          </div>
+        </article>
+        <article class="col-md-4 nedm-data">
+          <div class="card nedm-data-field">
+            <div class="card-body">
+              <h6 class="nedm-text"><strong>Using USB Graphics?</strong></h6>
+              <h2><?php echo get_post_meta( $post->ID, 'usbGraphics', true ); ?></h2>
+            </div>
+          </div>
+        </article>
+        <article class="col-md-4 nedm-data">
+          <div class="card nedm-data-field">
+            <div class="card-body">
+              <h6 class="nedm-text"><strong>Graphics Adapter</strong></h6>
+              <h2><?php echo get_post_meta( $post->ID, 'graphicsAdapter', true ); ?></h2>
+            </div>
+          </div>
+        </article>
+        <article class="col-md-4 nedm-data">
+          <div class="card nedm-data-field">
+            <div class="card-body">
+              <h6 class="nedm-text"><strong>Available USB ports on the computer</strong></h6>
+              <h2><?php echo get_post_meta( $post->ID, 'availableUsb', true ); ?></h2>
+            </div>
+          </div>
+        </article>
+        <article class="col-md-4 nedm-data">
+          <div class="card nedm-data-field">
+            <div class="card-body">
+              <h6 class="nedm-text"><strong>Type of USB</strong></h6>
+              <h2><?php echo get_post_meta( $post->ID, 'usbType', true ); ?></h2>
+            </div>
+          </div>
+        </article>
+        <article class="col-md-4 nedm-data">
+          <div class="card nedm-data-field">
+            <div class="card-body">
+              <h6 class="nedm-text"><strong>Mirroring or Cloning a primary display or extended desktop?</strong></h6>
+              <h2><?php echo get_post_meta( $post->ID, 'mirroringCloning', true ); ?></h2>
+            </div>
+          </div>
+        </article>
+        <article class="col-md-4 nedm-data">
+          <div class="card nedm-data-field">
+            <div class="card-body">
+              <h6 class="nedm-text"><strong>Desktop Resolution</strong></h6>
+              <h2><?php echo get_post_meta( $post->ID, 'desktopResolution', true ); ?></h2>
+            </div>
+          </div>
+        </article>
+        <article class="col-md-4 nedm-data">
+          <div class="card nedm-data-field">
+            <div class="card-body">
+              <h6 class="nedm-text"><strong>IFP to Computer Connection</strong></h6>
+              <h2><?php echo get_post_meta( $post->ID, 'connectedResolution', true ); ?></h2>
+            </div>
+          </div>
+        </article>
+        <article class="col-md-4 nedm-data">
+          <div class="card nedm-data-field">
+            <div class="card-body">
+              <h6 class="nedm-text"><strong>Display 4k Content?</strong></h6>
+              <h2><?php echo get_post_meta( $post->ID, 'displaying4k', true ); ?></h2>
+            </div>
+          </div>
+        </article>
+        <article class="col-md-4 nedm-data">
+          <div class="card nedm-data-field">
+            <div class="card-body">
+              <h6 class="nedm-text"><strong>Using the built-in browser or connected computer?</strong></h6>
+              <h2><?php echo get_post_meta( $post->ID, 'builtinBrowser', true ); ?></h2>
+            </div>
+          </div>
+        </article>
+        <article class="col-md-4 nedm-data">
+          <div class="card nedm-data-field">
+            <div class="card-body">
+              <h6 class="nedm-text"><strong>Systems connected to the IFP part of the Windows Domain</strong></h6>
+              <h2><?php echo get_post_meta( $post->ID, 'connectedDomain', true ); ?></h2>
+            </div>
+          </div>
+        </article>
+        <article class="col-md-4 nedm-data">
+          <div class="card nedm-data-field">
+            <div class="card-body">
+              <h6 class="nedm-text"><strong>Group Policy to prevent users from changing display?</strong></h6>
+              <h2><?php echo get_post_meta( $post->ID, 'groupPolicy', true ); ?></h2>
+            </div>
+          </div>
+        </article>
+        <article class="col-md-4 nedm-data">
+          <div class="card nedm-data-field">
+            <div class="card-body">
+              <h6 class="nedm-text"><strong>Multiple Users logging into the computer?</strong></h6>
+              <h2><?php echo get_post_meta( $post->ID, 'multipleUsers', true ); ?></h2>
+            </div>
+          </div>
+        </article>
+        <article class="col-md-4 nedm-data">
+          <div class="card nedm-data-field">
+            <div class="card-body">
+              <h6 class="nedm-text"><strong>User Permissions for every user?</strong></h6>
+              <h2><?php echo get_post_meta( $post->ID, 'userPermissions', true ); ?></h2>
+            </div>
+          </div>
+        </article>
 
       </section>
     </div>
