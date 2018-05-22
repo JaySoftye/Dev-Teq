@@ -75,6 +75,10 @@ label {
 
 /*! bootstrap overrides */
 
+.table td {
+  vertical-align: middle !important;
+}
+
 article.col-sm-4:nth-child(3n+0) {
     clear: left;
 }
