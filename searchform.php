@@ -1,6 +1,17 @@
-<form class="search-form input-group" role="search" method="get" action="<?php echo home_url( '/' ); ?>">
-  <input type="text" placeholder="<?php _e( 'Search Teq', 'bootstrap-four' ); ?>" name="s">
-  <span class="input-group-btn">
-    <button class="btn btn-secondary" type="button"><?php _e( '', 'bootstrap-four' ); ?></button>
-  </span>
+
+<form role="search" method="get" class="search-form search-form" action="<?php echo home_url( '/' ); ?>">
+	<button type="button" class="search-open"></button>
+	<div class="input-group">
+		<span class="screen-reader-text">Search for:</span>
+		<input type="search" class="search-field" placeholder="Search …" value="" name="s">
+		<input type="hidden" class="search-submit" value="search">
+	</div>
 </form>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+  	$("button.search-open").click(function(){
+    	$(".search-form div.input-group").toggleClass("active", 300);
+    });
+	});
+</script>

@@ -8,6 +8,7 @@
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
       <?php wp_head(); ?>
     <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
 
     <!-- Custom CSS -->
     <link href="<?php echo get_stylesheet_directory_uri();?>/css/teq-brand-style.css" rel="stylesheet" type="text/css">
@@ -21,7 +22,7 @@
 
   <nav id="mainNav">
     <?php
-      if ( is_page_template( 'templates-pages/classroom-concepts.php' ) || is_page_template( 'templates-pages/learning-community.php' ) || is_page_template( 'templates-pages/learning-community-teq-talk.php' ) || is_page_template( 'templates-pages/learning-community-media-resource-center.php' ) || is_page_template( 'templates-pages/learning-community-educator-resource-center.php' ) || is_archive() || is_404() ) {
+      if ( is_page_template( 'templates-pages/classroom-concepts.php' ) || is_page_template( 'templates-pages/learning-community.php' ) || is_page_template( 'templates-pages/learning-community-teq-talk.php' ) || is_page_template( 'templates-pages/learning-community-media-resource-center.php' ) || is_page_template( 'templates-pages/learning-community-educator-resource-center.php' ) || is_archive() || is_search() || is_404() ) {
     ?>
       <header id="mainBanner" class="hidden-sm-down hidden-xs-down collapse in"></header>
 
@@ -144,65 +145,10 @@
         <li class="nav-item">
             <a id="freeNavLink" class="nav-link bold" href="#freeOffer" data-toggle="collapse" aria-expanded="false" aria-controls="freeOffer" onclick="ga('send', 'event', 'FREE Link', 'Action label', 'Action Value');">FREE</a>
         </li>
-        <?php
-          global $wp_query;
-            $postid = $wp_query->post->ID;
-
-          if ( is_page_template( 'templates-pages/product-page.php' ) && get_post_meta($postid, 'titleRoleOne', true) || is_page_template( 'templates-pages/product-pd-page.php' ) && get_post_meta($postid, 'titleRoleOne', true) || is_page_template( 'templates-pages/product-page-slider-top.php' ) && get_post_meta($postid, 'titleRoleOne', true) || is_page_template( 'templates-pages/product-page-accordion-top.php' ) && get_post_meta($postid, 'titleRoleOne', true) || is_page_template( 'templates-pages/product-page-more-info-no-demo-form-open.php' ) && get_post_meta($postid, 'titleRoleOne', true)) {
-
-        ?>
-          <li class="nav-item search-form-container hidden-sm-down hidden-xs-down">
-          <a class="nav-link title-link menu-open" href="#title-roles-nav" data-toggle="collapse" aria-expanded="false" aria-controls="title-roles-nav"><strong>What's Your School Role?</strong></a>
-          </li>
-        </ul>
-          <div id="title-roles-nav" class="collapse">
-
-              <ul class="nav title-roles-menu">
-                <?php
-                  if ( get_post_meta($postid, 'titleRoleOne', true)) {
-                ?>
-                  <li><a href="#One" class="title-roles-menu-item1" data-toggle="collapse" aria-expanded="false" aria-controls="One"><?php echo get_post_meta($postid, 'titleRoleOne', true); ?></a></li>
-                <?php
-                  }
-                  if ( get_post_meta($postid, 'titleRoleTwo', true)) {
-                ?>
-                  <li><a href="#Two" class="title-roles-menu-item2" data-toggle="collapse" aria-expanded="false" aria-controls="Two"><?php echo get_post_meta($postid, 'titleRoleTwo', true); ?></a></li>
-                <?php
-                  }
-                  if ( get_post_meta($postid, 'titleRoleThree', true)) {
-                ?>
-                  <li><a href="#Three" class="title-roles-menu-item3" data-toggle="collapse" aria-expanded="false" aria-controls="Three"><?php echo get_post_meta($postid, 'titleRoleThree', true); ?></a></li>
-                <?php
-                  }
-                ?>
-              </ul>
-              <ul id="One" class="collapse nav title-roles-content">
-                <li>
-                  <article>
-                    <p><?php echo get_post_meta($postid, 'titleRoleOneDescription', true); ?></p>
-                  </article>
-                </li>
-              </ul>
-              <ul id="Two" class="collapse nav title-roles-content">
-                <li>
-                  <article>
-                    <p><?php echo get_post_meta($postid, 'titleRoleTwoDescription', true); ?></p>
-                  </article>
-                </li>
-              </ul>
-              <ul id="Three" class="collapse nav title-roles-content">
-                <li>
-                  <article>
-                    <p><?php echo get_post_meta($postid, 'titleRoleThreeDescription', true); ?></p>
-                  </article>
-                </li>
-              </ul>
-            </div>
-          <?php
-//          } else {
-//            get_search_form( $echo = true );
-            }
-          ?>
+        <li class="nav-item search-form-container">
+          <?php get_search_form( $echo = true ); ?>
+        </li>
+      </ul>
     </div>
     <div class="collapse fade subnav" id="productsMenu">
       <div class="container-fluid">
@@ -426,9 +372,59 @@
       </div>
     </div>
     <section id="breadCrumbs" class="hidden-sm-down hidden-xs-down">
-      <?php
-        if (function_exists('bootstrapwp_breadcrumbs')) {
-          bootstrapwp_breadcrumbs();
-        }
-      ?>
+      <div class="row">
+        <div class="col-md">
+          <?php if (function_exists('bootstrapwp_breadcrumbs')) { bootstrapwp_breadcrumbs(); } ?>
+        </div>
+        <div class="col-md">
+          <?php global $wp_query;
+            $postid = $wp_query->post->ID;
+            if ( is_page_template( 'templates-pages/product-page.php' ) && get_post_meta($postid, 'titleRoleOne', true) || is_page_template( 'templates-pages/product-pd-page.php' ) && get_post_meta($postid, 'titleRoleOne', true) || is_page_template( 'templates-pages/product-page-slider-top.php' ) && get_post_meta($postid, 'titleRoleOne', true) || is_page_template( 'templates-pages/product-page-accordion-top.php' ) && get_post_meta($postid, 'titleRoleOne', true) || is_page_template( 'templates-pages/product-page-more-info-no-demo-form-open.php' ) && get_post_meta($postid, 'titleRoleOne', true)) {
+          ?>
+          <a class="title-link text-right menu-open" href="#title-roles-nav" data-toggle="collapse" aria-expanded="false" aria-controls="title-roles-nav"><strong>What's Your School Role?</strong></a>
+            <div id="title-roles-nav" class="collapse">
+                <ul class="nav title-roles-menu">
+                  <?php
+                    if ( get_post_meta($postid, 'titleRoleOne', true)) {
+                  ?>
+                    <li><a href="#One" class="title-roles-menu-item1" data-toggle="collapse" aria-expanded="false" aria-controls="One"><?php echo get_post_meta($postid, 'titleRoleOne', true); ?></a></li>
+                  <?php
+                    }
+                    if ( get_post_meta($postid, 'titleRoleTwo', true)) {
+                  ?>
+                    <li><a href="#Two" class="title-roles-menu-item2" data-toggle="collapse" aria-expanded="false" aria-controls="Two"><?php echo get_post_meta($postid, 'titleRoleTwo', true); ?></a></li>
+                  <?php
+                    }
+                    if ( get_post_meta($postid, 'titleRoleThree', true)) {
+                  ?>
+                    <li><a href="#Three" class="title-roles-menu-item3" data-toggle="collapse" aria-expanded="false" aria-controls="Three"><?php echo get_post_meta($postid, 'titleRoleThree', true); ?></a></li>
+                  <?php
+                    }
+                  ?>
+                </ul>
+                <ul id="One" class="collapse nav title-roles-content">
+                  <li>
+                    <article>
+                      <p><?php echo get_post_meta($postid, 'titleRoleOneDescription', true); ?></p>
+                    </article>
+                  </li>
+                </ul>
+                <ul id="Two" class="collapse nav title-roles-content">
+                  <li>
+                    <article>
+                      <p><?php echo get_post_meta($postid, 'titleRoleTwoDescription', true); ?></p>
+                    </article>
+                  </li>
+                </ul>
+                <ul id="Three" class="collapse nav title-roles-content">
+                  <li>
+                    <article>
+                      <p><?php echo get_post_meta($postid, 'titleRoleThreeDescription', true); ?></p>
+                    </article>
+                  </li>
+                </ul>
+              </div>
+          <?php } ?>
+        </div>
+      </div>
     </section>

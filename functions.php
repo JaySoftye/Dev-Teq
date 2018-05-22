@@ -587,7 +587,7 @@ function my_login_logo() { ?>
 			background-color: #4b5760;
 		}
         #login h1 a, .login h1 a {
-            background-image: url('<?php echo get_template_directory_uri();?>/_img/teq_logo.svg');
+            background-image: url('<?php echo get_template_directory_uri();?>/_img/teq-logo-icon.svg');
             padding-bottom: 30px;
         }
 		body.login div#login form#loginform p label {

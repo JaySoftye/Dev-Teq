@@ -73,7 +73,7 @@
         </div>
         <div class="col-md-5 padding-left flex-md-middle">
           <h1 class="white"><img src="<?php echo get_template_directory_uri(); ?>/_img/yes-we-raised-in-a-barn.svg" alt="Yes we were raised in a bar" /></h1>
-          <p class="white"><strong>Our story began in a small barn where we specialized in the sale of vocational training equipment</strong>. As we shifted to interactive product integration, our family business steadily grew to an organization of 140 professionals. Now, more than 41 years later, our sweet little barn stands as the symbolic reminder of the company’s humble origins and the open door we offer our clients. We encourage you to stop by with your input, and look forward to sharing new learning experiences with you.</p>
+          <p class="white"><strong>Our story began in a small barn where we specialized in the sale of vocational training equipment</strong>. As we shifted to interactive product integration, our family business steadily grew to an organization of 140 professionals. Now, more than 46 years later, our sweet little barn stands as the symbolic reminder of the company’s humble origins and the open door we offer our clients. We encourage you to stop by with your input, and look forward to sharing new learning experiences with you.</p>
           <img src="/wp-content/uploads/2016/12/about-us-story-barn-img.png" />
         </div>
         <div class="col-md-6">
