@@ -360,8 +360,8 @@ function send_mails_on_publish( $new_status, $old_status, $post ) {
   if ( 'publish' !== $new_status or 'publish' === $old_status or 'nedm-surveys' !== get_post_type( $post ) )
 
     return;
-      $to = 'jonathansoftye@teq.com';
-      $headers = 'CC: jay@teq.com.com';
+      $to = 'NEDM@teq.com';
+      $headers = 'CC: jay@teq.com.com, paulprincipato@teq.com';
       $body = sprintf( 'Hey there is a new entry!' . "\n\n");
       $body .= sprintf( 'See <%s>', get_permalink( $post ));
 
