@@ -62,7 +62,7 @@
               <td class="white"><?php echo get_post_meta( $post->ID, 'reportSharing', true ); ?></td>
             </tr>
             <tr>
-              <td class="white"><?php echo get_post_meta( $post->ID, 'cloudgenixDevice', true ); ?></td>
+              <td class="white"><p><small class="white">Brief Description: </small></p><?php echo get_post_meta( $post->ID, 'issueDescription', true ); ?></td>
             </tr>
           </tbody>
         </table>

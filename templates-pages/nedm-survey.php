@@ -96,6 +96,7 @@ if (isset($_POST['submitted'])) {
  $multipleUsers = wp_strip_all_tags($_POST['nedm-survey-multiple-users']);
  $userPermissions = wp_strip_all_tags($_POST['nedm-survey-user-permissions']);
  $cloudgenixDevice = wp_strip_all_tags($_POST['nedm-survey-cloudgenix-device']);
+ $issueDescription = wp_strip_all_tags($_POST['nedm-survey-issue-description']);
 
  /** Submit your form information **/
  if (isset($_POST['submitted']) && isset($_POST['post_nonce_field']) && wp_verify_nonce($_POST['post_nonce_field'], 'post_nonce') && ($hasError == false)) {
@@ -157,12 +158,13 @@ if (isset($_POST['submitted'])) {
       add_post_meta($new_post, "groupPolicy", $groupPolicy);
       add_post_meta($new_post, "multipleUsers", $multipleUsers);
       add_post_meta($new_post, "userPermissions", $userPermissions);
+      add_post_meta($new_post, "issueDescription", $issueDescription);
  }
 
  get_template_part( 'lib/nedm-survey-post-header' ); wp_reset_query(); the_content();
 ?>
 
-<div class="container"><div class="row"><div class="col">
+<div class="container padding-bottom"><div class="row"><div class="col padding-bottom">
 <form action="#" method="POST" id="nedm-survey" <?php do_action('post_edit_form_tag'); ?> enctype="multipart/form-data">
 
 <div class="form-group">
@@ -628,10 +630,23 @@ if (isset($_POST['submitted'])) {
 -->
 
 <div class="row group-row">
-  <div class="col-md">
-    <input type="hidden" name="submitted" id="submitted" value="true" />
-    <?php wp_nonce_field( 'post_nonce', 'post_nonce_field' ); ?>
-    <button type="submit" value="submit" id="submit-survey">Find your solution now</button>
+  <div class="col-md-12">
+    <div class="form-group row"><hr class="col-md" /></div>
+    <h3><strong>Please describe any other major issues and/or concerns within your IFP setup.</strong></h3>
+  </div>
+  <div class="col-md-12 padding-right">
+    <div class="form-group row">
+      <div class="form-check col-md">
+        <input type="text" class="form-control" name="nedm-survey-issue-description" id="nedm-survey-issue-description" value="<?php echo $issueDescription; ?>" />
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="form-check col-md">
+        <input type="hidden" name="submitted" id="submitted" value="true" />
+        <?php wp_nonce_field( 'post_nonce', 'post_nonce_field' ); ?>
+        <button type="submit" value="submit" id="submit-survey">Submit Survey Answers</button>
+      </div>
+    </div>
   </div>
 </div>
 
