@@ -542,7 +542,7 @@ if (isset($_POST['submitted'])) {
     <div class="form-group row">
       <div class="form-check col-md-6">
         <label for="nedm-survey-deskop-resolution"><?php _e('What desktop resolution does your current configuration run in?', 'framework') ?></label>
-        <input type="text" class="form-control" name="nedm-survey-deskop-resolution" id="nedm-survey-deskop-resolution" value="<?php echo $desktopResolution; ?>">
+        <input type="text" class="form-control" name="nedm-survey-desktop-resolution" id="nedm-survey-desktop-resolution" value="<?php echo $desktopResolution; ?>">
       </div>
       <div class="form-check col-md-6">
         <label for="nedm-survey-connected-resolution"><?php _e('How is it connected to the computer? i.e. HDMI, DisplayPort, DVI or VGA', 'framework') ?></label>

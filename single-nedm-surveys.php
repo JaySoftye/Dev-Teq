@@ -37,39 +37,42 @@
 <div class="container-fluid">
 
   <div class="row">
-    <div class="col-md-4 nedm-bg padding">
-      <section class="padding-left padding-top">
+    <div class="col-md-3 nedm-bg padding">
+      <section>
         <h3 class="white"><strong><?php echo get_post_meta( $post->ID, 'firstName', true );?> <?php echo get_post_meta( $post->ID, 'lastName', true ); ?></strong></h3>
-        <h6 class="white"><?php echo get_post_meta( $post->ID, 'titleRole', true ); ?><br /><?php echo get_post_meta( $post->ID, 'contactPhone', true ); ?><br /><?php echo get_post_meta( $post->ID, 'contactEmail', true ); ?></h6>
+        <table class="table">
+          <tbody>
+            <tr>
+              <td class="white"><?php echo get_post_meta( $post->ID, 'titleRole', true ); ?><br /><?php echo get_post_meta( $post->ID, 'contactPhone', true ); ?><br /><?php echo get_post_meta( $post->ID, 'contactEmail', true ); ?></td>
+            </tr>
+          </tbody>
+        </table>
       </section>
     </div>
-    <div class="col-md-8 gray-bg padding">
-      <section class="row padding-right padding-top">
-        <article class="col-md-4">
-          <img src="/consulting-services/public/images/ConsultingServices_network-enabled-survey.svg" class="full" />
+    <div class="col-md-9 gray-bg">
+      <section class="row">
+        <article class="col-md-4 padding">
+          <h1><img src="/consulting-services/public/images/ConsultingServices_network-enabled-survey.svg" class="full" /></h1>
         </article>
       </section>
     </div>
   </div>
 
   <div class="row">
-    <div class="col-md-4 nedm-bg">
-      <section class="padding-left ">
+    <div class="col-md-3 nedm-bg padding">
+      <section>
         <h1 class="white"><strong><?php the_title();?></strong></h1>
         <table class="table">
           <tbody>
             <tr>
-              <td class="white"><?php echo get_post_meta( $post->ID, 'reportSharing', true ); ?></td>
-            </tr>
-            <tr>
-              <td class="white"><p><small class="white">Brief Description: </small></p><?php echo get_post_meta( $post->ID, 'issueDescription', true ); ?></td>
+              <td class="white"><p class="white"><?php echo get_post_meta( $post->ID, 'reportSharing', true ); ?></p><br /><p class="white"><small class="white"><strong>Brief Description:</strong></small><br /><?php echo get_post_meta( $post->ID, 'issueDescription', true ); ?></p></td>
             </tr>
           </tbody>
         </table>
       </section>
     </div>
-    <div class="col-md-8 gray-bg padding-bottom">
-      <section class="row nedm-data-container padding-right">
+    <div class="col-md-9 gray-bg">
+      <section class="row nedm-data-container padding">
         <article class="col-md-4 nedm-data">
           <div class="card nedm-data-field">
             <div class="card-body">
@@ -89,6 +92,7 @@
         <article class="col-md-4 nedm-data">
           <div class="card nedm-data-field">
             <div class="card-body">
+              <h6 class="nedm-text"><strong>Interactive Flat Panels are connected through:</strong></h6>
               <h2><?php echo get_post_meta( $post->ID, 'connection', true ); ?></h2>
             </div>
           </div>
@@ -96,6 +100,7 @@
         <article class="col-md-4 nedm-data">
           <div class="card nedm-data-field">
             <div class="card-body">
+              <h6 class="nedm-text"><strong>Is your school using a proxy for connectivity?</strong></h6>
               <h2><?php echo get_post_meta( $post->ID, 'proxyConnectivity', true ); ?></h2>
             </div>
           </div>
@@ -103,6 +108,7 @@
         <article class="col-md-4 nedm-data">
           <div class="card nedm-data-field">
             <div class="card-body">
+              <h6 class="nedm-text"><strong>Is WPAD implemented?</strong></h6>
               <h2><?php echo get_post_meta( $post->ID, 'wpadImplemented', true ); ?></h2>
             </div>
           </div>
@@ -110,6 +116,7 @@
         <article class="col-md-4 nedm-data">
           <div class="card nedm-data-field">
             <div class="card-body">
+              <h6 class="nedm-text"><strong>Is there an In-Line content filter or firewall deployed?</strong></h6>
               <h2><?php echo get_post_meta( $post->ID, 'filterFirewall', true ); ?></h2>
             </div>
           </div>
@@ -117,7 +124,7 @@
         <article class="col-md-4 nedm-data">
           <div class="card nedm-data-field">
             <div class="card-body">
-              <h6 class="nedm-text"><strong>Highest wireless standard supported</strong></h6>
+              <h6 class="nedm-text"><strong>Highest wireless standard supported?</strong></h6>
               <h2><?php echo get_post_meta( $post->ID, 'wirelessStandard', true ); ?></h2>
             </div>
           </div>
@@ -125,7 +132,7 @@
         <article class="col-md-4 nedm-data">
           <div class="card nedm-data-field">
             <div class="card-body">
-              <h6 class="nedm-text"><strong>Vendor of Firewall</strong></h6>
+              <h6 class="nedm-text"><strong>Vendor of Firewall?</strong></h6>
               <h2><?php echo get_post_meta( $post->ID, 'vendorType', true ); ?></h2>
             </div>
           </div>
@@ -133,7 +140,7 @@
         <article class="col-md-4 nedm-data">
           <div class="card nedm-data-field">
             <div class="card-body">
-              <h6 class="nedm-text"><strong>Broadcasting Speed</strong></h6>
+              <h6 class="nedm-text"><strong>Broadcasting Speed (2.4Ghz / 5Ghz)</strong></h6>
               <h2><?php echo get_post_meta( $post->ID, 'schoolBroadcasting', true ); ?></h2>
             </div>
           </div>
@@ -165,6 +172,7 @@
         <article class="col-md-4 nedm-data">
           <div class="card nedm-data-field">
             <div class="card-body">
+              <h6 class="nedm-text"><strong>Is VLAN tagging at the SSID part of your deployment? </strong></h6>
               <h2><?php echo get_post_meta( $post->ID, 'vlanTagging', true ); ?></h2>
             </div>
           </div>
@@ -196,6 +204,7 @@
         <article class="col-md-4 nedm-data">
           <div class="card nedm-data-field">
             <div class="card-body">
+              <h6 class="nedm-text"><strong>Will the client devices and Interactive Flat Panels be on the same VLAN?</strong></h6>
               <h2><?php echo get_post_meta( $post->ID, 'sameVlan', true ); ?></h2>
             </div>
           </div>
@@ -203,6 +212,7 @@
         <article class="col-md-4 nedm-data">
           <div class="card nedm-data-field">
             <div class="card-body">
+              <h6 class="nedm-text"><strong>HDCP content utilized?</strong></h6>
               <h2><?php echo get_post_meta( $post->ID, 'hdcpContent', true ); ?></h2>
             </div>
           </div>
@@ -210,6 +220,7 @@
         <article class="col-md-4 nedm-data">
           <div class="card nedm-data-field">
             <div class="card-body">
+              <h6 class="nedm-text"><strong>Teachers/Students be allowed to browse the Internet?</strong></h6>
               <h2><?php echo get_post_meta( $post->ID, 'browseInternet', true ); ?></h2>
             </div>
           </div>
@@ -217,6 +228,7 @@
         <article class="col-md-4 nedm-data">
           <div class="card nedm-data-field">
             <div class="card-body">
+              <h6 class="nedm-text"><strong>Share the device’s screen?</strong></h6>
               <h2><?php echo get_post_meta( $post->ID, 'teacherShare', true ); ?></h2>
             </div>
           </div>
@@ -232,6 +244,7 @@
         <article class="col-md-4 nedm-data">
           <div class="card nedm-data-field">
             <div class="card-body">
+              <h6 class="nedm-text"><strong>Wired device screen sharing?</strong></h6>
               <h2><?php echo get_post_meta( $post->ID, 'wiredSharing', true ); ?></h2>
             </div>
           </div>
@@ -239,6 +252,7 @@
         <article class="col-md-4 nedm-data">
           <div class="card nedm-data-field">
             <div class="card-body">
+              <h6 class="nedm-text"><strong>Leveraging automatic updates?</strong></h6>
               <h2><?php echo get_post_meta( $post->ID, 'automaticUpdates', true ); ?></h2>
             </div>
           </div>
@@ -246,6 +260,7 @@
         <article class="col-md-4 nedm-data">
           <div class="card nedm-data-field">
             <div class="card-body">
+              <h6 class="nedm-text"><strong>Tool/tools deployed for network traffic?</strong></h6>
               <h2><?php echo get_post_meta( $post->ID, 'trafficTool', true ); ?></h2>
             </div>
           </div>
@@ -402,25 +417,21 @@
             </div>
           </div>
         </article>
-
       </section>
     </div>
   </div>
-
   <div class="row">
-    <div class="col-md-4 nedm-bg">
-      <section class="padding-left padding-top padding-bottom">
+    <div class="col-md-3 nedm-bg padding">
+      <section>
         <img src="/consulting-services/public/images/ConsultingServices_teq-footer-logo.svg" class="full" />
-        <p class="white">7 Norden Lane<br />Huntington Station, NY 11746<br />877.455.9369 | <a href="mailto:info@teq.com" class="white">info@teq.com</a></p>
-        <p class="white"><a href="http://www.teq.com" class="white">Teq.com</a> | <a href="http://opd-dev.teq.com/" class="white">OnlinePD.teq.com</a></p>
+        <p class="white">7 Norden Lane<br />Huntington Station, NY 11746<br />877.455.9369<br /><a href="http://www.teq.com" class="white">Teq.com</a> | <a href="http://opd-dev.teq.com/" class="white">OnlinePD.teq.com</a></p>
       </section>
     </div>
-    <div class="col-md-8 gray-bg">
-      <section class="row padding-right padding-top padding-bottom">
+    <div class="col-md-9 gray-bg padding">
+      <section>
         <article class="col-md-4">
           <img src="/consulting-services/public/images/ConsultingServices_footer-logo.svg" class="full" />
-          <p>Teq Consulting Services<br />Network-Enabled Device Management</p>
-          <p>877.455.9369| <a href="http://opd-dev.teq.com/" class="nedm-text">OnlinePD.teq.com</a></p>
+          <p>Network-Enabled Device Management</p>
         </article>
       </section>
     </div>
