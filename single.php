@@ -41,6 +41,7 @@ get_header(); ?>
               formId: '<?php echo get_post_meta($postid, 'formId', true); ?>',
             });
           </script>
+          <p style="font-size:85%;color:rgba(255,255,255,0.65);">By submitting this form I confirm that I would like to receive email from Teq</p>
       </div>
     </div>
   </div>
