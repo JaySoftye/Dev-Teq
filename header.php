@@ -222,16 +222,12 @@
                 <li><a href="<?php echo site_url(); ?>/sight-and-sound/accessories/" class="subnav-link">Accessories</a></li>
               </ul>
           </li>
-          <li class="col-sm">
-              <h5 class="white"><a class="nav-link subnav-link" href="<?php echo site_url(); ?>/sd-wan/">SD-WAN from Cloudgenix</a></h5>
-              <ul class="nav">
-                <li><a href="<?php echo site_url(); ?>/sd-wan/cloudgenix-roi/" class="subnav-link">Return on Investment</a></li>
-                <li><a href="<?php echo site_url(); ?>/sd-wan/cloudgenix-central-control-point/" class="subnav-link">Centralized Control Center</a></li>
-                <li><a href="<?php echo site_url(); ?>/sd-wan/cloudgenix-software-assurance/" class="subnav-link">Software Assurance</a></li>
-              </ul>
-          </li>
           <li class="nav-item closeMenuCell">
             <a href="#productsMenu" data-toggle="collapse" aria-expanded="false" aria-controls="productsMenu"><img class="mainLogo" src="<?php echo get_template_directory_uri();?>/_img/subnav-collapse-icon.svg" /></a>
+          </li>
+          <li class="col-sm nopadding">
+            <img src="<?php echo get_template_directory_uri();?>/_img/teq-banner-opd-login-nav.png" />
+            <a href="https://onlinepd.teq.com/"><button class="salmon hideItem">Opd.teq.com</button></a>
           </li>
         </ul>
       </div>

@@ -45,7 +45,7 @@
         <h1 class="hideItem"><a href="http://www.teq.com/ctle-approved"><img src="<?php echo get_template_directory_uri(); ?>/_img/learn-professional-development.svg" alt="Learn" /></a></h1>
         <h2 class="productBlue display-5 hideItem">Professional Development</h2>
         <h4 class="white hideItem">Learn educational technology skills with PD designed around your needs; with options for on-site, online, or a blended learning model. </h4>
-        <a href="/pd-platforms/"><button class="light hideItem">Discover more</button></a>
+        <a href="/pd-platforms/"><button class="light hideItem">Discover more</button></a> <a href="https://onlinepd.teq.com/"><button class="salmon hideItem">Opd.teq.com</button></a>
       </div>
       <div class="col-md-1">
       </div>

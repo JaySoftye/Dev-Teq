@@ -441,7 +441,7 @@ ul.productBullets li {
 }
 
 button {
-  margin: 2rem auto 2rem auto;
+  margin: 2rem auto 2rem 1rem;
   outline: none;
   background: transparent;
   padding: 12px 30px;
@@ -502,14 +502,14 @@ button.lavender:hover {
   transition: background-color 0.4s ease-out;
 }
 
-button.sdwan {
-  border: 3px solid #fe5000;
-  color: #fe5000;
+button.salmon {
+  border: 3px solid rgb(255,118,125);
+  background-color: rgb(255,118,125);
+  color: #eceeef;
 }
 
-button.sdwan:hover {
-  color: #eceeef;
-  background-color: #fe5000;
+button.salmon:hover {
+  background-color: transparent;
   -webkit-transition: background-color 0.4s ease-out;
   -moz-transition: background-color 0.4s ease-out;
   transition: background-color 0.4s ease-out;
