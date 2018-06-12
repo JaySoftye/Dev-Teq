@@ -955,7 +955,9 @@ form.search-form {
   height: 34px;
   width: 34px;
   margin-top: 1.25rem;
+  margin-right: 0;
   margin-bottom: 1.25rem;
+  margin-left: 0;
   padding: 0;
   background-color: #d2d4d4;
   background-image:url('../_img/search-icon.svg');
