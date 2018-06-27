@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Product Page with Video Background
+ * Template Name: Product Page with Vid Background Form Open
  *
  * @package WordPress
  * @subpackage BootstrapWP
@@ -14,18 +14,16 @@
         $postid = $wp_query->post->ID;
     ?>
 
-</nav>
-<div id="popInWindow">
-  <a href="/roadmap"><img src="<?php echo get_template_directory_uri();?>/_img/teq-roadmap_icon-link.svg" alt="Teq 2018 Roadmap" /></a>
-</div>
-
-  <?php wp_reset_query(); ?>
-    <main>
-      <div class="container-fluid nopadding main-header">
-        <video class="vidBackgroundHeader productVideo" poster="<?php echo get_template_directory_uri(); ?>/_img/<?php echo get_post_meta($postid, 'headerBackground', true); ?>.jpg" playsinline autoplay muted loop>
-            <source src="<?php echo get_template_directory_uri();?>/_img/<?php echo get_post_meta($postid, 'headerBackground', true); ?>.mp4" type="video/mp4">
-        </video>
-        <div class="row fullHeight bottomGradient">
+  </nav>
+  <div id="popInWindow">
+    <a href="/roadmap"><img src="<?php echo get_template_directory_uri();?>/_img/teq-roadmap_icon-link.svg" alt="Teq 2018 Roadmap" /></a>
+  </div>
+  <main>
+    <div class="container-fluid nopadding home-header product-demo">
+      <video class="vidBackgroundHeader" poster="<?php echo get_template_directory_uri(); ?>/_img/<?php echo get_post_meta($postid, 'headerBackground', true); ?>.jpg" playsinline autoplay muted loop>
+          <source src="<?php echo get_template_directory_uri();?>/_img/<?php echo get_post_meta($postid, 'headerBackground', true); ?>.webm" type="video/webm">
+      </video>
+        <div class="row height-three-quarters bottomGradient">
           <div class="container flex-md-bottom">
             <div>
               <h2 class="white text-center"><?php echo get_post_meta($postid, 'headerTitle', true); ?></h2>
@@ -37,15 +35,14 @@
           </div>
         </div>
       </div>
-    <div class="fullHeight">
       <div class="container-fluid nopadding trialForm trialFormOpen collapse in" id="trialsignup">
         <button class="trialClose" type="button" aria-label="Close" data-toggle="collapse" data-target="#trialsignup" aria-expanded="true" aria-controls="trialsignup"><span aria-hidden="true">×</span></button>
         <div class="container">
           <div class="col-md nopadding">
             <h6 class="white text-center">For more info, simply fill out the form below and a Teq Representative will reach out to you directly.</h6>
-            <!--[if lte IE 8]>
-              <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
-            <![endif]-->
+              <!--[if lte IE 8]>
+                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+              <![endif]-->
 
             <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
               <script>
@@ -58,10 +55,9 @@
           </div>
         </div>
       </div>
-    </div>
+  
     <?php wp_reset_query(); the_content(); ?>
   </main>
-
   <div class="container-fluid">
     <div id="essentialCarousel" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner" role="listbox">

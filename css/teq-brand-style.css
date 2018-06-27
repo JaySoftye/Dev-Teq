@@ -324,7 +324,7 @@ span.videoPlayStem {
   font-weight: 400;
 }
 
-h1, h2, h3, h4, h5, h6, p, small, blockquote, a, li, button {
+h1, h2, h3, h4, h5, h6, p, small, blockquote, a, li, table, td, tr, button {
   font-family:'Roboto',Helvetica,Arial,san-serif !important;
   font-weight: 300 !important;
   color: #3c4852;
@@ -1448,6 +1448,13 @@ div.home-header {
   height: 100%;
   min-height:100vh;
   background-color: rgba(30, 35, 40, 0.8);
+  border-bottom: 5px solid #ffffff;
+}
+
+div.home-header.product-demo {
+  height: 85%;
+  min-height: 85vh;
+  background-color: rgba(30, 35, 40, 0.15);
   border-bottom: 5px solid #ffffff;
 }
 
