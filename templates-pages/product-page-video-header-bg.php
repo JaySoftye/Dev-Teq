@@ -15,9 +15,6 @@
     ?>
 
 </nav>
-<div id="popInWindow">
-  <a href="/roadmap"><img src="<?php echo get_template_directory_uri();?>/_img/teq-roadmap_icon-link.svg" alt="Teq 2018 Roadmap" /></a>
-</div>
 
   <?php wp_reset_query(); ?>
     <main>

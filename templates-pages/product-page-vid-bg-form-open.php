@@ -15,9 +15,7 @@
     ?>
 
   </nav>
-  <div id="popInWindow">
-    <a href="/roadmap"><img src="<?php echo get_template_directory_uri();?>/_img/teq-roadmap_icon-link.svg" alt="Teq 2018 Roadmap" /></a>
-  </div>
+
   <main>
     <div class="container-fluid nopadding home-header product-demo">
       <video class="vidBackgroundHeader" poster="<?php echo get_template_directory_uri(); ?>/_img/<?php echo get_post_meta($postid, 'headerBackground', true); ?>.jpg" playsinline autoplay muted loop>
@@ -55,7 +53,7 @@
           </div>
         </div>
       </div>
-  
+
     <?php wp_reset_query(); the_content(); ?>
   </main>
   <div class="container-fluid">
