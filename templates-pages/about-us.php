@@ -38,7 +38,7 @@
           <div class="col-md padding-top text-center flex-md-middle">
             <h2><img src="<?php echo get_template_directory_uri(); ?>/_img/onlinepd-onsitepd-nowinstructionsupport-logos.jpg" alt="Online and Onsite PD Now Instruction Support" /></h2>
             <h2 class="bold">The Fusion of Technology and Learning</h2>
-            <h5>We customize professional development to empower educators, improve technology integration, and increase student achievement. We different practice to help schools meet their instructional goals and help teachers achieve their individual goals. Teq provides technology and professional development solutions to ultimately increase student achievement.</h5> 
+            <h5>We customize professional development to empower educators, improve technology integration, and increase student achievement. By differentiating instruction, we are able to help schools meet their instructional goals and help teachers achieve their individual goals. Teq provides technology and professional development solutions to ultimately increase student achievement.</h5> 
           </div>
         </div>
       </div>
