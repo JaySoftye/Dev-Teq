@@ -32,8 +32,8 @@
 /** Scroll to Trial Form **/
     $("button.trialScroll").click(function(){
       $('html, body').animate({
-        scrollTop: '+=550px'},
-      400);
+        scrollTop: $("div.row.bottomGradient").offset().top
+      }, 900);
     });
 
 /** Scroll after dropdown content **/
