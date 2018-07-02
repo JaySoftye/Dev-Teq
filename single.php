@@ -70,7 +70,8 @@ get_header(); ?>
 
   <div class="container">
     <div class="row padding-top padding-bottom">
-      <div class="col-md">
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
         <h1 class="display-4 text-center"><strong><?php the_title();?></strong></h1>
         <small class="d-block text-center">Post in <?php the_category(', ') ?> by <span class="bold"><?php the_author(); ?></span> on <?php the_time('jS F Y') ?></small>
         <?php the_content(); ?>
@@ -82,6 +83,7 @@ get_header(); ?>
           } ?>
         </div>
       </div>
+      <div class="col-md-2"></div>
     </div>
   </div>
 
