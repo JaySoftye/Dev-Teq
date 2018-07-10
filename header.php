@@ -183,6 +183,7 @@
                     <li class="level2"><a href="<?php echo site_url(); ?>/stem/wonder-workshop/" class="subnav-link">Wonder Workshop</a></li>
                     <li class="level2"><a href="<?php echo site_url(); ?>/stem/sphero/" class="subnav-link">Sphero</a></li>
                     <li class="level2"><a href="<?php echo site_url(); ?>/stem/kibo/" class="subnav-link">KIBO</a></li>
+                    <li class="level2"><a href="<?php echo site_url(); ?>/stem/cubelets/" class="subnav-link">Cubelets</a></li>
                   </ul>
                 </li>
                 <li><a href="<?php echo site_url(); ?>/stem/zspace/" class="subnav-link">zSpace</a></li>
@@ -203,6 +204,7 @@
                 <ul class="nav">
                   <li class="level2"><a href="<?php echo site_url(); ?>/stem/ultimaker-3d-printer/" class="subnav-link">Ultimaker</a></li>
                   <li class="level2"><a href="<?php echo site_url(); ?>/stem/makerbot-3d-printer/" class="subnav-link">MakerBot</a></li>
+                  <li class="level2"><a href="<?php echo site_url(); ?>/stem/matter-and-form/" class="subnav-link">Matter and Form</a></li>
                   <li class="level2"><a href="<?php echo site_url(); ?>/stem/3d-printer-labs/" class="subnav-link">3D Printer Labs</a></li>
                 </ul>
           </li>
@@ -211,8 +213,9 @@
               <ul class="nav">
                 <li><a href="<?php echo site_url(); ?>/sight-and-sound/smart-boards/" class="subnav-link">SMART Boards</a>
                   <ul class="nav">
-                    <li class="level2"><a href="<?php echo site_url(); ?>/sight-and-sound/smart-board-6000/">6000 Series</a></li>
                     <li class="level2"><a href="<?php echo site_url(); ?>/sight-and-sound/smart-board-7000/">7000 Series</a></li>
+                    <li class="level2"><a href="<?php echo site_url(); ?>/sight-and-sound/smart-board-6000/">6000 Series</a></li>
+                    <li class="level2"><a href="<?php echo site_url(); ?>/sight-and-sound/smart-board-mx/">MX  Series</a></li>
                   </ul>
                 </li>
                 <li><a href="<?php echo site_url(); ?>/sight-and-sound/audio-enhancement/" class="subnav-link">Audio Enhancement</a></li>
