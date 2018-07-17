@@ -184,6 +184,7 @@
                     <li class="level2"><a href="<?php echo site_url(); ?>/stem/sphero/" class="subnav-link">Sphero</a></li>
                     <li class="level2"><a href="<?php echo site_url(); ?>/stem/kibo/" class="subnav-link">KIBO</a></li>
                     <li class="level2"><a href="<?php echo site_url(); ?>/stem/cubelets/" class="subnav-link">Cubelets</a></li>
+                    <li class="level2"><a href="<?php echo site_url(); ?>/stem/ozobot/" class="subnav-link">Ozobot</a></li>
                   </ul>
                 </li>
                 <li><a href="<?php echo site_url(); ?>/stem/zspace/" class="subnav-link">zSpace</a></li>
@@ -211,11 +212,13 @@
           <li class="col-sm">
               <h5><a class="nav-link subnav-link" href="<?php echo site_url(); ?>/sight-and-sound/">Sight and Sound</a></h5>
               <ul class="nav">
-                <li><a href="<?php echo site_url(); ?>/sight-and-sound/smart-boards/" class="subnav-link">SMART Boards</a>
+                <li><a href="<?php echo site_url(); ?>/sight-and-sound/smart-boards/" class="subnav-link">SMART</a>
                   <ul class="nav">
                     <li class="level2"><a href="<?php echo site_url(); ?>/sight-and-sound/smart-board-7000/">7000 Series</a></li>
                     <li class="level2"><a href="<?php echo site_url(); ?>/sight-and-sound/smart-board-6000/">6000 Series</a></li>
                     <li class="level2"><a href="<?php echo site_url(); ?>/sight-and-sound/smart-board-mx/">MX  Series</a></li>
+                    <li class="level2"><a href="<?php echo site_url(); ?>/sight-and-sound/smart-kapp/">kapp</a></li>
+                    <li class="level2"><a href="<?php echo site_url(); ?>/sight-and-sound/smart-podium-624/">Podium 624</a></li>
                   </ul>
                 </li>
                 <li><a href="<?php echo site_url(); ?>/sight-and-sound/audio-enhancement/" class="subnav-link">Audio Enhancement</a></li>
