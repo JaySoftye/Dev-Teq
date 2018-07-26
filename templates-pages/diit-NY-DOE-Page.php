@@ -25,258 +25,49 @@
   </head>
 
   <style>
-
-  p, li {
-  	font-weight: normal;
-  }
-
-  h3 {
-    padding-top: 0;
-    padding-bottom: 0;
-    text-align: center;
-  }
-
-  img {
-  	display: block;
-  	margin: 0 auto;
-  }
-
-  ul.nav-tabs li.nav-item a.nav-link {
-  	color: #666666;
-  }
-
-  ul.nav-tabs li.nav-item a.nav-link.active {
-  	color: #00b4e1;
-  }
-
-  div.tab-pane .col-sm-4 {
-    padding-top: 5rem;
-  }
-
-  div.tab-pane .col-sm-4:nth-child(3n+0) {
-    clear: left;
-  }
-
-  button.btn-form {
-  	display: block;
-  	font-size: 1em;
-  	outline: none;
-    background: transparent;
-  	color: #00b4e1;
-  	border: 2px solid #00b4e1;
-    padding: 12px 32px;
-  	margin: 50px auto 0 auto;
-    -webkit-border-radius: 40px;
-    -moz-border-radius: 40px;
-    border-radius: 40px;
-    -webkit-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.2);
-    -moz-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.2);
-    box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.2);
-  }
-
-  button.btn-form:hover, button.btn-form:focus  {
-  	outline: none;
-  	background: #00b4e1;
-  	color: #eceeef;
-    -webkit-transition: background-color ease-out 400ms;
-    -moz-transition: background-color ease-out 400ms;
-    transition: background-color ease-out 400ms;
-  }
-
-  div.buttonRow {
-  	text-align: center;
-  	display: block;
-  	margin: 0 auto;
-  }
-
-  button {
-  	display: inline;
-  	font-size: .9em;
-  	outline: none;
-    background: transparent;
-    padding: 10px 20px;
-  	margin-right: 10px;
-    -webkit-border-radius: 40px;
-    -moz-border-radius: 40px;
-    border-radius: 40px;
-  }
-
-  button:hover, button:focus  {
-  	outline: none;
-    -webkit-transition: background-color ease-out 400ms;
-    -moz-transition: background-color ease-out 400ms;
-    transition: background-color ease-out 400ms;
-  }
-
-  button.moreInfo {
-  	color: #7fa8e0;
-  	border: 2px solid #7fa8e0;
-  }
-
-  button.moreInfo:hover, button.moreInfo:focus  {
-  	background: #7fa8e0;
-  	color: #eceeef;
-  }
-
-  button.quote {
-  	color: #768693;
-  	border: 2px solid #768693;
-  }
-
-  button.quote:hover, button.quote:focus  {
-  	background: #768693;
-  	color: #eceeef;
-  }
-
-  section.post {
-  	min-height: 5rem;
-  	border-bottom: 2px solid #ffffff;
-  	display: flex;
-    flex-direction: column;
-    margin-bottom: 0;
-  }
-
-  .post > div {
-  	width: 50%;
-  	flex: 1;
-  	background-color: rgba(23, 27, 31, 0.9);
-  	padding: 3rem 2rem 2rem 2rem;
-  }
-
-  .postInfo p {
-  	display: block;
-  	font-weight: 200;
-  	font-size: 1.5rem;
-  	color: #00b4e1;
-  }
-
-  .postInfo h3 a {
-  	display: block;
-  	font-weight: 300;
-  	color: #eceeef;
-  }
-
-  .postInfo h3 a:hover {
-  	color: #ff923a;
-  }
-
-  .nav {
-    margin-left: 0;
-    padding-top: 20px;
-  }
-
-  a.nav-link {
-    margin-bottom: 0;
-  }
-
-  .modal {
-  	top: 10%;
-  }
-
-  .modal-content {
-  	border-radius: 0;
-  }
-
-  .modal-body {
-  	padding: 1.25rem;
-  	max-height: 60%;
-  }
-
-  .modal-copy {
-  	padding: 1.2rem;
-  }
-
-  .hs-form-field {
-      float: left;
-  		margin: 0 auto;
-      width: 50%;
-  }
-
-  input[type="submit"] {
-      height: 34px;
-  		display: block;
-  		font-size: 1.2em;
-  		outline: none;
-  	  background: transparent;
-  		border: 2px solid #0075c9;
-  	  padding: 7px 30px;
-  		margin-top: 20px;
-  	  -webkit-border-radius: 40px;
-  	  -moz-border-radius: 40px;
-  	  border-radius: 40px;
-      color: #00b4e1;
-  }
-
-  table.famis {
-  	width: 70%;
-  	max-width: 70%;
-  	margin: 0 auto 20px auto;
-  	table-layout: fixed;
-  	color: #3c4852;
-    font-size: .7rem;
-  }
-
-  table.famis td {
-  	padding: .3rem;
-  }
-
-  table td.three-col {
-  	width: 33%;
-  }
-
-  table td.three-col h2, table td.three-col p {
-  	padding: 0 20px;
-  }
-
-  table.landing-data td {
-  	vertical-align: top;
-  }
-
-  table.landing-data tr {
-  	border-top: 1px solid #3c4852;
-  	border-right: 1px solid #3c4852;
-  	border-bottom: 2px solid #3c4852;
-  	border-left: 1px solid #3c4852;
-  }
-
-  table.landing-data tr:nth-child(1) {
-  	border-bottom: 4px solid #3c4852;
-  }
-
-  table.landing-data td {
-  	padding: 14px 7px;
-  	background-color: #d2d4d4;
-  	text-align: center;
-  	width: 12%;
-  }
-
-  table.landing-data td:nth-child(2) {
-  	font-size: 1.5em;
-  	font-weight: bold;
-  }
-
-  table.landing-data td:nth-child(even) {
-  	background-color: #eceeef;
-  	webkit-box-shadow: -4px 0px 4px -2px rgba(0,0,0,0.5);
-  	-moz-box-shadow: -4px 0px 4px -2px rgba(0,0,0,0.5);
-  	box-shadow: -4px 0px 4px -2px rgba(0,0,0,0.5);
-  }
-
-  table.landing-data td:nth-child(1), table.landing-data td:nth-child(2) {
-  	width: 20%;
-  }
-
-  table.landing-data td.orange {
-  	color: #ff681d;
-  }
-
-  table.landing-data td.five-col {
-  	width: 20%;
-  	font-size: 1em;
-  	font-weight: normal;
-  	padding: 20px 10px;
-  }
-
+body { background-color: rgb(236, 238, 239); }
+p, li {font-weight: normal;}
+h3 {padding-top: 0; padding-bottom: 0; text-align: center;}
+img {display: block; margin: 0 auto;}
+ul.nav-tabs li.nav-item a.nav-link {color: #666666;}
+ul.nav-tabs li.nav-item a.nav-link.active {color: #00b4e1;}
+div.tab-pane .col-sm-4 {padding-top: 5rem;}
+div.tab-pane .col-sm-4:nth-child(3n+0) {clear: left;}
+button.btn-form {display: block; font-size: 1em; outline: none; background: transparent; color: #00b4e1; border: 2px solid #00b4e1; padding: 12px 32px; margin: 50px auto 0 auto; -webkit-border-radius: 40px; -moz-border-radius: 40px; border-radius: 40px; -webkit-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.2); -moz-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.2); box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.2); }
+button.btn-form:hover, button.btn-form:focus  { outline: none; background: #00b4e1; color: #eceeef; -webkit-transition: background-color ease-out 400ms; -moz-transition: background-color ease-out 400ms; transition: background-color ease-out 400ms; }
+div.buttonRow { text-align: center; display: block; margin: 0 auto; }
+button { display: inline; font-size: .9em; outline: none; background: transparent; padding: 10px 20px; margin-right: 10px; -webkit-border-radius: 40px; -moz-border-radius: 40px; border-radius: 40px; }
+button:hover, button:focus  { -webkit-transition: background-color ease-out 400ms; -moz-transition: background-color ease-out 400ms; transition: background-color ease-out 400ms; }
+button.moreInfo { color: #7fa8e0; border: 2px solid #7fa8e0; }
+button.moreInfo:hover, button.moreInfo:focus  { background: #7fa8e0; color: #eceeef; }
+button.quote { color: #768693; border: 2px solid #768693; }
+button.quote:hover, button.quote:focus  { background: #768693; color: #eceeef; }
+section.post { min-height: 5rem; border-bottom: 2px solid #ffffff; display: flex; flex-direction: column; margin-bottom: 0; }
+.post > div { width: 50%; flex: 1; background-color: rgba(23, 27, 31, 0.9); padding: 3rem 2rem 2rem 2rem; }
+.postInfo p { display: block; font-size: 1.5rem; color: #00b4e1; }
+.postInfo h3 a { display: block; font-weight: 300; color: #eceeef; }
+.postInfo h3 a:hover { color: #ff923a; }
+.nav { margin-left: 0; padding-top: 20px; }
+a.nav-link { margin-bottom: 0; }
+.modal { top: 10%; }
+.modal-content { border-radius: 0; }
+.modal-body { padding: 1.25rem; max-height: 60%; }
+.modal-copy { padding: 1.2rem; }
+.hs-form-field { float: left; margin: 0 auto; width: 50%; }
+input[type="submit"] { height: 34px; display: block; font-size: 1.2em; outline: none; background: transparent; border: 2px solid #0075c9; padding: 7px 30px; margin-top: 20px; -webkit-border-radius: 40px; -moz-border-radius: 40px; border-radius: 40px; color: #00b4e1; }
+table.famis { width: 70%; max-width: 70%; margin: 0 auto 20px auto; table-layout: fixed; color: #3c4852; font-size: .7rem; }
+table.famis td { padding: .3rem; }
+table td.three-col { width: 33%; }
+table td.three-col h2, table td.three-col p { padding: 0 20px; }
+table.landing-data td { vertical-align: top; }
+table.landing-data tr { border-top: 1px solid #3c4852; border-right: 1px solid #3c4852; border-bottom: 2px solid #3c4852; border-left: 1px solid #3c4852; }
+table.landing-data tr:nth-child(1) { border-bottom: 4px solid #3c4852; }
+table.landing-data td { padding: 14px 7px; background-color: #d2d4d4; text-align: center; width: 12%; }
+table.landing-data td:nth-child(2) { font-size: 1.5em; font-weight: bold; }
+table.landing-data td:nth-child(even) { background-color: #eceeef; -webkit-box-shadow: -4px 0px 4px -2px rgba(0,0,0,0.5); -moz-box-shadow: -4px 0px 4px -2px rgba(0,0,0,0.5); box-shadow: -4px 0px 4px -2px rgba(0,0,0,0.5); }
+table.landing-data td:nth-child(1), table.landing-data td:nth-child(2) { width: 20%; }
+table.landing-data td.orange { color: #ff681d; }
+table.landing-data td.five-col { width: 20%; font-size: 1em; padding: 20px 10px; }
   </style>
 
 <body <?php body_class(); ?>>
@@ -301,26 +92,6 @@
 </script>
 </div></div></div></div>
 
-  <div class="modal" id="smart2000-details" role="dialog">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-body">
-          <div class="modal-copy">
-            <p><strong>WIRELESS SCREEN-SHARING</strong><br />Students and teachers can show whatever is on their Android, iOS and Microsoft devices, and laptops on the display with a few easy taps.</p>
-            <p><strong>SMART LEARNING SUITE INCLUDED </strong><br /> SMART Learning Suite’s interactive lessons, game-based activities, formativeassessment, online co-creation and more.</p>
-            <p><strong>MORE STUDENT ENGAGEMENT</strong><br />Students who are engaged learn more. The 2000 series gives every student a chance tocontribute, which builds confidence.</p>
-            <p><strong>4K ULTRA HD RESOLUTION</strong><br />SMART Notebook lessons. Videos. Web browsing. Brilliant 4K resolution ensures whatever you show on your 2000 series looks its best.</p>
-            <p><strong>EASY TO AFFORD</strong><br />Sometimes you don’t need an interactive display for your lessons. With the 2000 series, you get wireless screen-sharing and 4K resolution on a 75” display at a great price.</p>
-          </div>
-          <img src="<?php echo get_template_directory_uri();?>/_img/diit-nycdoe-quote-footer.jpg" />
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">[Close X]</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <div class="container-fluid" style="background: transparent url(<?php echo get_template_directory_uri();?>/_img/diit-nycdoe-top-header-bg.jpg) no-repeat top center; background-size: cover;">
     <div class="container">
       <div class="row" style="padding-top: 12%;">
@@ -328,7 +99,7 @@
           <h3><img src="<?php echo get_template_directory_uri();?>/_img/teq-nyc-department-of-ed-logo.svg" style="margin: 0;" /></h3>
         </div>
         <div class="col-md-8">
-          <p class="white text-left">Welcome to Teq's Online Product Catalog for the</p>
+          <h5 class="white text-left" style="margin-bottom: 0;">Welcome to Teq's Online Product Catalog for the</h5>
           <h1 class="white text-left" style="margin: 0 0;"><strong>New York City Department of Education</strong></h1>
         </div>
       </div>
