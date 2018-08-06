@@ -396,6 +396,20 @@ function bootstrap_four_the_posts_pagination( $args = '' ) {
   echo bootstrap_four_get_posts_pagination( $args );
 }
 
+/** Add Post Featured Image URL to an RSS feed. **/
+
+function add_rss_item_image() {
+    global $post;
+    if(has_post_thumbnail($post->ID))
+    {
+        $thumbnail = get_the_post_thumbnail_url($post->ID);
+        echo"\t<image>{$thumbnail}</image>\n";
+    }
+}
+
+add_action('rss2_item', 'add_rss_item_image');
+add_action('rss_item', 'add_rss_item_image');
+
 /** Display template for breadcrumbs. **/
 
 function bootstrapwp_breadcrumbs()
