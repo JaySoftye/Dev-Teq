@@ -1,0 +1,346 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html {
+	font-weight: 300 !important;
+  font-family:'Roboto',Helvetica,Arial,san-serif !important;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+	font-weight: 300 !important;
+  font-family:'Roboto',Helvetica,Arial,san-serif !important;
+	background-color: rgb(236, 238, 239);
+}
+
+img {
+	display: block;
+	margin: 0 auto;
+}
+
+strong {
+	font-weight: 700;
+}
+
+a {
+	color: rgb(0, 180, 228);
+	-webkit-transition: color .25s ease-out;
+  transition: color .25s ease-out;
+}
+
+.nopadding {
+  padding-right: 0;
+  padding-left: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.padding {
+  padding: 4rem;
+}
+
+.padding-sm {
+  padding: 1.875rem 2.125rem;
+}
+
+.padding-right {
+  padding-right: 6rem;
+}
+
+.padding-left {
+  padding-left: 6rem;
+}
+
+.padding-top {
+  padding-top: 5rem;
+}
+
+.padding-bottom {
+  padding-bottom: 5rem;
+}
+
+.white {
+	color: #FFFFFF;
+}
+
+.thin {
+	font-weight: 200 !important;
+}
+
+table.table {
+	margin-top: 50px;
+	margin-bottom: 20px;
+}
+
+a.btn {
+	display: inline-block;
+	margin: 0 auto;
+	padding: 20px 30px;
+	border-radius: 5px;
+	text-align: inherit;
+	white-space: normal;
+	cursor: pointer;
+	-webkit-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.15);
+	box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.15);
+}
+
+a.btn.blue {
+	background-color: rgb(0, 180, 228);
+	color: #FFFFFF;
+}
+
+a.btn.blue:hover {
+	background-color: rgb(0, 118, 150);
+}
+
+a.btn.smart-purple {
+	background-color: rgb(72, 27, 111);
+	color: #FFFFFF;
+}
+
+a.btn.smart-purple:hover {
+	background-color: rgb(61, 22, 95);
+}
+
+a.btn.datasheet {
+	margin: 30px auto;
+	background-color: rgb(64, 85, 117);
+	text-align: center;
+	font-size: 80%;
+	color: #FFFFFF;
+}
+
+nav.navbar {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+nav.navbar a.navbar-brand.teq-cdw img {
+	height: 3.75rem;
+}
+
+nav.navbar div.navbar-text, nav.navbar div.navbar-text a {
+	text-align: right;
+	color: rgb(0, 180, 228);
+}
+
+nav.navbar div.navbar-text, nav.navbar div.navbar-text a {
+	color: rgb(0, 180, 228);
+}
+
+img.main-logo {
+	height: 8.125rem;
+}
+
+a.opd-link:active, a.opd-link:visited {
+	color: black;
+}
+
+div.container-fluid.main-header {
+	background-image: url('../_img/diit-nycdoe-top-header-bg.jpg');
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: cover;
+}
+
+.container-fluid.blank-content {
+	background-color: #FFFFFF;
+}
+
+div.container-fluid.opd-dark-blue {
+	background-color: rgb(64, 85, 117);
+}
+
+div.container-fluid.famis-products {
+	padding-top: 12.625rem;
+	padding-bottom: 12.625rem;
+}
+
+.famis-product-categories.form-group {
+	margin-top: 30px;
+}
+
+.famis-product-categories.form-group select.form-control {
+	height: calc(3rem + 10px);
+	border: 2px solid rgb(0, 180, 228);
+	text-indent: 10px;
+	font-size: 1.15rem;
+}
+
+#famis-product-container article.post-item {
+	height: 100%;
+	margin-bottom: 30px;
+}
+
+#famis-product-container div.card {
+	padding: 1rem 2.75rem 2.75rem 2.75rem;
+	background-color: #FFFFFF;
+	text-align: center;
+	-webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
+	box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
+	-webkit-transition: all .35s ease-out;
+  transition: all .35s ease-out;
+}
+
+#famis-product-container div.card:hover {
+	-webkit-box-shadow: 0px 0px 25px 0px rgba(255, 255, 255 , 0.5);
+	box-shadow: 0px 0px 25px 0px rgba(255, 255, 255 , 0.5);
+}
+
+#famis-product-container div.card-inner {
+	height: 10rem;
+	overflow: auto;
+}
+
+#famis-product-container div.card-inner h4 a, #famis-product-container div.card-inner p {
+	display: block;
+	text-align: center;
+	color: black;
+}
+
+#famis-product-container div.card a.btn {
+	width: inherit;
+	margin: 0 auto;
+	padding: 15px 25px;
+	background-color: rgb(64, 85, 117);
+	text-align: center;
+	font-size: 80%;
+	color: #FFFFFF;
+}
+
+#famis-product-container div.card a.btn:hover {
+	background-color: rgb(42, 59, 85);
+}
+
+section.post {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.postInfo p {
+	display: block;
+	font-size: 80%;
+	font-weight: 300;
+	color: #FFFFFF;
+}
+
+.container-fluid.blank-content table, .container-fluid.blank-content table tr, .container-fluid.blank-content table td {
+	font-size: 90%;
+}
+
+a#back-btn {
+	height: 70px;
+	width: 70px;
+	position: fixed;
+	left: 10%;
+	z-index: 100;
+	margin-top: 70px;
+	background-color: rgb(0, 180, 228);
+	border-radius: 10px;
+	-webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
+	box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
+	-webkit-transition: all .35s ease-out;
+  transition: all .35s ease-out;
+}
+
+a#back-btn:hover {
+	background-color: rgb(0, 131, 227);
+	-webkit-box-shadow: 0px 0px 25px 0px rgba(255, 255, 255 , 0.5);
+	box-shadow: 0px 0px 25px 0px rgba(255, 255, 255 , 0.5);
+}
+
+a#back-btn svg path {
+	height: 70px;
+	width: 70px;
+	fill: #FFFFFF;
+}
+
+footer {
+	padding-top: 5rem;
+	padding-right: 0;
+	padding-bottom: 5rem;
+	padding-left: 0;
+	background-color: #323e48;
+	background-image: url('../_img/diit-nycdoe-footer-bg.jpg');
+	background-size: cover;
+}
+
+.hs-form-container {
+	margin-top: 50px;
+}
+
+.hs-form-container .hbspt-form {
+	padding-top: 20px;
+}
+
+.hs-form-container input[type='text'], .hs-form-container input[type='email'], .hs-form-container input[type='tel'], .hs-form-container select.hs-input {
+  background-color: #eceeef;
+  height: 1.25rem;
+  width: 82.5%;
+  border: none;
+  margin: 5px 0 10px 0;
+	padding: 12px;
+	font-size: 1.125rem;
+	font-weight: 300;
+  color: #0077c6;
+}
+
+.hs-form-container select.hs-input {
+  height: 2.5rem;
+	width: 87%;
+}
+
+.hs-form-container .hs-form .hs-button, .hs-button {
+	width: 78%;
+  position: relative;
+  display: block;
+  margin: 0 0;
+  outline: none;
+  background: #0077c6;
+  padding: 20px 30px;
+  border-radius: 10px;
+  font-weight: 700;
+  color: #eceeef;
+  font-size: 1rem;
+  text-shadow: none;
+  box-shadow: none;
+  border: 0;
+}
+
+
+@media (max-width: 768px) {
+  .hide-small {
+    display: none !important;
+  }
+  .padding, .padding-right, .padding-left {
+    padding: .5rem;
+  }
+	nav.navbar div.navbar-text, nav.navbar div.navbar-text a {
+		text-align: left;
+	}
+	a#back-btn {
+		position: absolute;
+		margin-top: -30px;
+	}
+}
+
+@media (max-width: 425px) {
+  .padding, .padding-right, .padding-left {
+    padding: .1rem;
+  }
+  h1 {
+    font-size: 1.4rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+  h4 {
+    font-size: .8rem;
+  }
+}

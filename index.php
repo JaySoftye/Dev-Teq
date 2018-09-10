@@ -1,6 +1,9 @@
 <?php get_header(); ?>
 
 <?php get_template_part( 'navigation', 'default' ); ?>
+
+<?php get_template_part('lib/onload-modal'); ?>
+
 </nav>
 
 <div id="popInWindow">
@@ -73,7 +76,8 @@
         <h1 class="hideItem"><img src="<?php echo get_template_directory_uri(); ?>/_img/discover-steam-stem.svg" alt="Discover" /></h1>
         <h2 class="pdGreen display-5 hideItem">STEM</h2>
         <h4 class="white hideItem">Discover activity-rich STEM environments personalized to your needs with Teq's consulting services, innovated product selection, and supportive professional development.</h4>
-        <a href="/stem/"><button class="light d-inline-block hideItem">Discover more</button></a>
+        <a href="/stem/"><button class="light d-inline-block hideItem">Discover STEM</button></a>
+        <a href="/makerspaces/"><button class="light d-inline-block hideItem">Discover Makerspaces</button></a>
       </div>
     </div>
   </div>
@@ -86,20 +90,6 @@
         <h2 class="classroomBlue display-5 hideItem">Sight and Sound</h2>
         <h4 class="hideItem">Enrich student experiences and cultivate collaborative learning with the latest interactive displays and classroom audio systems.</h4>
         <a href="/sight-and-sound/"><button class="hideItem">Discover more</button></a>
-      </div>
-    </div>
-  </div>
-  <div class="container-fluid nopadding consultingServices">
-    <div class="row height-full">
-      <div class="col-md-1">
-      </div>
-      <div class="col-md-5 padding-top flex-md-middle text-left">
-        <h1 class="hideItem"><img src="<?php echo get_template_directory_uri(); ?>/_img/guiding-consulting-services-teq-areas.svg" alt="Guiding" /></h1>
-        <h4 class="white hideItem">We have expanded our offerings to <strong>three new areas of guidance and expertise</strong>.</h4>
-        <a href="/consulting-services"><button class="light hideItem">Discover Teq's Consulting Services</button></a>
-      </div>
-      <div class="col-md-6 padding-top flex-md-middle text-left">
-        <h1 class="hideItem col-xs-7"><img src="<?php echo get_template_directory_uri(); ?>/_img/guiding-consulting-services-logo.png" /></h1>
       </div>
     </div>
   </div>

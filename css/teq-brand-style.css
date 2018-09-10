@@ -109,6 +109,51 @@ div.height-full .flex-md-middle {
   border: none;
 }
 
+div#load-modal-load .modal-content {
+  width: 75%;
+  height: 75%;
+  position: fixed;
+  top: 13%;
+  left: 13%;
+  z-index: 100;
+  margin: 0 auto;
+  background: white url(../images/iblocks-home-header-bg.jpg) no-repeat center center;
+  background-size: cover;
+  border: none;
+  border-radius: 0;
+  outline: 0;
+}
+
+div#load-modal-load a.close-icon {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: -15px;
+  right: -40px;
+  z-index: 20;
+}
+
+div#load-modal-load .modal-content .modal-body {
+  height: 100%;
+  position: relative;
+  padding: 3rem;
+  overflow: auto;
+}
+
+div#load-modal-load .modal-body .row {
+  height: 100%;
+}
+
+
+@media (max-width: 768px) {
+  div#load-modal-load .modal-content {
+    background-position: right center;
+  }
+  div#load-modal-load .modal-content .modal-body {
+    padding: 1.5rem;
+  }
+}
+
 div.modal-header button.close {
   margin: 0 0;
   position: absolute;
@@ -789,7 +834,6 @@ ul.nav.title-roles-content p {
 .navbar-nav > li.nav-item {
   float: none;
   display: table-cell;
-  text-align: left;
   padding-bottom: .5rem;
 }
 
@@ -2224,8 +2268,13 @@ div.makerbotStemfuse {
   background-size: cover;
 }
 
-div.stemMobileCarts {
-  background: #3c4852 url(../_img/stemteq-stem-mobile-carts-bg.jpg) no-repeat center top;
+div.stemInitiatives {
+  background: #3c4852 url(../_img/stemteq-stem-initiatives-bg.jpg) no-repeat center top;
+  background-size: cover;
+}
+
+div.effectiveInstructional {
+  background: #3c4852 url(../_img/pdteq-effective-instructional-bg.jpg) no-repeat center top;
   background-size: cover;
 }
 

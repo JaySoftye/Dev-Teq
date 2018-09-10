@@ -16,8 +16,7 @@
         <li><a href="<?php echo site_url(); ?>/sight-and-sound/" class="white">Sight and Sound</a></li>
         <li><a href="<?php echo site_url(); ?>/sd-wan/" class="white">SD-Wan from Cloudgenix</a></li>
       </ul>
-      <h6><a href="<?php echo site_url(); ?>/consulting-services/" class="white">Consulting Services &#187;</a></h6>
-      <h6><a href="<?php echo site_url(); ?>/support-and-services/" class="white">Support &amp; Services &#187;</a></h6>
+      <h6><a href="<?php echo site_url(); ?>/support-and-services/" class="white">Technical Support &#187;</a></h6>
       <h6><a class="white" data-toggle="collapse" href="#footerLearning" aria-expanded="false" aria-controls="footerLearning">Community &#187;</a></h6>
       <ul class="footerLinks collapse" id="footerLearning">
         <li><a href="/learning-community/teq-talk/" class="white">Teq Talk</a></li>

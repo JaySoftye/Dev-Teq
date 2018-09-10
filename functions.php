@@ -271,7 +271,7 @@ function custom_post_type_famis_product() {
 		'description'         => __( 'FAMIS-Products', 'bootstrap-four' ),
 		'labels'              => $labels,
 		// Features this CPT supports in Post Editor
-		'supports'            => array( 'title', 'editor', 'author', 'custom-fields', 'revisions', 'thumbnail' ),
+		'supports'            => array( 'title', 'editor', 'author', 'custom-fields', 'revisions', 'thumbnail', 'excerpt' ),
 		/* A hierarchical CPT is like Pages and can have
 		* Parent and child items. A non-hierarchical CPT
 		* is like Posts.
@@ -285,7 +285,7 @@ function custom_post_type_famis_product() {
 		'menu_position'       => 7,
     'menu_icon'           => 'dashicons-forms',
 		'can_export'          => true,
-		'has_archive'         => true,
+		'has_archive'         => false,
 		'exclude_from_search' => true,
 		'publicly_queryable'  => true,
 		'capability_type'     => 'post',
