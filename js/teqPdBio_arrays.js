@@ -47,91 +47,75 @@ var imageArray = [];
   };
   imageArray[5] = {
     count: "6",
-    src : teqHome + "emily_jones.jpg",
-    firstName : "Emily",
-    lastName : "Jones",
-    title : "PD Specialist",
-    video : "Emily_Jones_PDBio_2017_Web"
-  };
-  imageArray[6] = {
-    count: "7",
     src : teqHome + "jessica_wenke.jpg",
     firstName : "Jessica",
     lastName : "Wenke",
     title : "PD and Curriculum Specialist",
     video : "Jessica_Wenke_PDBio_2017_Web"
   };
-  imageArray[7] = {
-    count: "8",
+  imageArray[6] = {
+    count: "7",
     src : teqHome + "joe_sanfillippo.jpg",
     firstName : "Joe",
     lastName : "Sanfilippo",
     title : "Director of eLearning",
     video : "Joe_Sanfilippo_PDBio_2017_Web"
   };
-  imageArray[8] = {
-    count: "9",
+  imageArray[7] = {
+    count: "8",
     src : teqHome + "lana_pasqual.jpg",
     firstName : "Lana",
     lastName : "Pasqual",
     title : "PD Specialist",
     video : "Lana_Pasqual_PDBio_2017_Web"
   };
-  imageArray[9] = {
-    count: "10",
+  imageArray[8] = {
+    count: "9",
     src : teqHome + "laura_jakubowski.jpg",
     firstName : "Laura",
     lastName : "Jakubowski",
     title : "PD Specialist",
     video : "Laura_Jakubowski_PDBio_2017_Web"
   };
-  imageArray[10] = {
-    count: "11",
+  imageArray[9] = {
+    count: "10",
     src : teqHome + "matt_thaxter.jpg",
     firstName : "Matt",
     lastName : "Thaxter",
     title : "PD Specialist",
     video : "Matthew_Thaxter_PDBio_2017_Web"
   };
-  imageArray[11] = {
-    count: "12",
+  imageArray[10] = {
+    count: "11",
     src : teqHome + "patricia_umhafer.jpg",
     firstName : "Patricia",
     lastName : "Umhafer",
     title : "PD Specialist",
     video : "Patricia_Umhafer_PDBio_2017_Web"
   };
-  imageArray[12] = {
-    count: "13",
+  imageArray[11] = {
+    count: "12",
     src : teqHome + "robert_abraham.jpg",
     firstName : "Robert",
     lastName : "Abraham",
     title : "PD Specialist",
     video : "Robert_Abraham_PDBio_2017_Web"
   };
-  imageArray[13] = {
-    count: "14",
+  imageArray[12] = {
+    count: "13",
     src : teqHome + "terry_vannoy.jpg",
     firstName : "Terry",
     lastName : "VanNoy",
     title : "PD Specialist",
     video : "Terry_VanNoy_PDBio_2017_Web"
   };
-  imageArray[14] = {
-    count: "15",
+  imageArray[13] = {
+    count: "14",
     src : teqHome + "thomas_schwartz.jpg",
     firstName : "Thomas",
     lastName : "Schwartz",
     title : "PD Specialist",
     video : "Thomas_Schwartz_PDBio_2017_Web"
-  };
-  imageArray[15] = {
-    count: "16",
-    src : teqHome + "una_titus.jpg",
-    firstName : "Una",
-    lastName : "Titus",
-    title : "PD Specialist",
-    video : "Una_Titus_PDBio_2017_Web"
   };
 
    var containner = document.getElementById('pdBioImages');
