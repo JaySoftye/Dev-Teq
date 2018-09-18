@@ -37,19 +37,20 @@ get_template_part('lib/nyc-doe-header');
 
 <div class="container-fluid opd-dark-blue">
   <div class="row">
-    <div class="col-md-3 nopadding flex-md-middle hide-small">
+    <div class="col-md-2 nopadding flex-md-bottom hide-small">
       <img src="<?php echo get_template_directory_uri();?>/_img/nyc-doe-free-opd-account-compare-image.jpg" />
     </div>
     <div class="col-md flex-md-middle">
-      <div class="row">
-        <h3 class="col-md text-center padding-sm white"><strong>What is your subscription is doing for you?</strong></h3>
+      <div class="row padding-top">
+        <h3 class="col-md text-center padding-sm white"><strong>Comparison Documents</strong></h3>
       </div>
-      <div class="row">
-        <p class="col-md-6"><a href="https://www.teq.com/wp-content/themes/BootstrapFour/_img/teq_opd_comparison.pdf" class="btn blue thin text-left">Compare a FREE Account with a Teq Online PD School Subscription</a></p>
-        <p class="col-md-6"><a href="https://www.teq.com/wp-content/themes/BootstrapFour/_img/teq_sls_unlimited_comparison.pdf" class="btn smart-purple thin text-left">Compare SMART Notebook to a SLS or Teq Essentials Subscription</a></p>
+      <div class="row padding-bottom">
+        <p class="col-md-4"><a href="https://www.teq.com/wp-content/themes/BootstrapFour/_img/Notebook_vs_ClassFlow_ActivInspire-Datasheet-2018.pdf" class="btn smart-green text-left"><strong>Compare SMART Notebook to a Classflow or ActivInspire Subscription</strong></a></p>
+        <p class="col-md-4"><a href="https://www.teq.com/wp-content/themes/BootstrapFour/_img/teq_opd_comparison.pdf" class="btn blue text-left"><strong>Compare a FREE Account with a Teq Online PD School Subscription</strong></a></p>
+        <p class="col-md-4"><a href="https://www.teq.com/wp-content/themes/BootstrapFour/_img/teq_sls_unlimited_comparison.pdf" class="btn smart-purple text-left"><strong>Compare a SMART Notebook Account to a SLS or Teq Essentials Subscription</strong></a></p>
       </div>
     </div>
-    <div class="col-md-3 nopadding flex-md-middle hide-small">
+    <div class="col-md-2 nopadding flex-md-bottom hide-small">
       <img src="<?php echo get_template_directory_uri();?>/_img/nyc-doe-smart-notebook-compare-image.jpg" />
     </div>
   </div>
