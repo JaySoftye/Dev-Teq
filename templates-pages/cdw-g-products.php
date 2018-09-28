@@ -20,13 +20,13 @@
      </div>
      <div class="row navigation-source">
        <div class="col-md-4">
-         <p>Are you ready to use it to impact student outcomes?</p>
+         <p>Are you ready to use it to<br />impact student outcomes?</p>
        </div>
        <div class="col-md-4">
-         <a href="/cdw-g-stem-products/">STEM Products</a>
+         <a href="/cdw-g-stem-products/">STEM<br />Products</a>
        </div>
        <div class="col-md-4">
-         <a href="/cdw-g-professional-development/">Professional Development</a>
+         <a href="/cdw-g-professional-development/">Professional<br />Development</a>
        </div>
      </div>
    </div>

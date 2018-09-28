@@ -9,7 +9,8 @@
       <?php wp_head(); ?>
     <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
-    <link href="<?php echo get_stylesheet_directory_uri();?>/css/cdw-g-style.css" rel="stylesheet" type="text/css">
+    <link href="<?php echo get_stylesheet_directory_uri();?>/css/cdw-g-style.css" rel="stylesheet" type="text/css" media="screen, projection">
+    <link href="<?php echo get_stylesheet_directory_uri();?>/css/cdw-g-print-style.css" rel="stylesheet" type="text/css" media="print" />
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,500,700|Roboto+Condensed:300,500,700" rel="stylesheet" type="text/css">
 
 </head>
