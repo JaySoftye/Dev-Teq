@@ -5,7 +5,6 @@
  */
 
 @charset "UTF-8";
-/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 
 button.button {
   display: inline-block;
@@ -55,6 +54,10 @@ button.button.blue-green:hover {
   color: rgb(133, 125, 166);
 }
 
+.green {
+  color: rgb(148, 202, 125);
+}
+
 .iblocks h1, .iblocks h2, .iblocks h3, .iblocks h4, .iblocks h5 {
   margin: 0 auto;
   padding-top: 0;
@@ -70,6 +73,7 @@ button.button.blue-green:hover {
 }
 
 .iblocks h3 {
+  line-height: 1.25;
   font-size: 2rem;
 }
 
@@ -88,6 +92,13 @@ button.button.blue-green:hover {
   margin: .5rem 0 0 0;
   line-height: 1.85rem;
   font-size: 1.35rem;
+}
+
+.container-fluid.iblocks {
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
 }
 
 .container-fluid.main-header.iblocks .row.height-vh {
@@ -120,13 +131,9 @@ button.button.blue-green:hover {
 }
 
 .container-fluid.iblocks-content {
-  position: relative;
-  padding-top: 5rem;
+  padding-top: 9rem;
   padding-bottom: 9rem;
   background-image: url('../images/iblocks-content-bg.jpg');
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
 }
 
 .container-fluid.iblocks-content .row.an-iblock .mobile-content {
@@ -135,11 +142,16 @@ button.button.blue-green:hover {
   padding-bottom: 2rem;
 }
 
+.container-fluid.iblocks-creating {
+  padding-bottom: 9rem;
+  background-image: url('../images/iblocks-creating-bg.jpg');
+}
+
 .row.creating-iblock {
   position: relative;
   z-index: 10;
   padding-top: 9rem;
-  padding-bottom: 29rem;
+  padding-bottom: 30rem;
 }
 
 .row.creating-iblock .your-role img {
@@ -160,6 +172,12 @@ button.button.blue-green:hover {
 
 .row.creating-iblock .mobile-content.our-role {
   background-color: rgba(255, 255, 255, 0.8);
+}
+
+.container-fluid.iblocks-designing {
+  padding-top: 9rem;
+  padding-bottom: 9rem;
+  background-image: url('../images/iblocks-designing-bg.jpg');
 }
 
 .container-fluid.iblocks-look {

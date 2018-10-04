@@ -187,6 +187,8 @@
                    <li><a href="<?php echo site_url(); ?>/stem/labdisc/" class="subnav-link">Labdisc</a></li>
                    <li><a href="<?php echo site_url(); ?>/stem/sparkfun/" class="subnav-link">Sparkfun</a></li>
                    <li><a href="<?php echo site_url(); ?>/stem/pi-top/" class="subnav-link">pi-top</a></li>
+                   <li><a href="<?php echo site_url(); ?>/stem/sam-labs/" class="subnav-link">SAM Labs</a></li>
+                   <li><a href="<?php echo site_url(); ?>/stem/littlebits/" class="subnav-link">littleBits</a></li>
                  </ul>
              </li>
              <li class="col-sm">

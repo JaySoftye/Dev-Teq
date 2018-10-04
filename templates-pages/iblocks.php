@@ -23,7 +23,7 @@ $(document).ready(function(){
    });
   });
  });
- </script>
+</script>
 
 <div class="container-fluid nopadding main-header iblocks" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/<?php echo get_post_meta($postid, 'headerBackground', true); ?>.jpg');">
   <div class="row height-vh">
@@ -60,7 +60,6 @@ $(document).ready(function(){
 </div>
 
 <div class="container-fluid nopadding iblocks-content iblocks">
-
   <div class="row an-iblock">
     <div class="col-md-1"></div>
     <div class="col-md-5 padding flex-md-middle content">
@@ -87,6 +86,9 @@ $(document).ready(function(){
       </div>
     </div>
   </div>
+</div>
+
+<div class="container-fluid nopadding iblocks-creating iblocks">
   <div class="row creating-iblock iblocks">
     <div class="col-md-1"></div>
     <div class="col-md-5">
@@ -118,7 +120,27 @@ $(document).ready(function(){
       </div>
     </div>
   </div>
+</div>
 
+<div class="container-fluid nopadding iblocks-designing iblocks">
+  <div class="row an-iblock">
+    <div class="col-md-6 nopadding">
+      <p class="hide-small">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/iblocks-designing-learning-pathway.svg" />
+      </p>
+      <div class="mobile-content hide-large">
+        <h2 class="green"><strong>Designing a Learning Pathway</strong></h2>
+        <p>Together, we’ll custom design an iBlock (or instructional block) that enables your students to explore, invent, and build the skills they need to be successful.</p>
+      </div>
+    </div>
+    <div class="col-md-5 padding flex-md-middle content">
+      <h3 class="green"><strong>Integrate STEM into your curriculum with iBlocks.</strong></h3>
+      <p>We know that exposing students to STEM is crucial for 21st century skills development, but often, our STEM programs grow stagnant and siloed. How much more effective could our STEM instruction be if we took a more interdisciplinary and holistic approach?</p>
+      <br />
+      <h3 class="green"><strong>The jobs of the future will require the students of today to be proficient in Computer Science.</strong></h3>
+      <p>What better way to engage students in Computer Science than with project-based learning that teaches 21st century skills – and fun, hands-on, and collaborative ways to apply those skills?</p>
+    </div>
+  </div>
 </div>
 
 <div class="container-fluid nopadding iblocks-look iblocks">

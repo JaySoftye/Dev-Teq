@@ -2325,3 +2325,37 @@ div.consultingServices {
             transform: translateY(25px);
   }
 }
+
+.image-swap {
+  position: relative;
+  margin: 0 auto;
+}
+
+.image-swap img.top {
+  position: absolute;
+  left: 0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+.image-swap img.top:hover {
+  opacity: 0;
+}
+
+@-webkit-keyframes dash-one {
+  to {
+    stroke-dashoffset: 500;
+  }
+}
+@keyframes dash-one {
+  to {
+    stroke-dashoffset: 500;
+  }
+}
+
+.path-dash {
+  -webkit-animation: dash-one 10s linear infinite;
+  animation: dash-one 10s linear infinite;
+  stroke-dasharray: 20;
+}
