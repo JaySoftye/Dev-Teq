@@ -28,7 +28,7 @@ strong {
   font-weight: 700 !important;
 }
 
-header, footer, div.hs-form-container, div#hbl-live-chat-wrapper, div#olark-wrapper {
+header, footer, div.hs-form-container, div.edc-number-table, div#hbl-live-chat-wrapper, div#olark-wrapper {
   display: none !important;
 }
 

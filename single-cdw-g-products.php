@@ -385,7 +385,23 @@ get_template_part('lib/cdw-g-header');
           <?php echo get_post_meta($postid, 'deviceCompatibility', true); ?>
         </tbody>
       </table>
+      <?php } if(metadata_exists('post', $post->ID,'edcNumber')) { ?>
+      <div class="edc-number-table">
+        <h6></h6>
+        <table class="table post-table">
+          <thead>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col"></th>
+              <th scope="col"></th>
+            </tr>
+          </thead>
+          </tbody>
+            <?php echo get_post_meta($postid, 'edcNumber', true); ?>
+          </tbody>
+        </table>
       <?php } ?>
+      </div>
       <div class="post-content print-content">
         <?php wp_reset_query(); the_content(); ?>
       </div>
