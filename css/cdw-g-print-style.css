@@ -28,7 +28,7 @@ strong {
   font-weight: 700 !important;
 }
 
-header, footer, div.hs-form-container, div.edc-number-table, div#hbl-live-chat-wrapper, div#olark-wrapper {
+header, footer, section.hs-form-container, div.edc-number-table, div#hbl-live-chat-wrapper, div#olark-wrapper, a.cdw-button {
   display: none !important;
 }
 
@@ -59,12 +59,12 @@ div.print-content p.title-block img {
   left: 0;
 }
 
-div.print-content h1, div.print-content h2, div.print-content h3, div.print-content h4, div.print-content h5, div.print-content p, div.print-content ul, div.print-content li, div.print-content img.post-header-image {
+div.print-content h1, div.print-content h2, div.print-content h3, div.print-content h4, div.print-content h5, div.print-content h6, div.print-content p, div.print-content ul, div.print-content li, div.print-content img.post-header-image, table.table.post-table {
   width: 80%;
   position: relative;
 }
 
-div.print-content h1, div.print-content h2, div.print-content h3, div.print-content h4, div.print-content h5, div.print-content p, div.print-content ul, div.print-content img.post-header-image {
+div.print-content h1, div.print-content h2, div.print-content h3, div.print-content h4, div.print-content h5, div.print-content h6, div.print-content p, div.print-content ul, div.print-content img.post-header-image, table.table.post-table {
   margin-left: 20%;
 }
 

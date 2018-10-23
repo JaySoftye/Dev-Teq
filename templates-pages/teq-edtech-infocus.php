@@ -123,21 +123,21 @@
             <div class="col-md-6">
               <dl class="faq one">
                 <img src="<?php echo get_template_directory_uri();?>/images/edtec-infocus-edtech-content1.jpg" />
-                <dt>What it can do for you?</dt>
+                <dt>What it can do for you? <small>more info &#187;</small></dt>
                 <dd>An EdTech in Focus event is a great opportunity for your teachers and administrators to learn about new classroom technologies, and to learn how to better integrate the technologies they already have. EdTech in Focus is also a fantastic way to network with nearby districts and learn about their successes and challenges when implementing their technology initiatives.</dd>
               </dl>
             </div>
             <div class="col-md-6">
               <dl class="faq two">
                 <img src="<?php echo get_template_directory_uri();?>/images/edtec-infocus-edtech-content2.jpg" />
-                <dt>How does it work?</dt>
-                <dd>The host district will be able to pick from a menu of courses aimed at either administrators or teachers. All sessions will be 45 minutes long and include audience participation. While we encourage teachers to attend, the primary audience should be administrators from the host district and surrounding districts (we recommend hosting a minimum of 10 administrators from neighboring districts). All EdTech in Focus events include a brief keynote speech delivered by a member of the Teq team or, if preferred, delivered by a member of the host school. Sessions can be run in two different models depending on the space, staffing, and agenda of the event:<br /><br /><strong>Option 1:</strong> Station-based sessions that are run simultaneously and have participants rotate between the stations.<br /><br /><strong>Option 2:</strong> A single session where all participants</dd>
+                <dt>How does it work? <small>more info &#187;</small></dt>
+                <dd>The host district will be able to pick from a menu of courses aimed at either administrators or teachers. All sessions will be 45 minutes long and include audience participation. While we encourage teachers to attend, the primary audience should be administrators from the host district and surrounding districts (we recommend hosting a minimum of 10 administrators from neighboring districts). All EdTech in Focus events include a brief keynote speech delivered by a member of the Teq team or, if preferred, delivered by a member of the host school. Sessions can be run in two different models depending on the space, staffing, and agenda of the event:<br /><br /><strong>Option 1:</strong> Station-based sessions that are run simultaneously and have participants rotate between the stations.<br /><br /><strong>Option 2:</strong> A single session where all participants attend together with short breaks in between.</dd>
               </dl>
             </div>
             <div class="col-md-6">
               <dl class="faq three">
                 <img src="<?php echo get_template_directory_uri();?>/images/edtec-infocus-edtech-content3.jpg" />
-                <dt>What does the schedule typically look like?</dt>
+                <dt>What does the schedule typically look like? <small>more info &#187;</small></dt>
                 <dd>
                   <ul>
                     <li>Meal (either breakfast or lunch depending on start time) - 30 minutes</li>
@@ -157,7 +157,7 @@
             <div class="col-md-6">
               <dl class="faq four">
                 <img src="<?php echo get_template_directory_uri();?>/images/edtec-infocus-edtech-content4.jpg" />
-                <dt>What type of equipment is included for the event?</dt>
+                <dt>What type of equipment is included for the event? <small>more info &#187;</small></dt>
                 <dd>We provide all the technology and take care of the set-up, so you don’t have to! Typically, we bring 3-4 SMART Interactive Flat Panels (all updated with the SMART Learning Suite) and a variety of STEM solutions including the following:
                   <ul>
                     <li>Makerbot 3D Printer</li>

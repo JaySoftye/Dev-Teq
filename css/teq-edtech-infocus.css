@@ -149,6 +149,14 @@ div.edtech-content header.edtech-header dt {
   color: #ffffff;
 }
 
+header.edtech-header dt small {
+  display: block;
+  text-indent: 20px;
+  text-decoration: underline;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
 div.edtech-content header.edtech-header dd, div.edtech-content header.edtech-header li {
   font-size: 1rem;
   color: #ffffff;
@@ -297,6 +305,12 @@ div.row.main-content.form-start div.edtech-content-form {
   div.row.main-header div.header-content {
     top: 0;
     padding-left: 40%;
+  }
+  div.edtech-content header.edtech-header dt {
+    top: 12%;
+  }
+  div.edtech-content header.edtech-header dd {
+    position: relative;
   }
   .form-check.course .form-check-input, .form-check.course .form-check-input:checked, .form-check.course .form-check-input:not(:checked) {
     margin-top: 3px;

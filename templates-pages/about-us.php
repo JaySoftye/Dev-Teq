@@ -96,139 +96,137 @@
             <ul class="aboutList">
               <li>
                 <a class="conceptLink mobileClose" data-toggle="collapse" href="#conceptOne" aria-expanded="false" aria-controls="conceptOne">Executive Team</a>
-                  <div class="collapse in padding-top padding-bottom" id="conceptOne">
+                <div class="collapse in padding-top padding-bottom" id="conceptOne">
+                  <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-sm">
+                      <img src="/wp-content/uploads/2016/12/about-us-leadership-DamianScarfo.png" />
+                      <p><strong>Damian Scarfo</strong></p>
+                      <small>Chief Executive officer</small>
+                    </div>
+                    <div class="col-sm">
+                      <img src="/wp-content/uploads/2016/12/about-us-leadership-ArnaldoPerez.png" />
+                      <p><strong>Arnaldo Perez</strong></p>
+                      <small>Chief Financial Officer</small>
+                    </div>
+                    <div class="col-sm">
+                      <img src="/wp-content/uploads/2016/12/about-us-leadership-RobertWayneHarris.png" />
+                      <p><strong>Robert-Wayne Harris</strong></p>
+                      <small>Chief Learning Officer</small>
+                    </div>
+                    <div class="col-md-2"></div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a class="conceptLink mobileClose" data-toggle="collapse" href="#conceptTwo" aria-expanded="false" aria-controls="conceptTwo">Vice Presidents</a>
+                <div class="collapse in padding-top padding-bottom" id="conceptTwo">
+                  <div class="row">
+                    <div class="col-sm">
+                      <img src="/wp-content/uploads/2016/12/about-us-leadership-chrissy_rebert.png" />
+                      <p><strong>Chrissy Rebert</strong></p>
+                      <small>VP of Instructional Solutions</small>
+                    </div>
+                    <div class="col-sm">
+                      <img src="/wp-content/uploads/2016/12/about-us-leadership-JohnBall.png" />
+                      <p><strong>John Ball </strong></p>
+                      <small>VP of Operations</small>
+                    </div>
+                    <div class="col-sm">
+                      <img src="/wp-content/uploads/2016/12/about-us-leadership-BrianBeedenbender.png" />
+                      <p><strong>Brian Beedenbender</strong></p>
+                      <small>VP of Sales</small>
+                    </div>
+                    <div class="col-sm"><img src="/wp-content/uploads/2016/12/about-us-leadership-PeterKurtz.png" />
+                      <p><strong>Peter Kurtz </strong></p>
+                      <small>VP of Marketing</small>
+                    </div>
+                    <div class="col-sm">
+                      <img src="/wp-content/uploads/2016/12/about-us-leadership-FredCatalano.png" />
+                      <p><strong>Fred Catalano </strong></p>
+                      <small>VP of Finance</small>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a class="conceptLink mobileClose" data-toggle="collapse" href="#conceptThree" aria-expanded="false" aria-controls="conceptThree">Directors and Managers</a>
+                  <div class="collapse in padding-top padding-bottom" id="conceptThree">
                     <div class="row">
                       <div class="col-sm">
-                        <img src="/wp-content/uploads/2016/12/about-us-leadership-DamianScarfo.png" />
-                        <p><strong>Damian Scarfo</strong></p>
-                        <small>Chief Executive officer</small>
+                        <img src="/wp-content/uploads/2016/12/about-us-leadership-JeffKoss.png" />
+                        <p><strong>Jeffrey Koss</strong></p>
+                        <small>Director of Sales Operations</small>
                       </div>
                       <div class="col-sm">
-                        <img src="/wp-content/uploads/2016/12/about-us-leadership-ArnaldoPerez.png" />
-                        <p><strong>Arnaldo Perez</strong></p>
-                        <small>Chief Financial Officer</small>
+                        <img src="/wp-content/uploads/2016/12/about-us-leadership-MichellePetry.png" />
+                        <p><strong>Michelle Petry</strong></p>
+                        <small>Director of Client Services</small>
                       </div>
                       <div class="col-sm">
-                        <img src="/wp-content/uploads/2016/12/about-us-leadership-GeorgeTsenes.png" />
-                        <p><strong>George Tsenes</strong></p>
-                        <small>Chief Technology Officer</small>
+                        <img src="/wp-content/uploads/2016/12/about-us-leadership-PaulPrincipato.png" />
+                        <p><strong>Paul Principato</strong></p>
+                        <small>Creative Director</small>
                       </div>
                       <div class="col-sm">
-                        <img src="/wp-content/uploads/2016/12/about-us-leadership-RobertWayneHarris.png" />
-                        <p><strong>Robert-Wayne Harris</strong></p>
-                        <small>Chief Learning Officer</small></div>
+                        <img src="/wp-content/uploads/2016/12/about-us-leadership-BrianFried.png" />
+                        <p><strong>Brian Fried</strong></p>
+                        <small>Director of Inside Sales</small>
+                      </div>
+                      <div class="col-sm">
+                        <img src="/wp-content/uploads/2016/12/about-us-leadership-AndrewGrefig.png" />
+                        <p><strong>Andrew Grefig</strong></p>
+                        <small>Director of Curriculum and Content</small>
+                      </div>
+                      <div class="col-sm">
+                        <img src="/wp-content/uploads/2016/12/about-us-leadership-JosephSanfilippo.png" />
+                        <p><strong>Joseph Sanfilippo</strong></p>
+                        <small>Director of eLearning</small>
                       </div>
                     </div>
-                  </li>
-                  <li>
-                    <a class="conceptLink mobileClose" data-toggle="collapse" href="#conceptTwo" aria-expanded="false" aria-controls="conceptTwo">Vice Presidents</a>
-                    <div class="collapse in padding-top padding-bottom" id="conceptTwo">
+                  </div>
+                </li>
+                <li>
+                  <a class="conceptLink mobileClose" data-toggle="collapse" href="#conceptFour" aria-expanded="false" aria-controls="conceptThree">Directors and Managers</a>
+                    <div class="collapse in padding-top padding-bottom" id="conceptFour">
                       <div class="row">
                         <div class="col-sm">
-                          <img src="/wp-content/uploads/2016/12/about-us-leadership-chrissy_rebert.png" />
-                          <p><strong>Chrissy Rebert</strong></p>
-                          <small>VP of Instructional Solutions</small>
+                          <img src="/wp-content/uploads/2016/12/about-us-leadership-FrankFalconeri.png" />
+                          <p><strong>Frank Falconeri</strong></p>
+                          <small>Director of Logistics</small>
                         </div>
                         <div class="col-sm">
-                          <img src="/wp-content/uploads/2016/12/about-us-leadership-JohnBall.png" />
-                          <p><strong>John Ball </strong></p>
-                          <small>VP of Operations</small>
+                          <img src="/wp-content/uploads/2016/12/about-us-leadership-DawnLibretto.png" />
+                          <p><strong>Dawn Libretto</strong></p>
+                          <small>Director of Scheduling</small>
                         </div>
                         <div class="col-sm">
-                          <img src="/wp-content/uploads/2016/12/about-us-leadership-BrianBeedenbender.png" />
-                          <p><strong>Brian Beedenbender</strong></p>
-                          <small>VP of Sales</small>
-                        </div>
-                        <div class="col-sm"><img src="/wp-content/uploads/2016/12/about-us-leadership-PeterKurtz.png" />
-                          <p><strong>Peter Kurtz </strong></p>
-                          <small>VP of Marketing</small>
-                        </div>
-                        <div class="col-sm">
-                          <img src="/wp-content/uploads/2016/12/about-us-leadership-FredCatalano.png" />
-                          <p><strong>Fred Catalano </strong></p>
-                          <small>VP of Finance</small>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <a class="conceptLink mobileClose" data-toggle="collapse" href="#conceptThree" aria-expanded="false" aria-controls="conceptThree">Directors and Managers</a>
-                    <div class="collapse in padding-top padding-bottom" id="conceptThree">
-                      <div class="row">
-                        <div class="col-sm">
-                          <img src="/wp-content/uploads/2016/12/about-us-leadership-JeffKoss.png" />
-                          <p><strong>Jeffrey Koss</strong></p>
+                          <img src="/wp-content/uploads/2016/12/about-us-leadership-PaulCangelosi.png" />
+                          <p><strong>Paul Cangelosi</strong></p>
                           <small>Director of Sales Operations</small>
                         </div>
                         <div class="col-sm">
-                          <img src="/wp-content/uploads/2016/12/about-us-leadership-MichellePetry.png" />
-                          <p><strong>Michelle Petry</strong></p>
-                          <small>Director of Client Services</small>
+                          <img src="/wp-content/uploads/2016/12/RaymondSimpson.png" />
+                          <p><strong>Ray Simpson</strong></p>
+                          <small>Director of NEDM<br />(Network-Enabled Device Management)</small>
                         </div>
                         <div class="col-sm">
-                          <img src="/wp-content/uploads/2016/12/about-us-leadership-PaulPrincipato.png" />
-                          <p><strong>Paul Principato</strong></p>
-                          <small>Creative Director</small>
+                          <img src="/wp-content/uploads/2016/12/about-us-leadership-JenniferHennessey.png" />
+                          <p><strong>Jennifer Hennessey</strong></p>
+                          <small>Purchasing Manager</small>
                         </div>
                         <div class="col-sm">
-                          <img src="/wp-content/uploads/2016/12/about-us-leadership-BrianFried.png" />
-                          <p><strong>Brian Fried</strong></p>
-                          <small>Director of Inside Sales</small>
-                        </div>
-                        <div class="col-sm">
-                          <img src="/wp-content/uploads/2016/12/about-us-leadership-ThomasMaher.png" />
-                          <p><strong>Thomas Maher</strong></p>
-                          <small>Director of Inside Sales</small>
-                        </div>
-                        <div class="col-sm">
-                          <img src="/wp-content/uploads/2016/12/about-us-leadership-AndrewGrefig.png" />
-                          <p><strong>Andrew Grefig</strong></p>
-                          <small>Director of Curriculum and Content</small>
-                        </div>
-                        <div class="col-sm">
-                          <img src="/wp-content/uploads/2016/12/about-us-leadership-JosephSanfilippo.png" />
-                          <p><strong>Joseph Sanfilippo</strong></p>
-                          <small>Director of eLearning</small>
+                          <img src="/wp-content/uploads/2016/12/about-us-leadership-LouisGilsenan.png" />
+                          <p><strong>Louis Gilsenan</strong></p>
+                          <small>HR Manager</small>
                         </div>
                       </div>
                     </div>
                   </li>
-                  <li>
-                    <a class="conceptLink mobileClose" data-toggle="collapse" href="#conceptFour" aria-expanded="false" aria-controls="conceptThree">Directors and Managers</a>
-                      <div class="collapse in padding-top padding-bottom" id="conceptFour">
-                        <div class="row">
-                          <div class="col-sm">
-                            <img src="/wp-content/uploads/2016/12/about-us-leadership-FrankFalconeri.png" />
-                            <p><strong>Frank Falconeri</strong></p>
-                            <small>Director of Logistics</small>
-                          </div>
-                          <div class="col-sm">
-                            <img src="/wp-content/uploads/2016/12/about-us-leadership-DawnLibretto.png" />
-                            <p><strong>Dawn Libretto</strong></p>
-                            <small>Director of Scheduling</small>
-                          </div>
-                          <div class="col-sm">
-                            <img src="/wp-content/uploads/2016/12/about-us-leadership-PaulCangelosi.png" />
-                            <p><strong>Paul Cangelosi</strong></p>
-                            <small>Director of Sales Operations</small>
-                          </div>
-                          <div class="col-sm">
-                            <img src="/wp-content/uploads/2016/12/about-us-leadership-JenniferHennessey.png" />
-                            <p><strong>Jennifer Hennessey</strong></p>
-                            <small>Purchasing Manager</small>
-                          </div>
-                          <div class="col-sm">
-                            <img src="/wp-content/uploads/2016/12/about-us-leadership-LouisGilsenan.png" />
-                            <p><strong>Louis Gilsenan</strong></p>
-                            <small>HR Manager</small>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
+                </ul>
               </div>
             </div>
+          </div>
 
   <div class="container-fluid padding join-teq-team" style="margin-top: -1rem;">
     <div class="container">

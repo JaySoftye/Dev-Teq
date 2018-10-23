@@ -24,7 +24,9 @@ get_template_part('lib/cdw-g-header');
         <h3><?php echo get_post_meta($postid, 'headerTitle', true); ?></h3>
       </div>
       <?php if(metadata_exists('post', $post->ID,'gradeBand')) { ?>
-      <h6><strong>Grade Band Compatibility</strong> - Red indicates the grade-band in which the product is focused on, while grey indicates other grade-bands that it can be applied in. Curriculum Versatility - Products with a higher Curriculum Versatility value can be used in multiple subject/curriculum areas or grade levels compared to products that have a lower number. Products that have a higher level for <strong>ease-of-use</strong> will be relatively simple for teachers to implement into their instruction.</h6>
+      <div class="print-content">
+        <h6><strong>Grade Band Compatibility</strong> - Red indicates the grade-band in which the product is focused on, while grey indicates other grade-bands that it can be applied in. Curriculum Versatility - Products with a higher Curriculum Versatility value can be used in multiple subject/curriculum areas or grade levels compared to products that have a lower number. Products that have a higher level for <strong>ease-of-use</strong> will be relatively simple for teachers to implement into their instruction.</h6>
+      </div>
       <table class="table post-table">
         <thead>
           <tr>
@@ -42,7 +44,9 @@ get_template_part('lib/cdw-g-header');
         </tbody>
       </table>
       <?php } if(metadata_exists('post', $post->ID,'deviceCompatibility')) { ?>
-      <h6><strong> Device Compatibility Chart & Product Coding Language </strong></h6>
+      <div class="print-content">
+        <h6><strong> Device Compatibility Chart & Product Coding Language </strong></h6>
+      </div>
       <table class="table device-compatibility post-table">
         <thead>
           <tr>
@@ -385,46 +389,31 @@ get_template_part('lib/cdw-g-header');
           <?php echo get_post_meta($postid, 'deviceCompatibility', true); ?>
         </tbody>
       </table>
-      <?php } if(metadata_exists('post', $post->ID,'edcNumber')) { ?>
-      <div class="edc-number-table">
-        <h6></h6>
-        <table class="table post-table">
-          <thead>
-            <tr>
-              <th scope="col"></th>
-              <th scope="col"></th>
-              <th scope="col"></th>
-            </tr>
-          </thead>
-          </tbody>
-            <?php echo get_post_meta($postid, 'edcNumber', true); ?>
-          </tbody>
-        </table>
-      <?php } ?>
-      </div>
+        <?php } ?>
       <div class="post-content print-content">
         <?php wp_reset_query(); the_content(); ?>
       </div>
-      <div class="hs-form-container">
-        <hr />
-        <div class="row">
-          <div class="col-md">
-            <h2>Interested in <strong><?php the_title();?>?</strong><br />Contact <a class="cdwg-red" href="mailto:channel@teq.com"><u>channel@teq.com</u></a> for more information.</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <h3><a class="datasheet-btn" href="javascript:window.print()">PRINT A DATASHEET</a></h3>
-          </div>
-          <div class="col-md-6">
-            <p class="cdwg-red"><strong>IMPORTANT</strong></p>
-            <ul>
-              <li>Please use <strong>Google Chrome</strong> to print.</li>
-              <li>Be sure the <strong>'Background Graphics'</strong> option is selected in the print dialog box. <small id="print-help">(<u>See more</u>)</small></li>
-            </ul>
-            <p id="print-help-image" style="display:none;"><img src="<?php echo get_template_directory_uri(); ?>/images/cdw-g-product-print-chrome-help.jpg" alt="" /></p>
-          </div>
-        </div>
+      <div class="print-content">
+        <img class="post-pd-image" src="<?php echo get_template_directory_uri(); ?>/images/CDW-G-pd-post-image.jpg" />
+        <h2><strong>Bundle with up to 3 Online PD (Opd) licenses!</strong></h2>
+        <p>With Teq Online PD (Opd), educators have access to PD that will boost their technology skills, and provide them with new ways to engage students and improve instruction. Teq PD helps teachers fulfill state-mandated PD hours while learning valuable skills on dozens of technology topics. Administrators can align PD with instructional goals and create personalized PD plans for their staff.</p>
+        <p><a class="cdw-button" href="/cdw-g-products/online-professional-development/">Read more</a></p>
+      </div>
+      <?php if(metadata_exists('post', $post->ID,'edcNumber')) { ?>
+        <div class="edc-number-table">
+          <h6><strong>Pricing and Product Options <small>(Click each row for a detailed list of what's included in each product)</small></strong></h6>
+          <table class="table post-table">
+            <thead>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">EDC #</th>
+                <th scope="col">CDW Price</th>
+                <th scope="col">Teq's Cost</th>
+              </tr>
+            </thead>
+            <?php echo get_post_meta($postid, 'edcNumber', true); ?>
+          </table>
+        <?php } ?>
       </div>
       <div class="print-footer">
         <img src="<?php echo get_template_directory_uri(); ?>/images/cdwg-print-footer.svg" alt="CDW-G People Who Get It" />
@@ -432,6 +421,28 @@ get_template_part('lib/cdw-g-header');
     </div>
   </div>
 </section>
+<div class="container-fluid grey-background">
+  <section class="container hs-form-container">
+    <div class="row">
+      <div class="col-md">
+        <h2>Interested in <strong><?php the_title();?>?</strong><br />Contact <a class="cdwg-red" href="mailto:channel@teq.com"><u>channel@teq.com</u></a> for more information.</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <h3><a class="datasheet-btn" href="javascript:window.print()">PRINT A DATASHEET</a></h3>
+      </div>
+      <div class="col-md-6">
+        <p class="cdwg-red"><strong>IMPORTANT</strong></p>
+        <ul>
+          <li>Please use <strong>Google Chrome</strong> to print.</li>
+          <li>Be sure the <strong>'Background Graphics'</strong> option is selected in the print dialog box. <small id="print-help">(<u>See more</u>)</small></li>
+        </ul>
+        <p id="print-help-image" style="display:none;"><img src="<?php echo get_template_directory_uri(); ?>/images/cdw-g-product-print-chrome-help.jpg" alt="" /></p>
+      </div>
+    </div>
+  </section>
+</div>
 
 <footer>
   <div class="container-fluid">
@@ -459,7 +470,18 @@ get_template_part('lib/cdw-g-header');
  jQuery(document).ready(function($){
 
    $("#print-help").click(function() {
-     $("#print-help-image").toggle();
+     $("#print-help-image").slideToggle();
+   });
+
+   $("img.post-header-image").click(function() {
+    $('html, body').animate({ scrollTop: $("img.post-pd-image").offset().top }, 2000);
+   });
+
+   $('tbody.product-row').each(function() {
+     $(this).click(function() {
+       $(this).children('tr.product-name').children('td.name').toggleClass('minus');
+       $(this).children('tr.product-info').fadeToggle();
+     });
    });
 
    //when keyup on textbox
