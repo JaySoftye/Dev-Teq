@@ -72,10 +72,6 @@ div.print-content p, div.print-content ul {
   margin-bottom: 5rem;
 }
 
-table.table.device-compatibility.post-table {
-  page-break-after: always;
-}
-
 div.print-content img.post-header-image {
   width: 680px;
 }

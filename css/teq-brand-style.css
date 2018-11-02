@@ -1281,7 +1281,7 @@ div.submitted-message p {
   margin: .5rem;
 }
 
-div.submitted-message a {
+div.submitted-message p a, div.submitted-message a {
   outline: none;
   display: inline-block;
   background: #0077c6;
@@ -1290,7 +1290,7 @@ div.submitted-message a {
   -moz-border-radius: 10px;
   border-radius: 10px;
   font-weight: 400;
-  color: #eceeef;
+  color: #eceeef !important;
   font-size: 1.1rem;
   border: 0;
 }

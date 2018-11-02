@@ -491,7 +491,11 @@ footer h2 strong, footer small {
   color: #ffffff;
 }
 
-div.print-content-logos, div.print-footer, div#ssba-classic-2 {
+div.print-content.pd-content {
+  margin-bottom: 10rem;
+}
+
+div.print-content-logos, div.print-footer img, div#ssba-classic-2 {
   display: none !important;
 }
 

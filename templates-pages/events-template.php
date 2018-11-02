@@ -13,18 +13,13 @@ get_header(); ?>
   <div class="container nopadding padding-top padding-bottom">
     <section>
       <div class="row">
-        <div class="col-md padding-bottom">
-          <h1 class="text-center"><img src="<?php echo get_template_directory_uri(); ?>/_img/teq-events-logo-icon.svg" class="halfWidth" /></h1>
+        <div class="col-md-9 padding-bottom">
+          <h1><img src="<?php echo get_template_directory_uri(); ?>/_img/teq-events-logo-icon.svg" /></h1>
           <p>Here at Teq we strive to continually educate ourselves and others on the latest improvements in education. Below you can find a list of upcoming Events, Webinars, Professional Development Sessions, etc. Please feel free to engage with the Teq team here or through any one of our social channels. We look forward to your feedback and invite you to be part of our learning community.</p>
         </div>
-        <!--
-        <div class="col-md-6 padding-bottom text-right">
-          <a href="<?php echo get_site_url(); ?>/teq-events/eventsignup/"><button>Teq Event Sign-up</button></a>
+        <div class="col-md-3 padding-bottom">
+          <h1><a href="/edtech-in-focus"><img src="<?php echo get_template_directory_uri(); ?>/_img/edtech-in-focus-event-signup_img2018.jpg" alt="let's host a day of learning together with EdTech in focus" /></a></h1>
         </div>
-        <div class="col-md-6 padding-bottom text-left">
-          <a href="<?php echo get_site_url(); ?>/teq-events/request-teqsquad/"><button>Request Teq Squad</button></a>
-        </div>
-        -->
       </div>
       <div class="row">
 
@@ -43,7 +38,7 @@ get_header(); ?>
           $thumb_id = get_post_thumbnail_id();
           $thumb_url = wp_get_attachment_image_src($thumb_id,'full', true);
         ?>
-        <article class="col-md-6 eventContainer">
+        <article class="col-md-4 eventContainer">
           <div class="eventArticle">
             <a class="eventHeader" href="<?php the_permalink() ?>" style="background-color: #3c4852; background-size: cover; background-repeat: no-repeat; background-position: top center; background-image: url('<?php echo $thumb_url[0]; ?>');"><?php the_title(); ?></a>
             <div class="eventInfo">
