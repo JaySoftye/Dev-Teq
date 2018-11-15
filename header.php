@@ -19,7 +19,6 @@
 </head>
 <body <?php body_class(); ?>>
 
-
   <nav id="mainNav">
     <?php
       if ( is_page_template( 'templates-pages/classroom-concepts.php' ) || is_page_template( 'templates-pages/learning-community.php' ) || is_page_template( 'templates-pages/learning-community-teq-talk.php' ) || is_page_template( 'templates-pages/learning-community-media-resource-center.php' ) || is_page_template( 'templates-pages/learning-community-educator-resource-center.php' ) || is_archive() || is_search() || is_404() ) {

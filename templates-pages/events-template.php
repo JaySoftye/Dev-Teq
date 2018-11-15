@@ -4,6 +4,8 @@
  *
  * @package WordPress
  * @subpackage BootstrapWP
+ *
+ * TO LINK TO OUTSIDE URL'S EVENT POSTS INCLUDE CUSTOM META FIELD 'bannerHeaderURL'
  */
 get_header(); ?>
   <?php get_template_part( 'navigation', 'default' ); ?>
@@ -40,11 +42,11 @@ get_header(); ?>
         ?>
         <article class="col-md-4 eventContainer">
           <div class="eventArticle">
-            <a class="eventHeader" href="<?php the_permalink() ?>" style="background-color: #3c4852; background-size: cover; background-repeat: no-repeat; background-position: top center; background-image: url('<?php echo $thumb_url[0]; ?>');"><?php the_title(); ?></a>
+            <a href="<?php if(metadata_exists('post', $post->ID,'bannerHeaderURL')) { echo get_post_meta( $post->ID, 'bannerHeaderURL', true ); } else { the_permalink(); }; ?>"><img src="<?php echo $thumb_url[0]; ?>" /></a>
             <div class="eventInfo">
-              <h5><a class="bold" href="<?php the_permalink() ?>"><?php the_title(); ?></a></h5>
+              <h5><a class="bold" href="<?php if(metadata_exists('post', $post->ID,'bannerHeaderURL')) { echo get_post_meta( $post->ID, 'bannerHeaderURL', true ); } else { the_permalink(); }; ?>"><?php the_title(); ?></a></h5>
               <p><?php echo get_the_excerpt(); ?></p>
-              <p><small class="ml-1"><a class="bold teqBlue" href="<?php the_permalink() ?>">MORE DETAILS &#187;</a></small></p>
+              <p><small class="ml-1"><a class="bold teqBlue" href="<?php if(metadata_exists('post', $post->ID,'bannerHeaderURL')) { echo get_post_meta( $post->ID, 'bannerHeaderURL', true ); } else { the_permalink(); }; ?>">MORE DETAILS &#187;</a></small></p>
             </div>
           </div>
         </article>

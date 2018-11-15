@@ -45,7 +45,7 @@ get_template_part('lib/cdw-g-header');
       </table>
       <?php } if(metadata_exists('post', $post->ID,'deviceCompatibility')) { ?>
       <div class="print-content">
-        <h6><strong> Device Compatibility Chart & Product Coding Language </strong></h6>
+        <h6>Use the compatibility chart below to determine which <strong>devices are compatible with each product.</strong> In addition, each product’s <strong>primary coding language</strong> is listed for review below as well.</h6>
       </div>
       <table class="table device-compatibility post-table">
         <thead>
@@ -403,15 +403,17 @@ get_template_part('lib/cdw-g-header');
         <?php } ?>
       </div>
       <?php if(metadata_exists('post', $post->ID,'edcNumber')) { ?>
-        <div class="edc-number-table">
-          <h6><strong>Pricing and Product Options <small>(Click each row for a detailed list of what's included in each product)</small></strong></h6>
+        <div class="edc-number-table print-content">
+          <h6><strong>Product Pricing and Bundle Options</strong> - <span class="hide-print">click on the table row for a break down of what is included in each product bundle.</span> We emphasize the importance of providing PD options with every product to make for a better student/teacher experience. <strong>All STEM Products are supported by our Online Professional Development Platform (Opd)</strong> - pricing is listed below for each product with and without an Opd license.</h6>
           <table class="table post-table">
             <thead>
               <tr>
                 <th scope="col"></th>
-                <th scope="col">EDC #</th>
-                <th scope="col">CDW Price</th>
-                <th scope="col">Teq's Cost</th>
+                <th scope="col">EDC</th>
+                <th scope="col">Price</th>
+                <th scope="col">Qty</th>
+                <th scope="col"><img src="<?php echo get_template_directory_uri(); ?>/images/EDC-with-opd.svg" alt="EDC with Opd" /></th>
+                <th scope="col"><img src="<?php echo get_template_directory_uri(); ?>/images/price-with-opd.svg" alt="Price with Opd" /></th></th>
               </tr>
             </thead>
             <?php echo get_post_meta($postid, 'edcNumber', true); ?>
@@ -438,6 +440,7 @@ get_template_part('lib/cdw-g-header');
       <div class="col-md-6">
         <p class="cdwg-red"><strong>IMPORTANT</strong></p>
         <ul>
+          <li>Please be sure to expand all pricing bundles before printing.</li>
           <li>Please use <strong>Google Chrome</strong> to print.</li>
           <li>Be sure the <strong>'Background Graphics'</strong> option is selected in the print dialog box. <small id="print-help">(<u>See more</u>)</small></li>
         </ul>
@@ -483,7 +486,7 @@ get_template_part('lib/cdw-g-header');
    $('tbody.product-row').each(function() {
      $(this).click(function() {
        $(this).children('tr.product-name').children('td.name').toggleClass('minus');
-       $(this).children('tr.product-info').fadeToggle();
+       $(this).children('tr.product-info').fadeToggle().toggleClass('print');;
      });
    });
 

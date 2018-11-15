@@ -328,11 +328,12 @@ table.table.post-table tr th.table-icon {
 }
 
 table.table.post-table tbody td {
-  vertical-align: middle;
+  vertical-align: top;
   color: rgb(202,23,38);
 }
 
 table.table.post-table tr td:first-child  {
+  width: 24%;
   text-align: left;
   font-weight: 300;
   color: #000000;
@@ -363,15 +364,21 @@ table.table.post-table td span.secondary {
   margin-bottom: 10rem;
 }
 
-.edc-number-table table.table.post-table tr th, .edc-number-table table.table.post-table tr td {
+.edc-number-table table.table.post-table tr th:first-child, .edc-number-table table.table.post-table tr td:first-child {
+  width: 36%;
   text-align: left;
 }
 
+.edc-number-table tr th img {
+  width: 105px;
+}
+
 .edc-number-table table.table.post-table tr th {
-  color: rgb(202,23,38);
+  color: rgb(0,0,0);
 }
 
 .edc-number-table table.table.post-table tr td {
+  position: relative;
   border-bottom: none;
   font-weight: 300;
   color: #000000;
@@ -382,6 +389,10 @@ table.table.post-table td span.secondary {
   color: rgb(202,23,38);
 }
 
+.edc-number-table table.table.post-table tr.product-name td {
+  border-bottom: 1px solid #cccccc;
+}
+
 .edc-number-table tr.product-name td.name:after {
   position: absolute;
   margin-left: 10px;
@@ -390,10 +401,12 @@ table.table.post-table td span.secondary {
 
 .edc-number-table tr.product-name td.name:after {
   content: ' +';
+  color: rgb(202,23,38)
 }
 
 .edc-number-table tr.product-name td.name.minus:after {
   content: ' \00d7';
+  color: rgb(202,23,38)
 }
 
 .edc-number-table table.table.post-table tbody.product-row {
@@ -402,6 +415,18 @@ table.table.post-table td span.secondary {
 
 .edc-number-table tbody.product-row tr.product-info {
   display: none;
+}
+
+.edc-number-table tbody.product-row tr.product-info td:first-child {
+  padding-left: 25px;
+}
+
+.edc-number-table tbody.product-row tr:last-child td {
+  padding-bottom: 50px;
+}
+
+.edc-number-table table.table.post-table tbody.product-row td:nth-child(5), .edc-number-table table.table.post-table tbody.product-row td:nth-child(6) {
+  color: rgb(202,23,38);
 }
 
 .hs-form-container {
