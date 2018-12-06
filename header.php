@@ -18,6 +18,7 @@
 
 </head>
 <body <?php body_class(); ?>>
+  <?php if( is_home() ) { do_action('after_body_open_tag'); } ?>
 
   <nav id="mainNav">
     <?php

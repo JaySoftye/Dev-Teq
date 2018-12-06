@@ -36,7 +36,7 @@ $(document).ready(function(){
         <h3><img src="<?php echo get_template_directory_uri(); ?>/images/iblocks-logo-white.png" alt="iBlocks" /></h3>
         <h1><strong>Learning Redesigned.</strong></h1>
         <p>Classroom environments are shifting towards learning experiences that are personalized, adaptive, hands-on, and collaborative.</p>
-        <p><strong>Schools that need a partner to help design curriculum to enrich student learning, and enable students to explore and invent, now have iBlocks.</strong></p>
+        <p><strong>Schools that need a partner to help design custom content to enrich student learning, and enable students to explore and invent, now have iBlocks.</strong></p>
         <div class="row">
           <script src="https://fast.wistia.com/embed/medias/sibycazjbw.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
           <span class="wistia_embed wistia_async_sibycazjbw popover=true popoverContent=link" style="display:inline;position:relative">
@@ -64,7 +64,7 @@ $(document).ready(function(){
     <div class="col-md-1"></div>
     <div class="col-md-5 padding flex-md-middle content">
       <h2 class="blue-green"><strong>What is an iBlock?</strong></h2>
-      <p>An iBlock is a personalized, custom-designed curriculum created to produce a particular outcome for a selected group of students.</p>
+      <p>An iBlock is personalized, custom-designed content created to produce a particular outcome for a selected group of students.</p>
       <br />
       <p>iBlocks are designed by you in collaboration with our award-winning PD team of state-certified teachers.</p>
     </div>
@@ -75,7 +75,7 @@ $(document).ready(function(){
       <div class="mobile-content hide-large">
         <p class="white padding-left"><strong>An iBlock:</strong></p>
         <ul>
-          <li class="white">A personalized curriculum, or instructional block, created to produce a particular outcome for your students.</li>
+          <li class="white">A personalized custom-designed content, or instructional block, created to produce a particular outcome for your students.</li>
           <li class="white">Crafted around the engineering design process and the Universal Design for Learning (UDL) framework.</li>
           <li class="white">A flexible learning environment that is cross-curricular and accommodates varying learning styles.</li>
           <li class="white">Aligned to national, state, and local standards.</li>

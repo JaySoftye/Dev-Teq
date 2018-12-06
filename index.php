@@ -2,8 +2,6 @@
 
 <?php get_template_part( 'navigation', 'default' ); ?>
 
-<?php get_template_part('lib/onload-modal'); ?>
-
 </nav>
 
 <div id="popInWindow">

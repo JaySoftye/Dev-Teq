@@ -44,7 +44,7 @@
     <div class="col-md-5 hidden-sm-down hidden-xs-down">
       <h3 class="teqBlue">Teq Talk</h3>
       <ul class="footerLinks">
-      <?php $the_query = new WP_Query( 'posts_per_page=2' ); ?>
+      <?php $the_query = new WP_Query(array('posts_per_page' => '2' , 'category_name' => 'news')); ?>
 			<?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
         <li class="white"><a class="teqBlue" href="<?php the_permalink() ?>"> <?php the_title(); ?> </a> - <?php echo get_the_excerpt(); ?>...<small><a class="teqBlue" href="<?php the_permalink() ?>">READ MORE &#187;</a></small></p>
         </li>

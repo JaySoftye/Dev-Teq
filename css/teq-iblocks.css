@@ -206,6 +206,65 @@ button.button.blue-green:hover {
   line-height: 1.25rem;
 }
 
+div.row.iblock-questionnaire ol {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+div.row.iblock-collateral {
+  padding-top: 5rem;
+  padding-bottom: 10rem;
+}
+
+article .article-content {
+  margin-bottom: 5rem;
+}
+
+article .article-content p {
+  margin-bottom: 1.25rem;
+}
+
+article .article-content button {
+  margin-top: 20px;
+  padding: 10px 30px;
+  background-color: rgb(51, 182, 224);
+  border: none;
+  text-align: center;
+  font-size: .84rem;
+  color: white;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.25);
+  -webkit-transition: all .15s;
+  box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.25);
+  transition: all .15s;
+}
+
+article .article-content button:hover {
+  background-color: rgb(16, 129, 165);
+}
+
+@-webkit-keyframes saturate-image {
+  0%   { -webkit-filter: hue-rotate(0deg); }
+  50% { -webkit-filter: hue-rotate(50deg); }
+  100%   { -webkit-filter: hue-rotate(0deg); }
+}
+@-moz-keyframes saturate-image {
+  0%   { filter: hue-rotate(0deg); }
+  50% { filter: hue-rotate(50deg); }
+  100%   { filter: hue-rotate(0deg); }
+}
+@keyframes saturate-image {
+  0%   { filter: hue-rotate(0deg); }
+  50% { filter: hue-rotate(50deg); }
+  100%   { filter: hue-rotate(0deg); }
+}
+
+img#saturate-loop {
+  -webkit-animation: saturate-image 5s infinite;
+  -moz-animation:    saturate-image 5s infinite;
+  animation:         saturate-image 5s infinite;
+}
+
 @media (min-width: 768px) {
   .hide-large, .mobile-content {
     display: none !important;
@@ -236,5 +295,18 @@ button.button.blue-green:hover {
   }
   .mobile-content {
     padding: 2rem;
+  }
+  .iblock-collateral article:nth-child(2n), .iblock-collateral article:nth-child(3n) {
+    border-right: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    border-left: 1px solid #cccccc;
+  }
+  article .article-content button {
+    display: block;
+    position: relative;
+    right: 0;
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
   }
 }

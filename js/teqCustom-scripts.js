@@ -8,6 +8,15 @@
       $('#onload').modal('show');
     });
 
+    $(window).on('load',function(){
+      $('#load-modal-load').modal('show');
+    });
+    $('a.close-icon').click(function() {
+      $('.modal-backdrop.in').hide();
+      $('.modal').hide();
+      $('body').removeClass('modal-open');
+    });
+
 /** video click to play **/
   $('.video').click(function(){this.paused?this.play():this.pause();});
 
