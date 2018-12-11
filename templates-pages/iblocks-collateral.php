@@ -50,37 +50,23 @@ $(document).ready(function(){
     ?>
 
     <article class="col-md-4">
-      <a a href="#" data-value="<?php if(metadata_exists('post', $post->ID,'location')) { echo get_post_meta( $post->ID, 'location', true ); } else { the_permalink(); }; ?>" class="collateral-open" data-popup="width=880,height=630,scrollbars=yes"><img class="card-img-top" src="<?php echo $thumb_url[0]; ?>" class="fullWidth" /></a>
+      <img class="card-img-top" src="<?php echo $thumb_url[0]; ?>" class="fullWidth" />
       <div class="article-content">
-        <h3>
-          <a href="#" data-value="<?php if(metadata_exists('post', $post->ID,'location')) { echo get_post_meta( $post->ID, 'location', true ); } else { the_permalink(); }; ?>" class="collateral-open" data-popup="width=880,height=630,scrollbars=yes"><strong> <?php the_title(); ?> </strong></a>
-        </h3>
+        <h3><strong> <?php the_title(); ?> </strong></h3>
         <p>
           <?php echo get_the_excerpt(); ?>
         </p>
-          <button data-value="<?php if(metadata_exists('post', $post->ID,'location')) { echo get_post_meta( $post->ID, 'location', true ); } else { the_permalink(); }; ?>" class="collateral-open" data-popup="width=880,height=630,scrollbars=yes" type="button">VIEW DOCUMENT</button>
+          <?php if(metadata_exists('post', $post->ID,'location')) { echo get_post_meta( $post->ID, 'location', true ); } else { ?>
+            <a href="<?php the_permalink(); ?>" class="collateral-open">VIEW DOCUMENT</a>
+          <?php } ?>
       </div>
     </article>
 
     <?php endwhile; wp_reset_postdata(); ?>
   </div>
 </div>
-  <script type="text/javascript">
-    $(document).ready(function(){
-      $('.collateral-open').click(function (event) {
-        event.preventDefault();
 
-          var $this = $(this);
-          var url = $this.attr("data-value");
-            // Get new-window Dimensions from DataPopup attribute
-          var windowName = "popUp";
-          var windowSize = $this.data("popup");
-            window.open(url, windowName, windowSize);
-        });
-      });
-  </script>
-  <script src="<?php echo get_template_directory_uri();?>/js/teqCustom-scripts.js"></script>
-
+<script src="<?php echo get_template_directory_uri();?>/js/teqCustom-scripts.js"></script>
 <?php get_footer(); wp_footer(); ?>
 
    </body>

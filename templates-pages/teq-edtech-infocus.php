@@ -88,11 +88,13 @@
           $email_message .= "<p>" . $teacherCourses . "</p> \r\n";
           $email_message .= "<hr /> \r\n";
 
-          $formMessage = '<h2><strong>Thank you for your interest.</strong></h2><h3>Your message has been successfully sent. You should hear from our EdTech Team shortly, but if you have any further questions please contact us at: 877.455.9369</h3>';
+          $formMessage = '<div class="row main-header"><div class="col-md-6"></div><div class="col-md-5 header-content"><h1><strong>Thank you for your interest.</strong></h1><h4>Your message has been successfully sent. You should hear from our EdTech Team shortly, but if you have any further questions please contact us at: 877.455.9369</h4><p><a class="button red" href="https://www.teq.com/edtech-in-focus/">Back to Hosting Page</a></p></div></div>';
+          print $formMessage;
+
           $to = 'events@teq.com';
           $subject = 'NEW EdTech in Focus Request';
           $body = $email_message;
-          $headers = array('Content-Type: text/html; charset=UTF-8' , 'From: Teq <teq@teq.com>' , 'Cc: jonathansoftye@teq.com');
+          $headers = array('Content-Type: text/html; charset=UTF-8' , 'From: Teq <teq@teq.com>' , 'Cc: BethBonner@teq.com, Marketing@teq.com, Events@teq.com, RobertWayneHarris@teq.com, JosephSanfilippo@teq.com, AndrewGrefig@teq.com, jonathansoftye@teq.com');
             wp_mail( $to, $subject, $body, $headers );
             exit;
           }

@@ -419,6 +419,18 @@ function get_cdw_list_via_ajax(){
 }
 
 /* * * * * * * * * * * * * * *
+ * FILTER TO USE in "SMART" Category posts
+ * * * * * * * * * * * * * * */
+function get_custom_cat_template($single_template) {
+     global $post;
+       if ( in_category( 'smart' )) {
+          $single_template = dirname( __FILE__ ) . '/single-smart.php';
+     }
+     return $single_template;
+}
+add_filter( "single_template", "get_custom_cat_template" ) ;
+
+/* * * * * * * * * * * * * * *
  * BS4 Utility Functions
  * * * * * * * * * * * * * * */
 
