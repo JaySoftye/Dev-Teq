@@ -15,7 +15,7 @@ get_header(); ?>
       <div class="row twoRowHeight">
 
 			  <?php
-          $the_query = new WP_Query( array( 'posts_per_page' => '10', 'cat' => '-363, -39, -322, -475, -483, -360') );
+          $the_query = new WP_Query( array( 'posts_per_page' => '10', 'category_name' => 'news, events') );
 			       while ($the_query -> have_posts()) : $the_query -> the_post();
 
           $thumb_id = get_post_thumbnail_id();

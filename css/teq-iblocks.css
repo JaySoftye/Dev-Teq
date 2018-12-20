@@ -267,13 +267,27 @@ img#saturate-loop {
 
 .container-fluid .row.height-page.smart-deals {
   height: 100%;
-  min-height: 75vh;
+  min-height: 66vh;
   position: relative;
   z-index: 20;
   background-image: url('../images/smart-deals-category-page-bg.jpg');
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
+}
+
+.row.height-page.smart-deals h1 {
+  text-align: center;
+}
+
+.row.height-page.smart-deals h1 svg {
+  height: auto;
+  width: 36%;
+  display: inline-block;
+}
+
+.row.height-page.smart-deals svg path.white, .row.height-page.smart-deals svg polygon.white {
+  fill: #eceeef;
 }
 
 .container-fluid.smart-deals-posts {
@@ -287,45 +301,105 @@ img#saturate-loop {
   background-position: left top;
 }
 
-.container-fluid.smart-deals-posts h1 {
-  font-size: 3.15rem;
-  text-align: center;
-}
-
-.container-fluid.smart-deals-posts h1 span {
-  height: 115px;
-  width: 115px;
-  display: inline-block;
-  margin-bottom: -2rem;
-  background-image: url(../images/smart-deals-category-specials-offers-ny-state.svg);
-  background-repeat: no-repeat;
-  background-position: right center;
-  background-size: 100%;
+.smart-deals article.post-item.smart {
+  margin-top: 30px;
 }
 
 .smart-deals article.post-item .card {
+  position: relative;
   border: none;
   -webkit-border-radius: 0;
-  -webkit-box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.25);
+  -webkit-box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.15);
+  -webkit-transition: all .5s;
   border-radius: 0;
-  box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.25);
+  box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.15);
+  transition: all .5s;
 }
 
-article.post-item div.card .card-inner {
-  padding: 1rem 2rem;
+.smart-deals article.post-item .card:hover {
+  background-color: rgba(0,0,0,0.1);
+}
+
+article.post-item .card a, article.post-item div.card div.card-content  {
+  height: 100%;
+  width: 100%;
+  display: block;
+  position: relative;
+  text-decoration: none !important;
+}
+
+div.card a img:hover {
+  opacity: 1;
+}
+
+div.card div.card-content .card-inner {
+  padding: 6rem;
   text-align: center;
+}
+
+div.card div.card-content .excerpt-container {
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 100;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+div.card-content .excerpt-container p {
+  margin: 0 0;
+  padding: 2rem 3.5rem;
+  font-size: 95%;
+  color: #ffffff;
+}
+
+div.card-content .excerpt-container button.btn {
+  width: 60%;
+  margin: 0 20%;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  text-transform: uppercase;
+  font-size: 75%;
+  color: #000000;
+  cursor: pointer;
+  text-align: center;
+}
+
+div.card-content .card-inner h4 {
+  font-size: 2rem;
+  line-height: 2rem;
+  text-decoration: none;
+  color: rgb(79, 197, 221);
 }
 
 .hs-form-container .hbspt-form {
 	padding-top: 20px;
 }
 
+.hs-form-container label {
+	margin-top: 0;
+  margin-right: 30px;
+  margin-bottom: 0;
+  margin-left: 30px;
+}
+
+.hs-form-container .inputs-list > li {
+  margin-top: -10px;
+  margin-bottom: 0;
+}
+
 .hs-form-container input[type='text'], .hs-form-container input[type='email'], .hs-form-container input[type='tel'], .hs-form-container select.hs-input {
   background-color: #eceeef;
   height: 1.25rem;
-  width: 100%;
+  width: 85%;
   border: none;
-  margin: 5px 0 10px 0;
+  margin-top: 0;
+  margin-right: 30px;
+  margin-bottom: 10px;
+  margin-left: 30px;
 	padding: 12px;
 	font-size: 1.125rem;
 	font-weight: 300;
@@ -333,15 +407,19 @@ article.post-item div.card .card-inner {
 }
 
 .hs-form-container select.hs-input {
-  height: 2.5rem;
-	width: 87%;
+  height: 3rem;
+  width: 95%;
+  -webkit-transition: box-shadow 0.2s linear;
+  -webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+  transition: box-shadow 0.2s linear;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
 }
 
 .hs-form-container .hs-form .hs-button, .hs-button {
-	width: 475px;
+	width: 85%;
   position: relative;
   display: block;
-  margin: 0 0;
+  margin: 5px 30px 10px 30px;
   outline: none;
   background: #0077c6;
   padding: 20px 30px;

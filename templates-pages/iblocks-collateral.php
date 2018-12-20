@@ -16,11 +16,9 @@
 </nav>
 <script>
 $(document).ready(function(){
-  $(function() {
-   $('.read-more').click (function() {
-     $('html, body').animate({scrollTop: $('div.iblocks-content').offset().top }, 'slow');
-     return false;
-   });
+  $('a.cta_button').click(function() {
+    window.open($(this).attr('href'),'title', 'width=800, height=700');
+    return false;
   });
  });
 </script>
@@ -57,7 +55,7 @@ $(document).ready(function(){
           <?php echo get_the_excerpt(); ?>
         </p>
           <?php if(metadata_exists('post', $post->ID,'location')) { echo get_post_meta( $post->ID, 'location', true ); } else { ?>
-            <a href="<?php the_permalink(); ?>" class="collateral-open">VIEW DOCUMENT</a>
+            <a href="<?php the_permalink(); ?>" class="cta_button">VIEW DOCUMENT</a>
           <?php } ?>
       </div>
     </article>
