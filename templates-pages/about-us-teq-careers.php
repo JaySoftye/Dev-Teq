@@ -51,12 +51,12 @@
             while ($the_query -> have_posts()) : $the_query -> the_post();
         ?>
         <div class="row padding-sm">
-          <div class="col-md-10 flex-md-middle">
+          <div class="col-md-9 flex-md-middle">
             <h6><a href="<?php the_permalink() ?>"><strong><?php the_title(); ?></strong></a></h6>
             <?php echo get_the_excerpt(); ?>
           </div>
-          <div class="col-md-2 flex-md-middle">
-            <a href="<?php the_permalink() ?>"><button class="small">See full posting</button></a>
+          <div class="col-md flex-md-middle">
+            <a href="<?php the_permalink() ?>"><button>See full posting</button></a>
           </div>
         </div>
         <hr />
