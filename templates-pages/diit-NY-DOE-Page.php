@@ -145,7 +145,7 @@ get_template_part('lib/nyc-doe-header');
      <div class="col-md-7">
        <h4 class="white"><strong>Teq Talk</strong></h2>
 
-        <?php $the_query = new WP_Query( 'posts_per_page=2&cat=-894,-888,-52' );
+        <?php $the_query = new WP_Query(array('posts_per_page' => '2' , 'category_name' => 'news'));
          while ($the_query -> have_posts()) : $the_query -> the_post();
 
          $thumb_id = get_post_thumbnail_id();
@@ -154,7 +154,9 @@ get_template_part('lib/nyc-doe-header');
 
        <section class="row post">
          <div class="col-md-3 flex-md-middle">
-           <img src="<?php echo $thumb_url[0]; ?>" />
+           <a href="<?php the_permalink() ?>">
+             <img src="<?php echo $thumb_url[0]; ?>" />
+           </a>
          </div>
          <div class="col-md-9 postInfo">
            <h6><a href="<?php the_permalink() ?>"> <?php the_title(); ?></a></h6>
