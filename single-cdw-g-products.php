@@ -1,12 +1,12 @@
 <?php
 /**
- * Default Custom Post Type - FAMIS Product
+ * Default Custom Post Type - CDW-G Product
  * Description: Post template with a content container.
  *
  * @package WordPress
  * @subpackage BootstrapWP
  */
-get_template_part('lib/cdw-g-header');
+get_template_part('lib/teq-g-header');
   global $wp_query;
     $postid = $wp_query->post->ID;
 ?>
@@ -15,7 +15,9 @@ get_template_part('lib/cdw-g-header');
   <div class="row">
     <div class="col-md">
       <div class="row print-content-logos">
+        <!--
         <img src="<?php echo get_template_directory_uri(); ?>/images/cdwg-tagline-logo.svg" alt="CDW-G People Who Get It" />
+        -->
         <img src="<?php echo get_template_directory_uri(); ?>/images/teq-tagline-logo-print.svg" alt="Teq It's all about learning" />
       </div>
       <div class="print-content">
@@ -25,7 +27,7 @@ get_template_part('lib/cdw-g-header');
       </div>
       <?php if(metadata_exists('post', $post->ID,'gradeBand')) { ?>
       <div class="print-content">
-        <h6><strong>Grade Band Compatibility</strong> - Red indicates the grade-band in which the product is focused on, while grey indicates other grade-bands that it can be applied in. Curriculum Versatility - Products with a higher Curriculum Versatility value can be used in multiple subject/curriculum areas or grade levels compared to products that have a lower number. Products that have a higher level for <strong>ease-of-use</strong> will be relatively simple for teachers to implement into their instruction.</h6>
+        <h6><strong>Grade Band Compatibility</strong> - Black indicates the grade-band in which the product is focused on, while grey indicates other grade-bands that it can be applied in. Curriculum Versatility - Products with a higher Curriculum Versatility value can be used in multiple subject/curriculum areas or grade levels compared to products that have a lower number. Products that have a higher level for <strong>ease-of-use</strong> will be relatively simple for teachers to implement into their instruction.</h6>
       </div>
       <table class="table post-table">
         <thead>
@@ -421,7 +423,7 @@ get_template_part('lib/cdw-g-header');
         <?php } ?>
       </div>
       <div class="print-footer">
-        <img src="<?php echo get_template_directory_uri(); ?>/images/cdwg-print-footer.svg" alt="CDW-G People Who Get It" />
+        <img src="<?php echo get_template_directory_uri(); ?>/images/teq-g-print-footer.svg" alt="CDW-G People Who Get It" />
       </div>
     </div>
   </div>
