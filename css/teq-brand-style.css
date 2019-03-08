@@ -2284,6 +2284,11 @@ div.consultingServices {
   background-size: cover;
 }
 
+div.stemActiveFloor {
+  background: #3c4852 url(../_img/active-floor-stem-learning-background.jpg) no-repeat center top;
+  background-size: cover;
+}
+
 .event-form-bg {
   background: rgb(136,191,232); /* Old browsers */
   background: -moz-linear-gradient(left, rgba(136,191,232,0.75) 0%, rgba(112,176,224,0.5) 100%);
