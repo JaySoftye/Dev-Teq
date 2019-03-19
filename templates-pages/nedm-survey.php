@@ -5,6 +5,9 @@
  * @package WordPress
  * @subpackage BootstrapWP
  */
+
+get_template_part( 'lib/nedm-survey-post-header' ); wp_reset_query(); the_content();
+
  /** Validate your form **/
 
 if (isset($_POST['submitted'])) {
@@ -164,7 +167,18 @@ if (isset($_POST['submitted'])) {
  get_template_part( 'lib/nedm-survey-post-header' ); wp_reset_query(); the_content();
 ?>
 
-<div class="container padding-bottom"><div class="row"><div class="col padding-bottom">
+<nav id="mainNav">
+  <div id="navMain" class="container-fluid navbar-toggleable-sm">
+    <ul class="nav navbar-nav">
+      <li class="nav-item">
+        <a href="<?php echo site_url(); ?>"><img src="<?php echo get_template_directory_uri();?>/_img/teq-logo-icon.svg" class="mainLogo" /><span class="h5
+          ">Network-Enable Device Management Survey</span></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container padding-top padding-bottom"><div class="row"><div class="col padding-bottom">
 <form action="#" method="POST" id="nedm-survey" <?php do_action('post_edit_form_tag'); ?> enctype="multipart/form-data">
 
 <div class="form-group">
