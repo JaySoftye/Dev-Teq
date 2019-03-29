@@ -215,11 +215,6 @@
                           <p><strong>Jennifer Hennessey</strong></p>
                           <small>Purchasing Manager</small>
                         </div>
-                        <div class="col-sm">
-                          <img src="/wp-content/uploads/2016/12/about-us-leadership-LouisGilsenan.png" />
-                          <p><strong>Louis Gilsenan</strong></p>
-                          <small>HR Manager</small>
-                        </div>
                       </div>
                     </div>
                   </li>
