@@ -16,10 +16,6 @@
         $postid = $wp_query->post->ID;
     ?>
 
-    <div id="popInWindow">
-      <a href="/roadmap"><img src="<?php echo get_template_directory_uri();?>/_img/teq-roadmap_icon-link.svg" alt="Teq 2018 Roadmap" /></a>
-    </div>
-
       <div class="container-fluid home-header">
         <video class="vidBackgroundHeader" poster="<?php echo get_template_directory_uri(); ?>/_img/<?php echo get_post_meta($postid, 'headerBackground', true); ?>.jpg" playsinline autoplay muted loop>
             <source src="<?php echo get_template_directory_uri();?>/_img/<?php echo get_post_meta($postid, 'headerBackground', true); ?>.webm" type="video/webm">
