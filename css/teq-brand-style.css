@@ -2311,6 +2311,19 @@ div.stemActiveFloor {
   -webkit-animation-name: scroll;
 }
 
+.wp-block-gallery li figure {
+  border: 2px solid #ffffff;
+  -webkit-box-shadow: 3px 6px 9px 0px rgba(0,0,0,0.5);
+  box-shadow: 3px 6px 9px 0px rgba(0,0,0,0.5);
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+}
+
+.wp-block-gallery li figure:hover {
+  border: none;
+}
+
+
 @-webkit-keyframes scroll {
   0% {
     opacity: 1;

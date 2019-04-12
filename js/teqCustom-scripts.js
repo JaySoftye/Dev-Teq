@@ -173,4 +173,17 @@
     });
   }).scroll();
 
+// ROTATE GALLERY IMAGE ICONS
+  $(".wp-block-gallery li figure").each( function() {
+    var rNum = (Math.random()*5)-1;
+      $(this).css( {
+        '-webkit-transform': 'rotate('+rNum+'5deg)',
+        'transform': 'rotate('+rNum+'5deg)'
+      });
+    });
+    $(".wp-block-gallery figure").click(function(){
+      var myImageId = $('img', this).attr('src');
+      $(".modal-body #galleryImage").attr("src", myImageId);
+    });
+
 });

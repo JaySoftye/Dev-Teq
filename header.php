@@ -110,11 +110,11 @@
         <li class="nav-item">
             <a class="nav-link" href="#productsMenu" data-toggle="collapse" aria-expanded="false" aria-controls="productsMenu">Products &amp; Things</a>
         </li>
-        <li class="nav-item new">
+        <li class="nav-item">
             <a class="nav-link" href="/iblocks">iBlocks</a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#classroomConceptsMenu" data-toggle="collapse" aria-expanded="false" aria-controls="classroomConceptsMenu">Classroom Concepts</a>
+        <li class="nav-item new">
+            <a class="nav-link" href="<?php echo site_url(); ?>/evospaces/">evoSpaces</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="#supportMenu" data-toggle="collapse" aria-expanded="false" aria-controls="supportMenu">Support and Service</a>
