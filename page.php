@@ -28,29 +28,17 @@
 
 	<?php the_content(); ?>
 
-  <div class="container-fluid nopadding scrollToBottom classroomConcepts hidden-xs-down hidden-sm-down">
-    <div class="row height-full">
-      <div class="col-md-2"></div>
-      <div class="col-md-8 flex-md-middle text-center padding">
-        <h2 class="white"><strong>Discover the new classroom for the 21st Century.</strong></h2>
-        <h4 class="white">Teq offers full technology based learning concepts for every level of k12 education. Select your school level below and discover the new modern classroom.</h4>
-        <div class="row">
-          <div class="col-sm">
-            <a href="/elementary-classroom-concepts/"><img src="<?php echo get_template_directory_uri(); ?>/_img/teq-classroom-concepts-elementary-school-icons.png" /></a>
-          </div>
-          <div class="col-sm">
-            <a href="/middle-classroom-concepts/"><img src="<?php echo get_template_directory_uri(); ?>/_img/teq-classroom-concepts-middle-school-icons.png" /></a>
-          </div>
-          <div class="col-sm">
-            <a href="/high-classroom-concepts/"><img src="<?php echo get_template_directory_uri(); ?>/_img/teq-classroom-concepts-high-school-icons.png" /></a>
-          </div>
-          <div class="col-sm">
-            <a href="/special-education-classroom-concepts/"><img src="<?php echo get_template_directory_uri(); ?>/_img/teq-classroom-concepts-special-inclusive-icons.png" /></a>
-          </div>
+  <div class="container-fluid padding-top padding-bottom scrollToBottom classroomConcepts hidden-xs-down hidden-sm-down">
+    <div class="row">
+      <div class="container padding-top padding-bottom">
+        <div class="col-md flex-md-middle text-center">
+          <h5 class="white text-center"><img src="/wp-content/uploads/2016/12/evospaces_logo_white.svg"></h5>
+          <h2 class="white"><strong>Evolve</strong> your classroom to support 21st century learning</h2>
+          <p class="text-center"><a href="/evospaces/"><button class="salmon">Learn more</button><a/></p>
         </div>
       </div>
-      <div class="col-md-2"></div>
     </div>
   </div>
+
 
 <?php get_footer(); ?>

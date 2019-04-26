@@ -166,7 +166,7 @@
                       <div class="col-sm">
                         <img src="/wp-content/uploads/2016/12/about-us-leadership-PaulPrincipato.png" />
                         <p><strong>Paul Principato</strong></p>
-                        <small>Creative Director</small>
+                        <small>Director of Creative and Development</small>
                       </div>
                       <div class="col-sm">
                         <img src="/wp-content/uploads/2016/12/about-us-leadership-BrianFried.png" />
@@ -174,14 +174,14 @@
                         <small>Director of Inside Sales</small>
                       </div>
                       <div class="col-sm">
-                        <img src="/wp-content/uploads/2016/12/about-us-leadership-AndrewGrefig.png" />
-                        <p><strong>Andrew Grefig</strong></p>
-                        <small>Director of Curriculum and Content</small>
-                      </div>
-                      <div class="col-sm">
                         <img src="/wp-content/uploads/2016/12/about-us-leadership-JosephSanfilippo.png" />
                         <p><strong>Joseph Sanfilippo</strong></p>
                         <small>Director of eLearning</small>
+                      </div>
+                      <div class="col-sm">
+                        <img src="/wp-content/uploads/2016/12/RaymondSimpson.png" />
+                        <p><strong>Ray Simpson</strong></p>
+                        <small>Director of NEDM<br />(Network-Enabled Device Management)</small>
                       </div>
                     </div>
                   </div>
@@ -206,14 +206,14 @@
                           <small>Director of Sales Operations</small>
                         </div>
                         <div class="col-sm">
-                          <img src="/wp-content/uploads/2016/12/RaymondSimpson.png" />
-                          <p><strong>Ray Simpson</strong></p>
-                          <small>Director of NEDM<br />(Network-Enabled Device Management)</small>
-                        </div>
-                        <div class="col-sm">
                           <img src="/wp-content/uploads/2016/12/about-us-leadership-JenniferHennessey.png" />
                           <p><strong>Jennifer Hennessey</strong></p>
                           <small>Purchasing Manager</small>
+                        </div>
+                        <div class="col-sm">
+                          <img src="/wp-content/uploads/2016/12/LeahCroce.png" />
+                          <p><strong>Leah Croce</strong></p>
+                          <small>HR Manager</small>
                         </div>
                       </div>
                     </div>
