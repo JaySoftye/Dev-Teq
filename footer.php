@@ -63,7 +63,12 @@
         });
       </script>
       <p class="white">7 Norden Lane<br /> Huntington Station, NY 11746 (US)<br />877.455.9369 | info@teq.com</p>
-      <small>©2016 Teq - all rights reserved</small>
+      <small></small>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md">
+      <small class="text-center">©2016 - Teq®, It’s all about learning.TM,  iBlocks TM, evoSpaces TM, pBlocks TM, Teq Essentials®, nOw Instructional Support®, OPD Online Professional Development®, Onsite Professional Development®, and Powered by Teq® are trademarks or registered trademarks of Tequipment, Inc. in the US. Other company names and product names appearing here are the trademarks and registered trademarks of their respective companies.</small>
     </div>
   </div>
 </div>
