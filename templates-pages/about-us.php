@@ -98,23 +98,18 @@
                 <a class="conceptLink mobileClose" data-toggle="collapse" href="#conceptOne" aria-expanded="false" aria-controls="conceptOne">Executive Team</a>
                 <div class="collapse in padding-top padding-bottom" id="conceptOne">
                   <div class="row">
-                    <div class="col-md-2"></div>
+                    <div class="col-md-3"></div>
                     <div class="col-sm">
                       <img src="/wp-content/uploads/2016/12/about-us-leadership-DamianScarfo.png" />
                       <p><strong>Damian Scarfo</strong></p>
                       <small>Chief Executive officer</small>
                     </div>
                     <div class="col-sm">
-                      <img src="/wp-content/uploads/2016/12/about-us-leadership-ArnaldoPerez.png" />
-                      <p><strong>Arnaldo Perez</strong></p>
-                      <small>Chief Financial Officer</small>
-                    </div>
-                    <div class="col-sm">
                       <img src="/wp-content/uploads/2016/12/about-us-leadership-RobertWayneHarris.png" />
                       <p><strong>Robert-Wayne Harris</strong></p>
                       <small>Chief Learning Officer</small>
                     </div>
-                    <div class="col-md-2"></div>
+                    <div class="col-md-3"></div>
                   </div>
                 </div>
               </li>
