@@ -23,9 +23,7 @@
 
 </head>
 <body <?php body_class(); ?>>
-
 <main>
-
   <div class="container-fluid error-header">
     <div class="row height-full">
       <div class="container flex-md-middle text-center">
@@ -38,7 +36,6 @@
       </div>
     </div>
   </div>
-
 </main>
 
   <?php get_footer();
