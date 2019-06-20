@@ -1254,6 +1254,45 @@ ul.hs-error-msgs {
   color: red;
 }
 
+.trialForm.new-product-form input {
+  background-color: #eceeef;
+  height: 2rem;
+  width: 95%;
+  border: none;
+  margin: 5px 0 10px 0;
+	padding: 7px;
+	font-size: 1.1rem;
+	font-weight: 300;
+  color: #323e48;
+}
+
+.trialForm.new-product-form select.hs-input {
+  height: 2rem;
+  width: 95%;
+  font-size: 1rem;
+}
+
+.trialForm.new-product-form .hs-form-field {
+  margin-bottom: 1.5rem;
+}
+
+.trialForm.new-product-form .hs-form-field ul.hs-error-msgs {
+  padding: 0 0;
+  margin-top: -1rem;
+}
+
+.trialForm.new-product-form label {
+  font-size: .85rem;
+  margin: 0 0;
+}
+
+.trialForm.new-product-form .hs-form .hs-button {
+  padding: 20px 60px;
+  margin: .5rem auto;
+  height: auto;
+  width: auto;
+}
+
 p.gdpr-form {
   margin-top: -5px;
   margin-left: -5px;

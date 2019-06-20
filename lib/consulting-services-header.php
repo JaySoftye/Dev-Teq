@@ -61,7 +61,6 @@
             <li><a href="<?php echo site_url(); ?>/stem/3d-printers/" class="white">3D Printing</a></li>
             <li><a href="<?php echo site_url(); ?>/makerspaces/" class="white">Makerspaces</a></li>
             <li><a href="<?php echo site_url(); ?>/sight-and-sound/" class="white">Sight and Sound</a></li>
-            <li><a href="<?php echo site_url(); ?>/sd-wan/" class="white">Software Assurance</a></li>
           </ul>
         </li>
         <li class="nav-item">

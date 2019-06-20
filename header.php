@@ -61,7 +61,6 @@
             <li><a href="<?php echo site_url(); ?>/stem/3d-printers/" class="white">3D Printing</a></li>
             <li><a href="<?php echo site_url(); ?>/makerspaces/" class="white">Makerspaces</a></li>
             <li><a href="<?php echo site_url(); ?>/sight-and-sound/" class="white">Sight and Sound</a></li>
-            <li><a href="<?php echo site_url(); ?>/sd-wan/" class="white">Software Assurance</a></li>
           </ul>
         </li>
         <li class="nav-item">
@@ -144,14 +143,10 @@
               <ul class="nav">
                 <li><a href="<?php echo site_url(); ?>/pd-platforms/onsite-pd" class="subnav-link">Onsite PD</a></li>
                 <li><a href="<?php echo site_url(); ?>/pd-platforms/online-pd" class="subnav-link">Online PD</a></li>
-                <li><a href="<?php echo site_url(); ?>/pd-platforms/now-instructional-support/" class="subnav-link">nOw Instructional Support</a></li>
-                <li><a href="<?php echo site_url(); ?>/pd-platforms/teq-essentials" class="subnav-link">Teq Essentials</a></li>
                 <li><a href="<?php echo site_url(); ?>/pd-platforms/teacher-certifications/" class="subnav-link">Teq Digital Teacher Certifications</a></li>
                 <li><a href="<?php echo site_url(); ?>/pd-platforms/eils/" class="subnav-link">Effective Instructional Leadership & Supervision</a></li>
               </ul>
-          </li>
-          <li class="col-sm">
-              <h5><a class="nav-link subnav-link" href="<?php echo site_url(); ?>/instructional-software/">Instructional Software</a></h5>
+              <h5><a class="nav-link subnav-link" href="<?php echo site_url(); ?>/instructional-software/">Instructional <br />Software</a></h5>
               <ul class="nav">
                 <li><a href="<?php echo site_url(); ?>/instructional-software/smart-learning-suite" class="subnav-link">SMART Learning Suite</a></li>
                 <li><a href="<?php echo site_url(); ?>/instructional-software/stemfuse/" class="subnav-link">STEM Fuse</a></li>
@@ -162,24 +157,26 @@
               <h5><a class="nav-link subnav-link" href="<?php echo site_url(); ?>/stem/">STEM</a></h5>
               <ul class="nav">
                 <li><a href="<?php echo site_url(); ?>/stem/si/" class="subnav-link">STEM Initiatives</a></li>
-                <li><a href="<?php echo site_url(); ?>/stem/robotics/" class="subnav-link">Robotics</a>
-                  <ul class="nav">
-                    <li class="level2"><a href="<?php echo site_url(); ?>/stem/jumpstart-nao/" class="subnav-link">Jumpstart NAO</a></li>
-                    <li class="level2"><a href="<?php echo site_url(); ?>/stem/robotis/" class="subnav-link">Robotis</a></li>
-                    <li class="level2"><a href="<?php echo site_url(); ?>/stem/wonder-workshop/" class="subnav-link">Wonder Workshop</a></li>
-                    <li class="level2"><a href="<?php echo site_url(); ?>/stem/sphero/" class="subnav-link">Sphero</a></li>
-                    <li class="level2"><a href="<?php echo site_url(); ?>/stem/kibo/" class="subnav-link">KIBO</a></li>
-                    <li class="level2"><a href="<?php echo site_url(); ?>/stem/cubelets/" class="subnav-link">Cubelets</a></li>
-                    <li class="level2"><a href="<?php echo site_url(); ?>/stem/ozobot/" class="subnav-link">Ozobot</a></li>
-                  </ul>
-                </li>
                 <li><a href="<?php echo site_url(); ?>/stem/zspace/" class="subnav-link">zSpace</a></li>
                 <li><a href="<?php echo site_url(); ?>/stem/labdisc/" class="subnav-link">Labdisc</a></li>
                 <li><a href="<?php echo site_url(); ?>/stem/sparkfun/" class="subnav-link">Sparkfun</a></li>
                 <li><a href="<?php echo site_url(); ?>/stem/pi-top/" class="subnav-link">pi-top</a></li>
                 <li><a href="<?php echo site_url(); ?>/stem/sam-labs/" class="subnav-link">SAM Labs</a></li>
                 <li><a href="<?php echo site_url(); ?>/stem/littlebits/" class="subnav-link">littleBits</a></li>
+                <li><a href="<?php echo site_url(); ?>/stem/bloxels/" class="subnav-link">Bloxels</a></li>
               </ul>
+          </li>
+          <li class="col-sm">
+            <h5><a href="<?php echo site_url(); ?>/stem/robotics/" class="subnav-link">Robotics</a></h5>
+            <ul class="nav">
+              <li><a href="<?php echo site_url(); ?>/stem/jumpstart-nao/" class="subnav-link">Jumpstart NAO</a></li>
+              <li><a href="<?php echo site_url(); ?>/stem/robotis/" class="subnav-link">Robotis</a></li>
+              <li><a href="<?php echo site_url(); ?>/stem/wonder-workshop/" class="subnav-link">Wonder Workshop</a></li>
+              <li><a href="<?php echo site_url(); ?>/stem/sphero/" class="subnav-link">Sphero</a></li>
+              <li><a href="<?php echo site_url(); ?>/stem/kibo/" class="subnav-link">KIBO</a></li>
+              <li><a href="<?php echo site_url(); ?>/stem/cubelets/" class="subnav-link">Cubelets</a></li>
+              <li><a href="<?php echo site_url(); ?>/stem/ozobot/" class="subnav-link">Ozobot</a></li>
+            </ul>
           </li>
           <li class="col-sm">
               <h5><a class="nav-link subnav-link" href="<?php echo site_url(); ?>/makerspaces/">Makerspaces</a></h5>
