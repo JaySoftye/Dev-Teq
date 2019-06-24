@@ -164,6 +164,7 @@
                 <li><a href="<?php echo site_url(); ?>/stem/sam-labs/" class="subnav-link">SAM Labs</a></li>
                 <li><a href="<?php echo site_url(); ?>/stem/littlebits/" class="subnav-link">littleBits</a></li>
                 <li><a href="<?php echo site_url(); ?>/stem/bloxels/" class="subnav-link">Bloxels</a></li>
+                <li><a href="<?php echo site_url(); ?>/stem/kano/" class="subnav-link">KANO</a></li>
               </ul>
           </li>
           <li class="col-sm">
