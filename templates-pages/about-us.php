@@ -98,18 +98,23 @@
                 <a class="conceptLink mobileClose" data-toggle="collapse" href="#conceptOne" aria-expanded="false" aria-controls="conceptOne">Executive Team</a>
                 <div class="collapse in padding-top padding-bottom" id="conceptOne">
                   <div class="row">
-                    <div class="col-md-3"></div>
+                    <div class="col-md-1"></div>
                     <div class="col-sm">
-                      <img src="/wp-content/uploads/2016/12/about-us-leadership-DamianScarfo.png" />
+                      <img src="https://www.teq.com/images/headshots_circles/DamianScarfo.png" />
                       <p><strong>Damian Scarfo</strong></p>
                       <small>Chief Executive officer</small>
                     </div>
                     <div class="col-sm">
-                      <img src="/wp-content/uploads/2016/12/about-us-leadership-RobertWayneHarris.png" />
+                      <img src="https://www.teq.com/images/headshots_circles/JenniferEddelson.png" />
+                      <p><strong>Jennifer Eddelson</strong></p>
+                      <small>Chief Financial Officer</small>
+                    </div>
+                    <div class="col-sm">
+                      <img src="https://www.teq.com/images/headshots_circles/Robert-WayneHarris.png" />
                       <p><strong>Robert-Wayne Harris</strong></p>
                       <small>Chief Learning Officer</small>
                     </div>
-                    <div class="col-md-3"></div>
+                    <div class="col-md-1"></div>
                   </div>
                 </div>
               </li>
@@ -149,7 +154,17 @@
                   <div class="collapse in padding-top padding-bottom" id="conceptThree">
                     <div class="row">
                       <div class="col-sm">
-                        <img src="/wp-content/uploads/2016/12/about-us-leadership-JeffKoss.png" />
+                        <img src="/wp-content/uploads/2016/12/about-us-leadership-PaulPrincipato.png" />
+                        <p><strong>Paul Principato</strong></p>
+                        <small>Director of Creative and Development</small>
+                      </div>
+                      <div class="col-sm">
+                        <img src="/wp-content/uploads/2016/12/RaymondSimpson.png" />
+                        <p><strong>Ray Simpson</strong></p>
+                        <small>Director of NEDM<br />(Network-Enabled Device Management)</small>
+                      </div>
+                      <div class="col-sm">
+                        <img src="https://www.teq.com/images/headshots_circles/JeffreyKoss.png" />
                         <p><strong>Jeffrey Koss</strong></p>
                         <small>Director of Sales Operations</small>
                       </div>
@@ -157,11 +172,6 @@
                         <img src="/wp-content/uploads/2016/12/about-us-leadership-MichellePetry.png" />
                         <p><strong>Michelle Petry</strong></p>
                         <small>Director of Client Services</small>
-                      </div>
-                      <div class="col-sm">
-                        <img src="/wp-content/uploads/2016/12/about-us-leadership-PaulPrincipato.png" />
-                        <p><strong>Paul Principato</strong></p>
-                        <small>Director of Creative and Development</small>
                       </div>
                       <div class="col-sm">
                         <img src="/wp-content/uploads/2016/12/about-us-leadership-BrianFried.png" />
@@ -173,11 +183,6 @@
                         <p><strong>Joseph Sanfilippo</strong></p>
                         <small>Director of eLearning</small>
                       </div>
-                      <div class="col-sm">
-                        <img src="/wp-content/uploads/2016/12/RaymondSimpson.png" />
-                        <p><strong>Ray Simpson</strong></p>
-                        <small>Director of NEDM<br />(Network-Enabled Device Management)</small>
-                      </div>
                     </div>
                   </div>
                 </li>
@@ -185,6 +190,11 @@
                   <a class="conceptLink mobileClose" data-toggle="collapse" href="#conceptFour" aria-expanded="false" aria-controls="conceptThree">Directors and Managers</a>
                     <div class="collapse in padding-top padding-bottom" id="conceptFour">
                       <div class="row">
+                        <div class="col-sm">
+                          <img src="https://www.teq.com/images/headshots_circles/SamanthaBurkhardt.png" />
+                          <p><strong>Samantha Burkhardt</strong></p>
+                          <small>Director of Business Processes</small>
+                        </div>
                         <div class="col-sm">
                           <img src="/wp-content/uploads/2016/12/about-us-leadership-FrankFalconeri.png" />
                           <p><strong>Frank Falconeri</strong></p>
@@ -196,19 +206,14 @@
                           <small>Director of Scheduling</small>
                         </div>
                         <div class="col-sm">
-                          <img src="/wp-content/uploads/2016/12/about-us-leadership-PaulCangelosi.png" />
-                          <p><strong>Paul Cangelosi</strong></p>
-                          <small>Director of Sales Operations</small>
-                        </div>
-                        <div class="col-sm">
                           <img src="/wp-content/uploads/2016/12/about-us-leadership-JenniferHennessey.png" />
                           <p><strong>Jennifer Hennessey</strong></p>
                           <small>Purchasing Manager</small>
                         </div>
                         <div class="col-sm">
-                          <img src="/wp-content/uploads/2016/12/LeahCroce.png" />
-                          <p><strong>Leah Croce</strong></p>
-                          <small>HR Manager</small>
+                          <img src="https://www.teq.com/images/headshots_circles/JenniferBailey.png" />
+                          <p><strong>Jennifer Bailey</strong></p>
+                          <small>Product Marketing Manager</small>
                         </div>
                       </div>
                     </div>
