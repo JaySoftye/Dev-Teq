@@ -412,10 +412,14 @@ get_template_part('lib/teq-g-header');
               <tr>
                 <th scope="col"></th>
                 <th scope="col">EDC</th>
+                <!--
                 <th scope="col">Price</th>
                 <th scope="col">Qty</th>
+                -->
                 <th scope="col"><img src="<?php echo get_template_directory_uri(); ?>/images/EDC-with-opd.svg" alt="EDC with Opd" /></th>
+                <!--
                 <th scope="col"><img src="<?php echo get_template_directory_uri(); ?>/images/price-with-opd.svg" alt="Price with Opd" /></th></th>
+                -->
               </tr>
             </thead>
             <?php echo get_post_meta($postid, 'edcNumber', true); ?>

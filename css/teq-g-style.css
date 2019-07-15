@@ -429,6 +429,10 @@ table.table.post-table td span.secondary {
   color: rgb(0,180,228);
 }
 
+.edc-number-table table.table.post-table tbody.product-row td:nth-child(3) {
+  color: rgb(190,32,38);
+}
+
 .hs-form-container {
 	margin-top: 5rem;
   margin-bottom: 10rem;
