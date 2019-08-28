@@ -25,7 +25,7 @@
             </div>
             <center>
               <button class="d-inline-block trialScroll light" type="button" data-toggle="collapse" data-target="#trialsignup" aria-expanded="false" aria-controls="trialsignup">Request more info</button>
-              <a href="http://onlinepd.teq.com/"><button class="d-inline-block light" style="margin-left: 10px;" type="button">OPD member login</button></a>
+              <a href="https://otis.teq.com/"><button class="d-inline-block light" style="margin-left: 10px;" type="button">OTIS login</button></a>
             </center>
           </div>
         </div>
@@ -68,21 +68,6 @@
             </div>
             <div class="col-md-6 nopadding flex-md-middle">
               <img class="essentialImg hidden-sm-down hidden-xs-down" src="<?php echo get_template_directory_uri(); ?>/_img/teq-essentials-slider-product-box-image.png" />
-            </div>
-          </div>
-          </div>
-        </div>
-
-        <div class="carousel-item essentialsBackground2">
-          <div class="container-fluid carousel-item-container-green">
-          <div class="container padding-top padding-bottom">
-            <div class="col-md-6 nopadding">
-              <h1 class="white display-1">Support.</h1>
-              <h3 class="white">Support <?php the_title( '<strong>', '</strong>' ); ?> with a fast, personalized way to get instructional technology help from a state-certified PD specialist, right when you need it most.</h3><a class="white" href="http://now.teq.com">now.teq.com</a>
-              <center><a href="<?php echo site_url(); ?>/pd-platforms/now-instructional-support/"><button class="light">Find out more</button></a></center>
-            </div>
-            <div class="col-md-6 nopadding flex-md-middle">
-              <img class="essentialImg hidden-sm-down hidden-xs-down" src="<?php echo get_template_directory_uri(); ?>/_img/teq-essentials-slider-now-ipad-product-image.png" />
             </div>
           </div>
           </div>

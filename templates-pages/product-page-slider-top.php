@@ -119,27 +119,12 @@
           </div>
         </div>
 
-        <div class="carousel-item essentialsBackground2">
-          <div class="container-fluid carousel-item-container-green">
-          <div class="container padding-top padding-bottom">
-            <div class="col-md-6 nopadding">
-              <h1 class="white display-1">Support.</h1>
-              <h3 class="white">Support <?php the_title( '<strong>', '</strong>' ); ?> with a fast, personalized way to get instructional technology help from a state-certified PD specialist, right when you need it most.</h3><a class="white" href="http://now.teq.com">now.teq.com</a>
-              <center><a href="<?php echo site_url(); ?>/pd-platforms/now-instructional-support/"><button class="light">Find out more</button></a></center>
-            </div>
-            <div class="col-md-6 nopadding flex-md-middle">
-              <img class="essentialImg hidden-sm-down hidden-xs-down" src="<?php echo get_template_directory_uri(); ?>/_img/teq-essentials-slider-now-ipad-product-image.png" />
-            </div>
-          </div>
-          </div>
-        </div>
-
         <div class="carousel-item essentialsBackground3">
           <div class="container-fluid carousel-item-container-blue-full">
           <div class="container">
             <div class="col-md-6 nopadding">
               <h1 class="white display-1">Learn. <img src="<?php echo get_template_directory_uri(); ?>/_img/teq-essentials-slider-learn-ctle-approved.png" /></h1>
-              <h3 class="white">Learn to utilize the potential <?php the_title( '<strong>', '</strong>' ); ?> can have inside the classroom with Teq online PD.</h3>
+              <h3 class="white">Learn to utilize the potential <?php the_title( '<strong>', '</strong>' ); ?> can have inside the classroom.</h3>
               <h5><a class="white" href="<?php echo get_post_meta($postid, 'PdRecOneURL', true); ?>"><strong><?php echo get_post_meta($postid, 'PdRecOneTitle', true); ?></strong></a> <img src="<?php echo get_template_directory_uri(); ?>/_img/teq-essentials-slider-learn-schedule-icon.png" /></h5>
               <p class="white"><?php echo get_post_meta($postid, 'PdRecOneDescription', true); ?></p>
               <center><a href="<?php echo get_post_meta($postid, 'PdRecOneURL', true); ?>"><button class="light">Register for this course</button></a></center>
