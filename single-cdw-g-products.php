@@ -396,9 +396,9 @@ get_template_part('lib/teq-g-header');
         <?php wp_reset_query(); the_content(); ?>
       </div>
       <div class="print-content pd-content">
-        <img class="post-pd-image" src="<?php echo get_template_directory_uri(); ?>/images/CDW-G-pd-post-image.jpg" />
-        <h2><strong>Bundle with up to 3 Online PD (Opd) licenses!</strong></h2>
-        <p>With Teq Online PD (Opd), educators have access to PD that will boost their technology skills, and provide them with new ways to engage students and improve instruction. Teq PD helps teachers fulfill state-mandated PD hours while learning valuable skills on dozens of technology topics. Administrators can align PD with instructional goals and create personalized PD plans for their staff.</p>
+        <img class="post-pd-image" src="<?php echo get_template_directory_uri(); ?>/images/CDW-G-otis-post-image.jpg" />
+        <h2><strong>Bundle with up to 3 Otis for educators licenses!</strong></h2>
+        <p>With Otis (formerly known as Opd), educators have access to PD that will boost their technology skills, and provide them with new ways to engage students and improve instruction. Otis PD helps teachers fulfill state-mandated PD hours while learning valuable skills on dozens of technology topics. Administrators can align PD with instructional goals and create personalized PD plans for their staff.</p>
 
         <?php if(is_single( 'Online Professional Development' )) { } else { ?>
           <p><a class="cdw-button" href="/cdw-g-products/online-professional-development/">Read more</a></p>

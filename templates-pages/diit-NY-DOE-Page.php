@@ -21,14 +21,14 @@ get_template_part('lib/nyc-doe-header');
       <div class="col-md">
         <h2 class="text-center"><a class="opd-link" data-toggle="collapse" href="#collapseOPD" aria-expanded="false" aria-controls="collapseOPD"><strong><u>Did you know that ?</u></strong></a></h2>
         <div class="collapse padding-sm" id="collapseOPD">
-          <h2 class="text-center white">Teq Online PD is approved by NYS to fulfill CTLE requirments. <br />Start earning CTLE hours towards maintaining your State Teaching License with Online PD today!</h2>
-          <h2 class="text-center padding-sm"><a class="btn blue" href="https://onlinepd.teq.com/">Learn more</a></h2>
+          <h2 class="text-center white">OTIS for educators is approved by NYS to fulfill CTLE requirments. <br />Start earning CTLE hours towards maintaining your State Teaching License with Otis today!</h2>
+          <h2 class="text-center padding-sm"><a class="btn blue" href="https://otis.teq.com/">Learn more</a></h2>
         </div>
       </div>
     </div>
     <div class="row">
       <div class="col-md">
-        <img src="<?php echo get_template_directory_uri();?>/_img/diit-nycdoe-teq-opd-ctle-approved.png" />
+        <img src="<?php echo get_template_directory_uri();?>/_img/diit-nycdoe-otis-ctle-approved.png" />
       </div>
     </div>
   </div>
@@ -38,16 +38,15 @@ get_template_part('lib/nyc-doe-header');
 <div class="container-fluid opd-dark-blue">
   <div class="row">
     <div class="col-md-2 nopadding flex-md-bottom hide-small">
-      <img src="<?php echo get_template_directory_uri();?>/_img/nyc-doe-free-opd-account-compare-image.jpg" />
+      <img src="<?php echo get_template_directory_uri();?>/_img/nyc-doe-free-otis-account-compare-image.jpg" />
     </div>
     <div class="col-md flex-md-middle">
       <div class="row padding-top">
         <h3 class="col-md text-center padding-sm white"><strong>Comparison Documents</strong></h3>
       </div>
       <div class="row padding-bottom">
-        <p class="col-md-4"><a href="https://www.teq.com/wp-content/themes/BootstrapFour/_img/Notebook_vs_ClassFlow_ActivInspire-Datasheet-2018.pdf" class="btn smart-green text-left"><strong>Compare SMART Notebook to a Classflow or ActivInspire Subscription</strong></a></p>
-        <p class="col-md-4"><a href="https://www.teq.com/wp-content/themes/BootstrapFour/_img/teq_opd_comparison.pdf" class="btn blue text-left"><strong>Compare a FREE Account with a Teq Online PD School Subscription</strong></a></p>
-        <p class="col-md-4"><a href="https://www.teq.com/wp-content/themes/BootstrapFour/_img/teq_sls_unlimited_comparison.pdf" class="btn smart-purple text-left"><strong>Compare a SMART Notebook Account to a SLS or Teq Essentials Subscription</strong></a></p>
+        <p class="col-md-6"><a href="https://www.teq.com/wp-content/themes/BootstrapFour/_img/Notebook_vs_ClassFlow_ActivInspire-Datasheet-2018.pdf" class="btn smart-green text-left"><strong>Compare SMART Notebook to a Classflow or ActivInspire Subscription</strong></a></p>
+        <p class="col-md-6"><a href="https://www.teq.com/wp-content/themes/BootstrapFour/_img/teq_sls_unlimited_comparison.pdf" class="btn smart-purple text-left"><strong>Compare a SMART Notebook Account to a SLS or Teq Essentials Subscription</strong></a></p>
       </div>
     </div>
     <div class="col-md-2 nopadding flex-md-bottom hide-small">
