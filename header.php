@@ -142,7 +142,7 @@
               <h5><a class="nav-link subnav-link" href="<?php echo site_url(); ?>/pd-platforms">PD Platforms</a></h5>
               <ul class="nav">
                 <li><a href="<?php echo site_url(); ?>/pd-platforms/onsite-pd" class="subnav-link">Onsite PD</a></li>
-                <li><a href="<?php echo site_url(); ?>/pd-platforms/online-pd" class="subnav-link">Online PD</a></li>
+                <li><a href="<?php echo site_url(); ?>/pd-platforms/otis" class="subnav-link">OTIS for educators</a></li>
                 <li><a href="<?php echo site_url(); ?>/pd-platforms/teacher-certifications/" class="subnav-link">Teq Digital Teacher Certifications</a></li>
                 <li><a href="<?php echo site_url(); ?>/pd-platforms/eils/" class="subnav-link">Effective Instructional Leadership & Supervision</a></li>
               </ul>
