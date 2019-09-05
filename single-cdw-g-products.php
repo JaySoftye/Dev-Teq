@@ -401,7 +401,7 @@ get_template_part('lib/teq-g-header');
         <p>With Otis (formerly known as Opd), educators have access to PD that will boost their technology skills, and provide them with new ways to engage students and improve instruction. Otis PD helps teachers fulfill state-mandated PD hours while learning valuable skills on dozens of technology topics. Administrators can align PD with instructional goals and create personalized PD plans for their staff.</p>
 
         <?php if(is_single( 'Online Professional Development' )) { } else { ?>
-          <p><a class="cdw-button" href="/cdw-g-products/online-professional-development/">Read more</a></p>
+          <p><a class="cdw-button" href="/cdw-g-products/otis-for-educators/">Read more</a></p>
         <?php } ?>
       </div>
       <?php if(metadata_exists('post', $post->ID,'edcNumber')) { ?>
@@ -416,7 +416,7 @@ get_template_part('lib/teq-g-header');
                 <th scope="col">Price</th>
                 <th scope="col">Qty</th>
                 -->
-                <th scope="col"><img src="<?php echo get_template_directory_uri(); ?>/images/EDC-with-opd.svg" alt="EDC with Opd" /></th>
+                <th scope="col"><img src="<?php echo get_template_directory_uri(); ?>/images/EDC-with-otis.svg" alt="EDC with Otis" /></th>
                 <!--
                 <th scope="col"><img src="<?php echo get_template_directory_uri(); ?>/images/price-with-opd.svg" alt="Price with Opd" /></th></th>
                 -->

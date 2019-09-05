@@ -50,7 +50,7 @@ $(document).ready(function(){
             <div class="col-md-7">
               <ul class="nav navbar-nav">
                 <li class="nav-item"><a href="<?php echo site_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/_img/<?php echo get_post_meta($postid, 'headerCaption', true); ?>.png" /></a></li>
-                <li class="nav-item"><a href="http://onlinepd.teq.com" class="white">More about Online PD</a></li>
+                <li class="nav-item"><a href="http://onlinepd.teq.com" class="white">More about OTIS</a></li>
                 <li class="nav-item"><a href="#form" class="white"><button class="rounded-rectangle">Customize a PD plan</button></a></li>
               </ul>
             </div>
@@ -119,8 +119,8 @@ $(document).ready(function(){
             </div>
             <div class="col-md-4 nopadding text-center">
               <a href="http://onlinepd.teq.com" class="teqBlue"><img src="<?php echo get_template_directory_uri();?>/_img/channel-partners-welcome-the-fusion-of-technology-and-learning.jpg" /></a>
-              <h5><strong>The fusion of technology and learning.</strong></h5>
-              <a href="http://onlinepd.teq.com" class="teqBlue">Learn more about Teq Online PD and create your own customized PD plan.</a>
+              <h5><strong>We Help Educators Succeed!</strong></h5>
+              <a href="http://onlinepd.teq.com" class="teqBlue">Learn more about OTIS and how to create your own customized PD plan.</a>
             </div>
             <div class="col-md-4 nopadding text-center">
               <a href="<?php echo get_site_url(); ?>/ctle-approved/" class="teqBlue"><img src="<?php echo get_template_directory_uri();?>/_img/channel-partners-welcome-ensure-your-pd-is-state-approved.jpg" /></a>
