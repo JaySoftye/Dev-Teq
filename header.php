@@ -201,24 +201,20 @@
           <li class="col-sm">
               <h5><a class="nav-link subnav-link" href="<?php echo site_url(); ?>/sight-and-sound/">Sight and Sound</a></h5>
               <ul class="nav">
-                <li><a href="<?php echo site_url(); ?>/sight-and-sound/smart-boards/" class="subnav-link">SMART</a>
-                  <ul class="nav">
-                    <li class="level2"><a href="<?php echo site_url(); ?>/sight-and-sound/smart-board-7000/">7000 Series</a></li>
-                    <li class="level2"><a href="<?php echo site_url(); ?>/sight-and-sound/smart-board-6000/">6000 Series</a></li>
-                    <li class="level2"><a href="<?php echo site_url(); ?>/sight-and-sound/smart-board-mx/">MX  Series</a></li>
-                    <li class="level2"><a href="<?php echo site_url(); ?>/sight-and-sound/smart-kapp/">kapp</a></li>
-                    <li class="level2"><a href="<?php echo site_url(); ?>/sight-and-sound/smart-podium-624/">Podium 624</a></li>
-                  </ul>
-                </li>
+                <li><a href="<?php echo site_url(); ?>/sight-and-sound/smart-board-7000/" class="subnav-link">7000 Series</a></li>
+                <li><a href="<?php echo site_url(); ?>/sight-and-sound/smart-board-6000/" class="subnav-link">6000 Series</a></li>
+                <li><a href="<?php echo site_url(); ?>/sight-and-sound/smart-board-mx/" class="subnav-link">MX  Series</a></li>
+                <li><a href="<?php echo site_url(); ?>/sight-and-sound/smart-kapp/" class="subnav-link">kapp</a></li>
+                <li><a href="<?php echo site_url(); ?>/sight-and-sound/smart-podium-624/" class="subnav-link">Podium 624</a></li>
                 <li><a href="<?php echo site_url(); ?>/sight-and-sound/audio-enhancement/" class="subnav-link">Audio Enhancement</a></li>
                 <li><a href="<?php echo site_url(); ?>/sight-and-sound/safe-system/" class="subnav-link">SAFE System</a></li>
                 <!--
-                  <li><a href="<?php echo site_url(); ?>/sight-and-sound/smart-table/" class="subnav-link">SMART Table</a></li>
+                <li><a href="<?php echo site_url(); ?>/sight-and-sound/smart-table/" class="subnav-link">SMART Table</a></li>
                 -->
                 <li><a href="<?php echo site_url(); ?>/sight-and-sound/wall-mounts-mobile-stands/" class="subnav-link">Wall Mounts/Mobile Stands</a></li>
                 <li><a href="<?php echo site_url(); ?>/sight-and-sound/tech-tub/" class="subnav-link">Tech Tub</a></li>
                 <li><a href="<?php echo site_url(); ?>/sight-and-sound/activefloor/" class="subnav-link">Active Floor</a></li>
-                <li><a href="<?php echo site_url(); ?>/sight-and-sound/accessories/" class="subnav-link">Accessories</a></li>
+                <li><a href="<?php echo site_url(); ?>/sight-and-sound/lu/" class="subnav-link">Lu</a></li>
               </ul>
           </li>
           <li class="nav-item closeMenuCell">
@@ -226,7 +222,7 @@
           </li>
           <li class="col-sm nopadding">
             <img src="<?php echo get_template_directory_uri();?>/_img/teq-banner-opd-login-nav.png" />
-            <a href="https://onlinepd.teq.com/"><button class="salmon hideItem">Opd.teq.com</button></a>
+            <a href="https://otis.teq.com/"><button class="salmon hideItem">Otis.teq.com</button></a>
           </li>
         </ul>
       </div>
