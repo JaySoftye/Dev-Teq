@@ -204,6 +204,8 @@
                 <li><a href="<?php echo site_url(); ?>/sight-and-sound/smart-board-7000/" class="subnav-link">7000 Series</a></li>
                 <li><a href="<?php echo site_url(); ?>/sight-and-sound/smart-board-6000/" class="subnav-link">6000 Series</a></li>
                 <li><a href="<?php echo site_url(); ?>/sight-and-sound/smart-board-mx/" class="subnav-link">MX  Series</a></li>
+                <li><a href="<?php echo site_url(); ?>/sight-and-sound/activefloor/" class="subnav-link">Active Floor</a></li>
+                <li><a href="<?php echo site_url(); ?>/sight-and-sound/lu/" class="subnav-link">Lu Interactive</a></li>
                 <li><a href="<?php echo site_url(); ?>/sight-and-sound/smart-kapp/" class="subnav-link">kapp</a></li>
                 <li><a href="<?php echo site_url(); ?>/sight-and-sound/smart-podium-624/" class="subnav-link">Podium 624</a></li>
                 <li><a href="<?php echo site_url(); ?>/sight-and-sound/audio-enhancement/" class="subnav-link">Audio Enhancement</a></li>
@@ -213,8 +215,6 @@
                 -->
                 <li><a href="<?php echo site_url(); ?>/sight-and-sound/wall-mounts-mobile-stands/" class="subnav-link">Wall Mounts/Mobile Stands</a></li>
                 <li><a href="<?php echo site_url(); ?>/sight-and-sound/tech-tub/" class="subnav-link">Tech Tub</a></li>
-                <li><a href="<?php echo site_url(); ?>/sight-and-sound/activefloor/" class="subnav-link">Active Floor</a></li>
-                <li><a href="<?php echo site_url(); ?>/sight-and-sound/lu/" class="subnav-link">Lu</a></li>
               </ul>
           </li>
           <li class="nav-item closeMenuCell">
