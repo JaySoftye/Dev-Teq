@@ -17,7 +17,7 @@
 </nav>
 
       <div class="container-fluid nopadding main-header" style="background-image: url('<?php echo get_template_directory_uri(); ?>/_img/<?php echo get_post_meta($postid, 'headerBackground', true); ?>.jpg');">
-        <div class="row height-full bottomGradient">
+        <div class="row height-three-quarters bottomGradient">
           <div class="container flex-md-bottom">
             <div>
               <h2 class="white text-center"><?php echo get_post_meta($postid, 'headerTitle', true); ?></h2>
