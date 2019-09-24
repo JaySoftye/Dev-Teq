@@ -93,12 +93,6 @@
             <li><a href="<?php echo site_url(); ?>/contact-us/" class="white">Contact Us</a></li>
           </ul>
         </li>
-        <li class="nav-item">
-          <h6><a id="freeNavLink" class="white nav-link" data-toggle="collapse" href="#mobileFreeOffer" aria-expanded="false" aria-controls="mobileFreeOffer">FREE OFFER</a></h6>
-          <ul class="footerLinks subnav collapse" id="mobileFreeOffer">
-            <li><h2 class="white">Get started with your <span class="teqBlue">new classroom technology</span> today.</h2><p class="white">You’ll learn all the skills you need to start using your new products and software right away. Teq's Getting Started option gives you access to an entire library of <a href="http://www.teq.com/ctle-approved"><span class="teqBlue">State-approved PD content</span></a> as well as hours of complementary onsite PD.</p><p class="white bold">To see what PD courses are available for you, visit <a class="teqBlue bold" href="http://onlinepd.teq.com/gettingstarted/" onclick="trackOutboundLink('http://onlinepd.teq.com/gettingstarted/'); return false;">onlinepd.teq.com/gettingstarted</a>.</p></li>
-          </ul>
-        </li>
       </ul>
     </div>
     <div id="navMain" class="container-fluid collapse navbar-toggleable-sm">
@@ -298,9 +292,6 @@
         <ul class="nav row">
           <li class="col-sm">
             <a class="nav-link subnav-link" href="<?php echo site_url(); ?>/about-us/">About</a>
-          </li>
-          <li class="col-sm">
-            <a class="nav-link subnav-link" href="<?php echo site_url(); ?>/roadmap/">Roadmap</a>
           </li>
           <li class="col-sm">
             <a class="nav-link subnav-link" href="<?php echo site_url(); ?>/about-us/press-releases/">Press Releases</a>
