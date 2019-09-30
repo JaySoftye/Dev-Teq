@@ -406,7 +406,7 @@ get_template_part('lib/teq-g-header');
       </div>
       <?php if(metadata_exists('post', $post->ID,'edcNumber')) { ?>
         <div class="edc-number-table print-content">
-          <h6><strong>Product Pricing and Bundle Options</strong> - <span class="hide-print">click on the table row for a break down of what is included in each product bundle.</span> We emphasize the importance of providing PD options with every product to make for a better student/teacher experience. <strong>All STEM Products are supported by our Online Professional Development Platform (Opd)</strong> - pricing is listed below for each product with and without an Opd license.</h6>
+          <h6><strong>Product Pricing and Bundle Options</strong> - <span class="hide-print">click on the table row for a break down of what is included in each product bundle.</span> We emphasize the importance of providing PD options with every product to make for a better student/teacher experience. <strong>All STEM Products are supported by our online Professional Development platform, Otis (formerly known as Opd)</strong> - pricing is listed below for each product with and without an Otis license.</h6>
           <table class="table post-table">
             <thead>
               <tr>

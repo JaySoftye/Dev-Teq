@@ -121,9 +121,6 @@
         <li class="nav-item">
             <a class="nav-link" href="#aboutMenu" data-toggle="collapse" aria-expanded="false" aria-controls="aboutMenu">About</a>
         </li>
-        <li class="nav-item">
-            <a id="freeNavLink" class="nav-link bold" href="#freeOffer" data-toggle="collapse" aria-expanded="false" aria-controls="freeOffer" onclick="ga('send', 'event', 'FREE Link', 'Action label', 'Action Value');">FREE</a>
-        </li>
         <li class="nav-item search-form-container">
           <?php get_search_form( $echo = true ); ?>
         </li>
@@ -309,24 +306,6 @@
             <a href="#aboutMenu" data-toggle="collapse" aria-expanded="false" aria-controls="aboutMenu"><img class="mainLogo" src="<?php echo get_template_directory_uri();?>/_img/subnav-collapse-icon.svg" /></a>
           </li>
         </ul>
-      </div>
-    </div>
-    <div class="collapse fade subnav" id="freeOffer">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-2">
-              <h2 class="white">Get started with your <span class="teqBlue">new classroom technology</span> today.</h2>
-          </div>
-          <div class="col-md-6">
-            <a href="http://onlinepd.teq.com/gettingstarted/" onclick="trackOutboundLink('http://onlinepd.teq.com/gettingstarted/'); return false;"><img src="<?php echo get_template_directory_uri();?>/_img/teq-headernav-GettingStartedAd.png" /></a>
-          </div>
-          <div class="col-md-3">
-            <p class="white">You’ll learn all the skills you need to start using your new products and software right away. Teq's Getting Started option gives you access to an entire library of <a target="_blank" href="http://www.teq.com/ctle-approved"><span class="teqBlue">State-approved PD content</span></a> as well as hours of complementary online PD.</p><p class="white bold">To see what PD courses are available for you, visit <a class="teqBlue bold" href="http://onlinepd.teq.com/gettingstarted/" onclick="trackOutboundLink('http://onlinepd.teq.com/gettingstarted/'); return false;">onlinepd.teq.com/gettingstarted</a>.</p>
-          </div>
-          <div class="col-md-1">
-            <a href="#freeOffer" data-toggle="collapse" aria-expanded="false" aria-controls="freeOffer"><img class="mainLogo" src="<?php echo get_template_directory_uri();?>/_img/subnav-collapse-icon.svg" /></a>
-          </div>
-        </div>
       </div>
     </div>
     <section id="breadCrumbs" class="hidden-sm-down hidden-xs-down">
