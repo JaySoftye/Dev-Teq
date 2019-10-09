@@ -22,11 +22,16 @@ get_template_part('lib/teq-g-header');
       </div>
       <div class="print-content">
         <img class="post-header-image" src="<?php echo get_post_meta($postid, 'headerBackground', true); ?>" />
+      </div>
+      <div class="post-content print-content">
         <h1><strong><?php the_title();?></strong><span class="blink"></span></h1>
         <h3><?php echo get_post_meta($postid, 'headerTitle', true); ?></h3>
       </div>
       <div class="post-content hide-print">
-        <h6><?php echo get_post_meta($postid, 'headerCaption', true); ?></h6>
+        <h5>
+          Watch our <strong>product familiarization</strong> video below.<br />
+          <?php echo get_post_meta($postid, 'headerCaption', true); ?>
+        </h5>
       </div>
       <?php if(metadata_exists('post', $post->ID,'gradeBand')) { ?>
       <div class="print-content">

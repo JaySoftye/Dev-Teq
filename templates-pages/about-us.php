@@ -166,14 +166,14 @@
                         <small>Director of Sales Operations</small>
                       </div>
                       <div class="col-sm">
-                        <img src="/wp-content/uploads/2016/12/about-us-leadership-MichellePetry.png" />
-                        <p><strong>Michelle Petry</strong></p>
-                        <small>Director of Client Services</small>
-                      </div>
-                      <div class="col-sm">
                         <img src="/wp-content/uploads/2016/12/about-us-leadership-BrianFried.png" />
                         <p><strong>Brian Fried</strong></p>
                         <small>Director of Inside Sales</small>
+                      </div>
+                      <div class="col-sm">
+                        <img src="https://www.teq.com/images/headshots_circles/MichelleHollander.png" />
+                        <p><strong>Michelle Hollander</strong></p>
+                        <small>Director of Content and Curriculum</small>
                       </div>
                       <div class="col-sm">
                         <img src="/wp-content/uploads/2016/12/about-us-leadership-JosephSanfilippo.png" />
@@ -187,6 +187,11 @@
                   <a class="conceptLink mobileClose" data-toggle="collapse" href="#conceptFour" aria-expanded="false" aria-controls="conceptThree">Directors and Managers</a>
                     <div class="collapse in padding-top padding-bottom" id="conceptFour">
                       <div class="row">
+                        <div class="col-sm">
+                          <img src="/wp-content/uploads/2016/12/about-us-leadership-MichellePetry.png" />
+                          <p><strong>Michelle Petry</strong></p>
+                          <small>Director of Client Services</small>
+                        </div>
                         <div class="col-sm">
                           <img src="https://www.teq.com/images/headshots_circles/SamanthaBurkhardt.png" />
                           <p><strong>Samantha Burkhardt</strong></p>
