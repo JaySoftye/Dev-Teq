@@ -27,13 +27,14 @@ get_template_part('lib/teq-g-header');
         <h1><strong><?php the_title();?></strong><span class="blink"></span></h1>
         <h3><?php echo get_post_meta($postid, 'headerTitle', true); ?></h3>
       </div>
+      <?php if(metadata_exists('post', $post->ID,'headerCaption')) { ?>
       <div class="post-content hide-print">
         <h5>
           Watch our <strong>product familiarization</strong> video below.<br />
           <?php echo get_post_meta($postid, 'headerCaption', true); ?>
         </h5>
       </div>
-      <?php if(metadata_exists('post', $post->ID,'gradeBand')) { ?>
+    <?php } if(metadata_exists('post', $post->ID,'gradeBand')) { ?>
       <div class="print-content">
         <h6><strong>Grade Band Compatibility</strong> - Black indicates the grade-band in which the product is focused on, while grey indicates other grade-bands that it can be applied in. Curriculum Versatility - Products with a higher Curriculum Versatility value can be used in multiple subject/curriculum areas or grade levels compared to products that have a lower number. Products that have a higher level for <strong>ease-of-use</strong> will be relatively simple for teachers to implement into their instruction.</h6>
       </div>

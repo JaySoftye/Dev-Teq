@@ -89,7 +89,7 @@
           <div class="container padding-top padding-bottom">
             <div class="col-md-6 nopadding">
               <h1 class="white display-1">Combine.</h1>
-              <h3 class="white">Combine the learning power of <?php the_title( '<strong>', '</strong>' ); ?> with <a class="white bold" href="<?php echo site_url(); ?>/pd-platforms/online-pd"/>Online</a> and <a class="white bold" href="<?php echo site_url(); ?>/pd-platforms/onsite-pd">Onsite PD</a> and an unparalleled level of Instructional Support for your Essential Learning Package.</h3><a class="white" href="http://onlinepd.teq.com">onlinepd.teq.com</a>
+              <h3 class="white">Combine the learning power of <a class="white bold" href="<?php echo site_url(); ?>/pd-platforms/otis"/>OTIS for educators</a> and <a class="white bold" href="<?php echo site_url(); ?>/pd-platforms/onsite-pd">Onsite PD</a> with Teq Essentials, an exclusive package with unparalleled learning content and instructional support.</h3><a class="white" href="https://otis.teq.com/">otis.teq.com</a>              
               <center><a href="<?php echo site_url(); ?>/pd-platforms/teq-essentials/"><button class="light">Find out more</button></a></center>
             </div>
             <div class="col-md-6 nopadding flex-md-middle">
