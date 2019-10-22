@@ -474,6 +474,55 @@ function bootstrap_four_the_posts_pagination( $args = '' ) {
   echo bootstrap_four_get_posts_pagination( $args );
 }
 
+/** CHANGE AUTHOR URL SUFFIX - WILL USE AUTHOR PAGES FOR PD BIOS **/
+
+add_action('init', 'wp_snippet_author_base');
+function wp_snippet_author_base() {
+    global $wp_rewrite;
+    $author_slug = 'pd'; // the new slug name
+    $wp_rewrite->author_base = $author_slug;
+}
+
+/** ADD EXTRA USER FIELDS FOR PROFILE INFO **/
+
+add_action( 'show_user_profile', 'extra_user_profile_fields' );
+add_action( 'edit_user_profile', 'extra_user_profile_fields' );
+function extra_user_profile_fields( $user ) {
+?>
+  <h3><?php _e("Extra profile information", "blank"); ?></h3>
+  <table class="form-table">
+    <tr>
+      <th><label for="certification"><?php _e("certification"); ?></label></th>
+      <td>
+        <input type="text" name="certification" id="certification" class="regular-text" value="<?php echo esc_attr( get_the_author_meta( 'certification', $user->ID ) ); ?>" /><br />
+        <span class="description"><?php _e("Please enter your certification."); ?></span>
+      </td>
+    </tr>
+    <tr>
+      <th><label for="profilebackground"><?php _e("profilebackground"); ?></label></th>
+      <td>
+        <input type="text" name="profilebackground" id="profilebackground" class="regular-text" value="<?php echo esc_attr( get_the_author_meta( 'profilebackground', $user->ID ) ); ?>" /><br />
+        <span class="description"><?php _e("Please enter the background image title."); ?></span>
+      </td>
+    </tr>
+  </table>
+<?php
+}
+
+add_action( 'personal_options_update', 'save_extra_user_profile_fields' );
+add_action( 'edit_user_profile_update', 'save_extra_user_profile_fields' );
+function save_extra_user_profile_fields( $user_id ) {
+  $saved = false;
+  if ( current_user_can( 'edit_user', $user_id ) ) {
+    update_user_meta( $user_id, 'certification', $_POST['certification'] );
+    update_user_meta( $user_id, 'profilebackground', $_POST['profilebackground'] );
+    $saved = true;
+  }
+  return true;
+}
+
+remove_filter('pre_user_description', 'wp_filter_kses');
+
 /** Add Post Featured Image URL to an RSS feed. **/
 
 function add_rss_item_image() {
