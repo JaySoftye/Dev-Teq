@@ -29,7 +29,7 @@
           <a href="https://www.facebook.com/myTeq/"><img src="<?php echo get_template_directory_uri();?>/_img/teq-footer-facebook-icon.png" /></a>
         </li>
         <li class="nav-item">
-          <a href="https://twitter.com/TeqOPD"><img src="<?php echo get_template_directory_uri();?>/_img/teq-footer-twitter-icon.png" /></a>
+          <a href="https://twitter.com/OTIS4educators"><img src="<?php echo get_template_directory_uri();?>/_img/teq-footer-twitter-icon.png" /></a>
         </li>
         <li class="nav-item">
           <a href="https://www.linkedin.com/company/teq/"><img src="<?php echo get_template_directory_uri();?>/_img/teq-footer-linkedin-icon.png" /></a>

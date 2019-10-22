@@ -13,7 +13,7 @@ $(document).ready(function(){
 
      for(var i in pdTeamArray.PD) {
 
-       $("table#pdTeam").append( "<tr><td style='width:10%;'><img src=\"http://www.teq.com/images/headshots_circles/" + pdTeamArray.PD[i].headshot + "\" /></td><td>" + pdTeamArray.PD[i].name + "</td><td>" + pdTeamArray.PD[i].title + "</td><td><a href=\"../pd/" + pdTeamArray.PD[i].file + "\"><strong>View Details</strong></a></td></tr>" );
+       $("table#pdTeam").append( "<tr><td style='width:10%;'><img src=\"http://www.teq.com/images/headshots_circles/" + pdTeamArray.PD[i].headshot + "\" /></td><td>" + pdTeamArray.PD[i].name + "</td><td>" + pdTeamArray.PD[i].title + "</td><td><a href=\"../../pd/" + pdTeamArray.PD[i].file + "\"><strong>View Details</strong></a></td></tr>" );
 
      }
 });
