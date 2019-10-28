@@ -13,7 +13,7 @@
 
     <meta charset="<?php bloginfo('charset'); ?>"/>
 
-    <title><?php wp_title('|', true, 'right'); ?></title>
+    <title>Teq Professional Development Team</title>
 
 <!-- jQuery -->
 <!--[if lte IE 8]><script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script><![endif]-->
