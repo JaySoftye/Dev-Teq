@@ -148,7 +148,7 @@
               <h5><a class="nav-link subnav-link" href="<?php echo site_url(); ?>/stem/">STEM</a></h5>
               <ul class="nav">
                 <li><a href="<?php echo site_url(); ?>/stem/si/" class="subnav-link">STEM Initiatives</a></li>
-                <li><a href="<?php echo site_url(); ?>/stem/nyc-stem-carts/" class="subnav-link">Mobile Stem Carts</a></li>
+                <li><a href="<?php echo site_url(); ?>/stem/nyc-stem-carts/" class="subnav-link">Mobile STEM Carts</a></li>
                 <li><a href="<?php echo site_url(); ?>/stem/labdisc/" class="subnav-link">Labdisc</a></li>
                 <li><a href="<?php echo site_url(); ?>/stem/sparkfun/" class="subnav-link">Sparkfun</a></li>
                 <li><a href="<?php echo site_url(); ?>/stem/pi-top/" class="subnav-link">pi-top</a></li>
