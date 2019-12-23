@@ -103,11 +103,11 @@
         <li class="nav-item">
             <a class="nav-link" href="#productsMenu" data-toggle="collapse" aria-expanded="false" aria-controls="productsMenu">Products &amp; Things</a>
         </li>
-        <li class="nav-item new">
+        <li class="nav-item">
             <a class="nav-link" href="/iblocks">iBlocks</a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#classroomConceptsMenu" data-toggle="collapse" aria-expanded="false" aria-controls="classroomConceptsMenu">Classroom Concepts</a>
+        <li class="nav-item new">
+            <a class="nav-link" href="<?php echo site_url(); ?>/evospaces/">evoSpaces</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="#supportMenu" data-toggle="collapse" aria-expanded="false" aria-controls="supportMenu">Support and Service</a>
@@ -133,15 +133,11 @@
               <h5><a class="nav-link subnav-link" href="<?php echo site_url(); ?>/pd-platforms">PD Platforms</a></h5>
               <ul class="nav">
                 <li><a href="<?php echo site_url(); ?>/pd-platforms/onsite-pd" class="subnav-link">Onsite PD</a></li>
-                <li><a href="<?php echo site_url(); ?>/pd-platforms/online-pd" class="subnav-link">Online PD</a></li>
-                <li><a href="<?php echo site_url(); ?>/pd-platforms/now-instructional-support/" class="subnav-link">nOw Instructional Support</a></li>
-                <li><a href="<?php echo site_url(); ?>/pd-platforms/teq-essentials" class="subnav-link">Teq Essentials</a></li>
+                <li><a href="<?php echo site_url(); ?>/pd-platforms/otis" class="subnav-link">OTIS for educators</a></li>
                 <li><a href="<?php echo site_url(); ?>/pd-platforms/teacher-certifications/" class="subnav-link">Teq Digital Teacher Certifications</a></li>
                 <li><a href="<?php echo site_url(); ?>/pd-platforms/eils/" class="subnav-link">Effective Instructional Leadership & Supervision</a></li>
               </ul>
-          </li>
-          <li class="col-sm">
-              <h5><a class="nav-link subnav-link" href="<?php echo site_url(); ?>/instructional-software/">Instructional Software</a></h5>
+              <h5><a class="nav-link subnav-link" href="<?php echo site_url(); ?>/instructional-software/">Instructional <br />Software</a></h5>
               <ul class="nav">
                 <li><a href="<?php echo site_url(); ?>/instructional-software/smart-learning-suite" class="subnav-link">SMART Learning Suite</a></li>
                 <li><a href="<?php echo site_url(); ?>/instructional-software/stemfuse/" class="subnav-link">STEM Fuse</a></li>
@@ -152,26 +148,44 @@
               <h5><a class="nav-link subnav-link" href="<?php echo site_url(); ?>/stem/">STEM</a></h5>
               <ul class="nav">
                 <li><a href="<?php echo site_url(); ?>/stem/si/" class="subnav-link">STEM Initiatives</a></li>
-                <li><a href="<?php echo site_url(); ?>/stem/robotics/" class="subnav-link">Robotics</a>
-                  <ul class="nav">
-                    <li class="level2"><a href="<?php echo site_url(); ?>/stem/jumpstart-nao/" class="subnav-link">Jumpstart NAO</a></li>
-                    <li class="level2"><a href="<?php echo site_url(); ?>/stem/robotis/" class="subnav-link">Robotis</a></li>
-                    <li class="level2"><a href="<?php echo site_url(); ?>/stem/wonder-workshop/" class="subnav-link">Wonder Workshop</a></li>
-                    <li class="level2"><a href="<?php echo site_url(); ?>/stem/sphero/" class="subnav-link">Sphero</a></li>
-                    <li class="level2"><a href="<?php echo site_url(); ?>/stem/kibo/" class="subnav-link">KIBO</a></li>
-                    <li class="level2"><a href="<?php echo site_url(); ?>/stem/cubelets/" class="subnav-link">Cubelets</a></li>
-                    <li class="level2"><a href="<?php echo site_url(); ?>/stem/ozobot/" class="subnav-link">Ozobot</a></li>
-                  </ul>
-                </li>
-                <li><a href="<?php echo site_url(); ?>/stem/zspace/" class="subnav-link">zSpace</a></li>
+                <li><a href="<?php echo site_url(); ?>/stem/nyc-stem-carts/" class="subnav-link">Mobile STEM Carts</a></li>
                 <li><a href="<?php echo site_url(); ?>/stem/labdisc/" class="subnav-link">Labdisc</a></li>
                 <li><a href="<?php echo site_url(); ?>/stem/sparkfun/" class="subnav-link">Sparkfun</a></li>
                 <li><a href="<?php echo site_url(); ?>/stem/pi-top/" class="subnav-link">pi-top</a></li>
                 <li><a href="<?php echo site_url(); ?>/stem/sam-labs/" class="subnav-link">SAM Labs</a></li>
                 <li><a href="<?php echo site_url(); ?>/stem/littlebits/" class="subnav-link">littleBits</a></li>
+                <li><a href="<?php echo site_url(); ?>/stem/bloxels/" class="subnav-link">Bloxels</a></li>
+                <li><a href="<?php echo site_url(); ?>/stem/kano/" class="subnav-link">KANO</a></li>
+                <li><a href="<?php echo site_url(); ?>/stem/osmo/" class="subnav-link">Osmo</a></li>
+                <li><a href="<?php echo site_url(); ?>/stem/farmshelf/" class="subnav-link">Farmshelf</a></li>
               </ul>
           </li>
           <li class="col-sm">
+            <h5><a class="nav-link subnav-link" href="<?php echo site_url(); ?>/stem/robotics/" class="subnav-link">Robotics</a></h5>
+            <ul class="nav">
+              <li><a href="<?php echo site_url(); ?>/stem/robotis/" class="subnav-link">Robotis</a></li>
+              <li><a href="<?php echo site_url(); ?>/stem/wonder-workshop/" class="subnav-link">Wonder Workshop</a></li>
+              <li><a href="<?php echo site_url(); ?>/stem/sphero/" class="subnav-link">Sphero</a></li>
+              <li><a href="<?php echo site_url(); ?>/stem/kibo/" class="subnav-link">KIBO</a></li>
+              <li><a href="<?php echo site_url(); ?>/stem/cubelets/" class="subnav-link">Cubelets</a></li>
+              <li><a href="<?php echo site_url(); ?>/stem/ozobot/" class="subnav-link">Ozobot</a></li>
+            </ul>
+            <h5><a class="nav-link subnav-link" href="<?php echo site_url(); ?>/stem/ar-and-vr/" class="subnav-link">AR / VR</a></h5>
+              <ul class="nav">
+                <li><a href="<?php echo site_url(); ?>/stem/zspace/" class="subnav-link">zSpace</a></li>
+                <li><a href="<?php echo site_url(); ?>/stem/veative/" class="subnav-link">Veative</a></li>
+                <li><a href="<?php echo site_url(); ?>/stem/merge/" class="subnav-link">Merge</a></li>
+                  </ul>
+
+          </li>
+          <li class="col-sm">
+            <h5><a class="nav-link subnav-link" href="<?php echo site_url(); ?>/stem/3d-printers/" class="subnav-link">3D Printers</a></h5>
+              <ul class="nav">
+                <li><a href="<?php echo site_url(); ?>/stem/ultimaker-3d-printer/" class="subnav-link">Ultimaker</a></li>
+                <li><a href="<?php echo site_url(); ?>/stem/makerbot-3d-printer/" class="subnav-link">MakerBot</a></li>
+                <li><a href="<?php echo site_url(); ?>/stem/matter-and-form/" class="subnav-link">Matter and Form</a></li>
+                <li><a href="<?php echo site_url(); ?>/stem/3d-printer-labs/" class="subnav-link">3D Printer Labs</a></li>
+              </ul>
               <h5><a class="nav-link subnav-link" href="<?php echo site_url(); ?>/makerspaces/">Makerspaces</a></h5>
               <ul class="nav">
                 <li><a href="<?php echo site_url(); ?>/makerspaces/stem-labs/" class="subnav-link">Mobile STEM Labs</a></li>
@@ -179,34 +193,24 @@
                 <li><a href="<?php echo site_url(); ?>/makerspaces/furniture/" class="subnav-link">Furniture</a></li>
                 <li><a href="<?php echo site_url(); ?>/stem/electronics-coding-bundle/" class="subnav-link">Coding Bundles</a></li>
               </ul>
-              <h5><a class="nav-link subnav-link" href="<?php echo site_url(); ?>/stem/3d-printers/" class="subnav-link">3D Printers</a></h5>
-                <ul class="nav">
-                  <li><a href="<?php echo site_url(); ?>/stem/ultimaker-3d-printer/" class="subnav-link">Ultimaker</a></li>
-                  <li><a href="<?php echo site_url(); ?>/stem/makerbot-3d-printer/" class="subnav-link">MakerBot</a></li>
-                  <li><a href="<?php echo site_url(); ?>/stem/matter-and-form/" class="subnav-link">Matter and Form</a></li>
-                  <li><a href="<?php echo site_url(); ?>/stem/3d-printer-labs/" class="subnav-link">3D Printer Labs</a></li>
-                </ul>
           </li>
           <li class="col-sm">
               <h5><a class="nav-link subnav-link" href="<?php echo site_url(); ?>/sight-and-sound/">Sight and Sound</a></h5>
               <ul class="nav">
-                <li><a href="<?php echo site_url(); ?>/sight-and-sound/smart-boards/" class="subnav-link">SMART</a>
-                  <ul class="nav">
-                    <li class="level2"><a href="<?php echo site_url(); ?>/sight-and-sound/smart-board-7000/">7000 Series</a></li>
-                    <li class="level2"><a href="<?php echo site_url(); ?>/sight-and-sound/smart-board-6000/">6000 Series</a></li>
-                    <li class="level2"><a href="<?php echo site_url(); ?>/sight-and-sound/smart-board-mx/">MX  Series</a></li>
-                    <li class="level2"><a href="<?php echo site_url(); ?>/sight-and-sound/smart-kapp/">kapp</a></li>
-                    <li class="level2"><a href="<?php echo site_url(); ?>/sight-and-sound/smart-podium-624/">Podium 624</a></li>
-                  </ul>
-                </li>
+                <li><a href="<?php echo site_url(); ?>/sight-and-sound/smart-board-7000/" class="subnav-link">7000 Series</a></li>
+                <li><a href="<?php echo site_url(); ?>/sight-and-sound/smart-board-6000/" class="subnav-link">6000 Series</a></li>
+                <li><a href="<?php echo site_url(); ?>/sight-and-sound/smart-board-mx/" class="subnav-link">MX  Series</a></li>
+                <li><a href="<?php echo site_url(); ?>/sight-and-sound/activefloor/" class="subnav-link">Active Floor</a></li>
+                <li><a href="<?php echo site_url(); ?>/sight-and-sound/lu/" class="subnav-link">Lu Interactive</a></li>
+                <li><a href="<?php echo site_url(); ?>/sight-and-sound/smart-kapp/" class="subnav-link">kapp</a></li>
+                <li><a href="<?php echo site_url(); ?>/sight-and-sound/smart-podium-624/" class="subnav-link">Podium 624</a></li>
                 <li><a href="<?php echo site_url(); ?>/sight-and-sound/audio-enhancement/" class="subnav-link">Audio Enhancement</a></li>
                 <li><a href="<?php echo site_url(); ?>/sight-and-sound/safe-system/" class="subnav-link">SAFE System</a></li>
                 <!--
-                  <li><a href="<?php echo site_url(); ?>/sight-and-sound/smart-table/" class="subnav-link">SMART Table</a></li>
+                <li><a href="<?php echo site_url(); ?>/sight-and-sound/smart-table/" class="subnav-link">SMART Table</a></li>
                 -->
                 <li><a href="<?php echo site_url(); ?>/sight-and-sound/wall-mounts-mobile-stands/" class="subnav-link">Wall Mounts/Mobile Stands</a></li>
                 <li><a href="<?php echo site_url(); ?>/sight-and-sound/tech-tub/" class="subnav-link">Tech Tub</a></li>
-                <li><a href="<?php echo site_url(); ?>/sight-and-sound/accessories/" class="subnav-link">Accessories</a></li>
               </ul>
           </li>
           <li class="nav-item closeMenuCell">
@@ -214,7 +218,7 @@
           </li>
           <li class="col-sm nopadding">
             <img src="<?php echo get_template_directory_uri();?>/_img/teq-banner-opd-login-nav.png" />
-            <a href="https://otis.teq.com/"><button class="salmon hideItem">OTIS.teq.com</button></a>
+            <a href="https://otis.teq.com/"><button class="salmon hideItem">Otis.teq.com</button></a>
           </li>
         </ul>
       </div>
@@ -290,9 +294,6 @@
         <ul class="nav row">
           <li class="col-sm">
             <a class="nav-link subnav-link" href="<?php echo site_url(); ?>/about-us/">About</a>
-          </li>
-          <li class="col-sm">
-            <a class="nav-link subnav-link" href="<?php echo site_url(); ?>/roadmap/">Roadmap</a>
           </li>
           <li class="col-sm">
             <a class="nav-link subnav-link" href="<?php echo site_url(); ?>/about-us/press-releases/">Press Releases</a>

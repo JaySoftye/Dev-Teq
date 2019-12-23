@@ -3,6 +3,7 @@ $(document).ready(function(){
      var pdTeamArray ={"PD": [
        {  "headshot": "AdamHerman.png", "name": "Adam Herman",  "title": "PD Specialist", "file": "Adam-Herman" },
        {  "headshot": "BenjaminCebulash.png", "name": "Benjamin Cebulash",  "title": "PD Specialist", "file": "bencebulash" },
+       {  "headshot": "BrandenAndrade.png", "name": "Branden Andrade",  "title": "Curriculum Specialist", "file": "BrandenAndrade" },
        {  "headshot": "CaylieLehrer.png", "name": "Caylie Lehrer",  "title": "Curriculum Specialist", "file": "CaylieLehrer" },
        {  "headshot": "ChristineBell.png", "name": "Christine Bell",  "title": "Curriculum Specialist ", "file": "ChristineBell" },
        {  "headshot": "DiomedesGonzalez.png", "name": "Diomedes Gonzalez Jr.",  "title": "PD Specialist", "file": "Diomedes-Gonzalez" },
