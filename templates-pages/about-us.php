@@ -139,9 +139,9 @@
                       <small>VP of Marketing</small>
                     </div>
                     <div class="col-sm">
-                      <img src="/wp-content/uploads/2016/12/about-us-leadership-FredCatalano.png" />
-                      <p><strong>Fred Catalano </strong></p>
-                      <small>VP of Finance</small>
+                      <img src="https://www.teq.com/images/headshots_circles/DawnCastillo.png" />
+                      <p><strong>Dawn Castillo </strong></p>
+                    <small>VP of Operations</small>
                     </div>
                   </div>
                 </div>
