@@ -141,7 +141,7 @@
                     <div class="col-sm">
                       <img src="https://www.teq.com/images/headshots_circles/DawnCastillo.png" />
                       <p><strong>Dawn Castillo </strong></p>
-                    <small>VP of Operations</small>
+                    <small>Vice President</small>
                     </div>
                   </div>
                 </div>
