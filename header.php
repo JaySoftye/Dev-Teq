@@ -147,22 +147,22 @@
           <li class="col-sm">
               <h5><a class="nav-link subnav-link" href="<?php echo site_url(); ?>/stem/">STEM</a></h5>
               <ul class="nav">
-                <li><a href="<?php echo site_url(); ?>/stem/si/" class="subnav-link">STEM Initiatives</a></li>
                 <li><a href="<?php echo site_url(); ?>/stem/nyc-stem-carts/" class="subnav-link">Mobile STEM Carts</a></li>
-                <li><a href="<?php echo site_url(); ?>/stem/labdisc/" class="subnav-link">Labdisc</a></li>
                 <li><a href="<?php echo site_url(); ?>/stem/sparkfun/" class="subnav-link">Sparkfun</a></li>
                 <li><a href="<?php echo site_url(); ?>/stem/pi-top/" class="subnav-link">pi-top</a></li>
                 <li><a href="<?php echo site_url(); ?>/stem/sam-labs/" class="subnav-link">SAM Labs</a></li>
-                <li><a href="<?php echo site_url(); ?>/stem/littlebits/" class="subnav-link">littleBits</a></li>
+                <li><a href="<?php echo site_url(); ?>/stem/littlebits/" class="subnav-link">littleBits by Sphero</a></li>
                 <li><a href="<?php echo site_url(); ?>/stem/bloxels/" class="subnav-link">Bloxels</a></li>
-                <li><a href="<?php echo site_url(); ?>/stem/kano/" class="subnav-link">KANO</a></li>
                 <li><a href="<?php echo site_url(); ?>/stem/osmo/" class="subnav-link">Osmo</a></li>
                 <li><a href="<?php echo site_url(); ?>/stem/farmshelf/" class="subnav-link">Farmshelf</a></li>
+                <li><a href="<?php echo site_url(); ?>/stem/squishy-circuits/" class="subnav-link">Squishy Circuits</a></li>
               </ul>
+              <h5><a class="nav-link subnav-link" href="<?php echo site_url(); ?>/stem/additional-stem-offerings/">Additional STEM Offerings</a></h5>
           </li>
           <li class="col-sm">
             <h5><a class="nav-link subnav-link" href="<?php echo site_url(); ?>/stem/robotics/" class="subnav-link">Robotics</a></h5>
             <ul class="nav">
+              <li><a href="<?php echo site_url(); ?>/stem/ubtech/" class="subnav-link">UBTECH</a></li>
               <li><a href="<?php echo site_url(); ?>/stem/robotis/" class="subnav-link">Robotis</a></li>
               <li><a href="<?php echo site_url(); ?>/stem/wonder-workshop/" class="subnav-link">Wonder Workshop</a></li>
               <li><a href="<?php echo site_url(); ?>/stem/sphero/" class="subnav-link">Sphero</a></li>
@@ -184,6 +184,7 @@
                 <li><a href="<?php echo site_url(); ?>/stem/ultimaker-3d-printer/" class="subnav-link">Ultimaker</a></li>
                 <li><a href="<?php echo site_url(); ?>/stem/makerbot-3d-printer/" class="subnav-link">MakerBot</a></li>
                 <li><a href="<?php echo site_url(); ?>/stem/matter-and-form/" class="subnav-link">Matter and Form</a></li>
+                <li><a href="<?php echo site_url(); ?>/stem/3d-doodler/" class="subnav-link">3D Doodler</a></li>
                 <li><a href="<?php echo site_url(); ?>/stem/3d-printer-labs/" class="subnav-link">3D Printer Labs</a></li>
               </ul>
               <h5><a class="nav-link subnav-link" href="<?php echo site_url(); ?>/makerspaces/">Makerspaces</a></h5>

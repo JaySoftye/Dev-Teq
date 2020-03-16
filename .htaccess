@@ -133,12 +133,8 @@ Redirect 301 /classroomplan/woodbridgetownship http://www.teq.com/classroomplan/
 Redirect 301 /iblocks http://iblocks.teq.com/
 Redirect 301 /iblocks/iblock-samples http://iblocks.teq.com/sample-collateral/
 
+Redirect 301 /remote-learning.html https://www.teq.com/remote-learning/
 
-<Files wp-login.php>
-    Order deny,allow
-    Deny from all
-    Allow from 108.54.230.2
-</Files>
 
 # BEGIN WordPress
 <IfModule mod_rewrite.c>

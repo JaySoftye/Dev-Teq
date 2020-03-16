@@ -385,7 +385,7 @@ h2 {
 
 h3 {
   font-size: 1.6rem;
-  padding-bottom: 1.2rem;
+  padding-bottom: .24rem;
   padding-top: 1.2rem;
 }
 
@@ -484,6 +484,18 @@ ul.productBullets li {
   padding-top: 2.3rem;
   padding-right: 5rem;
   padding-left: 1rem;
+}
+
+.button.square {
+  margin: 2rem auto;
+  outline: none;
+  background: #e380b1;
+  padding: 12px 30px;
+  border-radius: 0;
+  color: #000000;
+  font-weight: 400;
+  position: relative;
+  z-index: 1;
 }
 
 button {
@@ -977,6 +989,10 @@ div.wistia_responsive_padding {
 }
 
 /*! trial/search form */
+.hs-form fieldset {
+max-width: none!important;
+}
+
 button.trialClose {
   position: absolute;
   z-index: inherit;

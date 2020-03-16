@@ -10,11 +10,7 @@ get_header(); ?>
 </nav>
 
 <main>
-  <div class="container-fluid nopadding padding-top padding-bottom">
-    <section>
-      <?php wp_reset_query(); the_content(); ?>
-    </section>
-  </div>
+<?php wp_reset_query(); the_content(); ?>
 </main>
 
 <?php get_footer(); ?>
