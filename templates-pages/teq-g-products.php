@@ -13,19 +13,21 @@
  <section class="hero-content main">
    <div class="container-fluid">
      <div class="row align-items-center">
-       <div class="col-md-4">
+       <div class="col-md-6">
          <h1 class="white">Technology has the power to change the way students learn <span class="blink white"></span></h1>
        </div>
      </div>
      <div class="row navigation-source">
-       <div class="col-md-4">
-         <p>Are you ready to use it to<br />impact student outcomes?</p>
+       <div class="col-md-4 col-sm-6">
+         <a href="/cdw-g-stem-products/">STEM<br />Products &#8594;</a>
        </div>
-       <div class="col-md-4">
-         <a href="/cdw-g-stem-products/">STEM<br />Products</a>
+       <div class="col-md-4 col-sm-6">
+         <a href="/cdw-g-professional-development/">Professional<br />Development &#8594;</a>
        </div>
-       <div class="col-md-4">
-         <a href="/cdw-g-professional-development/">Professional<br />Development</a>
+     </div>
+     <div class="row navigation-source">
+       <div class="col-md-8 col-sm-12">
+         <a href="https://otis.teq.com/webinars" style="background-color:#000000;font-weight:700;padding:2rem;color:#ffffff;">Schedule a custom webinar on OTIS for educators &#8594; <br /><small style="color:#ffffff;">We'll present online, a deep dive on the product of your choosing, <br />and answer all yourquestions.</small></a>
        </div>
      </div>
    </div>

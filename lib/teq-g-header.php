@@ -16,11 +16,19 @@
 </head>
 <body <?php body_class(); ?>>
 
+  <script>
+  $(document).ready(function(){
+    $("a.registerForm").click(function(){
+      $("div#hbspot-register-form").slideToggle();
+    });
+  });
+  </script>
+
   <header class="container-fluid" id="main-nav">
     <nav class="row align-items-end">
       <ul class="col-md nav">
         <li class="nav-item">
-          <a class="nav-link" href="https://www.teq.com/cdw-g-products/">
+          <a class="nav-link" href="https://www.teq.com/">
             <img src="<?php echo get_template_directory_uri(); ?>/images/teq-tagline-logo.svg" alt="Teq It's all about learning" />
           </a>
         </li>
@@ -33,8 +41,33 @@
           <a class="nav-link" href="/cdw-g-professional-development/">Professional Development</a>
         </li>
         <li class="nav-item">
-          <p class="nav-link"><strong>877.455.9369</strong></p>
+          <a class="nav-link registerForm" href="#"><strong>Register Your Deal</strong></a>
         </li>
       </ul>
     </nav>
+    <div id="hbspot-register-form" class="container-fluid" style="padding: 2rem; display: none;">
+      <div class="row">
+        <div class="col-md">
+          <h5>Register you deal using the form below.</h5><br />
+        </div>
+        <div class="col-md text-right">
+          <a class="nav-link registerForm" href="#"><small>[close]</small></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md">
+
+<!--[if lte IE 8]>
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+<![endif]-->
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+<script>
+  hbspt.forms.create({
+	portalId: "182596",
+	formId: "239ef9d7-666a-4a6c-83f9-ec34e5e37a42"
+});
+</script>
+        </div>
+      </div>
+    </div>
   </header>

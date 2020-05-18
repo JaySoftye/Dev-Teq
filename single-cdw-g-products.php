@@ -415,7 +415,7 @@ get_template_part('lib/teq-g-header');
       </div>
       <?php if(metadata_exists('post', $post->ID,'edcNumber')) { ?>
         <div class="edc-number-table print-content">
-          <h6><strong>Product Pricing and Bundle Options</strong> - <span class="hide-print">click on the table row for a break down of what is included in each product bundle.</span> We emphasize the importance of providing PD options with every product to make for a better student/teacher experience. <strong>All STEM Products are supported by our online Professional Development platform, Otis (formerly known as Opd)</strong> - pricing is listed below for each product with and without an Otis license.</h6>
+          <h3><strong>Product Bundle Options</strong><!-- <span class="hide-print">click on the table row for a break down of what is included in each product bundle.</span> We emphasize the importance of providing PD options with every product to make for a better student/teacher experience. <strong>All STEM Products are supported by our online Professional Development platform, Otis (formerly known as Opd)</strong> - pricing is listed below for each product with and without an Otis license.--></h3>
           <table class="table post-table">
             <thead>
               <tr>
@@ -424,9 +424,7 @@ get_template_part('lib/teq-g-header');
                 <!--
                 <th scope="col">Price</th>
                 <th scope="col">Qty</th>
-                -->
                 <th scope="col"><img src="<?php echo get_template_directory_uri(); ?>/images/EDC-with-otis.svg" alt="EDC with Otis" /></th>
-                <!--
                 <th scope="col"><img src="<?php echo get_template_directory_uri(); ?>/images/price-with-opd.svg" alt="Price with Opd" /></th></th>
                 -->
               </tr>

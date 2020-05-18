@@ -69,7 +69,7 @@ get_template_part( 'navigation', 'default' ); ?>
   $(document).ready(function(){
     $('select#filter').on('change', function() {
       var value = '.' + $(this).val();
-      $('article.post').show().not(value).hide();
+      $('div.status-publish').show().not(value).hide();
     });
   });
 </script>

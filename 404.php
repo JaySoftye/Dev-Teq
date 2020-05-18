@@ -23,19 +23,22 @@
 
 </head>
 <body <?php body_class(); ?>>
+
 <main>
+
   <div class="container-fluid error-header">
     <div class="row height-full">
       <div class="container flex-md-middle text-center">
         <img src="<?php echo get_template_directory_uri(); ?>/_img/404-snap-icon.svg" class="halfWidth" />
-        <h1 class="display-3 white text-center">Oh Snap! this page cannot be found!</h1>
-        <h4 class="white text-center">It seems we can’t find what you’re looking for, try and start from the home page using the link below.</h4>
+        <h1 class="display-3 white text-center">Oh Snap, this page cannot be found.</h1>
+        <h4 class="white text-center">It seems we can’t find what you’re looking for, try and start from the home page from the link below.</h4>
         <center>
           <a href="http://www.teq.com"><button class="learnhow lightBlue">Back to home</button></a>
         </center>
       </div>
     </div>
   </div>
+
 </main>
 
   <?php get_footer();

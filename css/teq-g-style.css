@@ -365,7 +365,7 @@ table.table.post-table td span.secondary {
 }
 
 .edc-number-table table.table.post-table tr th:first-child, .edc-number-table table.table.post-table tr td:first-child {
-  width: 36%;
+  width: 87%;
   text-align: left;
 }
 
@@ -399,16 +399,6 @@ table.table.post-table td span.secondary {
   font-weight: 700;
 }
 
-.edc-number-table tr.product-name td.name:after {
-  content: ' +';
-  color: rgb(0,180,228)
-}
-
-.edc-number-table tr.product-name td.name.minus:after {
-  content: ' \00d7';
-  color: rgb(0,180,228)
-}
-
 .edc-number-table table.table.post-table tbody.product-row {
   border-bottom: 1px solid #cccccc;
 }
@@ -419,10 +409,6 @@ table.table.post-table td span.secondary {
 
 .edc-number-table tbody.product-row tr.product-info td:first-child {
   padding-left: 25px;
-}
-
-.edc-number-table tbody.product-row tr:last-child td {
-  padding-bottom: 50px;
 }
 
 .edc-number-table table.table.post-table tbody.product-row td:nth-child(5), .edc-number-table table.table.post-table tbody.product-row td:nth-child(6) {

@@ -487,7 +487,7 @@ ul.productBullets li {
 }
 
 .button.square {
-  margin: 2rem auto;
+  margin: 1.23rem auto;
   outline: none;
   background: #e380b1;
   padding: 12px 30px;
@@ -1251,6 +1251,10 @@ div.centeredForm .hs-form .hs-button, .hs-button {
 
 .trialForm label span {
   color: #eceeef;
+}
+
+.trialForm.black-label label span {
+  color: #000000 !important;
 }
 
 .centeredForm label span, .standardForm label span {

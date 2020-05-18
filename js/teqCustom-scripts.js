@@ -34,14 +34,14 @@
 
     $("button.classroomScroll").click(function(){
       $('html, body').animate({
-        scrollTop: $("div.scrollToBottom").offset().top
+        scrollTop: $("div.scrollToBottom").offset().top - 450
       }, 900);
      });
 
 /** Scroll to Trial Form **/
     $("button.trialScroll").click(function(){
       $('html, body').animate({
-        scrollTop: $("div.row.bottomGradient").offset().top
+        scrollTop: $("div#trialsignup").offset().top
       }, 900);
     });
 

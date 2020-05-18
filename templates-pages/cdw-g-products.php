@@ -20,7 +20,7 @@
      </div>
      <div class="row navigation-source">
        <div class="col-md-4">
-         <p>Are you ready to use it to<br />impact student outcomes?</p>
+         <p>impact student outcomes?</p>
        </div>
        <div class="col-md-4">
          <a href="/cdw-g-stem-products/">STEM<br />Products</a>

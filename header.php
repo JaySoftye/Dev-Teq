@@ -132,7 +132,7 @@
           <li class="col-sm">
               <h5><a class="nav-link subnav-link" href="<?php echo site_url(); ?>/pd-platforms">PD Platforms</a></h5>
               <ul class="nav">
-                <li><a href="<?php echo site_url(); ?>/pd-platforms/onsite-pd" class="subnav-link">Onsite PD</a></li>
+                <li><a href="<?php echo site_url(); ?>/pd-platforms/onsite-pd" class="subnav-link">Onsite & Virtual PD</a></li>
                 <li><a href="<?php echo site_url(); ?>/pd-platforms/otis" class="subnav-link">OTIS for educators</a></li>
                 <li><a href="<?php echo site_url(); ?>/pd-platforms/teacher-certifications/" class="subnav-link">Teq Digital Teacher Certifications</a></li>
                 <li><a href="<?php echo site_url(); ?>/pd-platforms/eils/" class="subnav-link">Effective Instructional Leadership & Supervision</a></li>
@@ -185,6 +185,7 @@
                 <li><a href="<?php echo site_url(); ?>/stem/makerbot-3d-printer/" class="subnav-link">MakerBot</a></li>
                 <li><a href="<?php echo site_url(); ?>/stem/matter-and-form/" class="subnav-link">Matter and Form</a></li>
                 <li><a href="<?php echo site_url(); ?>/stem/3d-doodler/" class="subnav-link">3D Doodler</a></li>
+                <li><a href="<?php echo site_url(); ?>/stem/glowforge/" class="subnav-link">Glowforge</a></li>
                 <li><a href="<?php echo site_url(); ?>/stem/3d-printer-labs/" class="subnav-link">3D Printer Labs</a></li>
               </ul>
               <h5><a class="nav-link subnav-link" href="<?php echo site_url(); ?>/makerspaces/">Makerspaces</a></h5>
@@ -198,13 +199,13 @@
           <li class="col-sm">
               <h5><a class="nav-link subnav-link" href="<?php echo site_url(); ?>/sight-and-sound/">Sight and Sound</a></h5>
               <ul class="nav">
-                <li><a href="<?php echo site_url(); ?>/sight-and-sound/smart-board-7000/" class="subnav-link">7000 Series</a></li>
-                <li><a href="<?php echo site_url(); ?>/sight-and-sound/smart-board-6000/" class="subnav-link">6000 Series</a></li>
-                <li><a href="<?php echo site_url(); ?>/sight-and-sound/smart-board-mx/" class="subnav-link">MX  Series</a></li>
+                <li><a href="<?php echo site_url(); ?>/sight-and-sound/smart-board-7000/" class="subnav-link">SMART Board 7000R</a></li>
+                <li><a href="<?php echo site_url(); ?>/sight-and-sound/smart-board-6000/" class="subnav-link">SMART Board 6000S</a></li>
+                <li><a href="<?php echo site_url(); ?>/sight-and-sound/smart-board-mx/" class="subnav-link">SMART Board MX</a></li>
                 <li><a href="<?php echo site_url(); ?>/sight-and-sound/activefloor/" class="subnav-link">Active Floor</a></li>
                 <li><a href="<?php echo site_url(); ?>/sight-and-sound/lu/" class="subnav-link">Lu Interactive</a></li>
-                <li><a href="<?php echo site_url(); ?>/sight-and-sound/smart-kapp/" class="subnav-link">kapp</a></li>
-                <li><a href="<?php echo site_url(); ?>/sight-and-sound/smart-podium-624/" class="subnav-link">Podium 624</a></li>
+                <li><a href="<?php echo site_url(); ?>/sight-and-sound/smart-kapp/" class="subnav-link">SMART kapp</a></li>
+                <li><a href="<?php echo site_url(); ?>/sight-and-sound/smart-podium-624/" class="subnav-link">SMART Podium 624</a></li>
                 <li><a href="<?php echo site_url(); ?>/sight-and-sound/audio-enhancement/" class="subnav-link">Audio Enhancement</a></li>
                 <li><a href="<?php echo site_url(); ?>/sight-and-sound/safe-system/" class="subnav-link">SAFE System</a></li>
                 <!--
