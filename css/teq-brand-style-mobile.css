@@ -1,6 +1,19 @@
 @charset "UTF-8";
 /*! mobile view */
 
+@media (max-width: 1280px) {
+  .hidemedium {
+    display: none !important;
+  }
+}
+
+@media (max-width: 980px) {
+  .product-card-container .homecard {
+    margin-top: -3vh;
+    margin-bottom: 9vh;
+  }
+}
+
 @media (max-width: 768px) {
   .hidesmall {
     display: none !important;

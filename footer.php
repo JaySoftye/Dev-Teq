@@ -24,20 +24,20 @@
       </ul>
       <h6><a class="white" href="<?php echo site_url(); ?>/teq-events/">Events &#187;</a></h6>
       <h6><a href="<?php echo site_url(); ?>/about-us/" class="white">About &#187;</a></h6>
-      <ul class="navbar-nav footerLinks">
-        <li class="nav-item">
+      <div class="row">
+        <div class="col-md">
           <a href="https://www.facebook.com/myTeq/"><img src="<?php echo get_template_directory_uri();?>/_img/teq-footer-facebook-icon.png" /></a>
-        </li>
-        <li class="nav-item">
+        </div>
+        <div class="col-md">
           <a href="https://twitter.com/OTIS4educators"><img src="<?php echo get_template_directory_uri();?>/_img/teq-footer-twitter-icon.png" /></a>
-        </li>
-        <li class="nav-item">
+        </div>
+        <div class="col-md">
           <a href="https://www.linkedin.com/company/teq/"><img src="<?php echo get_template_directory_uri();?>/_img/teq-footer-linkedin-icon.png" /></a>
-        </li>
-        <li class="nav-item">
+        </div>
+        <div class="col-md">
           <a href="https://www.instagram.com/edteq/"><img src="<?php echo get_template_directory_uri();?>/_img/teq-footer-instagram-icon.png" /></a>
-        </li>
-      </ul>
+        </div>
+      </div>
     </div>
     <div class="col-md-5 hidden-sm-down hidden-xs-down">
       <h3 class="teqBlue">Teq Talk</h3>
