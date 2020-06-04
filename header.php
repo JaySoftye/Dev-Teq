@@ -115,7 +115,7 @@
             <a class="nav-link" href="#aboutMenu" data-toggle="collapse" aria-expanded="false" aria-controls="aboutMenu">About</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link btn yellow" href="https://otis.teq.com/" data-toggle="collapse" aria-expanded="false" aria-controls="aboutMenu"><strong>Go to OTIS.teq.com</strong></a>
+            <a class="nav-link btn yellow" href="https://otis.teq.com/"><strong>Go to OTIS.teq.com</strong></a>
         </li>
       </ul>
     </div>
