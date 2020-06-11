@@ -179,8 +179,10 @@
                 <li><a href="<?php echo site_url(); ?>/stem/osmo/" class="subnav-link">Osmo</a></li>
                 <li><a href="<?php echo site_url(); ?>/stem/farmshelf/" class="subnav-link">Farmshelf</a></li>
                 <li><a href="<?php echo site_url(); ?>/stem/squishy-circuits/" class="subnav-link">Squishy Circuits</a></li>
+                <li><a href="<?php echo site_url(); ?>/stem/piper/" class="subnav-link">Piper</a></li>
+                  <li><a href="<?php echo site_url(); ?>/stem/kais-clan/" class="subnav-link">Kai's Clan</a></li>
+                <li><a href="<?php echo site_url(); ?>/stem/additional-stem-offerings/"><strong>Additional STEM Offerings</strong></a></li>
               </ul>
-              <h5><a class="nav-link subnav-link" href="<?php echo site_url(); ?>/stem/additional-stem-offerings/">Additional STEM Offerings</a></h5>
           </li>
           <li class="col-sm">
             <h5><a class="nav-link subnav-link" href="<?php echo site_url(); ?>/stem/robotics/" class="subnav-link">Robotics</a></h5>
@@ -207,7 +209,7 @@
                 <li><a href="<?php echo site_url(); ?>/stem/ultimaker-3d-printer/" class="subnav-link">Ultimaker</a></li>
                 <li><a href="<?php echo site_url(); ?>/stem/makerbot-3d-printer/" class="subnav-link">MakerBot</a></li>
                 <li><a href="<?php echo site_url(); ?>/stem/matter-and-form/" class="subnav-link">Matter and Form</a></li>
-                <li><a href="<?php echo site_url(); ?>/stem/3d-doodler/" class="subnav-link">3D Doodler</a></li>
+                <li><a href="<?php echo site_url(); ?>/stem/3d-doodler/" class="subnav-link">3Doodler</a></li>
                 <li><a href="<?php echo site_url(); ?>/stem/glowforge/" class="subnav-link">Glowforge</a></li>
                 <li><a href="<?php echo site_url(); ?>/stem/3d-printer-labs/" class="subnav-link">3D Printer Labs</a></li>
               </ul>
@@ -252,7 +254,7 @@
       <div class="container">
         <ul class="nav row">
           <li class="col-sm">
-            <a class="nav-link subnav-link" href="https://www.teq.com/consulting-services/nedm">Network-Enabled Device Management</a>
+            <a class="nav-link subnav-link" href="https://www.teq.com/nedm-survey/">Network-Enabled Device Management Survey</a>
           </li>
           <li class="col-sm">
             <a class="nav-link subnav-link" href="<?php echo site_url(); ?>/support-and-services/">Service Plans</a>

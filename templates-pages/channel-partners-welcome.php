@@ -49,8 +49,8 @@ $(document).ready(function(){
           <div class="row">
             <div class="col-md-7">
               <ul class="nav navbar-nav">
-                <li class="nav-item"><a href="<?php echo site_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/_img/<?php echo get_post_meta($postid, 'headerCaption', true); ?>.png" /></a></li>
-                <li class="nav-item"><a href="http://onlinepd.teq.com" class="white">More about OTIS</a></li>
+                <li class="nav-item"><a href="<?php echo site_url(); ?>"><img style="width:100%;" src="<?php echo get_template_directory_uri(); ?>/_img/<?php echo get_post_meta($postid, 'headerCaption', true); ?>.png" /></a></li>
+                <li class="nav-item"><a href="http://otis.teq.com" class="white"><button class="rounded-rectangle">More about OTIS</button></a></li>
                 <li class="nav-item"><a href="#form" class="white"><button class="rounded-rectangle">Customize a PD plan</button></a></li>
               </ul>
             </div>

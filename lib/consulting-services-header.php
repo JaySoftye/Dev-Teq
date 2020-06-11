@@ -19,6 +19,7 @@
 
 </head>
 <body <?php body_class(); ?>>
+  <?php if( is_home() ) { do_action('after_body_open_tag'); } ?>
 
   <nav id="mainNav">
     <?php
@@ -30,28 +31,21 @@
       } else {
     ?>
     <header id="mainBanner" class="hidden-sm-down hidden-xs-down collapse in">
-      <div class="container">
-        <?php if( is_home() ) { ?>
-          <div class="col" id="bannerPlugin"></div>
-        <?php } elseif(metadata_exists('post', $post->ID,'bannerHeaderImg')) { ?>
-          <div class="col">
-            <a href="<?php echo get_post_meta($post->ID, 'bannerHeaderURL', true); ?>">
-              <img src="<?php echo get_template_directory_uri(); ?>/images/<?php echo get_post_meta($post->ID, 'bannerHeaderImg', true); ?>.jpg" />
-            </a>
-          </div>
-        <?php } else { ?>
-          <span></span>
-        <?php } ?>
+      <div class="container-fluid">
+        <div class="col" id="bannerPlugin"></div>
       </div>
     </header>
     <?php } ?>
-    <div class="mobileNav hidden-lg-up hidden-md-up">
-      <ul class="nav navbar-nav">
-        <li class="nav-item">
-          <a href="#navbarMobile" data-toggle="collapse" aria-expanded="false" aria-controls="classroomConceptsMenu" aria-label="Toggle navigation" title="menue"><img src="<?php echo get_template_directory_uri();?>/_img/mobilenav-logo-icon.svg" class="mainLogo" /></a>
-        </li>
+    <div class="mobileNav hidden-lg-up hidden-md-up row">
+      <a class="col-xs-5" href="#navbarMobile" data-toggle="collapse" aria-expanded="false" aria-controls="classroomConceptsMenu" aria-label="Toggle navigation" title="menue"><img src="<?php echo get_template_directory_uri();?>/_img/mobilenav-logo-icon.svg" /></a>
       </ul>
       <ul id="navbarMobile" class="nav collapse">
+        <li class="nav-item">
+          <a class="nav-link subnav-link" href="/remote-learning/">Remote Learning Resources</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link subnav-link" href="/teq-blocks/">Teq Blocks</a>
+        </li>
         <li class="nav-item">
           <h6><a class="white nav-link" data-toggle="collapse" href="#mobileMenuProducts" aria-expanded="false" aria-controls="mobileMenuProducts">Products and Things</a></h6>
           <ul class="footerLinks subnav collapse" id="mobileMenuProducts">
@@ -64,9 +58,6 @@
           </ul>
         </li>
         <li class="nav-item">
-          <h6><a class="white nav-link" href="/iblocks">iBlocks</a></h6>
-        </li>
-        <li class="nav-item">
           <h6><a class="white nav-link" data-toggle="collapse" href="#mobileMenuServices" aria-expanded="false" aria-controls="mobileMenuServices">Support & Service</a></h6>
           <ul class="footerLinks subnav collapse" id="mobileMenuServices">
             <li><a href="<?php echo site_url(); ?>/support-and-services/" class="white">Service and Bundles</a></li>
@@ -74,7 +65,7 @@
           </ul>
         </li>
         <li class="nav-item">
-          <h6><a class="white nav-link" data-toggle="collapse" href="#mobileMenuLearning" aria-expanded="false" aria-controls="mobileMenuLearning">Learning Community</a></h6>
+          <h6><a class="white nav-link" data-toggle="collapse" href="#mobileMenuLearning" aria-expanded="false" aria-controls="mobileMenuLearning">Resources</a></h6>
           <ul class="footerLinks subnav collapse" id="mobileMenuLearning">
             <li><a href="<?php echo site_url(); ?>/learning-community/teq-talk/" class="white">Teq Talk</a></li>
             <li><a href="<?php echo site_url(); ?>/learning-community/teq-tips/" class="white">Teq Tips</a></li>
@@ -98,22 +89,25 @@
     <div id="navMain" class="container-fluid collapse navbar-toggleable-sm">
       <ul class="nav navbar-nav">
         <li class="nav-item">
-          <a href="<?php echo site_url(); ?>"><img src="<?php echo get_template_directory_uri();?>/_img/teq-logo-icon.svg" class="mainLogo" /></a>
+          <a class="nav-link" href="#mainTeqMenu" data-toggle="collapse" aria-expanded="false" aria-controls="mainTeqMenu"><img src="<?php echo get_template_directory_uri();?>/_img/teq-main-menu-hamburger.svg" /></a>
+        </li>
+        <li class="nav-item">
+          <a href="<?php echo site_url(); ?>"><img src="<?php echo get_template_directory_uri();?>/_img/teq-logo-icon_black.svg" class="mainLogo" /></a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="#productsMenu" data-toggle="collapse" aria-expanded="false" aria-controls="productsMenu">Products &amp; Things</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="/iblocks">iBlocks</a>
+            <a class="nav-link" href="/teq-blocks/">Teq Blocks</a>
         </li>
-        <li class="nav-item new">
+        <li class="nav-item">
             <a class="nav-link" href="<?php echo site_url(); ?>/evospaces/">evoSpaces</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="#supportMenu" data-toggle="collapse" aria-expanded="false" aria-controls="supportMenu">Support and Service</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#learningMenu" data-toggle="collapse" aria-expanded="false" aria-controls="learningMenu">Community</a>
+            <a class="nav-link" href="#learningMenu" data-toggle="collapse" aria-expanded="false" aria-controls="learningMenu">Resources</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="<?php echo site_url(); ?>/teq-events/">Events</a>
@@ -121,10 +115,40 @@
         <li class="nav-item">
             <a class="nav-link" href="#aboutMenu" data-toggle="collapse" aria-expanded="false" aria-controls="aboutMenu">About</a>
         </li>
-        <li class="nav-item search-form-container">
-          <?php get_search_form( $echo = true ); ?>
+        <li class="nav-item">
+            <a class="nav-link btn yellow" href="https://otis.teq.com/"><strong>Go to OTIS.teq.com</strong></a>
         </li>
       </ul>
+    </div>
+    <div class="collapse fade subnav" id="mainTeqMenu">
+      <div class="container">
+        <ul class="nav row">
+          <li class="col-sm">
+            <a class="nav-link subnav-link" href="/remote-learning/">Remote Learning Resources</a>
+          </li>
+          <li class="col-sm">
+            <a class="nav-link subnav-link" href="/teq-blocks/">Teq Blocks</a>
+          </li>
+          <li class="col-sm">
+            <a class="nav-link subnav-link" href="/teq-blocks/">pBlocks</a>
+          </li>
+          <li class="col-sm">
+            <a class="nav-link subnav-link" href="/teq-blocks/">sBlocks</a>
+          </li>
+          <li class="col-sm">
+            <a class="nav-link subnav-link" href="https://www.iblocks.com">iBlocks</a>
+          </li>
+          <li class="col-sm">
+            <a class="nav-link subnav-link" href="/teq-blocks/">Teq-tivities</a>
+          </li>
+          <li class="col-sm">
+            <a class="nav-link subnav-link" href="/teq-stem-activities/">STEM Activity Packs</a>
+          </li>
+          <li class="nav-item closeMenuCell">
+            <a href="#mainTeqMenu" data-toggle="collapse" aria-expanded="false" aria-controls="mainTeqMenu"><img class="mainLogo" src="<?php echo get_template_directory_uri();?>/_img/subnav-collapse-icon.svg" /></a>
+          </li>
+        </ul>
+      </div>
     </div>
     <div class="collapse fade subnav" id="productsMenu">
       <div class="container-fluid">
@@ -132,7 +156,7 @@
           <li class="col-sm">
               <h5><a class="nav-link subnav-link" href="<?php echo site_url(); ?>/pd-platforms">PD Platforms</a></h5>
               <ul class="nav">
-                <li><a href="<?php echo site_url(); ?>/pd-platforms/onsite-pd" class="subnav-link">Onsite PD</a></li>
+                <li><a href="<?php echo site_url(); ?>/pd-platforms/onsite-pd" class="subnav-link">Onsite & Virtual PD</a></li>
                 <li><a href="<?php echo site_url(); ?>/pd-platforms/otis" class="subnav-link">OTIS for educators</a></li>
                 <li><a href="<?php echo site_url(); ?>/pd-platforms/teacher-certifications/" class="subnav-link">Teq Digital Teacher Certifications</a></li>
                 <li><a href="<?php echo site_url(); ?>/pd-platforms/eils/" class="subnav-link">Effective Instructional Leadership & Supervision</a></li>
@@ -147,22 +171,22 @@
           <li class="col-sm">
               <h5><a class="nav-link subnav-link" href="<?php echo site_url(); ?>/stem/">STEM</a></h5>
               <ul class="nav">
-                <li><a href="<?php echo site_url(); ?>/stem/si/" class="subnav-link">STEM Initiatives</a></li>
                 <li><a href="<?php echo site_url(); ?>/stem/nyc-stem-carts/" class="subnav-link">Mobile STEM Carts</a></li>
-                <li><a href="<?php echo site_url(); ?>/stem/labdisc/" class="subnav-link">Labdisc</a></li>
                 <li><a href="<?php echo site_url(); ?>/stem/sparkfun/" class="subnav-link">Sparkfun</a></li>
                 <li><a href="<?php echo site_url(); ?>/stem/pi-top/" class="subnav-link">pi-top</a></li>
                 <li><a href="<?php echo site_url(); ?>/stem/sam-labs/" class="subnav-link">SAM Labs</a></li>
-                <li><a href="<?php echo site_url(); ?>/stem/littlebits/" class="subnav-link">littleBits</a></li>
+                <li><a href="<?php echo site_url(); ?>/stem/littlebits/" class="subnav-link">littleBits by Sphero</a></li>
                 <li><a href="<?php echo site_url(); ?>/stem/bloxels/" class="subnav-link">Bloxels</a></li>
-                <li><a href="<?php echo site_url(); ?>/stem/kano/" class="subnav-link">KANO</a></li>
                 <li><a href="<?php echo site_url(); ?>/stem/osmo/" class="subnav-link">Osmo</a></li>
                 <li><a href="<?php echo site_url(); ?>/stem/farmshelf/" class="subnav-link">Farmshelf</a></li>
+                <li><a href="<?php echo site_url(); ?>/stem/squishy-circuits/" class="subnav-link">Squishy Circuits</a></li>
               </ul>
+              <h5><a class="nav-link subnav-link" href="<?php echo site_url(); ?>/stem/additional-stem-offerings/">Additional STEM Offerings</a></h5>
           </li>
           <li class="col-sm">
             <h5><a class="nav-link subnav-link" href="<?php echo site_url(); ?>/stem/robotics/" class="subnav-link">Robotics</a></h5>
             <ul class="nav">
+              <li><a href="<?php echo site_url(); ?>/stem/ubtech/" class="subnav-link">UBTECH</a></li>
               <li><a href="<?php echo site_url(); ?>/stem/robotis/" class="subnav-link">Robotis</a></li>
               <li><a href="<?php echo site_url(); ?>/stem/wonder-workshop/" class="subnav-link">Wonder Workshop</a></li>
               <li><a href="<?php echo site_url(); ?>/stem/sphero/" class="subnav-link">Sphero</a></li>
@@ -184,6 +208,8 @@
                 <li><a href="<?php echo site_url(); ?>/stem/ultimaker-3d-printer/" class="subnav-link">Ultimaker</a></li>
                 <li><a href="<?php echo site_url(); ?>/stem/makerbot-3d-printer/" class="subnav-link">MakerBot</a></li>
                 <li><a href="<?php echo site_url(); ?>/stem/matter-and-form/" class="subnav-link">Matter and Form</a></li>
+                <li><a href="<?php echo site_url(); ?>/stem/3d-doodler/" class="subnav-link">3Doodler</a></li>
+                <li><a href="<?php echo site_url(); ?>/stem/glowforge/" class="subnav-link">Glowforge</a></li>
                 <li><a href="<?php echo site_url(); ?>/stem/3d-printer-labs/" class="subnav-link">3D Printer Labs</a></li>
               </ul>
               <h5><a class="nav-link subnav-link" href="<?php echo site_url(); ?>/makerspaces/">Makerspaces</a></h5>
@@ -197,13 +223,13 @@
           <li class="col-sm">
               <h5><a class="nav-link subnav-link" href="<?php echo site_url(); ?>/sight-and-sound/">Sight and Sound</a></h5>
               <ul class="nav">
-                <li><a href="<?php echo site_url(); ?>/sight-and-sound/smart-board-7000/" class="subnav-link">7000 Series</a></li>
-                <li><a href="<?php echo site_url(); ?>/sight-and-sound/smart-board-6000/" class="subnav-link">6000 Series</a></li>
-                <li><a href="<?php echo site_url(); ?>/sight-and-sound/smart-board-mx/" class="subnav-link">MX  Series</a></li>
+                <li><a href="<?php echo site_url(); ?>/sight-and-sound/smart-board-7000/" class="subnav-link">SMART Board 7000R</a></li>
+                <li><a href="<?php echo site_url(); ?>/sight-and-sound/smart-board-6000/" class="subnav-link">SMART Board 6000S</a></li>
+                <li><a href="<?php echo site_url(); ?>/sight-and-sound/smart-board-mx/" class="subnav-link">SMART Board MX</a></li>
                 <li><a href="<?php echo site_url(); ?>/sight-and-sound/activefloor/" class="subnav-link">Active Floor</a></li>
                 <li><a href="<?php echo site_url(); ?>/sight-and-sound/lu/" class="subnav-link">Lu Interactive</a></li>
-                <li><a href="<?php echo site_url(); ?>/sight-and-sound/smart-kapp/" class="subnav-link">kapp</a></li>
-                <li><a href="<?php echo site_url(); ?>/sight-and-sound/smart-podium-624/" class="subnav-link">Podium 624</a></li>
+                <li><a href="<?php echo site_url(); ?>/sight-and-sound/smart-kapp/" class="subnav-link">SMART kapp</a></li>
+                <li><a href="<?php echo site_url(); ?>/sight-and-sound/smart-podium-624/" class="subnav-link">SMART Podium 624</a></li>
                 <li><a href="<?php echo site_url(); ?>/sight-and-sound/audio-enhancement/" class="subnav-link">Audio Enhancement</a></li>
                 <li><a href="<?php echo site_url(); ?>/sight-and-sound/safe-system/" class="subnav-link">SAFE System</a></li>
                 <!--
@@ -223,32 +249,11 @@
         </ul>
       </div>
     </div>
-    <div class="collapse fade subnav" id="classroomConceptsMenu">
-      <div class="container">
-        <ul class="nav row">
-          <li class="col-sm">
-            <a class="nav-link subnav-link" href="<?php echo site_url(); ?>/elementary-classroom-concepts/">Elementary &amp; Early Childhood Concepts</a>
-          </li>
-          <li class="col-sm">
-            <a class="nav-link subnav-link" href="<?php echo site_url(); ?>/middle-classroom-concepts/">Middle School Concepts</a>
-          </li>
-          <li class="col-sm">
-            <a class="nav-link subnav-link" href="<?php echo site_url(); ?>/high-classroom-concepts/">High School Concepts</a>
-          </li>
-          <li class="col-sm">
-            <a class="nav-link subnav-link" href="<?php echo site_url(); ?>/special-education-classroom-concepts/">Special Ed / Inclusion Classroom Concepts</a>
-          </li>
-          <li class="nav-item col-sm closeMenuCell">
-            <a href="#classroomConceptsMenu" data-toggle="collapse" aria-expanded="false" aria-controls="classroomConceptsMenu"><img class="mainLogo" src="<?php echo get_template_directory_uri();?>/_img/subnav-collapse-icon.svg" /></a>
-          </li>
-        </ul>
-      </div>
-    </div>
     <div class="collapse fade subnav" id="supportMenu">
       <div class="container">
         <ul class="nav row">
           <li class="col-sm">
-            <a class="nav-link subnav-link" href="https://www.teq.com/consulting-services/nedm">Network-Enabled Device Management</a>
+            <a class="nav-link subnav-link" href="https://www.teq.com/nedm-survey/">Network-Enabled Device Management Survey</a>
           </li>
           <li class="col-sm">
             <a class="nav-link subnav-link" href="<?php echo site_url(); ?>/support-and-services/">Service Plans</a>
@@ -259,7 +264,7 @@
           <li class="col-sm">
             <a class="nav-link subnav-link" href="<?php echo site_url(); ?>/support-and-services/teqsquad/">Teq Squad</a>
           </li>
-          <li class="nav-item col-sm closeMenuCell">
+          <li class="nav-item col-sm flex-md-middle closeMenuCell">
             <a href="#supportMenu" data-toggle="collapse" aria-expanded="false" aria-controls="supportMenu"><img class="mainLogo" src="<?php echo get_template_directory_uri();?>/_img/subnav-collapse-icon.svg" /></a>
           </li>
         </ul>
@@ -293,10 +298,7 @@
       <div class="container">
         <ul class="nav row">
           <li class="col-sm">
-            <a class="nav-link subnav-link" href="<?php echo site_url(); ?>/about-us/">About</a>
-          </li>
-          <li class="col-sm">
-            <a class="nav-link subnav-link" href="<?php echo site_url(); ?>/about-us/press-releases/">Press Releases</a>
+            <a class="nav-link subnav-link" href="<?php echo site_url(); ?>/about-us/">About Teq</a>
           </li>
           <li class="col-sm">
             <a class="nav-link subnav-link" href="<?php echo site_url(); ?>/about-us/testimonials/">Testimonials</a>
@@ -317,56 +319,6 @@
       <div class="row">
         <div class="col-md">
           <?php if (function_exists('bootstrapwp_breadcrumbs')) { bootstrapwp_breadcrumbs(); } ?>
-        </div>
-        <div class="col-md">
-          <?php global $wp_query;
-            $postid = $wp_query->post->ID;
-            if ( is_page_template( 'templates-pages/product-page.php' ) && get_post_meta($postid, 'titleRoleOne', true) || is_page_template( 'templates-pages/product-pd-page.php' ) && get_post_meta($postid, 'titleRoleOne', true) || is_page_template( 'templates-pages/product-page-slider-top.php' ) && get_post_meta($postid, 'titleRoleOne', true) || is_page_template( 'templates-pages/product-page-accordion-top.php' ) && get_post_meta($postid, 'titleRoleOne', true) || is_page_template( 'templates-pages/product-page-more-info-no-demo-form-open.php' ) && get_post_meta($postid, 'titleRoleOne', true)) {
-          ?>
-          <a class="title-link text-right menu-open" href="#title-roles-nav" data-toggle="collapse" aria-expanded="false" aria-controls="title-roles-nav"><strong>What's Your School Role?</strong></a>
-            <div id="title-roles-nav" class="collapse">
-                <ul class="nav title-roles-menu">
-                  <?php
-                    if ( get_post_meta($postid, 'titleRoleOne', true)) {
-                  ?>
-                    <li><a href="#One" class="title-roles-menu-item1" data-toggle="collapse" aria-expanded="false" aria-controls="One"><?php echo get_post_meta($postid, 'titleRoleOne', true); ?></a></li>
-                  <?php
-                    }
-                    if ( get_post_meta($postid, 'titleRoleTwo', true)) {
-                  ?>
-                    <li><a href="#Two" class="title-roles-menu-item2" data-toggle="collapse" aria-expanded="false" aria-controls="Two"><?php echo get_post_meta($postid, 'titleRoleTwo', true); ?></a></li>
-                  <?php
-                    }
-                    if ( get_post_meta($postid, 'titleRoleThree', true)) {
-                  ?>
-                    <li><a href="#Three" class="title-roles-menu-item3" data-toggle="collapse" aria-expanded="false" aria-controls="Three"><?php echo get_post_meta($postid, 'titleRoleThree', true); ?></a></li>
-                  <?php
-                    }
-                  ?>
-                </ul>
-                <ul id="One" class="collapse nav title-roles-content">
-                  <li>
-                    <article>
-                      <p><?php echo get_post_meta($postid, 'titleRoleOneDescription', true); ?></p>
-                    </article>
-                  </li>
-                </ul>
-                <ul id="Two" class="collapse nav title-roles-content">
-                  <li>
-                    <article>
-                      <p><?php echo get_post_meta($postid, 'titleRoleTwoDescription', true); ?></p>
-                    </article>
-                  </li>
-                </ul>
-                <ul id="Three" class="collapse nav title-roles-content">
-                  <li>
-                    <article>
-                      <p><?php echo get_post_meta($postid, 'titleRoleThreeDescription', true); ?></p>
-                    </article>
-                  </li>
-                </ul>
-              </div>
-          <?php } ?>
         </div>
       </div>
     </section>
