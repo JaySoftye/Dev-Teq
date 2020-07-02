@@ -17,12 +17,13 @@ get_header(); ?>
 <div class="row">
   <div class="col-md-7 padding-top">
     <h1><a href="https://otis.teq.com/users/register"><img style="width:48%;" src="/wp-content/uploads/2016/12/teq-opd-online-logo-icon.svg" /></a></h1>
-    <h1><strong>OTIS for educators is now free.</strong></h1>
-    <h3>In light of the COVID-19 pandemic, <strong>we are making all of our PD courses FREE</strong> to help schools implement distance learning and online professional development.</h3>
+    <h1><strong>Preparing for the upcoming school year.</strong></h1>
+    <h4>In light of the COVID-19 pandemic, we had made all of our PD courses free to help schools implement distance learning through online professional development.</h4>
+    <h4>Thousands of educators benefitted from our PD and were able to quickly build capacity for distance learning.</h4>
     <br />
-    <h4><a style="text-decoration:underline;" href="https://otis.teq.com/users/register"><strong>Individual teachers, sign up for a FREE Basic account.</strong></a> You will be automatically upgraded to a full subscription for free.</h4>
+    <h5>Individual educators can <a style="text-decoration:underline;" href="https://otis.teq.com/users/register"><strong>sign up for a FREE Basic account</strong></a> with access to select PD sessions or purchase PD certification tracks.</h5>
     <br />
-    <h4><a style="text-decoration:underline;" href="#school-form"><strong>Schools fill out the following information</strong></a> and we will assist you with setting up your free accounts. If you need immediate assistance setting up an account for your school, please call 877.455.9369</h4>
+    <h5>If you school or district needs a full OTIS for Educators account, you can <a style="text-decoration:underline;" href="#school-form"><strong>request pricing here.</strong></a></h5>
   </div>
 </div>
 
@@ -109,16 +110,17 @@ get_header(); ?>
 <p><img src="/wp-content/uploads/2016/12/course-library-otis_vector.svg" style="margin-top:-12%;"/></p>
 <h3><strong>Free OTIS for Schools:</strong></h3>
 <p>In order to utilize our free resources, Teq can set up a temporary OTIS for educators account for your building. For administrators and schools requesting us to set up a school based OTIS for educators account please fill out the form below:
-<!--[if lte IE 8]>
-<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
-<![endif]-->
-<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-<script>
-  hbspt.forms.create({
-	portalId: "182596",
-	formId: "7e9ae20d-0eb6-485d-9276-da2c83553a1f"
-});
-</script></p>
+  <br /><br />
+  <!--[if lte IE 8]>
+  <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+  <![endif]-->
+  <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+  <script>
+    hbspt.forms.create({
+  	portalId: "182596",
+  	formId: "8636d830-ea93-4dc4-b067-a123c1c8a4f1"
+  });
+  </script></p>
 </div>
 <div class="col-md-1"></div>
 <div class="col-md-5">
