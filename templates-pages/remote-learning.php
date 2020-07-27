@@ -23,7 +23,7 @@ get_header(); ?>
     <br />
     <h5>Individual educators can <a style="text-decoration:underline;" href="https://otis.teq.com/users/register"><strong>sign up for a FREE Basic account</strong></a> with access to select PD sessions or purchase PD certification tracks.</h5>
     <br />
-    <h5>If you school or district needs a full OTIS for Educators account, you can <a style="text-decoration:underline;" href="#school-form"><strong>request pricing here.</strong></a></h5>
+    <h5>If your school or district needs a full OTIS for Educators account, you can <a style="text-decoration:underline;" href="#school-form"><strong>request pricing here.</strong></a></h5>
   </div>
 </div>
 
