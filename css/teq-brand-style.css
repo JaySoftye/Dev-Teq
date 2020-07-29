@@ -1291,20 +1291,14 @@ div.centeredForm .hs-form .hs-button, .hs-button {
 
 .centeredForm input[type='text'], .centeredForm input[type='email'], .centeredForm input[type='tel'], .centeredForm select.hs-input {
   background-color: #eceeef;
-  height: 1.7rem;
+  height: 3rem;
   width: 85%;
   border: none;
   margin: 5px 0 10px 0;
 	padding: 12px;
-	font-size: 1.4rem;
+	font-size: 1rem;
 	font-weight: 300;
   color: #0077c6;
-}
-
-.centeredForm select.hs-input {
-  height: 3.2rem;
-  width: 100%;
-  font-size: .9rem;
 }
 
 .trialForm input[type='text'], .trialForm input[type='email'], .trialForm input[type='tel'], .trialForm select.hs-input, .standardForm input[type='text'], .standardForm input[type='email'], .standardForm input[type='tel'], .standardForm select.hs-input {
@@ -1342,7 +1336,7 @@ div.centeredForm .hs-form .hs-button, .hs-button {
 }
 
 ul.hs-error-msgs {
-  position: absolute;
+  list-style: none;
 }
 
 .hs-error-msgs li label {
