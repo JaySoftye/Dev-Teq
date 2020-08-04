@@ -420,7 +420,6 @@
 
 <script type="text/javascript">
   $(document).ready(function(){
-
     $('dl.faq').each(function() {
       $(this).click(function() {
         $(this).children('dd').slideToggle();
@@ -437,8 +436,6 @@
     $('a#schedule-btn').click(function() {
       $('html, body').animate({ scrollTop: $("div.edtech-content-form").offset().top }, 1000);
     });
-
-
   });
 </script>
 </body>
