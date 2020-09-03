@@ -12,6 +12,22 @@ get_header(); ?>
 <main>
   <div class="container nopadding padding-top">
     <section id="teqBlog">
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md padding-sm">
+          <h1 class="text-center"><strong>Teq Talk</strong></h1>
+          <form role="search" method="get" id="searchform" class="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search Teq Talk" value="<?php echo get_search_query(); ?>" name="s" id="s" style="height:42px;">
+              <input type="hidden" value="post" name="post_type" id="post_type" />
+              <div class="input-group-btn">
+                <button class="btn btn-default" type="submit" id="searchsubmit" value="<?php echo esc_attr_x( 'Search', 'submit button' ); ?>" style="height:42px;background-position:center center;"></button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
       <div class="row twoRowHeight">
 
 			  <?php
