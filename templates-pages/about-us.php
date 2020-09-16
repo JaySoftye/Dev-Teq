@@ -171,6 +171,11 @@
                         <small>Director of Inside Sales</small>
                       </div>
                       <div class="col-sm">
+                        <img src="/images/headshots_circles/LindseyKane.png" />
+                        <p><strong>Lindsey Kane</strong></p>
+                        <small>Director of Channel Sales</small>
+                      </div>
+                      <div class="col-sm">
                         <img src="https://www.teq.com/images/headshots_circles/MichelleHollander.png" />
                         <p><strong>Michelle Hollander</strong></p>
                         <small>Director of Content and Curriculum</small>
