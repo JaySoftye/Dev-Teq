@@ -44,12 +44,12 @@
   <div class="col-md-4">
     <div class="row">
       <div class="col-md-12">
-        <img src="../consulting-services/../consulting-services/public/images/teq-footer-teq-icon.png" />
+        <img src="../../consulting-services/public/images/teq-footer-teq-icon.png" />
       </div>
       <div class="col-md-12">
         <p class="white">7 Norden Lane<br />Huntington Station, NY 11746 United States</p>
         <p class="white">Phone: 877.455.9369<br />Email: info@teq.com<br />Fax: 631.293.4951</p>
-        <h6><a href="https://www.facebook.com/myTeq/"><img src="../consulting-services/../consulting-services/public/images/teq-footer-facebook-icon.png" /></a><a href="https://twitter.com/TeqPD"><img src="../consulting-services/../consulting-services/public/images/teq-footer-twitter-icon.png" /></a><a href="https://www.linkedin.com/company/teq/"><img src="../consulting-services/../consulting-services/public/images/teq-footer-linkedin-icon.png" /></a></h6>
+        <h6><a href="https://www.facebook.com/myTeq/"><img src="../../consulting-services/public/images/teq-footer-facebook-icon.png" /></a><a href="https://twitter.com/TeqPD"><img src="../../consulting-services/public/images/teq-footer-twitter-icon.png" /></a><a href="https://www.linkedin.com/company/teq/"><img src="../../consulting-services/public/images/teq-footer-linkedin-icon.png" /></a></h6>
         <small class="white">©2017 Teq - all rights reserved</small>
       </div>
     </div>
