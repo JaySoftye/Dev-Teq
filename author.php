@@ -194,11 +194,7 @@
               <?php echo $curauth->user_description; ?>
             </div>
             <div class="col-md-3 hide-from-print">
-              <?php if (!empty( $curauth->profilebackground )) {
-                echo "<img class='profile-img' src='https://www.teq.com/img/" . $curauth->profilebackground . "' />";
-              } else { ?>
-                <img class="profile-img"'" src="https://www.teq.com/img/default-profile-bg.jpg" />
-              <?php } ?>
+            	<img class="profile-img"'" src="https://www.teq.com/img/default-profile-bg.jpg" />
             </div>
           </div>
 
