@@ -129,19 +129,16 @@
             <a class="nav-link subnav-link" href="/teq-blocks/">Teq Blocks</a>
           </li>
           <li class="col-sm">
-            <a class="nav-link subnav-link" href="/teq-blocks/">pBlocks</a>
+            <a class="nav-link subnav-link" href="/teq-blocks/#pBlocks">pBlocks</a>
           </li>
           <li class="col-sm">
-            <a class="nav-link subnav-link" href="/teq-blocks/">sBlocks</a>
+            <a class="nav-link subnav-link" href="/teq-blocks/#iBlocks">iBlocks</a>
           </li>
           <li class="col-sm">
-            <a class="nav-link subnav-link" href="https://www.iblocks.com">iBlocks</a>
+            <a class="nav-link subnav-link" href="/teq-blocks/#teqTivities">Teq-tivities</a>
           </li>
           <li class="col-sm">
-            <a class="nav-link subnav-link" href="/teq-blocks/">Teq-tivities</a>
-          </li>
-          <li class="col-sm">
-            <a class="nav-link subnav-link" href="/teq-stem-activities/">STEM Activity Packs</a>
+            <a class="nav-link subnav-link" href="/teq-stem-activities/#stemActivityPacks">STEM Activity Packs</a>
           </li>
           <li class="nav-item closeMenuCell">
             <a href="#mainTeqMenu" data-toggle="collapse" aria-expanded="false" aria-controls="mainTeqMenu"><img class="mainLogo" src="<?php echo get_template_directory_uri();?>/_img/subnav-collapse-icon.svg" /></a>
