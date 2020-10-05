@@ -88,17 +88,13 @@ get_header(); ?>
   </div>
 
   <div class="row padding-bottom padding-right">
-<div class="col-md-4 padding-sm">
+<div class="col-md-5 padding-sm">
 <h3><strong>OTIS for educators – PD for Remote Learning</strong></h3>
 <p>We have a series of webinars for Remote learning. This includes SMART Learning Suite Online, Google, and Microsoft Teams. </p>
 <p><a class="square button" href="https://www.teq.com/pdf/OTIS_courses.pdf">Download List</a></p>
 </div>
-<div class="col-md-4 padding-sm">
-  <h3><strong>Free Internet Services</strong></h3>
-  <p>See the internet providers that are offering free services and/or data and speed upgrades.</p>
-  <p><a class="square button" href="https://www.teq.com/pdf/Free_Internet_Services.pdf">Download List</a></p>
-</div>
-<div class="col-md-4 padding-sm">
+<div class="col-md-1"></div>
+<div class="col-md-5 padding-sm">
 <h3><strong>Education companies are offering resources for free</strong></h3>
 <p>We are sharing resources from our partners and affiliates that we feel will help you and your schools in the wake of the coronavirus pandemic that is affecting schools. These resources are for informational purposes only and Teq does not endorse any product or program that is listed.</p>
 <p><a class="square button" href="https://www.teq.com/pdf/Free_access_websites.pdf">Download List</a></p>
